@@ -32,24 +32,30 @@ public class Imita_rotazione : MonoBehaviour
         
         var twograbTransf= target_Follow.GetComponent<TwoGrabFreeTransformer>();
         percentuale = target_Follow.GetComponent<TwoGrabFreeTransformer>().scalePercentage;
+        //Debug.Log(percentuale);
+        Debug.Log(scala_ini_value);
         this.transform.rotation = target_Follow.transform.rotation;
         //this.transform.localScale *= percentuale;
         if(percentuale != 0f)
         {
             
-            scala_Corrente = scala_ini_value * percentuale;
-            if ((twograbTransf.targetVector-twograbTransf.initialVector).magnitude<0f)
+            scala_Corrente = (scala_ini_value/40 )* percentuale;
+            //if ((twograbTransf.targetVector-twograbTransf.initialVector).magnitude<0f)
+            //{
+            //scala_Corrente = Mathf.Max(limiteMinimo, scala_Corrente);
+
+            //}
+            //else if((twograbTransf.targetVector - twograbTransf.initialVector).magnitude > 0f)
+            //{
+            //scala_Corrente = Mathf.Min(limiteMassimo, scala_Corrente);
+
+            //}
+            if(scala_Corrente> limiteMinimo && scala_Corrente < limiteMassimo)
             {
-            scala_Corrente = Mathf.Max(limiteMinimo, scala_Corrente);
-
-            }
-            else if((twograbTransf.targetVector - twograbTransf.initialVector).magnitude > 0f)
-            {
-            scala_Corrente = Mathf.Min(limiteMassimo, scala_Corrente);
-
-            }
-
             this.transform.localScale = scala_iniziale * scala_Corrente;
+
+            }
+
         }
         
 
