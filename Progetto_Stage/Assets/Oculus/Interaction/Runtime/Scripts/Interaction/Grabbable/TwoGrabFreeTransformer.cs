@@ -32,6 +32,10 @@ namespace Oculus.Interaction
 
         private Pose _previousGrabPointA;
         private Pose _previousGrabPointB;
+        public float scalePercentage;
+
+        public Vector3 initialVector;
+        public Vector3 targetVector;
 
         [Serializable]
         public class TwoGrabFreeConstraints
@@ -42,7 +46,7 @@ namespace Oculus.Interaction
             public FloatConstraint MinScale;
             public FloatConstraint MaxScale;
         }
-
+        
         [SerializeField]
         private TwoGrabFreeConstraints _constraints;
 
@@ -101,8 +105,8 @@ namespace Oculus.Interaction
             Quaternion initialRotation = _activeRotation;
 
             // The base rotation is based on the delta in vector rotation between grab points
-            Vector3 initialVector = _previousGrabPointB.position - _previousGrabPointA.position;
-            Vector3 targetVector = grabB.position - grabA.position;
+            initialVector = _previousGrabPointB.position - _previousGrabPointA.position;
+            targetVector = grabB.position - grabA.position;
             Quaternion baseRotation = Quaternion.FromToRotation(initialVector, targetVector);
 
             // Any local grab point rotation contributes 50% of its rotation to the final transformation
@@ -127,7 +131,7 @@ namespace Oculus.Interaction
             float activeDistance = targetVector.magnitude;
             if(Mathf.Abs(activeDistance) < 0.0001f) activeDistance = 0.0001f;
 
-            float scalePercentage = activeDistance / _initialDistance;
+            scalePercentage = activeDistance / _initialDistance;
 
             float previousScale = _activeScale;
             _activeScale = _initialScale * scalePercentage;
