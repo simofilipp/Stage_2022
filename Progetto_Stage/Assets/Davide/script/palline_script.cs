@@ -19,6 +19,6 @@ public class palline_script : MonoBehaviour
     }
     public void Cambiastato_Terra()
     {
-        WorldMapManager._instance.CurrentState = stato;
+        WorldMapManager.instance.CurrentState=stato;
     }
 }
