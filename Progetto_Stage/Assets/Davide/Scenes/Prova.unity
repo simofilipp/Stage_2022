@@ -137,6 +137,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9067480af55f5874d8f613b16812f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &155390998
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5137810416250212848, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406538, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_Name
+      value: $Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.457117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbd1914d3283afe4b8f4eb1c40cf56bd, type: 3}
+--- !u!1 &185371102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1807350511420674344, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2020489797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &240846990
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,10 +377,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneOctahedron
       objectReference: {fileID: 0}
+    - target: {fileID: 1571555043832058641, guid: 63b105a6ee122134295e170669579854,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8807312835454417492, guid: 63b105a6ee122134295e170669579854,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8807312835454417492, guid: 63b105a6ee122134295e170669579854,
         type: 3}
@@ -394,7 +479,7 @@ Transform:
   - {fileID: 619580804}
   - {fileID: 333668708}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &497365081 stripped
 MonoBehaviour:
@@ -418,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 1108419882308158592, guid: a912065df8e0b4b4385507810e31c60d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1108419882308158592, guid: a912065df8e0b4b4385507810e31c60d,
         type: 3}
@@ -489,10 +574,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneIcosahedron
       objectReference: {fileID: 0}
+    - target: {fileID: 1371851131998176600, guid: 975bcaf61a9872e488aa68d572fd4fb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9007023290955525149, guid: 975bcaf61a9872e488aa68d572fd4fb4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9007023290955525149, guid: 975bcaf61a9872e488aa68d572fd4fb4,
         type: 3}
@@ -562,6 +652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -646,6 +737,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &717027231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -867,6 +978,26 @@ PrefabInstance:
       objectReference: {fileID: 1316951562}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
+--- !u!1 &929287370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6015426671792406538, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 155390998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &929287374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929287370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f847081ff195640b78322e29fd7e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target_Follow: {fileID: 185371102}
+  state: 0
 --- !u!114 &1007821194 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4461332057873753924, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -879,6 +1010,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e48d93b64a9ae4f9fd5a728c8f51af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1009751683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2425221604022717958, guid: 31e61fab4487ba940a445bdfb90c53bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989395016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1182796667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +1143,7 @@ PrefabInstance:
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
@@ -1395,7 +1532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1363710159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,6 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target_Follow: {fileID: 2047319330}
+  state: 0
 --- !u!65 &1363710160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1485,7 +1623,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1628185354 stripped
 Transform:
@@ -1755,10 +1893,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneTetrahedron
       objectReference: {fileID: 0}
+    - target: {fileID: 2425221604022717958, guid: 31e61fab4487ba940a445bdfb90c53bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240702511065411981, guid: 31e61fab4487ba940a445bdfb90c53bb,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240702511065411981, guid: 31e61fab4487ba940a445bdfb90c53bb,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5647103347321890627, guid: 31e61fab4487ba940a445bdfb90c53bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5647103347321890627, guid: 31e61fab4487ba940a445bdfb90c53bb,
         type: 3}
@@ -1818,6 +1971,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1989395016}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1989395020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7789925545670664649, guid: 31e61fab4487ba940a445bdfb90c53bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989395016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009751683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989395024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009751683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 1989395020}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1989395025}
+        m_TargetAssemblyTypeName: palline_script, Assembly-CSharp
+        m_MethodName: Cambiastato_Terra
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1989395025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009751683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6976b02ee74c44bb6329f0de3d29d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stato: 1
 --- !u!1001 &2020489797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1830,10 +2051,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneDodecahedron
       objectReference: {fileID: 0}
+    - target: {fileID: 8072234692418743971, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072234692418743971, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566527186997311597, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8566527186997311597, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
         type: 3}
@@ -1893,6 +2124,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2020489797}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2020489801 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6099986637667303143, guid: b40c01843778b2446b1d3dcd5e5fdc8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2020489797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185371102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2020489805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185371102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 2020489801}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2020489806}
+        m_TargetAssemblyTypeName: palline_script, Assembly-CSharp
+        m_MethodName: Cambiastato_Terra
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2020489806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185371102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6976b02ee74c44bb6329f0de3d29d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stato: 0
 --- !u!1001 &2047319328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1903,7 +2202,7 @@ PrefabInstance:
     - target: {fileID: 1412293541113831033, guid: e3b826e8a7103bc49af231259b274c97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1412293541113831033, guid: e3b826e8a7103bc49af231259b274c97,
         type: 3}
@@ -1964,6 +2263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StoneCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966646920969844540, guid: e3b826e8a7103bc49af231259b274c97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3b826e8a7103bc49af231259b274c97, type: 3}

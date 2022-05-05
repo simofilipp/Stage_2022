@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction;
 
+
 public class Imita_rotazione : MonoBehaviour
 {
     [SerializeField]
@@ -16,6 +17,8 @@ public class Imita_rotazione : MonoBehaviour
     float limiteMassimo= 1.2f;
     float limiteMinimo= 0.5f;
 
+   
+    public WorldMapManager.State state;
 
 
     // Start is called before the first frame update
@@ -34,7 +37,9 @@ public class Imita_rotazione : MonoBehaviour
         percentuale = target_Follow.GetComponent<TwoGrabFreeTransformer>().scalePercentage;
         //Debug.Log(percentuale);
         Debug.Log(scala_ini_value);
+
         this.transform.rotation = target_Follow.transform.rotation;
+
         //this.transform.localScale *= percentuale;
         if(percentuale != 0f)
         {
@@ -60,4 +65,12 @@ public class Imita_rotazione : MonoBehaviour
         
 
     }
+
+    public void RendiFiglio(Transform nuovo_genitore) 
+    {
+        target_Follow.transform.SetParent(nuovo_genitore, false);
+    }
+
+  
+
 }
