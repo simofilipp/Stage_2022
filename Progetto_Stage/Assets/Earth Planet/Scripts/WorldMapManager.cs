@@ -310,7 +310,7 @@ public class WorldMapManager : MonoBehaviour
         return Mathf.RoundToInt(col.r * 100);
     }
 
-    void ChangeAllCountriesMaterials(Material mat)
+    public void ChangeAllCountriesMaterials(Material mat)
     {
         foreach (var item in countries)
         {
