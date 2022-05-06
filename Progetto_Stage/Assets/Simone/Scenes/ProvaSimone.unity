@@ -310,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactableView: {fileID: 359382875}
   materialStato: {fileID: 2100000, guid: 585fea98343e0e84aacb1764f50eb7ff, type: 2}
+  layerShader: {fileID: 4800000, guid: 314e3034937b50349a70af5d749e7eae, type: 3}
   _testObj: {fileID: 1805531345}
 --- !u!1 &115231540
 GameObject:
@@ -3730,14 +3731,14 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963513206}
-        m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
-        m_MethodName: PlayAudio
-        m_Mode: 1
+      - m_Target: {fileID: 2049549480}
+        m_TargetAssemblyTypeName: testGrab, Assembly-CSharp
+        m_MethodName: OnChange
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3956,14 +3957,14 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1781108500}
-        m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
-        m_MethodName: PlayAudio
-        m_Mode: 1
+      - m_Target: {fileID: 92062499}
+        m_TargetAssemblyTypeName: testGrab, Assembly-CSharp
+        m_MethodName: OnChange
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5949,6 +5950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactableView: {fileID: 1512603042}
   materialStato: {fileID: 2100000, guid: 86bf976675e4e404f9bcebffd9d62df7, type: 2}
+  layerShader: {fileID: 0}
   _testObj: {fileID: 1805531345}
 --- !u!1 &2077856742
 GameObject:
@@ -7361,10 +7363,10 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2035712703440768656}
-        m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
-        m_MethodName: PlayAudio
-        m_Mode: 1
+      - m_Target: {fileID: 8566527186328961578}
+        m_TargetAssemblyTypeName: testGrab, Assembly-CSharp
+        m_MethodName: OnChange
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8117,6 +8119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactableView: {fileID: 7825638447178820504}
   materialStato: {fileID: 2100000, guid: f72df2c248e02df4fb2299c5191b68f9, type: 2}
+  layerShader: {fileID: 0}
   _testObj: {fileID: 1805531345}
 --- !u!82 &8841293401539706998
 AudioSource:

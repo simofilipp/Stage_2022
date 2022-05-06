@@ -51,7 +51,7 @@ public class WorldMapManager : MonoBehaviour
     public float currentPointValue;
     LayerMask EarthMask;
     public GameObject CurrenUnitPoint;
-    public static event Action EventChangeState;
+    //public static event Action EventChangeState;
     
     public enum State { Earth = 0, Politic = 1, Population = 2, Science = 3, Transport = 4, Disaster = 5, Climat = 6 }
     private State _currentState;
@@ -115,7 +115,7 @@ public class WorldMapManager : MonoBehaviour
 
 
             _currentState = value;
-            EventChangeState();
+            //EventChangeState();
         }
 
     }

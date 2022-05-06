@@ -12,7 +12,7 @@ public class LayersController : MonoBehaviour
     {
        
         drop.onValueChanged.AddListener(OnChange); 
-        WorldMapManager.EventChangeState += OnChangeState;
+        //WorldMapManager.EventChangeState += OnChangeState;
     }
     private void OnChange(int id)
     {
@@ -28,7 +28,7 @@ public class LayersController : MonoBehaviour
     private void OnDestroy()
     {
         drop.onValueChanged.RemoveListener(OnChange);
-        WorldMapManager.EventChangeState -= OnChangeState;
+        //WorldMapManager.EventChangeState -= OnChangeState;
     }
     void OnChangeState()
     {
