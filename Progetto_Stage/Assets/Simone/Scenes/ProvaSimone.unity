@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4083494, g: 0.40781504, b: 0.4129906, a: 1}
+  m_IndirectSpecularColor: {r: 0.40835008, g: 0.4078112, b: 0.41298527, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 92062498}
   - component: {fileID: 92062499}
   - component: {fileID: 92062500}
+  - component: {fileID: 92062501}
   m_Layer: 0
   m_Name: StoneDodecahedron (1)
   m_TagString: Untagged
@@ -312,6 +313,19 @@ MonoBehaviour:
   - {fileID: 1807350510210493293}
   - {fileID: 2049549470}
   terra: {fileID: 929287370}
+--- !u!114 &92062501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92062489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c6bcb41e1145b4f94bf76ccd5f1fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianeta: {fileID: 929287370}
 --- !u!1 &115231540
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015426671792406550, guid: dbd1914d3283afe4b8f4eb1c40cf56bd,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbd1914d3283afe4b8f4eb1c40cf56bd, type: 3}
@@ -5836,6 +5855,7 @@ GameObject:
   - component: {fileID: 2049549479}
   - component: {fileID: 2049549480}
   - component: {fileID: 2049549481}
+  - component: {fileID: 2049549482}
   m_Layer: 0
   m_Name: StoneDodecahedron (2)
   m_TagString: Untagged
@@ -6006,6 +6026,19 @@ MonoBehaviour:
   - {fileID: 1807350510210493293}
   - {fileID: 92062489}
   terra: {fileID: 929287370}
+--- !u!114 &2049549482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049549470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c6bcb41e1145b4f94bf76ccd5f1fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianeta: {fileID: 929287370}
 --- !u!1 &2077856742
 GameObject:
   m_ObjectHideFlags: 0
@@ -6694,6 +6727,7 @@ GameObject:
   - component: {fileID: 2583200481207857142}
   - component: {fileID: 8566527186328961578}
   - component: {fileID: 8566527186328961579}
+  - component: {fileID: 8566527186328961580}
   m_Layer: 0
   m_Name: StoneDodecahedron
   m_TagString: Untagged
@@ -8199,6 +8233,19 @@ MonoBehaviour:
   - {fileID: 92062489}
   - {fileID: 2049549470}
   terra: {fileID: 929287370}
+--- !u!114 &8566527186328961580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807350510210493293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c6bcb41e1145b4f94bf76ccd5f1fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianeta: {fileID: 929287370}
 --- !u!82 &8841293401539706998
 AudioSource:
   m_ObjectHideFlags: 0

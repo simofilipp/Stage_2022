@@ -38,7 +38,7 @@ public class Imita_rotazione : MonoBehaviour
         //Debug.Log(percentuale);
         Debug.Log(scala_ini_value);
 
-        this.transform.rotation = target_Follow.transform.rotation;
+        //this.transform.rotation = target_Follow.transform.rotation;
 
         //this.transform.localScale *= percentuale;
         if(percentuale != 0f)

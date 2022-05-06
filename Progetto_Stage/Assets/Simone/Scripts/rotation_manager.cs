@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +41,7 @@ public class rotation_manager : MonoBehaviour
 
     public void StoppaCoroutine()
     {
-        selezionato = false;
+            selezionato = false;
         terra.GetComponent<Animator>().enabled = true;
     }
 
