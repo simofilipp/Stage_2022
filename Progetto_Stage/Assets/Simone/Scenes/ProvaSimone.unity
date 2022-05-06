@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.40835008, g: 0.4078112, b: 0.41298527, a: 1}
+  m_IndirectSpecularColor: {r: 0.4083494, g: 0.40781504, b: 0.4129906, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,8 +140,8 @@ GameObject:
   - component: {fileID: 92062491}
   - component: {fileID: 92062492}
   - component: {fileID: 92062498}
-  - component: {fileID: 92062497}
   - component: {fileID: 92062499}
+  - component: {fileID: 92062500}
   m_Layer: 0
   m_Name: StoneDodecahedron (1)
   m_TagString: Untagged
@@ -252,22 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &92062497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92062489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
-  _includeChildrenAsDependents: 0
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!114 &92062498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +296,22 @@ MonoBehaviour:
   materialStato: {fileID: 2100000, guid: 585fea98343e0e84aacb1764f50eb7ff, type: 2}
   layerShader: {fileID: 4800000, guid: 314e3034937b50349a70af5d749e7eae, type: 3}
   _testObj: {fileID: 1805531345}
+--- !u!114 &92062500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92062489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere:
+  - {fileID: 1807350510210493293}
+  - {fileID: 2049549470}
+  terra: {fileID: 929287370}
 --- !u!1 &115231540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,12 +3749,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2049549481}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: AvviaCoroutine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1608705236}
         m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
         m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2049549481}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: StoppaCoroutine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3975,12 +3999,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 92062500}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: AvviaCoroutine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 332971568}
         m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
         m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 92062500}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: StoppaCoroutine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5786,8 +5834,8 @@ GameObject:
   - component: {fileID: 2049549472}
   - component: {fileID: 2049549473}
   - component: {fileID: 2049549479}
-  - component: {fileID: 2049549478}
   - component: {fileID: 2049549480}
+  - component: {fileID: 2049549481}
   m_Layer: 0
   m_Name: StoneDodecahedron (2)
   m_TagString: Untagged
@@ -5898,22 +5946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2049549478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049549470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
-  _includeChildrenAsDependents: 0
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!114 &2049549479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,6 +5990,22 @@ MonoBehaviour:
   materialStato: {fileID: 2100000, guid: 86bf976675e4e404f9bcebffd9d62df7, type: 2}
   layerShader: {fileID: 0}
   _testObj: {fileID: 1805531345}
+--- !u!114 &2049549481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049549470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere:
+  - {fileID: 1807350510210493293}
+  - {fileID: 92062489}
+  terra: {fileID: 929287370}
 --- !u!1 &2077856742
 GameObject:
   m_ObjectHideFlags: 0
@@ -6644,8 +6692,8 @@ GameObject:
   - component: {fileID: 4730366722042547119}
   - component: {fileID: 8072234693092316390}
   - component: {fileID: 2583200481207857142}
-  - component: {fileID: 8566527186328961577}
   - component: {fileID: 8566527186328961578}
+  - component: {fileID: 8566527186328961579}
   m_Layer: 0
   m_Name: StoneDodecahedron
   m_TagString: Untagged
@@ -7381,12 +7429,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8566527186328961579}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: AvviaCoroutine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3210205091750397662}
         m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
         m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8566527186328961579}
+        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+        m_MethodName: StoppaCoroutine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8095,22 +8167,6 @@ Transform:
   m_Father: {fileID: 439302038}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 55, y: 0, z: 0}
---- !u!114 &8566527186328961577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807350510210493293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
-  _includeChildrenAsDependents: 0
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!114 &8566527186328961578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8127,6 +8183,22 @@ MonoBehaviour:
   materialStato: {fileID: 2100000, guid: f72df2c248e02df4fb2299c5191b68f9, type: 2}
   layerShader: {fileID: 0}
   _testObj: {fileID: 1805531345}
+--- !u!114 &8566527186328961579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807350510210493293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere:
+  - {fileID: 92062489}
+  - {fileID: 2049549470}
+  terra: {fileID: 929287370}
 --- !u!82 &8841293401539706998
 AudioSource:
   m_ObjectHideFlags: 0
