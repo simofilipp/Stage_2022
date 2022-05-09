@@ -1,4 +1,5 @@
 using Oculus.Interaction;
+using Oculus.Interaction.HandPosing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,9 +27,17 @@ public class rotation_manager : MonoBehaviour
     public void AvviaCoroutine()
     {
         counterSelezionato += 1;
-        selezionato = true;
-        terra.GetComponent<Animator>().enabled = false;
-        StartCoroutine(Rotazione());
+        if (counterSelezionato == 1)
+        {
+            for(int i = 0; i < altreSfere.Count; i++)
+            {
+                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
+                altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
+            }
+            selezionato = true;
+            terra.GetComponent<Animator>().enabled = false;
+            StartCoroutine(Rotazione());
+        }
     }
 
     IEnumerator Rotazione()
@@ -49,6 +58,11 @@ public class rotation_manager : MonoBehaviour
         {
             selezionato = false;
             terra.GetComponent<Animator>().enabled = true;
+            for (int i = 0; i < altreSfere.Count; i++)
+            {
+                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
+                altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
+            }
         }
     }
 
