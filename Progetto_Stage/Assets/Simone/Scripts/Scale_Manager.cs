@@ -38,7 +38,7 @@ public class Scale_Manager : MonoBehaviour
     public void OnSelectedScale()
     {
         counterSelezionato += 1;
-        if(counterSelezionato == 1)
+        if(counterSelezionato == 2)
         {
             selezionato = true;
             StartCoroutine(Scalatura());
@@ -59,6 +59,7 @@ public class Scale_Manager : MonoBehaviour
 
     IEnumerator Scalatura()
     {
+        yield return null;
         while (selezionato)
         {
             twograbTransf = this.GetComponent<TwoGrabFreeTransformer>();
