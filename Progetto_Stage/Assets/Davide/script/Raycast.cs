@@ -2,12 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Oculus.Interaction;
+using System;
 
 public class Raycast : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject stato_nome;
-  
+    GameObject canvasFinale;
+    private IInteractableView iiv;
+
+    private void Awake()
+    {
+        canvasFinale = GameObject.Find("CanvasFinale");
+        iiv = GetComponent<IInteractableView>();
+    }
     void Start()
     {
         
@@ -18,10 +27,22 @@ public class Raycast : MonoBehaviour
     {
         
     }
-    public void StatoSelezinato(string codice)
+    private void StatoSelezinato(InteractableStateChangeArgs obj)
     {
-        codice = stato_nome.name;
-        Debug.Log(codice);
+        //codice = stato_nome.name;
+        //Debug.Log(codice);
+        if(iiv.State == InteractableState.Select)
+        {
+            TMP_Text testo = canvasFinale.GetComponentInChildren<TMP_Text>();
+            testo.text = this.name;
+
+        }
 
     }
+    void OnEnable()
+    {
+        iiv.WhenStateChanged += StatoSelezinato;
+    }
+
+   
 }

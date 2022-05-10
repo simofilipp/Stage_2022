@@ -9,7 +9,7 @@ public class UnitEarth : MonoBehaviour
     private void Update()
     {
          
-           // transform.Rotate(Vector3.back, Time.deltaTime);
+            transform.Rotate(Vector3.back, Time.deltaTime);
 
         
     }
