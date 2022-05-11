@@ -9,12 +9,13 @@ using System;
 public class Raycast : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField]
     GameObject canvasFinale;
     private IInteractableView iiv;
 
     private void Awake()
     {
-        canvasFinale = GameObject.Find("CanvasFinale");
+        //canvasFinale = GameObject.Find("CanvasFinale");
         iiv = GetComponent<IInteractableView>();
     }
     void Start()

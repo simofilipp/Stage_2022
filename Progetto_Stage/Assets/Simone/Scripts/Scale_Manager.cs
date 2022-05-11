@@ -38,6 +38,7 @@ public class Scale_Manager : MonoBehaviour
     public void OnSelectedScale()
     {
         counterSelezionato += 1;
+        twograbTransf = this.GetComponent<TwoGrabFreeTransformer>();
         if(counterSelezionato == 2)
         {
             selezionato = true;
@@ -62,7 +63,6 @@ public class Scale_Manager : MonoBehaviour
         yield return null;
         while (selezionato)
         {
-            twograbTransf = this.GetComponent<TwoGrabFreeTransformer>();
             percentuale = twograbTransf.scalePercentage;
             Debug.Log(scala_ini_value_Pianeta);
             if (percentuale != 0f)
