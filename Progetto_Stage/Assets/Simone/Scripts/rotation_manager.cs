@@ -35,7 +35,7 @@ public class rotation_manager : MonoBehaviour
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
             }
             selezionato = true;
-            terra.GetComponent<Animator>().enabled = false;
+            //terra.GetComponent<Animator>().enabled = false;
             StartCoroutine(Rotazione());
         }
     }

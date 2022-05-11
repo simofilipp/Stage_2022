@@ -10,7 +10,7 @@ public class KeypadManager : MonoBehaviour
     private void Awake()
     {
         m_Text= GetComponentInChildren<TMP_Text>();
-        if (m_Text.gameObject.name != "DEL")
+        if (m_Text.gameObject.name != "DEL" && m_Text.gameObject.name != "ENT")
         {
             m_Text.fontSize = 0.8f;
         }
@@ -52,6 +52,14 @@ public class KeypadManager : MonoBehaviour
         if (m_InputField.text.Length > 0)
         {
             m_InputField.text=m_InputField.text.Substring(0,m_InputField.text.Length-1);
+        }
+    }
+
+    public void Enter()
+    {
+        if(m_InputField != null && m_InputField.text!="")
+        {
+            APIManager.instance.GetCountryData(m_InputField.text);
         }
     }
 }

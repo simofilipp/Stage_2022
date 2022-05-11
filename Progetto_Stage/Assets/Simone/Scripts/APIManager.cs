@@ -29,8 +29,24 @@ public class APIManager : MonoBehaviour
     DateTime yesterday;
     DateTime twoDaysAgo;
 
+    public static APIManager _instance;
+    public static APIManager instance
+    {
+        get
+        {
+            if (!_instance)
+            {
+                _instance = FindObjectOfType<APIManager>();
+            }
+            return _instance;
+        }
+        set { _instance = value; }
+    }
+
     void Awake()
     {
+        if (instance == null) instance = this;
+        else if (instance != this) { Destroy(gameObject); return; };
         dataList = new List<DatiGiornalieri>();
         dataList.Add(yesterdayData);
         dataList.Add(todayData);
@@ -115,7 +131,7 @@ public class APIManager : MonoBehaviour
 
             Debug.Log(_countryScript.PrintAllData());
             textCovid.text = _countryScript.PrintAllData();
-            earthRotationManager.RuotaTerra(_countryScript.GetCode());
+            //earthRotationManager.RuotaTerra(_countryScript.GetCode());
 
         }
         else

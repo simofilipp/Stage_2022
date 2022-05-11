@@ -8,11 +8,16 @@ public class EarthRotationManager : MonoBehaviour
     [SerializeField] Transform cameraMain;
     Transform stato;
 
+    int id;
     Vector3 terra_initial_scale;
+    Quaternion terra_initial_rotation;
     // Start is called before the first frame update
     void Start()
     {
+        terra_initial_rotation = terra.rotation;
         terra_initial_scale = terra.localScale;
+        id=LeanTween.rotateZ(terra.gameObject, 360, 60f).id;
+        Invoke("CancellaTween", 5f);
     }
 
     // Update is called once per frame
@@ -48,5 +53,10 @@ public class EarthRotationManager : MonoBehaviour
 
         //terra.rotation = rotazioneFinale;
 
+    }
+
+    void CancellaTween()
+    {
+        LeanTween.cancel(id);
     }
 }

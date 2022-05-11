@@ -11,8 +11,7 @@ public class Raycast : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     GameObject canvasFinale;
-    [SerializeField]
-    GameObject _APIManager;
+
     private IInteractableView iiv;
 
     private void Awake()
@@ -39,7 +38,7 @@ public class Raycast : MonoBehaviour
             TMP_Text testo = canvasFinale.GetComponentInChildren<TMP_Text>();
             testo.text = this.GetComponent<Country>().Name;
             Debug.Log(GetComponent<Country>().Name);
-            _APIManager.GetComponent<APIManager>().GetCountryData(GetComponent<Country>().Name);
+            APIManager.instance.GetCountryData(GetComponent<Country>().Name);
         }
 
     }
