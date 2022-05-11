@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &25302210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895758, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -164,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &32561951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895774, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -183,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &37199450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896152, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -202,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &39466686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896130, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -221,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &40195958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &103535105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,8 +1234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1.2466}
+  m_SizeDelta: {x: 0, y: -2.493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103563281
 MonoBehaviour:
@@ -1281,8 +1287,8 @@ MonoBehaviour:
   m_fontSize: 0.67
   m_fontSizeBase: 0.67
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1347,6 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &115181895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +1796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &130782220 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895836, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1808,6 +1816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &132430333 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895778, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1827,6 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &139684848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895842, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1846,6 +1856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &146348922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895790, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1865,6 +1876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &149114020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895684, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1884,6 +1896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &150521282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896120, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -1903,6 +1916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!114 &182776436 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3392710849946547363, guid: d27ac1ffd4cdd7c40a39dcfa6012355c,
@@ -1946,6 +1960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &196611954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &205990189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2317,6 +2333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &238289689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +2520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &240846990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,6 +2614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &260436518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,6 +3262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &326658097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895916, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3262,6 +3282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &334834685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896086, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3281,6 +3302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &338206434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,6 +3550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &391404585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895876, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3547,6 +3570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &394946146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896080, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3566,6 +3590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &402062991 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896108, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3585,6 +3610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &408305525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896132, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3604,6 +3630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &411238207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895924, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3623,6 +3650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &419723419
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +3827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &426986955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896104, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3818,6 +3847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &430580460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895754, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3837,6 +3867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &433810137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895818, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3856,6 +3887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &440179271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895892, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3875,6 +3907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &444002377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &450760475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896138, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -3999,6 +4033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &468539700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,6 +4150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &483905082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895914, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -4134,6 +4170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &486947813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895740, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -4153,6 +4190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!114 &497365081 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4551574684703527225, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -4268,6 +4306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &529683544
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &610660401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,6 +5007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &647418414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,6 +5188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &679119700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,6 +5306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &713139077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895736, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -5417,6 +5461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &717027231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5652,6 +5697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &735976471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896140, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -5671,6 +5717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &744306632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6037,6 +6084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &767086355 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895918, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6056,6 +6104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &768468004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895796, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6075,6 +6124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &770602064
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,6 +6345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &780452442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895752, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6314,6 +6365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &803600921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896094, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6333,6 +6385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &809255505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895908, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6352,6 +6405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &824880595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895680, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6371,6 +6425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &831772487 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895744, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6390,6 +6445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &837689210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895728, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6409,6 +6465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &841010795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895756, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6428,6 +6485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &844711157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895926, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6447,6 +6505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &845072847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6520,6 +6579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &871804443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896112, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -6539,6 +6599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &873979377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,6 +6660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &877947962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,6 +6844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &901140171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7094,6 +7157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &940619747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895704, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -7113,6 +7177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &942320834
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +7364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &953101602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896154, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -7318,6 +7384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &957077010
 GameObject:
   m_ObjectHideFlags: 0
@@ -7504,6 +7571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &987523378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7684,6 +7752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &997860717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895902, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -7703,6 +7772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &999167664
 GameObject:
   m_ObjectHideFlags: 0
@@ -7943,6 +8013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1004854524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895934, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -7962,6 +8033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!114 &1007821194 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4461332057873753924, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -7993,6 +8065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!114 &1039188989 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5428581016899148157, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -8024,6 +8097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1063729566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8286,6 +8360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1090815114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895906, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -8305,6 +8380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1093706739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895768, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -8324,6 +8400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1094712713
 GameObject:
   m_ObjectHideFlags: 0
@@ -9129,6 +9206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1124268890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895884, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9148,6 +9226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1130518153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895932, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9167,6 +9246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1136506326 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896128, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9186,6 +9266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1142885568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896100, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9205,6 +9286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1144381513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895806, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9224,6 +9306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1146487342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895690, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9243,6 +9326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1149096339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895886, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9262,6 +9346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1161976459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896144, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9281,6 +9366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1167292913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896096, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9300,6 +9386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1172126747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895730, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9319,6 +9406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1180457630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896150, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9338,6 +9426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1182796667
 GameObject:
   m_ObjectHideFlags: 0
@@ -9394,6 +9483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1210114215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895770, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9413,6 +9503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1216620352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895714, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9432,6 +9523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1231171407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896136, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9451,6 +9543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1236766185
 GameObject:
   m_ObjectHideFlags: 0
@@ -9637,6 +9730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1249833118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895788, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -9656,6 +9750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1250255439
 GameObject:
   m_ObjectHideFlags: 0
@@ -9994,6 +10089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1276523315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895922, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10013,6 +10109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1276714069 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895784, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10032,6 +10129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1279132785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895700, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10051,6 +10149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1279900972
 GameObject:
   m_ObjectHideFlags: 0
@@ -10155,6 +10254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1286084936
 GameObject:
   m_ObjectHideFlags: 0
@@ -10387,6 +10487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1298721016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895712, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10406,6 +10507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1304537130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895760, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10425,6 +10527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1307849712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895864, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10444,6 +10547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1308361495 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896070, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10463,6 +10567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1312529366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895692, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -10482,6 +10587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &1316951552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11676,6 +11782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1338914459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895724, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11695,6 +11802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1349067870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895858, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11714,6 +11822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1359899694 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895722, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11733,6 +11842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1365286410 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895708, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11752,6 +11862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1366696449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895868, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11771,6 +11882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1383299646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895826, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11790,6 +11902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1392345553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895862, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11809,6 +11922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1393911952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895854, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11828,6 +11942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1398249510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896084, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11847,6 +11962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1411823044 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895866, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -11866,6 +11982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1427044225
 GameObject:
   m_ObjectHideFlags: 0
@@ -12047,6 +12164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1442189421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896158, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12066,6 +12184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1453446233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895732, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12085,6 +12204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &1458489582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12344,6 +12464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1479949559
 GameObject:
   m_ObjectHideFlags: 0
@@ -12776,6 +12897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1519131103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896146, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12795,6 +12917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1521208990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895710, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12814,6 +12937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1524835807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896066, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12833,6 +12957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1543698402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896072, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12852,6 +12977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1546615451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895682, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -12871,6 +12997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1552644963
 GameObject:
   m_ObjectHideFlags: 0
@@ -12902,6 +13029,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 103563280}
+  - {fileID: 1624821759}
   m_Father: {fileID: 1649254943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13131,6 +13259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1574324903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895898, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13150,6 +13279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1598061922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895838, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13169,6 +13299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1606626979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896076, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13188,6 +13319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1616058721
 GameObject:
   m_ObjectHideFlags: 0
@@ -13274,6 +13406,141 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1624821758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624821759}
+  - component: {fileID: 1624821761}
+  - component: {fileID: 1624821760}
+  m_Layer: 5
+  m_Name: InfoCovid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1624821759
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624821758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1552644964}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.559}
+  m_SizeDelta: {x: 0, y: -1.1179}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1624821760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624821758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.67
+  m_fontSizeBase: 0.67
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1624821761
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624821758}
+  m_CullTransparentMesh: 1
 --- !u!4 &1628185354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7415146172554156808, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -13299,6 +13566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1645555832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895894, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13318,6 +13586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1649254939
 GameObject:
   m_ObjectHideFlags: 0
@@ -13510,6 +13779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1695318608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895860, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13529,6 +13799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1700051446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895822, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -13548,6 +13819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1706669717
 GameObject:
   m_ObjectHideFlags: 0
@@ -14005,6 +14277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1741241841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896064, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -14024,6 +14297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &1751871451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14123,6 +14397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1774800831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895848, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -14142,6 +14417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1778043454
 GameObject:
   m_ObjectHideFlags: 0
@@ -14323,6 +14599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1786092326
 GameObject:
   m_ObjectHideFlags: 0
@@ -14414,6 +14691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1800594473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895808, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -14433,6 +14711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1800762458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895742, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -14452,6 +14731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1805132017 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896088, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -14471,6 +14751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1819301872
 GameObject:
   m_ObjectHideFlags: 0
@@ -14834,6 +15115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &1831248672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15090,6 +15372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1846570874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895786, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -15109,6 +15392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1863111328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895762, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -15128,6 +15412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1866187511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895870, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -15147,6 +15432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1867178618 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895764, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -15166,6 +15452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1868299819
 GameObject:
   m_ObjectHideFlags: 0
@@ -15762,6 +16049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1889875811
 GameObject:
   m_ObjectHideFlags: 0
@@ -15834,6 +16122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1899908518
 GameObject:
   m_ObjectHideFlags: 0
@@ -16010,6 +16299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1902614017 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895780, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -16029,6 +16319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1907662904
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,6 +16506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1916786055
 GameObject:
   m_ObjectHideFlags: 0
@@ -16395,6 +16687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1923041255
 GameObject:
   m_ObjectHideFlags: 0
@@ -16575,6 +16868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &1938331054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16896,6 +17190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1960310516
 GameObject:
   m_ObjectHideFlags: 0
@@ -17386,6 +17681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &1972325486
 GameObject:
   m_ObjectHideFlags: 0
@@ -17728,6 +18024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2013330206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896118, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17747,6 +18044,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
+--- !u!1 &2031375527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031375529}
+  - component: {fileID: 2031375528}
+  m_Layer: 0
+  m_Name: APIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2031375528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031375527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32132f9334d9304fa3089a48ff54cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCovid: {fileID: 1624821760}
+  countryInput: {fileID: 0}
+  earthRotationManager: {fileID: 0}
+--- !u!4 &2031375529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031375527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.65047, y: 5.657449, z: 1.513454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2039620950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895912, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17766,6 +18111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2047647830 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973896082, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17785,6 +18131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2057905033
 GameObject:
   m_ObjectHideFlags: 0
@@ -17928,6 +18275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2076803561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895820, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17947,6 +18295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2078259403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895816, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17966,6 +18315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2090052542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878579547973895794, guid: 0fa77770054434844b819c5cc411a8ab,
@@ -17985,6 +18335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2091280218
 GameObject:
   m_ObjectHideFlags: 0
@@ -18161,6 +18512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1001 &2093692210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18489,6 +18841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2107468291
 GameObject:
   m_ObjectHideFlags: 0
@@ -18836,6 +19189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2116371604
 GameObject:
   m_ObjectHideFlags: 0
@@ -19012,6 +19366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+  _APIManager: {fileID: 2031375527}
 --- !u!1 &2136078256
 GameObject:
   m_ObjectHideFlags: 0
