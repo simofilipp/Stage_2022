@@ -131,7 +131,7 @@ public class APIManager : MonoBehaviour
 
             Debug.Log(_countryScript.PrintAllData());
             textCovid.text = _countryScript.PrintAllData();
-            //earthRotationManager.RuotaTerra(_countryScript.GetCode());
+            earthRotationManager.RuotaTerra(_countryScript.GetCode());
 
         }
         else

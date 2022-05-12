@@ -31,11 +31,10 @@ public class rotation_manager : MonoBehaviour
         {
             for(int i = 0; i < altreSfere.Count; i++)
             {
-                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
+                //altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
             }
             selezionato = true;
-            //terra.GetComponent<Animator>().enabled = false;
             StartCoroutine(Rotazione());
         }
     }
@@ -57,10 +56,9 @@ public class rotation_manager : MonoBehaviour
         if(counterSelezionato == 0)
         {
             selezionato = false;
-            terra.GetComponent<Animator>().enabled = true;
             for (int i = 0; i < altreSfere.Count; i++)
             {
-                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
+                //altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
             }
         }

@@ -15,8 +15,12 @@ using UnityEngine.Assertions;
 
 namespace Oculus.Interaction
 {
+
     public class BoxProximityField : MonoBehaviour, IProximityField
     {
+        public float proximityValueX;
+        public float proximityValueY;
+        public float proximityValueZ;
         [SerializeField]
         private Transform _boxTransform;
 
@@ -31,9 +35,9 @@ namespace Oculus.Interaction
         {
             Vector3 localPoint = _boxTransform.InverseTransformPoint(point);
 
-            localPoint.x = Mathf.Clamp(localPoint.x, -0.5f, 0.5f);
-            localPoint.y = Mathf.Clamp(localPoint.y, -0.5f, 0.5f);
-            localPoint.z = Mathf.Clamp(localPoint.z, -0.5f, 0.5f);
+            localPoint.x = Mathf.Clamp(localPoint.x, -proximityValueX,proximityValueX);
+            localPoint.y = Mathf.Clamp(localPoint.y, -proximityValueY, proximityValueY);
+            localPoint.z = Mathf.Clamp(localPoint.z, -proximityValueZ, proximityValueZ);
 
             Vector3 worldPoint = _boxTransform.TransformPoint(localPoint);
 

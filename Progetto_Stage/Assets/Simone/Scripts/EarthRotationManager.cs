@@ -5,19 +5,20 @@ using UnityEngine;
 public class EarthRotationManager : MonoBehaviour
 {
     [SerializeField] Transform terra;
+    [SerializeField] Transform terraPerRicerca;
     [SerializeField] Transform cameraMain;
     Transform stato;
 
     int id;
     Vector3 terra_initial_scale;
     Quaternion terra_initial_rotation;
+
     // Start is called before the first frame update
     void Start()
     {
         terra_initial_rotation = terra.rotation;
         terra_initial_scale = terra.localScale;
-        id=LeanTween.rotateZ(terra.gameObject, 360, 60f).id;
-        Invoke("CancellaTween", 5f);
+        id=terra.LeanRotateAroundLocal(terra.up, -360, 60f).setLoopCount(-1).id;
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class EarthRotationManager : MonoBehaviour
 
     IEnumerator RotazioneTerra(string code)
     {
+        CancellaTweenTerra();
         yield return new WaitForSeconds(0.1f);
         //alcuni stati hanno un codice diverso, filtrarli
         switch (code)
@@ -44,19 +46,24 @@ public class EarthRotationManager : MonoBehaviour
         }
         //Find non ottimizzato, tenere in considerazione di usare un loop per cercare nella lista del WorldMapManager
         stato = GameObject.Find(code).transform;
-        var toCamera = Quaternion.LookRotation(cameraMain.position - terra.position);
+        var toCamera = Quaternion.LookRotation(cameraMain.position - terraPerRicerca.position);
         var toSite = Quaternion.LookRotation(stato.localPosition);
         var fromSite = Quaternion.Inverse(toSite);
         var rotazioneFinale = toCamera * fromSite;
-        terra.LeanRotate(rotazioneFinale.eulerAngles, 1f);
+        terraPerRicerca.LeanRotate(rotazioneFinale.eulerAngles, 1f);
         terra.LeanScale(terra_initial_scale * 0.8f, 0.5f).setOnComplete(() => { terra.LeanScale(terra_initial_scale * 1.2f, 0.5f); });
 
         //terra.rotation = rotazioneFinale;
 
     }
 
-    void CancellaTween()
+    public void CancellaTweenTerra()
     {
-        LeanTween.cancel(id);
+        LeanTween.pause(id);
+    }
+
+    public void RiprendiTweenTerra()
+    {
+        LeanTween.resume(id);
     }
 }
