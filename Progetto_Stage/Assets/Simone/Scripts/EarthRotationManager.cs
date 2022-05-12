@@ -11,12 +11,32 @@ public class EarthRotationManager : MonoBehaviour
 
     int id;
     Vector3 terra_initial_scale;
-    Quaternion terra_initial_rotation;
+    Quaternion terraRicerca_initial_rotation;
 
-    // Start is called before the first frame update
-    void Start()
+    public static EarthRotationManager _instance;
+    public static EarthRotationManager instance
     {
-        terra_initial_rotation = terra.rotation;
+        get
+        {
+            if (!_instance)
+            {
+                _instance = FindObjectOfType<EarthRotationManager>();
+            }
+            return _instance;
+        }
+        set { _instance = value; }
+    }
+
+    void Awake()
+    {
+        if (instance == null) instance = this;
+        else if (instance != this) { Destroy(gameObject); return; };
+    }
+
+        // Start is called before the first frame update
+        void Start()
+    {
+        terraRicerca_initial_rotation = terraPerRicerca.rotation;
         terra_initial_scale = terra.localScale;
         id=terra.LeanRotateAroundLocal(terra.up, -360, 60f).setLoopCount(-1).id;
     }
@@ -35,7 +55,6 @@ public class EarthRotationManager : MonoBehaviour
 
     IEnumerator RotazioneTerra(string code)
     {
-        CancellaTweenTerra();
         yield return new WaitForSeconds(0.1f);
         //alcuni stati hanno un codice diverso, filtrarli
         switch (code)
@@ -60,10 +79,13 @@ public class EarthRotationManager : MonoBehaviour
     public void CancellaTweenTerra()
     {
         LeanTween.pause(id);
+        terraRicerca_initial_rotation = terraPerRicerca.rotation;
     }
 
     public void RiprendiTweenTerra()
     {
-        LeanTween.resume(id);
+        terra.LeanScale(terra_initial_scale, 2f);
+        terraPerRicerca.LeanRotate(terraRicerca_initial_rotation.eulerAngles, 2f).setOnComplete(() => { LeanTween.resume(id); });
+        
     }
 }

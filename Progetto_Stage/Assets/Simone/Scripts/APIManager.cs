@@ -24,6 +24,7 @@ public class APIManager : MonoBehaviour
 
     int listCounter = 0;
     bool validData = false;
+    public bool turn = false;
 
     DateTime today;
     DateTime yesterday;
@@ -131,7 +132,11 @@ public class APIManager : MonoBehaviour
 
             Debug.Log(_countryScript.PrintAllData());
             textCovid.text = _countryScript.PrintAllData();
-            earthRotationManager.RuotaTerra(_countryScript.GetCode());
+
+            if (turn)
+            {
+                earthRotationManager.RuotaTerra(_countryScript.GetCode());
+            }
 
         }
         else

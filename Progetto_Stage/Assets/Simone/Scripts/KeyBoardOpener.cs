@@ -5,7 +5,8 @@ using UnityEngine;
 public class KeyBoardOpener : MonoBehaviour
 {
     [SerializeField]
-    GameObject keyboard;
+    GameObject keyboard; 
+
 
     Vector3 initialPositionKB;
     Vector3 initialScaleKB;
@@ -36,6 +37,8 @@ public class KeyBoardOpener : MonoBehaviour
         if (!open)
         {
             open=true;
+            EarthRotationManager.instance.CancellaTweenTerra();
+            APIManager.instance.turn = true;
             keyboard.transform.LeanMoveLocal(initialPositionKB, 0.5f).setEaseOutQuart();
             keyboard.transform.LeanScaleY(initialScaleKB.y,0.5f);
             keyboard.transform.LeanScaleX(initialScaleKB.x,0.25f);
@@ -43,6 +46,8 @@ public class KeyBoardOpener : MonoBehaviour
         else
         {
             open = false;
+            EarthRotationManager.instance.RiprendiTweenTerra();
+            APIManager.instance.turn = false;
             keyboard.transform.LeanMoveLocal(transform.localPosition, 0.7f).setEaseInQuad();
             keyboard.transform.LeanScaleY(0, 0.5f);
             keyboard.transform.LeanScaleX(0, 0.3f);
