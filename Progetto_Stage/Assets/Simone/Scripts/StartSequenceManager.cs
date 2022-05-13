@@ -10,6 +10,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] float dissolveTimeSfere;
     [SerializeField] GameObject ponte;
     [SerializeField] GameObject tastiera;
+    [SerializeField] GameObject terra;
     [SerializeField] List<GameObject> sferette;
 
 
@@ -35,24 +36,25 @@ public class StartSequenceManager : MonoBehaviour
         LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
         {
             solve.SetFloat("_Dissolvenza_animazione", value);
+        }).setOnComplete(() =>
+        {
+            //attivare tastiera
+
+            //animazione terra che sale
+            terra.transform.LeanMoveY(0, 5f);
+            
+
+            //Animazione entrata palline con dissolve
+            foreach (var obj in sferette)
+            {
+                obj.SetActive(true);
+                var solveSfera = obj.GetComponentInChildren<MeshRenderer>().material;
+                LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
+                {
+                    solveSfera.SetFloat("_Dissolvenza_animazione", value);
+                });
+            }
         });
-        //.setOnComplete(() => 
-        //{ 
-        //    //attivare tastiera
-
-        //    //animazione terra che sale
-
-        //    //Animazione entrata palline con dissolve
-        //    foreach(var obj in sferette)
-        //    {
-        //        obj.SetActive(true);
-        //        var solveSfera = obj.GetComponent<MeshRenderer>().material;
-        //        LeanTween.value(-1f, 1f, dissolveTimeSfere).setOnUpdate((float value) =>
-        //        {
-        //            solve.SetFloat("_Dissolvenza_animazione", value);
-        //        });
-        //    }
-        //});
 
     }
 }

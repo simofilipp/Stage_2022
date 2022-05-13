@@ -1,3 +1,5 @@
+using Oculus.Interaction;
+using Oculus.Interaction.HandPosing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +7,10 @@ using UnityEngine;
 public class KeyBoardOpener : MonoBehaviour
 {
     [SerializeField]
-    GameObject keyboard; 
+    GameObject keyboard;
+
+    [SerializeField]
+    List<GameObject> sferette;
 
 
     Vector3 initialPositionKB;
@@ -42,6 +47,12 @@ public class KeyBoardOpener : MonoBehaviour
             keyboard.transform.LeanMoveLocal(initialPositionKB, 0.5f).setEaseOutQuart();
             keyboard.transform.LeanScaleY(initialScaleKB.y,0.5f);
             keyboard.transform.LeanScaleX(initialScaleKB.x,0.25f);
+
+            foreach(var sferetta in sferette)
+            {
+                sferetta.GetComponentInChildren<GrabInteractable>().enabled = false;
+                sferetta.GetComponentInChildren<HandGrabInteractable>().enabled = false;
+            }
         }
         else
         {
@@ -51,6 +62,12 @@ public class KeyBoardOpener : MonoBehaviour
             keyboard.transform.LeanMoveLocal(transform.localPosition, 0.7f).setEaseInQuad();
             keyboard.transform.LeanScaleY(0, 0.5f);
             keyboard.transform.LeanScaleX(0, 0.3f);
+
+            foreach (var sferetta in sferette)
+            {
+                sferetta.GetComponentInChildren<GrabInteractable>().enabled = true;
+                sferetta.GetComponentInChildren<HandGrabInteractable>().enabled = true;
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ public class rotation_manager : MonoBehaviour
         {
             for(int i = 0; i < altreSfere.Count; i++)
             {
-                //altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
+                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
             }
             selezionato = true;
@@ -58,7 +58,7 @@ public class rotation_manager : MonoBehaviour
             selezionato = false;
             for (int i = 0; i < altreSfere.Count; i++)
             {
-                //altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
+                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
             }
         }
