@@ -73,6 +73,8 @@ public class APIManager : MonoBehaviour
         var client = new RestClient(_URL);
         client.Timeout = -1;
         var request = new RestRequest(Method.GET);
+        yield return new WaitForSeconds(0.5f);
+        
         IRestResponse response = client.Execute(request);
         Debug.Log(response.Content);
         if (response.Content != "{\"message\":\"Not Found\"}")
@@ -119,6 +121,8 @@ public class APIManager : MonoBehaviour
                 }
 
             }
+            yield return new WaitForSeconds(0.5f);
+
             //salvo i valori utili dello stato in questione
             _countryScript = new CountryScript(
             dataList[0].GetName(),
@@ -127,7 +131,6 @@ public class APIManager : MonoBehaviour
             dataList[1].GetDailyCases(),
             dataList[1].GetDailyCases() - dataList[0].GetDailyCases()
             );
-
 
 
             Debug.Log(_countryScript.PrintAllData());

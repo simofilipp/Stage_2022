@@ -12,6 +12,7 @@ public class EarthRotationManager : MonoBehaviour
     int id;
     Vector3 terra_initial_scale;
     Quaternion terraRicerca_initial_rotation;
+    Quaternion terra_initial_rotation;
 
     public static EarthRotationManager _instance;
     public static EarthRotationManager instance
@@ -79,13 +80,27 @@ public class EarthRotationManager : MonoBehaviour
     public void CancellaTweenTerra()
     {
         LeanTween.pause(id);
+        //salvo l'ultimo valore della terra per ricerca
         terraRicerca_initial_rotation = terraPerRicerca.rotation;
     }
 
     public void RiprendiTweenTerra()
     {
         terra.LeanScale(terra_initial_scale, 2f);
+        //riporto in asse la terra per ricerca
         terraPerRicerca.LeanRotate(terraRicerca_initial_rotation.eulerAngles, 2f).setOnComplete(() => { LeanTween.resume(id); });
         
+    }
+    public void PausaTweenTerraSferette()
+    {
+        LeanTween.pause(id);
+        //salvo l'ultimo valore della terra
+        terra_initial_rotation = terra.rotation;
+    }
+    public void RiprendiTweenTerraSferette()
+    {
+        terra.LeanScale(terra_initial_scale, 2f);
+        //riporto in asse la terra
+        terra.LeanRotate(terra_initial_rotation.eulerAngles, 2f).setOnComplete(() => { LeanTween.resume(id); });
     }
 }
