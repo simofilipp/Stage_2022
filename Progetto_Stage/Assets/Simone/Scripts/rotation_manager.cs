@@ -12,11 +12,17 @@ public class rotation_manager : MonoBehaviour
     [SerializeField]
     GameObject terra;
 
+    float rotazioneX;
+    float rotazioneY;
+    float rotazioneZ;
+
     int counterSelezionato=0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rotazioneX = 1f;
+        rotazioneY = 1f;
+        rotazioneZ = 1f;
     }
 
     // Update is called once per frame
@@ -44,8 +50,30 @@ public class rotation_manager : MonoBehaviour
         //terra.GetComponent<Animator>().SetTrigger("rotazione");
         while (selezionato ==true)
         {
-            terra.transform.rotation = this.transform.rotation;
-            yield return null;
+            float rot_inizialeX = 0;
+            float rot_inizialeY = 0;
+            float rot_inizialeZ = 0;
+            float rot_sucessivaX;
+            float rot_sucessivaY;
+            float rot_sucessivaZ;
+
+            while (selezionato == true)
+            {
+                rot_sucessivaX = transform.rotation.eulerAngles.x;
+                rot_sucessivaY = transform.rotation.eulerAngles.y;
+                rot_sucessivaZ = transform.rotation.eulerAngles.z;
+                Debug.LogWarning(rot_sucessivaX - rot_inizialeX);
+                if (Mathf.Abs(rot_sucessivaX - rot_inizialeX) > rotazioneX || Mathf.Abs(rot_sucessivaY - rot_inizialeY) > rotazioneY || Mathf.Abs(rot_sucessivaZ - rot_inizialeZ) > rotazioneZ)
+                {
+                    //terra.transform.rotation = this.transform.rotation;
+                    LeanTween.cancel(terra);
+                    terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.5f);
+                }
+                rot_inizialeX = rot_sucessivaX;
+                rot_inizialeY = rot_sucessivaY;
+                rot_inizialeZ = rot_sucessivaY;
+                yield return null;
+            }
         }
         //terra.GetComponent<Animator>().SetTrigger("rotazione");
     }

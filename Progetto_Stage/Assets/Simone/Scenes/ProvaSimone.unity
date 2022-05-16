@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4083494, g: 0.40781504, b: 0.4129906, a: 1}
+  m_IndirectSpecularColor: {r: 0.40835008, g: 0.4078112, b: 0.41298527, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5383,26 +5383,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 155390998}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &929287378
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929287370}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: efdcea99f4c37b0428646a105fb4857f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &963513204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6067,8 +6047,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1740774831980050548}
-        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+      - m_Target: {fileID: 1740774831980050556}
+        m_TargetAssemblyTypeName: Rotazione_manager_davide, Assembly-CSharp
         m_MethodName: AvviaCoroutine
         m_Mode: 1
         m_Arguments:
@@ -6106,8 +6086,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1740774831980050548}
-        m_TargetAssemblyTypeName: rotation_manager, Assembly-CSharp
+      - m_Target: {fileID: 1740774831980050556}
+        m_TargetAssemblyTypeName: Rotazione_manager_davide, Assembly-CSharp
         m_MethodName: StoppaCoroutine
         m_Mode: 1
         m_Arguments:
@@ -12855,7 +12835,6 @@ GameObject:
   - component: {fileID: 1740774831980050551}
   - component: {fileID: 1740774831980050550}
   - component: {fileID: 1740774831980050549}
-  - component: {fileID: 1740774831980050548}
   - component: {fileID: 1740774831980050547}
   - component: {fileID: 1740774831980050556}
   m_Layer: 0
@@ -12878,22 +12857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianeta: {fileID: 929287370}
---- !u!114 &1740774831980050548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740774831980050546}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  altreSfere:
-  - {fileID: 365269859}
-  - {fileID: 1954149363}
-  terra: {fileID: 929287370}
 --- !u!114 &1740774831980050549
 MonoBehaviour:
   m_ObjectHideFlags: 0
