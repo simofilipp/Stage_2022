@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21
+  controlID: 144
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 97
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 98
+  controlID: 154
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 811.3333
     height: 480
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 31
+  controlID: 90
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 566.6667
     height: 446
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 21}
@@ -4019,7 +4019,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 157890
+  m_LastSelectedObjectID: -6048
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4309,7 +4309,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.666666}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -4457,9 +4457,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.252569, y: 1.96068, z: 11.47219}
+    m_Target: {x: -8.835755, y: -12.830252, z: 5.5525265}
     speed: 2
-    m_Value: {x: 10.252569, y: 1.96068, z: 11.47219}
+    m_Value: {x: -8.835755, y: -12.830252, z: 5.5525265}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4506,13 +4506,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.46848652, y: 0.19921336, z: -0.11116027, w: -0.8536956}
+    m_Target: {x: -0.21594101, y: -0.106429994, z: 0.02209593, w: -0.9705042}
     speed: 2
-    m_Value: {x: -0.46841198, y: 0.19918166, z: -0.11114258, w: -0.85355973}
+    m_Value: {x: -0.21590598, y: -0.10641273, z: 0.022092346, w: -0.9703468}
   m_Size:
-    m_Target: 12.924029
+    m_Target: 26.495358
     speed: 2
-    m_Value: 12.924029
+    m_Value: 26.495358
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -4569,9 +4569,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ba79ffff02fbffff507b0000f87d00005a670200b6670200
+      m_SelectedIDs: 60e8ffff
+      m_LastClickedID: -6048
+      m_ExpandedIDs: 18eeffff20eeffff24eeffff66f8ffff02fbffff307c0000527c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -4710,7 +4710,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: terr
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -4722,22 +4722,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Davide/Scenes
+    - Assets
     m_Globs: []
-    m_OriginalText: 
+    m_OriginalText: terr
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Davide/Scenes
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Sviluppo\Desktop\Simone Stage\Unity\Progetti\Stage_2022\Progetto_Stage
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aaac0000
-    m_LastClickedID: 44202
-    m_ExpandedIDs: 0000000082ac000084ac000086ac000088ac00008aac00008cac00008eac000090ac000092ac000094ac000096ac000000ca9a3bffffff7f
+    m_SelectedIDs: faaf0000
+    m_LastClickedID: 45050
+    m_ExpandedIDs: 00000000faaf0000fcaf0000feaf000000b0000002b0000004b0000006b0000008b000000ab000000cb000000eb0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4765,7 +4765,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082ac000084ac000086ac000088ac00008aac00008cac00008eac000090ac000092ac000094ac000096ac0000
+    m_ExpandedIDs: 00000000faaf0000fcaf0000feaf000000b0000002b0000004b0000006b0000008b000000ab000000cb000000eb00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

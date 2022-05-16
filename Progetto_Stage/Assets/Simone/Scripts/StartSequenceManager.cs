@@ -39,7 +39,7 @@ public class StartSequenceManager : MonoBehaviour
         }).setOnComplete(() =>
         {
             //attivare tastiera
-
+            tastiera.SetActive(true);
             //animazione terra che sale
             terra.transform.LeanMoveY(0, 5f);
             
