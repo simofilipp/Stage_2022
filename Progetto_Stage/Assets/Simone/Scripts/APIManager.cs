@@ -121,8 +121,7 @@ public class APIManager : MonoBehaviour
                 }
 
             }
-            yield return new WaitForSeconds(0.5f);
-
+            
             //salvo i valori utili dello stato in questione
             _countryScript = new CountryScript(
             dataList[0].GetName(),
