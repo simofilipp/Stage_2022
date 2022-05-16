@@ -9768,7 +9768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1649254940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9997,6 +9997,7 @@ MonoBehaviour:
   dissolveTimeSfere: 3
   ponte: {fileID: 919132147542215423}
   tastiera: {fileID: 1046599445}
+  canvasFinale: {fileID: 1649254939}
   terra: {fileID: 8482397537264485169}
   sferette:
   - {fileID: 770602064}

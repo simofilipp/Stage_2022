@@ -58,8 +58,6 @@ public class APIManager : MonoBehaviour
         today = DateTime.Now;
         yesterday = today.AddDays(-2);
         twoDaysAgo = today.AddDays(-3);
-
-        WorldMapManager.instance.CurrentState = WorldMapManager.State.Politic;
     }
 
     void Update()

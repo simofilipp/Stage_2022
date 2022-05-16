@@ -10,6 +10,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] float dissolveTimeSfere;
     [SerializeField] GameObject ponte;
     [SerializeField] GameObject tastiera;
+    [SerializeField] GameObject canvasFinale;
     [SerializeField] GameObject terra;
     [SerializeField] List<GameObject> sferette;
 
@@ -38,8 +39,9 @@ public class StartSequenceManager : MonoBehaviour
             solve.SetFloat("_Dissolvenza_animazione", value);
         }).setOnComplete(() =>
         {
-            //attivare tastiera
+            //attivare tastiera e canvas
             tastiera.SetActive(true);
+            canvasFinale.SetActive(true);
             //animazione terra che sale
             terra.transform.LeanMoveY(0, 5f);
             
