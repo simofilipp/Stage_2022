@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.40835008, g: 0.4078112, b: 0.41298527, a: 1}
+  m_IndirectSpecularColor: {r: 0.4083494, g: 0.40781504, b: 0.4129906, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1865,6 +1865,7 @@ GameObject:
   - component: {fileID: 365269862}
   - component: {fileID: 365269861}
   - component: {fileID: 365269860}
+  - component: {fileID: 365269870}
   m_Layer: 0
   m_Name: Sferetta (1)
   m_TagString: Untagged
@@ -1892,7 +1893,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365269859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
   m_Name: 
@@ -2048,6 +2049,20 @@ Transform:
   m_Father: {fileID: 439302038}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365269870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365269859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda0a85a1155117488d1ab27e8c9eb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere: []
+  terra: {fileID: 929287370}
 --- !u!1 &420969836
 GameObject:
   m_ObjectHideFlags: 0
@@ -10542,6 +10557,7 @@ GameObject:
   - component: {fileID: 1954149372}
   - component: {fileID: 1954149371}
   - component: {fileID: 1954149370}
+  - component: {fileID: 1954149374}
   m_Layer: 0
   m_Name: Sferetta (2)
   m_TagString: Untagged
@@ -10672,7 +10688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954149363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
   m_Name: 
@@ -10725,6 +10741,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1954149374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954149363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda0a85a1155117488d1ab27e8c9eb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere: []
+  terra: {fileID: 929287370}
 --- !u!1 &1983177734
 GameObject:
   m_ObjectHideFlags: 0
@@ -12827,6 +12857,7 @@ GameObject:
   - component: {fileID: 1740774831980050549}
   - component: {fileID: 1740774831980050548}
   - component: {fileID: 1740774831980050547}
+  - component: {fileID: 1740774831980050556}
   m_Layer: 0
   m_Name: Sferetta
   m_TagString: Untagged
@@ -12854,7 +12885,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740774831980050546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8c7bb7c4f9938c4f9679d9da3572a50, type: 3}
   m_Name: 
@@ -12991,6 +13022,20 @@ MonoBehaviour:
   _oneGrabTransformer: {fileID: 1740774831980050554}
   _twoGrabTransformer: {fileID: 1740774831980050553}
   _maxGrabPoints: -1
+--- !u!114 &1740774831980050556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740774831980050546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda0a85a1155117488d1ab27e8c9eb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altreSfere: []
+  terra: {fileID: 929287370}
 --- !u!1 &1807350510210493293
 GameObject:
   m_ObjectHideFlags: 0
