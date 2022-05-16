@@ -60,7 +60,7 @@ public class Scale_Manager : MonoBehaviour
 
     IEnumerator Scalatura()
     {
-        yield return null;
+        pianeta.transform.LeanScale(scala_iniziale_Pianeta * scala_Corrente_Pianeta, 0.2f);
         while (selezionato)
         {
             percentuale = twograbTransf.scalePercentage;
