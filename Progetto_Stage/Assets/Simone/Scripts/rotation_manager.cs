@@ -17,6 +17,7 @@ public class rotation_manager : MonoBehaviour
     float rotazioneZ;
 
     int counterSelezionato=0;
+    int id=100;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,23 +58,26 @@ public class rotation_manager : MonoBehaviour
             float rot_sucessivaY;
             float rot_sucessivaZ;
 
+            id = terra.LeanRotateAroundLocal(terra.transform.up, -1, 0.05f).id;
+
             while (selezionato == true)
             {
                 rot_sucessivaX = transform.rotation.eulerAngles.x;
                 rot_sucessivaY = transform.rotation.eulerAngles.y;
                 rot_sucessivaZ = transform.rotation.eulerAngles.z;
-                Debug.LogWarning(rot_sucessivaX - rot_inizialeX);
                 if (Mathf.Abs(rot_sucessivaX - rot_inizialeX) > rotazioneX || Mathf.Abs(rot_sucessivaY - rot_inizialeY) > rotazioneY || Mathf.Abs(rot_sucessivaZ - rot_inizialeZ) > rotazioneZ)
                 {
                     //terra.transform.rotation = this.transform.rotation;
-                    LeanTween.cancel(terra);
-                    terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.5f);
+                    LeanTween.cancel(id);
+                    id=terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.5f).id;
+                    Debug.LogWarning(id);
                 }
                 rot_inizialeX = rot_sucessivaX;
                 rot_inizialeY = rot_sucessivaY;
                 rot_inizialeZ = rot_sucessivaY;
                 yield return null;
             }
+            LeanTween.cancel(id);
         }
         //terra.GetComponent<Animator>().SetTrigger("rotazione");
     }
