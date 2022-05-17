@@ -2,19 +2,25 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WorldPopulation_URP
   m_Shader: {fileID: 4800000, guid: 314e3034937b50349a70af5d749e7eae, type: 3}
-  m_ShaderKeywords: _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ALPHA _DISABLE_SSR _EMISSION
-    _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ADD_PRECOMPUTED_VELOCITY
+  - _BLENDMODE_ALPHA
+  - _DISABLE_SSR
+  - _EMISSION
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -101,11 +107,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SelectionTexCountries:
-        m_Texture: {fileID: 2800000, guid: 7c841689d19131e49bc256a326d00430, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SelectionTexOceans:
-        m_Texture: {fileID: 2800000, guid: 4d3fd44a40f3d2744897941f39f86a72, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture0:
@@ -124,6 +130,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 1
     - _AlphaCutoff: 0.5
@@ -223,3 +230,4 @@ Material:
     - _OceansFresnel: {r: 0.601, g: 0.37305665, b: 0.084252335, a: 0}
     - _OverlayColor: {r: 0, g: 0, b: 0, a: 0}
     - _VTInfoBlock: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -81,7 +81,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Dissolvenza_animazione: -1
-    - _Dissolvenza_spessore: 0.01
+    - _Dissolvenza_spessore: 0.06
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotazione_voronoi: -2.74
