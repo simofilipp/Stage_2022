@@ -35,7 +35,6 @@ public class EarthRotationManager : MonoBehaviour
         else if (instance != this) { Destroy(gameObject); return; };
     }
 
-        // Start is called before the first frame update
         void Start()
     {
         terraRicerca_initial_rotation = terraPerRicerca.rotation;

@@ -43,7 +43,7 @@ public class StartSequenceManager : MonoBehaviour
             //attivare tastiera e canvas
             tastiera.SetActive(true);
             canvasFinale.SetActive(true);
-            //animazione terra che sale
+            //animazione terra che si ingrandisce, luna che scompare
             terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => { luna.SetActive(false); }).delay=0.5f;
             
 
