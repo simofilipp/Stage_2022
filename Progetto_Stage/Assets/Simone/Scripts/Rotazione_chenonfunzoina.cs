@@ -18,5 +18,4 @@ public class Rotazione_chenonfunzoina : MonoBehaviour
     }
 
     // Update is called once per frame
-   
 }
