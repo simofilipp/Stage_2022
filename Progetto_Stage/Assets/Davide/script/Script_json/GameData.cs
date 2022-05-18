@@ -12,6 +12,8 @@ public class GameData
     public string country = "";
     public string iso2 = "";
     public string capital = "";
+    public long population;
+    
 
     public string PrintAllData()
     {
@@ -26,6 +28,7 @@ public class GameData
 public class GameDatas
 {
     public GameData[] dati;
+   
 }
 
 

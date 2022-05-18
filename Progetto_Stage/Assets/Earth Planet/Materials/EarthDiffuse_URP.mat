@@ -2,15 +2,19 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EarthDiffuse_URP
   m_Shader: {fileID: 4800000, guid: 843474d731b810348a1545746e84138f, type: 3}
-  m_ShaderKeywords: _ADD_PRECOMPUTED_VELOCITY _NORMALMAP_TANGENT_SPACE _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
-    _SPECGLOSSMAP
+  m_ValidKeywords:
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_InvalidKeywords:
+  - _ADD_PRECOMPUTED_VELOCITY
+  - _NORMALMAP_TANGENT_SPACE
+  - _SPECGLOSSMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -193,6 +197,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -209,8 +214,8 @@ Material:
     - _Anisotropy: 0
     - _AtmosphereBias: 0
     - _AtmosphereDarkSide: 0.423
-    - _AtmospherePower: 1.2
-    - _AtmosphereScale: 1.75
+    - _AtmospherePower: 4.1
+    - _AtmosphereScale: 0.23
     - _Bias: 0
     - _BlendMode: 0
     - _BumpScale: 0.32
@@ -285,8 +290,8 @@ Material:
     - _Ior: 1
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
-    - _LandNormal: 0.1
-    - _LandSmoothness: 0.4
+    - _LandNormal: 0.397
+    - _LandSmoothness: 0.276
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
     - _Metallic: 0.568
@@ -370,8 +375,8 @@ Material:
     - _UVSec: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
-    - _WaterNormal: 0.03
-    - _WaterSmoothness: 0.7
+    - _WaterNormal: 0.049
+    - _WaterSmoothness: 0.289
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
@@ -397,3 +402,4 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,5064 @@
+ {
+    "costi":[
+          {
+            "Rank": 1,
+            "City": "Hamilton, Bermuda",
+            "costOfLivingIndex": "162.13.00",
+            "Rent Index": "101.55.00",
+            "Cost of Living Plus Rent Index": "133.29.00",
+            "Groceries Index": "170.16.00",
+            "Restaurant Price Index": "147.10.00",
+            "Local Purchasing Power Index": "89.31.00"
+          },
+          {
+            "Rank": 2,
+            "City": "Zurich, Switzerland",
+            "costOfLivingIndex": "119.53.00",
+            "Rent Index": "60.51.00",
+            "Cost of Living Plus Rent Index": "91.43.00",
+            "Groceries Index": "125.25.00",
+            "Restaurant Price Index": "112.20.00",
+            "Local Purchasing Power Index": "117.11.00"
+          },
+          {
+            "Rank": 3,
+            "City": "Basel, Switzerland",
+            "costOfLivingIndex": "118.03.00",
+            "Rent Index": "44.15.00",
+            "Cost of Living Plus Rent Index": "83.06.00",
+            "Groceries Index": "125.56.00",
+            "Restaurant Price Index": "112.10.00",
+            "Local Purchasing Power Index": "110.32.00"
+          },
+          {
+            "Rank": 4,
+            "City": "Zug, Switzerland",
+            "costOfLivingIndex": "114.41.00",
+            "Rent Index": "62.23.00",
+            "Cost of Living Plus Rent Index": "89.57.00",
+            "Groceries Index": "117.32.00",
+            "Restaurant Price Index": "110.51.00",
+            "Local Purchasing Power Index": "138.48.00"
+          },
+          {
+            "Rank": 5,
+            "City": "Bern, Switzerland",
+            "costOfLivingIndex": "110.41.00",
+            "Rent Index": "35.42.00",
+            "Cost of Living Plus Rent Index": "75.11.00",
+            "Groceries Index": "114.02.00",
+            "Restaurant Price Index": "103.21.00",
+            "Local Purchasing Power Index": "116.07.00"
+          },
+          {
+            "Rank": 6,
+            "City": "Lausanne, Switzerland",
+            "costOfLivingIndex": "108.10.00",
+            "Rent Index": "51.35.00",
+            "Cost of Living Plus Rent Index": "81.08.00",
+            "Groceries Index": "109.48.00",
+            "Restaurant Price Index": "104.06.00",
+            "Local Purchasing Power Index": "115.20.00"
+          },
+          {
+            "Rank": 7,
+            "City": "Honolulu, HI, United States",
+            "costOfLivingIndex": "102.22.00",
+            "Rent Index": "58.30.00",
+            "Cost of Living Plus Rent Index": "81.10.00",
+            "Groceries Index": "115.29.00",
+            "Restaurant Price Index": "88.21.00",
+            "Local Purchasing Power Index": "99.32.00"
+          },
+          {
+            "Rank": 8,
+            "City": "Beirut, Lebanon",
+            "costOfLivingIndex": "102.19.00",
+            "Rent Index": "25.11.00",
+            "Cost of Living Plus Rent Index": "65.28.00",
+            "Groceries Index": "122.44.00",
+            "Restaurant Price Index": "71.25.00",
+            "Local Purchasing Power Index": 14.23
+          },
+          {
+            "Rank": 9,
+            "City": "Geneva, Switzerland",
+            "costOfLivingIndex": "102.18.00",
+            "Rent Index": "69.46.00",
+            "Cost of Living Plus Rent Index": "86.39.00",
+            "Groceries Index": "100.31.00",
+            "Restaurant Price Index": "109.09.00",
+            "Local Purchasing Power Index": "114.03.00"
+          },
+          {
+            "Rank": 10,
+            "City": "New York, NY, United States",
+            "costOfLivingIndex": "100.00.00",
+            "Rent Index": "100.00.00",
+            "Cost of Living Plus Rent Index": "100.00.00",
+            "Groceries Index": "100.00.00",
+            "Restaurant Price Index": "100.00.00",
+            "Local Purchasing Power Index": "100.00.00"
+          },
+          {
+            "Rank": 11,
+            "City": "Santa Barbara, CA, United States",
+            "costOfLivingIndex": "100.26.00",
+            "Rent Index": "88.14.00",
+            "Cost of Living Plus Rent Index": "94.09.00",
+            "Groceries Index": "107.00.00",
+            "Restaurant Price Index": "95.29.00",
+            "Local Purchasing Power Index": "74.21.00"
+          },
+          {
+            "Rank": 12,
+            "City": "San Francisco, CA, United States",
+            "costOfLivingIndex": "96.04.00",
+            "Rent Index": "92.27.00",
+            "Cost of Living Plus Rent Index": "94.25.00",
+            "Groceries Index": "101.16.00",
+            "Restaurant Price Index": "93.25.00",
+            "Local Purchasing Power Index": "131.01.00"
+          },
+          {
+            "Rank": 13,
+            "City": "Reykjavik, Iceland",
+            "costOfLivingIndex": "93.50.00",
+            "Rent Index": "42.55.00",
+            "Cost of Living Plus Rent Index": "69.24.00",
+            "Groceries Index": "88.53.00",
+            "Restaurant Price Index": "95.27.00",
+            "Local Purchasing Power Index": "82.07.00"
+          },
+          {
+            "Rank": 14,
+            "City": "Stavanger, Norway",
+            "costOfLivingIndex": "93.04.00",
+            "Rent Index": "32.03.00",
+            "Cost of Living Plus Rent Index": "64.20.00",
+            "Groceries Index": "93.56.00",
+            "Restaurant Price Index": "88.08.00",
+            "Local Purchasing Power Index": "83.06.00"
+          },
+          {
+            "Rank": 15,
+            "City": "Oslo, Norway",
+            "costOfLivingIndex": "93.02.00",
+            "Rent Index": "40.05.00",
+            "Cost of Living Plus Rent Index": "67.59.00",
+            "Groceries Index": "87.37.00",
+            "Restaurant Price Index": "96.16.00",
+            "Local Purchasing Power Index": "79.34.00"
+          },
+          {
+            "Rank": 16,
+            "City": "Oakland, CA, United States",
+            "costOfLivingIndex": "91.21.00",
+            "Rent Index": "86.54.00",
+            "Cost of Living Plus Rent Index": "89.39.00",
+            "Groceries Index": "93.25.00",
+            "Restaurant Price Index": "82.07.00",
+            "Local Purchasing Power Index": "118.23.00"
+          },
+          {
+            "Rank": 17,
+            "City": "Berkeley, CA, United States",
+            "costOfLivingIndex": "91.19.00",
+            "Rent Index": "85.10.00",
+            "Cost of Living Plus Rent Index": "88.29.00",
+            "Groceries Index": "101.51.00",
+            "Restaurant Price Index": "74.09.00",
+            "Local Purchasing Power Index": "82.01.00"
+          },
+          {
+            "Rank": 18,
+            "City": "Nassau, Bahamas",
+            "costOfLivingIndex": "89.28.00",
+            "Rent Index": "37.22.00",
+            "Cost of Living Plus Rent Index": "64.30.00",
+            "Groceries Index": "80.56.00",
+            "Restaurant Price Index": "95.32.00",
+            "Local Purchasing Power Index": "42.00.00"
+          },
+          {
+            "Rank": 19,
+            "City": "Anchorage, AK, United States",
+            "costOfLivingIndex": "89.04.00",
+            "Rent Index": "41.20.00",
+            "Cost of Living Plus Rent Index": "66.05.00",
+            "Groceries Index": "96.24.00",
+            "Restaurant Price Index": "74.22.00",
+            "Local Purchasing Power Index": "116.22.00"
+          },
+          {
+            "Rank": 20,
+            "City": "Saint Helier, Jersey",
+            "costOfLivingIndex": "88.42.00",
+            "Rent Index": "57.44.00",
+            "Cost of Living Plus Rent Index": "74.07.00",
+            "Groceries Index": "72.18.00",
+            "Restaurant Price Index": "102.39.00",
+            "Local Purchasing Power Index": "62.33.00"
+          },
+          {
+            "Rank": 21,
+            "City": "Seattle, WA, United States",
+            "costOfLivingIndex": "88.20.00",
+            "Rent Index": "64.20.00",
+            "Cost of Living Plus Rent Index": "76.58.00",
+            "Groceries Index": "92.20.00",
+            "Restaurant Price Index": "80.50.00",
+            "Local Purchasing Power Index": "153.35.00"
+          },
+          {
+            "Rank": 22,
+            "City": "Bergen, Norway",
+            "costOfLivingIndex": "88.12.00",
+            "Rent Index": "32.07.00",
+            "Cost of Living Plus Rent Index": "61.43.00",
+            "Groceries Index": "83.57.00",
+            "Restaurant Price Index": "86.47.00",
+            "Local Purchasing Power Index": "86.11.00"
+          },
+          {
+            "Rank": 23,
+            "City": "Trondheim, Norway",
+            "costOfLivingIndex": "88.33.00",
+            "Rent Index": "32.17.00",
+            "Cost of Living Plus Rent Index": "61.19.00",
+            "Groceries Index": "83.28.00",
+            "Restaurant Price Index": "92.03.00",
+            "Local Purchasing Power Index": "97.45.00"
+          },
+          {
+            "Rank": 24,
+            "City": "Tel Aviv-Yafo, Israel",
+            "costOfLivingIndex": "86.23.00",
+            "Rent Index": "50.20.00",
+            "Cost of Living Plus Rent Index": "69.08.00",
+            "Groceries Index": "75.53.00",
+            "Restaurant Price Index": "91.23.00",
+            "Local Purchasing Power Index": "72.17.00"
+          },
+          {
+            "Rank": 25,
+            "City": "Tromso, Norway",
+            "costOfLivingIndex": "86.05.00",
+            "Rent Index": "31.35.00",
+            "Cost of Living Plus Rent Index": "60.21.00",
+            "Groceries Index": "85.27.00",
+            "Restaurant Price Index": "86.07.00",
+            "Local Purchasing Power Index": "89.20.00"
+          },
+          {
+            "Rank": 26,
+            "City": "Washington, DC, United States",
+            "costOfLivingIndex": "85.29.00",
+            "Rent Index": "72.59.00",
+            "Cost of Living Plus Rent Index": "79.04.00",
+            "Groceries Index": "88.43.00",
+            "Restaurant Price Index": "76.16.00",
+            "Local Purchasing Power Index": "124.25.00"
+          },
+          {
+            "Rank": 27,
+            "City": "Rehovot, Israel",
+            "costOfLivingIndex": "84.31.00",
+            "Rent Index": "29.16.00",
+            "Cost of Living Plus Rent Index": "58.26.00",
+            "Groceries Index": "76.08.00",
+            "Restaurant Price Index": "80.34.00",
+            "Local Purchasing Power Index": "66.31.00"
+          },
+          {
+            "Rank": 28,
+            "City": "Netanya, Israel",
+            "costOfLivingIndex": "83.50.00",
+            "Rent Index": "29.44.00",
+            "Cost of Living Plus Rent Index": "58.16.00",
+            "Groceries Index": "69.36.00",
+            "Restaurant Price Index": "97.19.00",
+            "Local Purchasing Power Index": "65.50.00"
+          },
+          {
+            "Rank": 29,
+            "City": "Santa Clara, CA, United States",
+            "costOfLivingIndex": "83.33.00",
+            "Rent Index": "86.30.00",
+            "Cost of Living Plus Rent Index": "85.14.00",
+            "Groceries Index": "89.19.00",
+            "Restaurant Price Index": "67.54.00",
+            "Local Purchasing Power Index": "158.19.00"
+          },
+          {
+            "Rank": 30,
+            "City": "Bellevue, WA, United States",
+            "costOfLivingIndex": "83.16.00",
+            "Rent Index": "68.39.00",
+            "Cost of Living Plus Rent Index": "76.13.00",
+            "Groceries Index": "85.34.00",
+            "Restaurant Price Index": "75.45.00",
+            "Local Purchasing Power Index": "181.38.00"
+          },
+          {
+            "Rank": 31,
+            "City": "Copenhagen, Denmark",
+            "costOfLivingIndex": "81.59.00",
+            "Rent Index": "45.27.00",
+            "Cost of Living Plus Rent Index": "64.30.00",
+            "Groceries Index": "66.29.00",
+            "Restaurant Price Index": "95.05.00",
+            "Local Purchasing Power Index": "88.54.00"
+          },
+          {
+            "Rank": 32,
+            "City": "Pittsburgh, PA, United States",
+            "costOfLivingIndex": "81.14.00",
+            "Rent Index": "40.03.00",
+            "Cost of Living Plus Rent Index": "61.57.00",
+            "Groceries Index": "89.40.00",
+            "Restaurant Price Index": "62.56.00",
+            "Local Purchasing Power Index": "98.31.00"
+          },
+          {
+            "Rank": 33,
+            "City": "Boston, MA, United States",
+            "costOfLivingIndex": "81.14.00",
+            "Rent Index": "75.59.00",
+            "Cost of Living Plus Rent Index": "78.50.00",
+            "Groceries Index": "81.27.00",
+            "Restaurant Price Index": "84.29.00",
+            "Local Purchasing Power Index": "125.03.00"
+          },
+          {
+            "Rank": 34,
+            "City": "London, United Kingdom",
+            "costOfLivingIndex": "81.14.00",
+            "Rent Index": "65.21.00",
+            "Cost of Living Plus Rent Index": "73.37.00",
+            "Groceries Index": "59.22.00",
+            "Restaurant Price Index": "88.51.00",
+            "Local Purchasing Power Index": "77.56.00"
+          },
+          {
+            "Rank": 35,
+            "City": "Petah Tikva, Israel",
+            "costOfLivingIndex": "81.01.00",
+            "Rent Index": "29.09.00",
+            "Cost of Living Plus Rent Index": "56.10.00",
+            "Groceries Index": "71.40.00",
+            "Restaurant Price Index": "87.33.00",
+            "Local Purchasing Power Index": "70.35.00"
+          },
+          {
+            "Rank": 36,
+            "City": "Darwin, Australia",
+            "costOfLivingIndex": "81.37.00",
+            "Rent Index": "36.59.00",
+            "Cost of Living Plus Rent Index": "60.24.00",
+            "Groceries Index": "85.19.00",
+            "Restaurant Price Index": "70.47.00",
+            "Local Purchasing Power Index": "150.38.00"
+          },
+          {
+            "Rank": 37,
+            "City": "Queens, NY, United States",
+            "costOfLivingIndex": "81.19.00",
+            "Rent Index": "60.27.00",
+            "Cost of Living Plus Rent Index": "71.02.00",
+            "Groceries Index": "78.04.00",
+            "Restaurant Price Index": "77.32.00",
+            "Local Purchasing Power Index": "104.09.00"
+          },
+          {
+            "Rank": 38,
+            "City": "San Jose, CA, United States",
+            "costOfLivingIndex": "81.07.00",
+            "Rent Index": "78.29.00",
+            "Cost of Living Plus Rent Index": "79.54.00",
+            "Groceries Index": "76.44.00",
+            "Restaurant Price Index": "83.34.00",
+            "Local Purchasing Power Index": "148.02.00"
+          },
+          {
+            "Rank": 39,
+            "City": "Denver, CO, United States",
+            "costOfLivingIndex": "80.59.00",
+            "Rent Index": "55.44.00",
+            "Cost of Living Plus Rent Index": "69.02.00",
+            "Groceries Index": "79.18.00",
+            "Restaurant Price Index": "77.28.00",
+            "Local Purchasing Power Index": "130.27.00"
+          },
+          {
+            "Rank": 40,
+            "City": "Singapore, Singapore",
+            "costOfLivingIndex": "80.15.00",
+            "Rent Index": "65.57.00",
+            "Cost of Living Plus Rent Index": "73.21.00",
+            "Groceries Index": "74.34.00",
+            "Restaurant Price Index": "55.27.00",
+            "Local Purchasing Power Index": "87.51.00"
+          },
+          {
+            "Rank": 41,
+            "City": "Nice, France",
+            "costOfLivingIndex": "80.07.00",
+            "Rent Index": "28.07.00",
+            "Cost of Living Plus Rent Index": "55.31.00",
+            "Groceries Index": "76.06.00",
+            "Restaurant Price Index": "87.52.00",
+            "Local Purchasing Power Index": "69.20.00"
+          },
+          {
+            "Rank": 42,
+            "City": "Portland, OR, United States",
+            "costOfLivingIndex": "80.26.00",
+            "Rent Index": "52.35.00",
+            "Cost of Living Plus Rent Index": "66.57.00",
+            "Groceries Index": "83.33.00",
+            "Restaurant Price Index": "70.05.00",
+            "Local Purchasing Power Index": "101.41.00"
+          },
+          {
+            "Rank": 43,
+            "City": "Sydney, Australia",
+            "costOfLivingIndex": "79.26.00",
+            "Rent Index": "52.37.00",
+            "Cost of Living Plus Rent Index": "66.27.00",
+            "Groceries Index": "76.31.00",
+            "Restaurant Price Index": "66.27.00",
+            "Local Purchasing Power Index": "115.56.00"
+          },
+          {
+            "Rank": 44,
+            "City": "Seoul, South Korea",
+            "costOfLivingIndex": "79.26.00",
+            "Rent Index": "31.54.00",
+            "Cost of Living Plus Rent Index": "56.54.00",
+            "Groceries Index": "103.09.00",
+            "Restaurant Price Index": "44.14.00",
+            "Local Purchasing Power Index": "75.52.00"
+          },
+          {
+            "Rank": 45,
+            "City": "Los Angeles, CA, United States",
+            "costOfLivingIndex": "79.15.00",
+            "Rent Index": "74.25.00",
+            "Cost of Living Plus Rent Index": "77.03.00",
+            "Groceries Index": "79.04.00",
+            "Restaurant Price Index": "86.09.00",
+            "Local Purchasing Power Index": "123.41.00"
+          },
+          {
+            "Rank": 46,
+            "City": "Miami, FL, United States",
+            "costOfLivingIndex": "79.04.00",
+            "Rent Index": "73.39.00",
+            "Cost of Living Plus Rent Index": "76.16.00",
+            "Groceries Index": "78.34.00",
+            "Restaurant Price Index": "83.57.00",
+            "Local Purchasing Power Index": "88.53.00"
+          },
+          {
+            "Rank": 47,
+            "City": "Haifa, Israel",
+            "costOfLivingIndex": "79.25.00",
+            "Rent Index": 22.4,
+            "Cost of Living Plus Rent Index": "52.38.00",
+            "Groceries Index": "68.17.00",
+            "Restaurant Price Index": "79.11.00",
+            "Local Purchasing Power Index": "79.01.00"
+          },
+          {
+            "Rank": 48,
+            "City": "Hong Kong, Hong Kong",
+            "costOfLivingIndex": "78.42.00",
+            "Rent Index": "70.37.00",
+            "Cost of Living Plus Rent Index": "74.40.00",
+            "Groceries Index": "84.19.00",
+            "Restaurant Price Index": "54.58.00",
+            "Local Purchasing Power Index": "65.40.00"
+          },
+          {
+            "Rank": 49,
+            "City": "San Diego, CA, United States",
+            "costOfLivingIndex": "78.40.00",
+            "Rent Index": "74.04.00",
+            "Cost of Living Plus Rent Index": "76.13.00",
+            "Groceries Index": "76.39.00",
+            "Restaurant Price Index": "80.26.00",
+            "Local Purchasing Power Index": "127.13.00"
+          },
+          {
+            "Rank": 50,
+            "City": "Jerusalem, Israel",
+            "costOfLivingIndex": "78.38.00",
+            "Rent Index": "35.23.00",
+            "Cost of Living Plus Rent Index": "58.24.00",
+            "Groceries Index": "69.55.00",
+            "Restaurant Price Index": "86.33.00",
+            "Local Purchasing Power Index": "74.33.00"
+          },
+          {
+            "Rank": 51,
+            "City": "Luxembourg, Luxembourg",
+            "costOfLivingIndex": "78.32.00",
+            "Rent Index": "55.09.00",
+            "Cost of Living Plus Rent Index": "67.07.00",
+            "Groceries Index": "70.42.00",
+            "Restaurant Price Index": "84.24.00",
+            "Local Purchasing Power Index": "98.36.00"
+          },
+          {
+            "Rank": 52,
+            "City": "Tokyo, Japan",
+            "costOfLivingIndex": "78.08.00",
+            "Rent Index": "34.45.00",
+            "Cost of Living Plus Rent Index": "57.31.00",
+            "Groceries Index": "88.33.00",
+            "Restaurant Price Index": "44.24.00",
+            "Local Purchasing Power Index": "81.44.00"
+          },
+          {
+            "Rank": 53,
+            "City": "Espoo, Finland",
+            "costOfLivingIndex": "78.02.00",
+            "Rent Index": "31.57.00",
+            "Cost of Living Plus Rent Index": "56.30.00",
+            "Groceries Index": "74.33.00",
+            "Restaurant Price Index": "85.46.00",
+            "Local Purchasing Power Index": "88.21.00"
+          },
+          {
+            "Rank": 54,
+            "City": "Sacramento, CA, United States",
+            "costOfLivingIndex": "78.35.00",
+            "Rent Index": "52.37.00",
+            "Cost of Living Plus Rent Index": "65.58.00",
+            "Groceries Index": "80.02.00",
+            "Restaurant Price Index": "69.00.00",
+            "Local Purchasing Power Index": "98.03.00"
+          },
+          {
+            "Rank": 55,
+            "City": "Arhus, Denmark",
+            "costOfLivingIndex": "78.22.00",
+            "Rent Index": "31.46.00",
+            "Cost of Living Plus Rent Index": "56.15.00",
+            "Groceries Index": "63.47.00",
+            "Restaurant Price Index": "92.52.00",
+            "Local Purchasing Power Index": "99.54.00"
+          },
+          {
+            "Rank": 56,
+            "City": "Auckland, New Zealand",
+            "costOfLivingIndex": "78.10.00",
+            "Rent Index": "41.32.00",
+            "Cost of Living Plus Rent Index": "60.38.00",
+            "Groceries Index": "76.07.00",
+            "Restaurant Price Index": "71.59.00",
+            "Local Purchasing Power Index": "74.19.00"
+          },
+          {
+            "Rank": 57,
+            "City": "Nashville, TN, United States",
+            "costOfLivingIndex": "77.50.00",
+            "Rent Index": "60.27.00",
+            "Cost of Living Plus Rent Index": "69.30.00",
+            "Groceries Index": "77.06.00",
+            "Restaurant Price Index": "69.00.00",
+            "Local Purchasing Power Index": "101.24.00"
+          },
+          {
+            "Rank": 58,
+            "City": "Brisbane, Australia",
+            "costOfLivingIndex": "77.50.00",
+            "Rent Index": "36.00.00",
+            "Cost of Living Plus Rent Index": "58.14.00",
+            "Groceries Index": "75.47.00",
+            "Restaurant Price Index": "70.54.00",
+            "Local Purchasing Power Index": "111.36.00"
+          },
+          {
+            "Rank": 59,
+            "City": "Leiden, Netherlands",
+            "costOfLivingIndex": "77.14.00",
+            "Rent Index": "39.12.00",
+            "Cost of Living Plus Rent Index": "59.25.00",
+            "Groceries Index": "62.22.00",
+            "Restaurant Price Index": "83.04.00",
+            "Local Purchasing Power Index": "104.01.00"
+          },
+          {
+            "Rank": 60,
+            "City": "Minneapolis, MN, United States",
+            "costOfLivingIndex": "77.12.00",
+            "Rent Index": "55.03.00",
+            "Cost of Living Plus Rent Index": "66.41.00",
+            "Groceries Index": "78.26.00",
+            "Restaurant Price Index": "73.39.00",
+            "Local Purchasing Power Index": "117.37.00"
+          },
+          {
+            "Rank": 61,
+            "City": "Philadelphia, PA, United States",
+            "costOfLivingIndex": "77.05.00",
+            "Rent Index": "51.07.00",
+            "Cost of Living Plus Rent Index": "64.47.00",
+            "Groceries Index": "79.29.00",
+            "Restaurant Price Index": "65.24.00",
+            "Local Purchasing Power Index": "117.42.00"
+          },
+          {
+            "Rank": 62,
+            "City": "Odense, Denmark",
+            "costOfLivingIndex": "76.54.00",
+            "Rent Index": "27.34.00",
+            "Cost of Living Plus Rent Index": "53.32.00",
+            "Groceries Index": "62.51.00",
+            "Restaurant Price Index": "86.50.00",
+            "Local Purchasing Power Index": "88.29.00"
+          },
+          {
+            "Rank": 63,
+            "City": "Nanaimo, BC, Canada",
+            "costOfLivingIndex": "76.39.00",
+            "Rent Index": "36.30.00",
+            "Cost of Living Plus Rent Index": "57.12.00",
+            "Groceries Index": "83.24.00",
+            "Restaurant Price Index": "61.37.00",
+            "Local Purchasing Power Index": "82.17.00"
+          },
+          {
+            "Rank": 64,
+            "City": "Victoria, Canada",
+            "costOfLivingIndex": "76.38.00",
+            "Rent Index": "44.25.00",
+            "Cost of Living Plus Rent Index": "61.08.00",
+            "Groceries Index": "79.02.00",
+            "Restaurant Price Index": "77.18.00",
+            "Local Purchasing Power Index": "108.40.00"
+          },
+          {
+            "Rank": 65,
+            "City": "Amsterdam, Netherlands",
+            "costOfLivingIndex": "76.09.00",
+            "Rent Index": "49.28.00",
+            "Cost of Living Plus Rent Index": "63.13.00",
+            "Groceries Index": "63.02.00",
+            "Restaurant Price Index": "77.08.00",
+            "Local Purchasing Power Index": "91.01.00"
+          },
+          {
+            "Rank": 66,
+            "City": "Valletta, Malta",
+            "costOfLivingIndex": "76.21.00",
+            "Rent Index": "32.44.00",
+            "Cost of Living Plus Rent Index": "55.17.00",
+            "Groceries Index": "65.35.00",
+            "Restaurant Price Index": "86.29.00",
+            "Local Purchasing Power Index": "31.34.00"
+          },
+          {
+            "Rank": 67,
+            "City": "Chicago, IL, United States",
+            "costOfLivingIndex": "76.03.00",
+            "Rent Index": "58.14.00",
+            "Cost of Living Plus Rent Index": "67.11.00",
+            "Groceries Index": "73.25.00",
+            "Restaurant Price Index": "72.35.00",
+            "Local Purchasing Power Index": "130.18.00"
+          },
+          {
+            "Rank": 68,
+            "City": "Irvine, CA, United States",
+            "costOfLivingIndex": "75.55.00",
+            "Rent Index": "68.21.00",
+            "Cost of Living Plus Rent Index": "72.26.00",
+            "Groceries Index": "76.23.00",
+            "Restaurant Price Index": "77.07.00",
+            "Local Purchasing Power Index": "137.02.00"
+          },
+          {
+            "Rank": 69,
+            "City": "Melbourne, Australia",
+            "costOfLivingIndex": "75.42.00",
+            "Rent Index": "36.30.00",
+            "Cost of Living Plus Rent Index": "57.20.00",
+            "Groceries Index": "77.01.00",
+            "Restaurant Price Index": "67.23.00",
+            "Local Purchasing Power Index": "104.06.00"
+          },
+          {
+            "Rank": 70,
+            "City": "Calgary, Canada",
+            "costOfLivingIndex": "75.25.00",
+            "Rent Index": "33.07.00",
+            "Cost of Living Plus Rent Index": "55.17.00",
+            "Groceries Index": "72.43.00",
+            "Restaurant Price Index": "73.27.00",
+            "Local Purchasing Power Index": "117.19.00"
+          },
+          {
+            "Rank": 71,
+            "City": "St. John's, Newfoundland and Labrador, Canada",
+            "costOfLivingIndex": "75.15.00",
+            "Rent Index": 23.18,
+            "Cost of Living Plus Rent Index": "50.21.00",
+            "Groceries Index": "76.01.00",
+            "Restaurant Price Index": "71.34.00",
+            "Local Purchasing Power Index": "97.09.00"
+          },
+          {
+            "Rank": 72,
+            "City": "Dallas, TX, United States",
+            "costOfLivingIndex": "75.39.00",
+            "Rent Index": "51.20.00",
+            "Cost of Living Plus Rent Index": "63.47.00",
+            "Groceries Index": "74.16.00",
+            "Restaurant Price Index": "79.08.00",
+            "Local Purchasing Power Index": "156.50.00"
+          },
+          {
+            "Rank": 73,
+            "City": "Aalborg, Denmark",
+            "costOfLivingIndex": "75.35.00",
+            "Rent Index": 21.36,
+            "Cost of Living Plus Rent Index": "49.24.00",
+            "Groceries Index": "65.05.00",
+            "Restaurant Price Index": "79.20.00",
+            "Local Purchasing Power Index": "112.29.00"
+          },
+          {
+            "Rank": 74,
+            "City": "Plano, TX, United States",
+            "costOfLivingIndex": "75.27.00",
+            "Rent Index": "46.12.00",
+            "Cost of Living Plus Rent Index": "61.18.00",
+            "Groceries Index": "73.52.00",
+            "Restaurant Price Index": "60.51.00",
+            "Local Purchasing Power Index": "131.10.00"
+          },
+          {
+            "Rank": 75,
+            "City": "New Orleans, LA, United States",
+            "costOfLivingIndex": "75.23.00",
+            "Rent Index": "46.29.00",
+            "Cost of Living Plus Rent Index": "61.05.00",
+            "Groceries Index": "72.55.00",
+            "Restaurant Price Index": "75.20.00",
+            "Local Purchasing Power Index": "82.56.00"
+          },
+          {
+            "Rank": 76,
+            "City": "Baltimore, MD, United States",
+            "costOfLivingIndex": "75.22.00",
+            "Rent Index": "46.33.00",
+            "Cost of Living Plus Rent Index": "61.25.00",
+            "Groceries Index": "76.25.00",
+            "Restaurant Price Index": "74.14.00",
+            "Local Purchasing Power Index": "118.23.00"
+          },
+          {
+            "Rank": 77,
+            "City": "Rotterdam, Netherlands",
+            "costOfLivingIndex": "74.52.00",
+            "Rent Index": "36.45.00",
+            "Cost of Living Plus Rent Index": "56.39.00",
+            "Groceries Index": "63.33.00",
+            "Restaurant Price Index": "74.14.00",
+            "Local Purchasing Power Index": "87.22.00"
+          },
+          {
+            "Rank": 78,
+            "City": "Tampa, FL, United States",
+            "costOfLivingIndex": "74.45.00",
+            "Rent Index": "53.13.00",
+            "Cost of Living Plus Rent Index": "64.30.00",
+            "Groceries Index": "72.16.00",
+            "Restaurant Price Index": "82.35.00",
+            "Local Purchasing Power Index": "109.36.00"
+          },
+          {
+            "Rank": 79,
+            "City": "Paris, France",
+            "costOfLivingIndex": "74.35.00",
+            "Rent Index": "43.50.00",
+            "Cost of Living Plus Rent Index": "60.07.00",
+            "Groceries Index": "73.31.00",
+            "Restaurant Price Index": "69.43.00",
+            "Local Purchasing Power Index": "70.10.00"
+          },
+          {
+            "Rank": 80,
+            "City": "Guelph, Canada",
+            "costOfLivingIndex": "74.32.00",
+            "Rent Index": "40.41.00",
+            "Cost of Living Plus Rent Index": "58.18.00",
+            "Groceries Index": "80.19.00",
+            "Restaurant Price Index": "70.54.00",
+            "Local Purchasing Power Index": "101.19.00"
+          },
+          {
+            "Rank": 81,
+            "City": "Atlanta, GA, United States",
+            "costOfLivingIndex": "74.18.00",
+            "Rent Index": "49.22.00",
+            "Cost of Living Plus Rent Index": "62.30.00",
+            "Groceries Index": "73.28.00",
+            "Restaurant Price Index": "67.23.00",
+            "Local Purchasing Power Index": "117.05.00"
+          },
+          {
+            "Rank": 82,
+            "City": "Adelaide, Australia",
+            "costOfLivingIndex": "74.12.00",
+            "Rent Index": "31.03.00",
+            "Cost of Living Plus Rent Index": "53.41.00",
+            "Groceries Index": "76.00.00",
+            "Restaurant Price Index": "62.08.00",
+            "Local Purchasing Power Index": "111.00.00"
+          },
+          {
+            "Rank": 83,
+            "City": "Haarlem, Netherlands",
+            "costOfLivingIndex": "74.01.00",
+            "Rent Index": "39.05.00",
+            "Cost of Living Plus Rent Index": "57.17.00",
+            "Groceries Index": "62.27.00",
+            "Restaurant Price Index": "71.10.00",
+            "Local Purchasing Power Index": "107.29.00"
+          },
+          {
+            "Rank": 84,
+            "City": "Toronto, Canada",
+            "costOfLivingIndex": "74.00.00",
+            "Rent Index": "49.18.00",
+            "Cost of Living Plus Rent Index": "62.39.00",
+            "Groceries Index": "70.40.00",
+            "Restaurant Price Index": "72.02.00",
+            "Local Purchasing Power Index": "111.30.00"
+          },
+          {
+            "Rank": 85,
+            "City": "Omaha, NE, United States",
+            "costOfLivingIndex": "74.34.00",
+            "Rent Index": "29.20.00",
+            "Cost of Living Plus Rent Index": "53.04.00",
+            "Groceries Index": "71.09.00",
+            "Restaurant Price Index": "78.26.00",
+            "Local Purchasing Power Index": "105.15.00"
+          },
+          {
+            "Rank": 86,
+            "City": "Asheville, NC, United States",
+            "costOfLivingIndex": "74.27.00",
+            "Rent Index": "52.55.00",
+            "Cost of Living Plus Rent Index": "64.12.00",
+            "Groceries Index": "81.12.00",
+            "Restaurant Price Index": "66.19.00",
+            "Local Purchasing Power Index": "85.35.00"
+          },
+          {
+            "Rank": 87,
+            "City": "Saint Paul, MN, United States",
+            "costOfLivingIndex": "74.26.00",
+            "Rent Index": "38.51.00",
+            "Cost of Living Plus Rent Index": "57.03.00",
+            "Groceries Index": "72.29.00",
+            "Restaurant Price Index": "69.28.00",
+            "Local Purchasing Power Index": "109.20.00"
+          },
+          {
+            "Rank": 88,
+            "City": "Fort Lauderdale, FL, United States",
+            "costOfLivingIndex": "74.19.00",
+            "Rent Index": "62.33.00",
+            "Cost of Living Plus Rent Index": "68.33.00",
+            "Groceries Index": "76.09.00",
+            "Restaurant Price Index": "79.35.00",
+            "Local Purchasing Power Index": "96.13.00"
+          },
+          {
+            "Rank": 89,
+            "City": "Wellington, New Zealand",
+            "costOfLivingIndex": "74.06.00",
+            "Rent Index": "42.21.00",
+            "Cost of Living Plus Rent Index": "58.50.00",
+            "Groceries Index": "76.18.00",
+            "Restaurant Price Index": "62.16.00",
+            "Local Purchasing Power Index": "89.11.00"
+          },
+          {
+            "Rank": 90,
+            "City": "Buffalo, NY, United States",
+            "costOfLivingIndex": "73.34.00",
+            "Rent Index": "40.24.00",
+            "Cost of Living Plus Rent Index": "57.39.00",
+            "Groceries Index": "72.14.00",
+            "Restaurant Price Index": "71.02.00",
+            "Local Purchasing Power Index": "103.32.00"
+          },
+          {
+            "Rank": 91,
+            "City": "Eindhoven, Netherlands",
+            "costOfLivingIndex": "73.27.00",
+            "Rent Index": "32.32.00",
+            "Cost of Living Plus Rent Index": "54.18.00",
+            "Groceries Index": "62.20.00",
+            "Restaurant Price Index": "69.35.00",
+            "Local Purchasing Power Index": "99.00.00"
+          },
+          {
+            "Rank": 92,
+            "City": "Utrecht, Netherlands",
+            "costOfLivingIndex": "73.24.00",
+            "Rent Index": "37.38.00",
+            "Cost of Living Plus Rent Index": "56.17.00",
+            "Groceries Index": "63.07.00",
+            "Restaurant Price Index": "70.11.00",
+            "Local Purchasing Power Index": "80.09.00"
+          },
+          {
+            "Rank": 93,
+            "City": "Perth, Australia",
+            "costOfLivingIndex": "73.09.00",
+            "Rent Index": "33.00.00",
+            "Cost of Living Plus Rent Index": "54.21.00",
+            "Groceries Index": "73.19.00",
+            "Restaurant Price Index": "67.53.00",
+            "Local Purchasing Power Index": "126.29.00"
+          },
+          {
+            "Rank": 94,
+            "City": "Dublin, Ireland",
+            "costOfLivingIndex": "73.00.00",
+            "Rent Index": "55.50.00",
+            "Cost of Living Plus Rent Index": "65.07.00",
+            "Groceries Index": "60.27.00",
+            "Restaurant Price Index": "71.01.00",
+            "Local Purchasing Power Index": "78.26.00"
+          },
+          {
+            "Rank": 95,
+            "City": "Gold Coast, Australia",
+            "costOfLivingIndex": "73.31.00",
+            "Rent Index": "42.20.00",
+            "Cost of Living Plus Rent Index": "58.10.00",
+            "Groceries Index": "70.18.00",
+            "Restaurant Price Index": "66.36.00",
+            "Local Purchasing Power Index": "97.00.00"
+          },
+          {
+            "Rank": 96,
+            "City": "Hobart, Australia",
+            "costOfLivingIndex": "73.24.00",
+            "Rent Index": "24.50.00",
+            "Cost of Living Plus Rent Index": "50.22.00",
+            "Groceries Index": "72.13.00",
+            "Restaurant Price Index": "66.04.00",
+            "Local Purchasing Power Index": "117.30.00"
+          },
+          {
+            "Rank": 97,
+            "City": "Reno, NV, United States",
+            "costOfLivingIndex": "73.14.00",
+            "Rent Index": "46.22.00",
+            "Cost of Living Plus Rent Index": "60.32.00",
+            "Groceries Index": "74.22.00",
+            "Restaurant Price Index": "73.05.00",
+            "Local Purchasing Power Index": "82.22.00"
+          },
+          {
+            "Rank": 98,
+            "City": "Vancouver, Canada",
+            "costOfLivingIndex": "73.10.00",
+            "Rent Index": "53.50.00",
+            "Cost of Living Plus Rent Index": "63.56.00",
+            "Groceries Index": "76.55.00",
+            "Restaurant Price Index": "67.09.00",
+            "Local Purchasing Power Index": "93.03.00"
+          },
+          {
+            "Rank": 99,
+            "City": "Colorado Springs, CO, United States",
+            "costOfLivingIndex": "73.01.00",
+            "Rent Index": "45.36.00",
+            "Cost of Living Plus Rent Index": "59.44.00",
+            "Groceries Index": "74.05.00",
+            "Restaurant Price Index": "69.17.00",
+            "Local Purchasing Power Index": "136.32.00"
+          },
+          {
+            "Rank": 100,
+            "City": "Stockholm, Sweden",
+            "costOfLivingIndex": "72.41.00",
+            "Rent Index": "41.05.00",
+            "Cost of Living Plus Rent Index": "57.29.00",
+            "Groceries Index": "67.37.00",
+            "Restaurant Price Index": "70.43.00",
+            "Local Purchasing Power Index": "90.05.00"
+          },
+          {
+            "Rank": 101,
+            "City": "Hamilton, New Zealand",
+            "costOfLivingIndex": "72.06.00",
+            "Rent Index": "27.37.00",
+            "Cost of Living Plus Rent Index": "51.18.00",
+            "Groceries Index": "71.34.00",
+            "Restaurant Price Index": "74.01.00",
+            "Local Purchasing Power Index": "86.13.00"
+          },
+          {
+            "Rank": 102,
+            "City": "Markham, Canada",
+            "costOfLivingIndex": "72.04.00",
+            "Rent Index": "47.26.00",
+            "Cost of Living Plus Rent Index": "60.05.00",
+            "Groceries Index": "67.54.00",
+            "Restaurant Price Index": "75.14.00",
+            "Local Purchasing Power Index": "97.16.00"
+          },
+          {
+            "Rank": 103,
+            "City": "Lyon, France",
+            "costOfLivingIndex": "72.01.00",
+            "Rent Index": "33.33.00",
+            "Cost of Living Plus Rent Index": "54.00.00",
+            "Groceries Index": "71.47.00",
+            "Restaurant Price Index": "69.10.00",
+            "Local Purchasing Power Index": "72.29.00"
+          },
+          {
+            "Rank": 104,
+            "City": "Spokane, WA, United States",
+            "costOfLivingIndex": "72.00.00",
+            "Rent Index": "39.12.00",
+            "Cost of Living Plus Rent Index": "56.15.00",
+            "Groceries Index": "68.23.00",
+            "Restaurant Price Index": "71.14.00",
+            "Local Purchasing Power Index": "99.20.00"
+          },
+          {
+            "Rank": 105,
+            "City": "Groningen, Netherlands",
+            "costOfLivingIndex": "72.31.00",
+            "Rent Index": 23.52,
+            "Cost of Living Plus Rent Index": "49.27.00",
+            "Groceries Index": "62.04.00",
+            "Restaurant Price Index": "68.50.00",
+            "Local Purchasing Power Index": "69.45.00"
+          },
+          {
+            "Rank": 106,
+            "City": "Cleveland, OH, United States",
+            "costOfLivingIndex": "72.12.00",
+            "Rent Index": "37.16.00",
+            "Cost of Living Plus Rent Index": "55.08.00",
+            "Groceries Index": "73.27.00",
+            "Restaurant Price Index": "68.35.00",
+            "Local Purchasing Power Index": "131.32.00"
+          },
+          {
+            "Rank": 107,
+            "City": "Edmonton, Canada",
+            "costOfLivingIndex": "72.07.00",
+            "Rent Index": "28.28.00",
+            "Cost of Living Plus Rent Index": "51.22.00",
+            "Groceries Index": "70.08.00",
+            "Restaurant Price Index": "68.18.00",
+            "Local Purchasing Power Index": "111.39.00"
+          },
+          {
+            "Rank": 108,
+            "City": "Canberra, Australia",
+            "costOfLivingIndex": "72.05.00",
+            "Rent Index": "40.56.00",
+            "Cost of Living Plus Rent Index": "57.24.00",
+            "Groceries Index": "76.00.00",
+            "Restaurant Price Index": "71.08.00",
+            "Local Purchasing Power Index": "143.48.00"
+          },
+          {
+            "Rank": 109,
+            "City": "Rochester, NY, United States",
+            "costOfLivingIndex": "71.59.00",
+            "Rent Index": "30.16.00",
+            "Cost of Living Plus Rent Index": "52.26.00",
+            "Groceries Index": "73.19.00",
+            "Restaurant Price Index": "67.22.00",
+            "Local Purchasing Power Index": "92.05.00"
+          },
+          {
+            "Rank": 110,
+            "City": "Everett, WA, United States",
+            "costOfLivingIndex": "71.55.00",
+            "Rent Index": "48.38.00",
+            "Cost of Living Plus Rent Index": "60.33.00",
+            "Groceries Index": "72.34.00",
+            "Restaurant Price Index": "79.30.00",
+            "Local Purchasing Power Index": "93.22.00"
+          },
+          {
+            "Rank": 111,
+            "City": "Phoenix, AZ, United States",
+            "costOfLivingIndex": "71.53.00",
+            "Rent Index": "45.17.00",
+            "Cost of Living Plus Rent Index": "59.38.00",
+            "Groceries Index": "71.12.00",
+            "Restaurant Price Index": "69.05.00",
+            "Local Purchasing Power Index": "122.18.00"
+          },
+          {
+            "Rank": 112,
+            "City": "Guildford, United Kingdom",
+            "costOfLivingIndex": "71.50.00",
+            "Rent Index": "44.11.00",
+            "Cost of Living Plus Rent Index": "58.27.00",
+            "Groceries Index": "61.13.00",
+            "Restaurant Price Index": "72.54.00",
+            "Local Purchasing Power Index": "111.32.00"
+          },
+          {
+            "Rank": 113,
+            "City": "Halifax, Canada",
+            "costOfLivingIndex": "71.49.00",
+            "Rent Index": "34.58.00",
+            "Cost of Living Plus Rent Index": "54.32.00",
+            "Groceries Index": "77.08.00",
+            "Restaurant Price Index": "66.29.00",
+            "Local Purchasing Power Index": "99.11.00"
+          },
+          {
+            "Rank": 114,
+            "City": "Ottawa, Canada",
+            "costOfLivingIndex": "71.38.00",
+            "Rent Index": "37.28.00",
+            "Cost of Living Plus Rent Index": "55.14.00",
+            "Groceries Index": "68.08.00",
+            "Restaurant Price Index": "70.16.00",
+            "Local Purchasing Power Index": "97.24.00"
+          },
+          {
+            "Rank": 115,
+            "City": "Reading, United Kingdom",
+            "costOfLivingIndex": "71.36.00",
+            "Rent Index": "37.03.00",
+            "Cost of Living Plus Rent Index": "55.01.00",
+            "Groceries Index": "58.33.00",
+            "Restaurant Price Index": "93.15.00",
+            "Local Purchasing Power Index": "94.38.00"
+          },
+          {
+            "Rank": 116,
+            "City": "Helsinki, Finland",
+            "costOfLivingIndex": "71.35.00",
+            "Rent Index": "34.23.00",
+            "Cost of Living Plus Rent Index": "53.49.00",
+            "Groceries Index": "63.37.00",
+            "Restaurant Price Index": "74.20.00",
+            "Local Purchasing Power Index": "79.12.00"
+          },
+          {
+            "Rank": 117,
+            "City": "Milan, Italy",
+            "costOfLivingIndex": "71.30.00",
+            "Rent Index": "39.20.00",
+            "Cost of Living Plus Rent Index": "56.02.00",
+            "Groceries Index": "60.43.00",
+            "Restaurant Price Index": "75.15.00",
+            "Local Purchasing Power Index": "52.27.00"
+          },
+          {
+            "Rank": 118,
+            "City": "Munich, Germany",
+            "costOfLivingIndex": "71.10.00",
+            "Rent Index": "44.20.00",
+            "Cost of Living Plus Rent Index": "58.10.00",
+            "Groceries Index": "62.01.00",
+            "Restaurant Price Index": "66.16.00",
+            "Local Purchasing Power Index": "90.01.00"
+          },
+          {
+            "Rank": 119,
+            "City": "Turku, Finland",
+            "costOfLivingIndex": "70.59.00",
+            "Rent Index": 20.57,
+            "Cost of Living Plus Rent Index": "47.18.00",
+            "Groceries Index": "64.53.00",
+            "Restaurant Price Index": "72.30.00",
+            "Local Purchasing Power Index": "87.42.00"
+          },
+          {
+            "Rank": 120,
+            "City": "Hamburg, Germany",
+            "costOfLivingIndex": "70.57.00",
+            "Rent Index": "36.31.00",
+            "Cost of Living Plus Rent Index": "54.26.00",
+            "Groceries Index": "56.16.00",
+            "Restaurant Price Index": "61.10.00",
+            "Local Purchasing Power Index": "87.13.00"
+          },
+          {
+            "Rank": 121,
+            "City": "Galway, Ireland",
+            "costOfLivingIndex": "70.37.00",
+            "Rent Index": "37.32.00",
+            "Cost of Living Plus Rent Index": "55.03.00",
+            "Groceries Index": "61.37.00",
+            "Restaurant Price Index": "64.34.00",
+            "Local Purchasing Power Index": "68.14.00"
+          },
+          {
+            "Rank": 122,
+            "City": "Christchurch, New Zealand",
+            "costOfLivingIndex": "70.36.00",
+            "Rent Index": "30.10.00",
+            "Cost of Living Plus Rent Index": "51.19.00",
+            "Groceries Index": "71.32.00",
+            "Restaurant Price Index": "62.38.00",
+            "Local Purchasing Power Index": "92.21.00"
+          },
+          {
+            "Rank": 123,
+            "City": "Vancouver, WA, United States",
+            "costOfLivingIndex": "70.30.00",
+            "Rent Index": "43.51.00",
+            "Cost of Living Plus Rent Index": "57.34.00",
+            "Groceries Index": "65.24.00",
+            "Restaurant Price Index": "66.33.00",
+            "Local Purchasing Power Index": "125.18.00"
+          },
+          {
+            "Rank": 124,
+            "City": "Montreal, Canada",
+            "costOfLivingIndex": "70.16.00",
+            "Rent Index": "30.00.00",
+            "Cost of Living Plus Rent Index": "51.23.00",
+            "Groceries Index": "70.39.00",
+            "Restaurant Price Index": "69.10.00",
+            "Local Purchasing Power Index": "84.14.00"
+          },
+          {
+            "Rank": 125,
+            "City": "Fort Worth, TX, United States",
+            "costOfLivingIndex": "70.12.00",
+            "Rent Index": "47.03.00",
+            "Cost of Living Plus Rent Index": "59.13.00",
+            "Groceries Index": "70.24.00",
+            "Restaurant Price Index": "61.08.00",
+            "Local Purchasing Power Index": "113.20.00"
+          },
+          {
+            "Rank": 126,
+            "City": "Surrey, Canada",
+            "costOfLivingIndex": "70.03.00",
+            "Rent Index": "41.27.00",
+            "Cost of Living Plus Rent Index": "56.34.00",
+            "Groceries Index": "71.27.00",
+            "Restaurant Price Index": "65.59.00",
+            "Local Purchasing Power Index": "137.33.00"
+          },
+          {
+            "Rank": 127,
+            "City": "Austin, TX, United States",
+            "costOfLivingIndex": "69.53.00",
+            "Rent Index": "59.05.00",
+            "Cost of Living Plus Rent Index": "64.54.00",
+            "Groceries Index": "73.01.00",
+            "Restaurant Price Index": "68.30.00",
+            "Local Purchasing Power Index": "146.34.00"
+          },
+          {
+            "Rank": 128,
+            "City": "London, Canada",
+            "costOfLivingIndex": "69.53.00",
+            "Rent Index": "40.07.00",
+            "Cost of Living Plus Rent Index": "55.51.00",
+            "Groceries Index": "66.33.00",
+            "Restaurant Price Index": "72.42.00",
+            "Local Purchasing Power Index": "118.15.00"
+          },
+          {
+            "Rank": 129,
+            "City": "Long Beach, CA, United States",
+            "costOfLivingIndex": "69.50.00",
+            "Rent Index": "58.26.00",
+            "Cost of Living Plus Rent Index": "64.36.00",
+            "Groceries Index": "72.21.00",
+            "Restaurant Price Index": "73.20.00",
+            "Local Purchasing Power Index": "102.23.00"
+          },
+          {
+            "Rank": 130,
+            "City": "Toulouse, France",
+            "costOfLivingIndex": "69.41.00",
+            "Rent Index": 22.22,
+            "Cost of Living Plus Rent Index": "47.34.00",
+            "Groceries Index": "69.09.00",
+            "Restaurant Price Index": "69.56.00",
+            "Local Purchasing Power Index": "91.30.00"
+          },
+          {
+            "Rank": 131,
+            "City": "Orlando, FL, United States",
+            "costOfLivingIndex": "69.37.00",
+            "Rent Index": "52.38.00",
+            "Cost of Living Plus Rent Index": "61.09.00",
+            "Groceries Index": "67.04.00",
+            "Restaurant Price Index": "73.12.00",
+            "Local Purchasing Power Index": "120.09.00"
+          },
+          {
+            "Rank": 132,
+            "City": "Bonn, Germany",
+            "costOfLivingIndex": "69.36.00",
+            "Rent Index": "29.09.00",
+            "Cost of Living Plus Rent Index": "50.19.00",
+            "Groceries Index": "57.04.00",
+            "Restaurant Price Index": "66.41.00",
+            "Local Purchasing Power Index": "70.25.00"
+          },
+          {
+            "Rank": 133,
+            "City": "Durham, NC, United States",
+            "costOfLivingIndex": "69.31.00",
+            "Rent Index": "42.47.00",
+            "Cost of Living Plus Rent Index": "56.53.00",
+            "Groceries Index": "78.23.00",
+            "Restaurant Price Index": "65.08.00",
+            "Local Purchasing Power Index": "104.20.00"
+          },
+          {
+            "Rank": 134,
+            "City": "Charlotte, NC, United States",
+            "costOfLivingIndex": "69.29.00",
+            "Rent Index": "53.37.00",
+            "Cost of Living Plus Rent Index": "61.52.00",
+            "Groceries Index": "67.13.00",
+            "Restaurant Price Index": "67.20.00",
+            "Local Purchasing Power Index": "142.22.00"
+          },
+          {
+            "Rank": 135,
+            "City": "Indianapolis, IN, United States",
+            "costOfLivingIndex": "69.27.00",
+            "Rent Index": "39.35.00",
+            "Cost of Living Plus Rent Index": "55.23.00",
+            "Groceries Index": "71.09.00",
+            "Restaurant Price Index": "66.24.00",
+            "Local Purchasing Power Index": "129.28.00"
+          },
+          {
+            "Rank": 136,
+            "City": "Brighton, United Kingdom",
+            "costOfLivingIndex": "69.25.00",
+            "Rent Index": "48.39.00",
+            "Cost of Living Plus Rent Index": "59.32.00",
+            "Groceries Index": "56.49.00",
+            "Restaurant Price Index": "72.58.00",
+            "Local Purchasing Power Index": "70.53.00"
+          },
+          {
+            "Rank": 137,
+            "City": "Innsbruck, Austria",
+            "costOfLivingIndex": "69.25.00",
+            "Rent Index": "27.02.00",
+            "Cost of Living Plus Rent Index": "49.14.00",
+            "Groceries Index": "59.34.00",
+            "Restaurant Price Index": "68.04.00",
+            "Local Purchasing Power Index": "65.06.00"
+          },
+          {
+            "Rank": 138,
+            "City": "Graz, Austria",
+            "costOfLivingIndex": "69.21.00",
+            "Rent Index": 20.19,
+            "Cost of Living Plus Rent Index": "46.08.00",
+            "Groceries Index": "67.08.00",
+            "Restaurant Price Index": "56.19.00",
+            "Local Purchasing Power Index": "76.31.00"
+          },
+          {
+            "Rank": 139,
+            "City": "Frankfurt, Germany",
+            "costOfLivingIndex": "69.21.00",
+            "Rent Index": "35.58.00",
+            "Cost of Living Plus Rent Index": "53.20.00",
+            "Groceries Index": "56.12.00",
+            "Restaurant Price Index": "59.32.00",
+            "Local Purchasing Power Index": "104.24.00"
+          },
+          {
+            "Rank": 140,
+            "City": "Ann Arbor, MI, United States",
+            "costOfLivingIndex": "69.20.00",
+            "Rent Index": "51.45.00",
+            "Cost of Living Plus Rent Index": "61.15.00",
+            "Groceries Index": "72.13.00",
+            "Restaurant Price Index": "63.25.00",
+            "Local Purchasing Power Index": "134.31.00"
+          },
+          {
+            "Rank": 141,
+            "City": "Las Vegas, NV, United States",
+            "costOfLivingIndex": "69.13.00",
+            "Rent Index": "40.13.00",
+            "Cost of Living Plus Rent Index": "55.32.00",
+            "Groceries Index": "64.16.00",
+            "Restaurant Price Index": "69.06.00",
+            "Local Purchasing Power Index": "112.50.00"
+          },
+          {
+            "Rank": 142,
+            "City": "Detroit, MI, United States",
+            "costOfLivingIndex": "69.12.00",
+            "Rent Index": "40.25.00",
+            "Cost of Living Plus Rent Index": "55.19.00",
+            "Groceries Index": "65.01.00",
+            "Restaurant Price Index": "61.20.00",
+            "Local Purchasing Power Index": "108.18.00"
+          },
+          {
+            "Rank": 143,
+            "City": "Madison, WI, United States",
+            "costOfLivingIndex": "69.01.00",
+            "Rent Index": "43.05.00",
+            "Cost of Living Plus Rent Index": "57.05.00",
+            "Groceries Index": "71.07.00",
+            "Restaurant Price Index": "67.51.00",
+            "Local Purchasing Power Index": "109.37.00"
+          },
+          {
+            "Rank": 144,
+            "City": "San Juan, Puerto Rico",
+            "costOfLivingIndex": "69.23.00",
+            "Rent Index": "52.11.00",
+            "Cost of Living Plus Rent Index": "61.08.00",
+            "Groceries Index": "71.36.00",
+            "Restaurant Price Index": "59.09.00",
+            "Local Purchasing Power Index": "49.02.00"
+          },
+          {
+            "Rank": 145,
+            "City": "Hamilton, Canada",
+            "costOfLivingIndex": "69.20.00",
+            "Rent Index": "37.08.00",
+            "Cost of Living Plus Rent Index": "53.51.00",
+            "Groceries Index": "71.06.00",
+            "Restaurant Price Index": "62.13.00",
+            "Local Purchasing Power Index": "100.21.00"
+          },
+          {
+            "Rank": 146,
+            "City": "Saskatoon, Canada",
+            "costOfLivingIndex": "69.09.00",
+            "Rent Index": "26.28.00",
+            "Cost of Living Plus Rent Index": "48.30.00",
+            "Groceries Index": "64.12.00",
+            "Restaurant Price Index": "66.12.00",
+            "Local Purchasing Power Index": "126.06.00"
+          },
+          {
+            "Rank": 147,
+            "City": "Grenoble, France",
+            "costOfLivingIndex": "68.42.00",
+            "Rent Index": 18.36,
+            "Cost of Living Plus Rent Index": "44.59.00",
+            "Groceries Index": "66.16.00",
+            "Restaurant Price Index": "59.23.00",
+            "Local Purchasing Power Index": "77.27.00"
+          },
+          {
+            "Rank": 148,
+            "City": "The Hague (Den Haag), Netherlands",
+            "costOfLivingIndex": "68.33.00",
+            "Rent Index": "33.29.00",
+            "Cost of Living Plus Rent Index": "51.46.00",
+            "Groceries Index": "58.08.00",
+            "Restaurant Price Index": "71.11.00",
+            "Local Purchasing Power Index": "98.22.00"
+          },
+          {
+            "Rank": 149,
+            "City": "Brampton, Canada",
+            "costOfLivingIndex": "68.03.00",
+            "Rent Index": "34.29.00",
+            "Cost of Living Plus Rent Index": "52.37.00",
+            "Groceries Index": "67.35.00",
+            "Restaurant Price Index": "57.15.00",
+            "Local Purchasing Power Index": "100.05.00"
+          },
+          {
+            "Rank": 150,
+            "City": "Delft, Netherlands",
+            "costOfLivingIndex": "68.03.00",
+            "Rent Index": "27.09.00",
+            "Cost of Living Plus Rent Index": "48.34.00",
+            "Groceries Index": "62.37.00",
+            "Restaurant Price Index": "52.29.00",
+            "Local Purchasing Power Index": "106.34.00"
+          },
+          {
+            "Rank": 151,
+            "City": "Grand Rapids, MI, United States",
+            "costOfLivingIndex": "68.00.00",
+            "Rent Index": "47.37.00",
+            "Cost of Living Plus Rent Index": "58.18.00",
+            "Groceries Index": "72.32.00",
+            "Restaurant Price Index": "65.54.00",
+            "Local Purchasing Power Index": "109.21.00"
+          },
+          {
+            "Rank": 152,
+            "City": "Limerick, Ireland",
+            "costOfLivingIndex": "68.39.00",
+            "Rent Index": "34.49.00",
+            "Cost of Living Plus Rent Index": "52.04.00",
+            "Groceries Index": "57.31.00",
+            "Restaurant Price Index": "64.55.00",
+            "Local Purchasing Power Index": "97.20.00"
+          },
+          {
+            "Rank": 153,
+            "City": "Kitchener, Canada",
+            "costOfLivingIndex": "68.39.00",
+            "Rent Index": "36.15.00",
+            "Cost of Living Plus Rent Index": "53.23.00",
+            "Groceries Index": "69.04.00",
+            "Restaurant Price Index": "66.09.00",
+            "Local Purchasing Power Index": "96.19.00"
+          },
+          {
+            "Rank": 154,
+            "City": "Olympia, WA, United States",
+            "costOfLivingIndex": "68.38.00",
+            "Rent Index": "38.36.00",
+            "Cost of Living Plus Rent Index": "54.28.00",
+            "Groceries Index": "73.55.00",
+            "Restaurant Price Index": "65.34.00",
+            "Local Purchasing Power Index": "111.13.00"
+          },
+          {
+            "Rank": 155,
+            "City": "Columbus, OH, United States",
+            "costOfLivingIndex": "68.37.00",
+            "Rent Index": "35.55.00",
+            "Cost of Living Plus Rent Index": "52.53.00",
+            "Groceries Index": "65.32.00",
+            "Restaurant Price Index": "66.18.00",
+            "Local Purchasing Power Index": "137.12.00"
+          },
+          {
+            "Rank": 156,
+            "City": "Akron, OH, United States",
+            "costOfLivingIndex": "68.27.00",
+            "Rent Index": "28.13.00",
+            "Cost of Living Plus Rent Index": "49.35.00",
+            "Groceries Index": "68.08.00",
+            "Restaurant Price Index": "70.20.00",
+            "Local Purchasing Power Index": "85.31.00"
+          },
+          {
+            "Rank": 157,
+            "City": "Oxford, United Kingdom",
+            "costOfLivingIndex": "68.21.00",
+            "Rent Index": "53.19.00",
+            "Cost of Living Plus Rent Index": "61.25.00",
+            "Groceries Index": "59.05.00",
+            "Restaurant Price Index": "66.05.00",
+            "Local Purchasing Power Index": "104.12.00"
+          },
+          {
+            "Rank": 158,
+            "City": "Heidelberg, Germany",
+            "costOfLivingIndex": "68.18.00",
+            "Rent Index": "29.00.00",
+            "Cost of Living Plus Rent Index": "49.31.00",
+            "Groceries Index": "52.19.00",
+            "Restaurant Price Index": "66.03.00",
+            "Local Purchasing Power Index": "97.38.00"
+          },
+          {
+            "Rank": 159,
+            "City": "Kelowna, Canada",
+            "costOfLivingIndex": "68.16.00",
+            "Rent Index": "40.39.00",
+            "Cost of Living Plus Rent Index": "54.54.00",
+            "Groceries Index": "66.46.00",
+            "Restaurant Price Index": "66.15.00",
+            "Local Purchasing Power Index": "111.47.00"
+          },
+          {
+            "Rank": 160,
+            "City": "Jacksonville, FL, United States",
+            "costOfLivingIndex": "68.12.00",
+            "Rent Index": "38.17.00",
+            "Cost of Living Plus Rent Index": "53.46.00",
+            "Groceries Index": "74.07.00",
+            "Restaurant Price Index": "65.17.00",
+            "Local Purchasing Power Index": "133.45.00"
+          },
+          {
+            "Rank": 161,
+            "City": "Antwerp, Belgium",
+            "costOfLivingIndex": "68.11.00",
+            "Rent Index": 23.17,
+            "Cost of Living Plus Rent Index": "46.50.00",
+            "Groceries Index": "57.08.00",
+            "Restaurant Price Index": "74.02.00",
+            "Local Purchasing Power Index": "85.51.00"
+          },
+          {
+            "Rank": 162,
+            "City": "Kingston, Canada",
+            "costOfLivingIndex": "68.10.00",
+            "Rent Index": "35.46.00",
+            "Cost of Living Plus Rent Index": "52.35.00",
+            "Groceries Index": "67.30.00",
+            "Restaurant Price Index": "64.27.00",
+            "Local Purchasing Power Index": "97.24.00"
+          },
+          {
+            "Rank": 163,
+            "City": "Cork, Ireland",
+            "costOfLivingIndex": "68.01.00",
+            "Rent Index": "41.28.00",
+            "Cost of Living Plus Rent Index": "55.29.00",
+            "Groceries Index": "52.57.00",
+            "Restaurant Price Index": "74.25.00",
+            "Local Purchasing Power Index": "78.21.00"
+          },
+          {
+            "Rank": 164,
+            "City": "Maastricht, Netherlands",
+            "costOfLivingIndex": "67.45.00",
+            "Rent Index": "32.04.00",
+            "Cost of Living Plus Rent Index": "50.59.00",
+            "Groceries Index": "62.34.00",
+            "Restaurant Price Index": "60.19.00",
+            "Local Purchasing Power Index": "86.22.00"
+          },
+          {
+            "Rank": 165,
+            "City": "Winnipeg, Canada",
+            "costOfLivingIndex": "67.43.00",
+            "Rent Index": "26.30.00",
+            "Cost of Living Plus Rent Index": "48.06.00",
+            "Groceries Index": "69.12.00",
+            "Restaurant Price Index": "57.39.00",
+            "Local Purchasing Power Index": "81.06.00"
+          },
+          {
+            "Rank": 166,
+            "City": "Louisville, KY, United States",
+            "costOfLivingIndex": "67.39.00",
+            "Rent Index": "31.24.00",
+            "Cost of Living Plus Rent Index": "50.18.00",
+            "Groceries Index": "71.16.00",
+            "Restaurant Price Index": "65.10.00",
+            "Local Purchasing Power Index": "111.21.00"
+          },
+          {
+            "Rank": 167,
+            "City": "Milwaukee, WI, United States",
+            "costOfLivingIndex": "67.36.00",
+            "Rent Index": "34.27.00",
+            "Cost of Living Plus Rent Index": "52.00.00",
+            "Groceries Index": "65.37.00",
+            "Restaurant Price Index": "60.28.00",
+            "Local Purchasing Power Index": "119.09.00"
+          },
+          {
+            "Rank": 168,
+            "City": "Brussels, Belgium",
+            "costOfLivingIndex": "67.30.00",
+            "Rent Index": "30.25.00",
+            "Cost of Living Plus Rent Index": "49.47.00",
+            "Groceries Index": "57.37.00",
+            "Restaurant Price Index": "70.07.00",
+            "Local Purchasing Power Index": "86.25.00"
+          },
+          {
+            "Rank": 169,
+            "City": "Quebec City, Canada",
+            "costOfLivingIndex": "67.27.00",
+            "Rent Index": 20.1,
+            "Cost of Living Plus Rent Index": "45.21.00",
+            "Groceries Index": "69.39.00",
+            "Restaurant Price Index": "62.28.00",
+            "Local Purchasing Power Index": "126.57.00"
+          },
+          {
+            "Rank": 170,
+            "City": "Leuven, Belgium",
+            "costOfLivingIndex": "67.22.00",
+            "Rent Index": "25.03.00",
+            "Cost of Living Plus Rent Index": "47.13.00",
+            "Groceries Index": "56.37.00",
+            "Restaurant Price Index": "75.38.00",
+            "Local Purchasing Power Index": "81.44.00"
+          },
+          {
+            "Rank": 171,
+            "City": "Lund, Sweden",
+            "costOfLivingIndex": "67.22.00",
+            "Rent Index": "26.25.00",
+            "Cost of Living Plus Rent Index": "48.11.00",
+            "Groceries Index": "65.12.00",
+            "Restaurant Price Index": "62.06.00",
+            "Local Purchasing Power Index": "92.14.00"
+          },
+          {
+            "Rank": 172,
+            "City": "Houston, TX, United States",
+            "costOfLivingIndex": "67.15.00",
+            "Rent Index": "45.00.00",
+            "Cost of Living Plus Rent Index": "57.01.00",
+            "Groceries Index": "65.06.00",
+            "Restaurant Price Index": "69.12.00",
+            "Local Purchasing Power Index": "155.14.00"
+          },
+          {
+            "Rank": 173,
+            "City": "Nantes, France",
+            "costOfLivingIndex": "67.11.00",
+            "Rent Index": "24.05.00",
+            "Cost of Living Plus Rent Index": "46.42.00",
+            "Groceries Index": "67.05.00",
+            "Restaurant Price Index": "63.26.00",
+            "Local Purchasing Power Index": "80.59.00"
+          },
+          {
+            "Rank": 174,
+            "City": "Enschede, Netherlands",
+            "costOfLivingIndex": "67.10.00",
+            "Rent Index": "27.19.00",
+            "Cost of Living Plus Rent Index": "48.31.00",
+            "Groceries Index": "62.36.00",
+            "Restaurant Price Index": "66.26.00",
+            "Local Purchasing Power Index": "117.00.00"
+          },
+          {
+            "Rank": 175,
+            "City": "Des Moines, IA, United States",
+            "costOfLivingIndex": "67.00.00",
+            "Rent Index": "27.30.00",
+            "Cost of Living Plus Rent Index": "48.10.00",
+            "Groceries Index": "70.10.00",
+            "Restaurant Price Index": "62.15.00",
+            "Local Purchasing Power Index": "106.22.00"
+          },
+          {
+            "Rank": 176,
+            "City": "Uppsala, Sweden",
+            "costOfLivingIndex": "67.31.00",
+            "Rent Index": 22.26,
+            "Cost of Living Plus Rent Index": "46.05.00",
+            "Groceries Index": "59.14.00",
+            "Restaurant Price Index": "68.06.00",
+            "Local Purchasing Power Index": "80.20.00"
+          },
+          {
+            "Rank": 177,
+            "City": "Richmond, VA, United States",
+            "costOfLivingIndex": "67.20.00",
+            "Rent Index": "35.27.00",
+            "Cost of Living Plus Rent Index": "52.00.00",
+            "Groceries Index": "61.13.00",
+            "Restaurant Price Index": "86.12.00",
+            "Local Purchasing Power Index": "125.17.00"
+          },
+          {
+            "Rank": 178,
+            "City": "Albany, NY, United States",
+            "costOfLivingIndex": "67.11.00",
+            "Rent Index": "35.26.00",
+            "Cost of Living Plus Rent Index": "52.14.00",
+            "Groceries Index": "67.40.00",
+            "Restaurant Price Index": "65.10.00",
+            "Local Purchasing Power Index": "127.56.00"
+          },
+          {
+            "Rank": 179,
+            "City": "Windsor, Canada",
+            "costOfLivingIndex": "66.52.00",
+            "Rent Index": "33.13.00",
+            "Cost of Living Plus Rent Index": "51.02.00",
+            "Groceries Index": "63.15.00",
+            "Restaurant Price Index": "64.44.00",
+            "Local Purchasing Power Index": "84.19.00"
+          },
+          {
+            "Rank": 180,
+            "City": "Parma, Italy",
+            "costOfLivingIndex": "66.50.00",
+            "Rent Index": 16.35,
+            "Cost of Living Plus Rent Index": "43.02.00",
+            "Groceries Index": "54.16.00",
+            "Restaurant Price Index": "67.17.00",
+            "Local Purchasing Power Index": "62.13.00"
+          },
+          {
+            "Rank": 181,
+            "City": "Fresno, CA, United States",
+            "costOfLivingIndex": "66.41.00",
+            "Rent Index": "45.16.00",
+            "Cost of Living Plus Rent Index": "56.29.00",
+            "Groceries Index": "62.51.00",
+            "Restaurant Price Index": "68.33.00",
+            "Local Purchasing Power Index": "107.49.00"
+          },
+          {
+            "Rank": 182,
+            "City": "Linz, Austria",
+            "costOfLivingIndex": "66.40.00",
+            "Rent Index": 23.25,
+            "Cost of Living Plus Rent Index": "46.06.00",
+            "Groceries Index": "61.32.00",
+            "Restaurant Price Index": "64.13.00",
+            "Local Purchasing Power Index": "70.28.00"
+          },
+          {
+            "Rank": 183,
+            "City": "Milton Keynes, United Kingdom",
+            "costOfLivingIndex": "66.35.00",
+            "Rent Index": "36.20.00",
+            "Cost of Living Plus Rent Index": "52.00.00",
+            "Groceries Index": "57.54.00",
+            "Restaurant Price Index": "63.24.00",
+            "Local Purchasing Power Index": "84.31.00"
+          },
+          {
+            "Rank": 184,
+            "City": "Liverpool, United Kingdom",
+            "costOfLivingIndex": "66.29.00",
+            "Rent Index": "24.57.00",
+            "Cost of Living Plus Rent Index": "46.43.00",
+            "Groceries Index": "52.21.00",
+            "Restaurant Price Index": "77.10.00",
+            "Local Purchasing Power Index": "70.01.00"
+          },
+          {
+            "Rank": 185,
+            "City": "Raleigh, NC, United States",
+            "costOfLivingIndex": "66.17.00",
+            "Rent Index": "45.30.00",
+            "Cost of Living Plus Rent Index": "56.23.00",
+            "Groceries Index": "68.46.00",
+            "Restaurant Price Index": "64.16.00",
+            "Local Purchasing Power Index": "135.08.00"
+          },
+          {
+            "Rank": 186,
+            "City": "Manchester, United Kingdom",
+            "costOfLivingIndex": "66.11.00",
+            "Rent Index": "33.18.00",
+            "Cost of Living Plus Rent Index": "50.43.00",
+            "Groceries Index": "54.49.00",
+            "Restaurant Price Index": "74.27.00",
+            "Local Purchasing Power Index": "91.12.00"
+          },
+          {
+            "Rank": 187,
+            "City": "Regina, Canada",
+            "costOfLivingIndex": "66.36.00",
+            "Rent Index": 23.48,
+            "Cost of Living Plus Rent Index": "46.14.00",
+            "Groceries Index": "64.18.00",
+            "Restaurant Price Index": "66.20.00",
+            "Local Purchasing Power Index": "160.11.00"
+          },
+          {
+            "Rank": 188,
+            "City": "Genoa, Italy",
+            "costOfLivingIndex": "66.14.00",
+            "Rent Index": 17.56,
+            "Cost of Living Plus Rent Index": "43.20.00",
+            "Groceries Index": "65.25.00",
+            "Restaurant Price Index": "55.24.00",
+            "Local Purchasing Power Index": "52.22.00"
+          },
+          {
+            "Rank": 189,
+            "City": "Dortmund, Germany",
+            "costOfLivingIndex": "66.11.00",
+            "Rent Index": 20.35,
+            "Cost of Living Plus Rent Index": "44.32.00",
+            "Groceries Index": "55.19.00",
+            "Restaurant Price Index": "53.51.00",
+            "Local Purchasing Power Index": "80.34.00"
+          },
+          {
+            "Rank": 190,
+            "City": "Malmo, Sweden",
+            "costOfLivingIndex": "66.05.00",
+            "Rent Index": 22.37,
+            "Cost of Living Plus Rent Index": "45.25.00",
+            "Groceries Index": "58.42.00",
+            "Restaurant Price Index": "67.44.00",
+            "Local Purchasing Power Index": "98.15.00"
+          },
+          {
+            "Rank": 191,
+            "City": "Macao, Macao",
+            "costOfLivingIndex": "66.01.00",
+            "Rent Index": "36.52.00",
+            "Cost of Living Plus Rent Index": "52.16.00",
+            "Groceries Index": "69.28.00",
+            "Restaurant Price Index": "51.10.00",
+            "Local Purchasing Power Index": "69.24.00"
+          },
+          {
+            "Rank": 192,
+            "City": "Karlsruhe, Germany",
+            "costOfLivingIndex": "65.51.00",
+            "Rent Index": "25.37.00",
+            "Cost of Living Plus Rent Index": "46.21.00",
+            "Groceries Index": "57.09.00",
+            "Restaurant Price Index": "55.18.00",
+            "Local Purchasing Power Index": "108.30.00"
+          },
+          {
+            "Rank": 193,
+            "City": "Bergamo, Italy",
+            "costOfLivingIndex": "65.47.00",
+            "Rent Index": "26.16.00",
+            "Cost of Living Plus Rent Index": "46.57.00",
+            "Groceries Index": "58.17.00",
+            "Restaurant Price Index": "62.13.00",
+            "Local Purchasing Power Index": "60.12.00"
+          },
+          {
+            "Rank": 194,
+            "City": "Saint Louis, MO, United States",
+            "costOfLivingIndex": "65.41.00",
+            "Rent Index": "34.25.00",
+            "Cost of Living Plus Rent Index": "50.57.00",
+            "Groceries Index": "66.04.00",
+            "Restaurant Price Index": "60.33.00",
+            "Local Purchasing Power Index": "106.26.00"
+          },
+          {
+            "Rank": 195,
+            "City": "Oklahoma City, OK, United States",
+            "costOfLivingIndex": "65.40.00",
+            "Rent Index": "31.19.00",
+            "Cost of Living Plus Rent Index": "49.32.00",
+            "Groceries Index": "71.04.00",
+            "Restaurant Price Index": "54.27.00",
+            "Local Purchasing Power Index": "119.28.00"
+          },
+          {
+            "Rank": 196,
+            "City": "Tucson, AZ, United States",
+            "costOfLivingIndex": "65.39.00",
+            "Rent Index": "30.25.00",
+            "Cost of Living Plus Rent Index": "49.06.00",
+            "Groceries Index": "64.30.00",
+            "Restaurant Price Index": "64.10.00",
+            "Local Purchasing Power Index": "91.34.00"
+          },
+          {
+            "Rank": 197,
+            "City": "Bristol, United Kingdom",
+            "costOfLivingIndex": "65.39.00",
+            "Rent Index": "36.06.00",
+            "Cost of Living Plus Rent Index": "51.24.00",
+            "Groceries Index": "53.36.00",
+            "Restaurant Price Index": "70.01.00",
+            "Local Purchasing Power Index": "97.39.00"
+          },
+          {
+            "Rank": 198,
+            "City": "Oulu, Finland",
+            "costOfLivingIndex": "65.37.00",
+            "Rent Index": 19.43,
+            "Cost of Living Plus Rent Index": "43.50.00",
+            "Groceries Index": "64.32.00",
+            "Restaurant Price Index": "59.31.00",
+            "Local Purchasing Power Index": "99.31.00"
+          },
+          {
+            "Rank": 199,
+            "City": "Gent, Belgium",
+            "costOfLivingIndex": "65.37.00",
+            "Rent Index": "25.06.00",
+            "Cost of Living Plus Rent Index": "46.18.00",
+            "Groceries Index": "57.22.00",
+            "Restaurant Price Index": "67.11.00",
+            "Local Purchasing Power Index": "72.59.00"
+          },
+          {
+            "Rank": 200,
+            "City": "Mannheim, Germany",
+            "costOfLivingIndex": "65.33.00",
+            "Rent Index": 22.07,
+            "Cost of Living Plus Rent Index": "45.13.00",
+            "Groceries Index": "54.36.00",
+            "Restaurant Price Index": "55.18.00",
+            "Local Purchasing Power Index": "108.14.00"
+          },
+          {
+            "Rank": 201,
+            "City": "Marseille, France",
+            "costOfLivingIndex": "65.32.00",
+            "Rent Index": 23.01,
+            "Cost of Living Plus Rent Index": "45.39.00",
+            "Groceries Index": "67.24.00",
+            "Restaurant Price Index": "59.54.00",
+            "Local Purchasing Power Index": "89.58.00"
+          },
+          {
+            "Rank": 202,
+            "City": "Sliema, Malta",
+            "costOfLivingIndex": "65.31.00",
+            "Rent Index": "27.39.00",
+            "Cost of Living Plus Rent Index": "47.07.00",
+            "Groceries Index": "61.05.00",
+            "Restaurant Price Index": "67.24.00",
+            "Local Purchasing Power Index": "45.54.00"
+          },
+          {
+            "Rank": 203,
+            "City": "Stuttgart, Germany",
+            "costOfLivingIndex": "65.26.00",
+            "Rent Index": "30.38.00",
+            "Cost of Living Plus Rent Index": "49.06.00",
+            "Groceries Index": "54.32.00",
+            "Restaurant Price Index": "61.08.00",
+            "Local Purchasing Power Index": "114.26.00"
+          },
+          {
+            "Rank": 204,
+            "City": "Red Deer, Canada",
+            "costOfLivingIndex": "65.00.00",
+            "Rent Index": 20.27,
+            "Cost of Living Plus Rent Index": "43.51.00",
+            "Groceries Index": "63.28.00",
+            "Restaurant Price Index": "55.00.00",
+            "Local Purchasing Power Index": "89.37.00"
+          },
+          {
+            "Rank": 205,
+            "City": "Nottingham, United Kingdom",
+            "costOfLivingIndex": "65.38.00",
+            "Rent Index": "28.35.00",
+            "Cost of Living Plus Rent Index": "47.54.00",
+            "Groceries Index": "59.48.00",
+            "Restaurant Price Index": "62.03.00",
+            "Local Purchasing Power Index": "81.29.00"
+          },
+          {
+            "Rank": 206,
+            "City": "Tampere, Finland",
+            "costOfLivingIndex": "65.36.00",
+            "Rent Index": 22.26,
+            "Cost of Living Plus Rent Index": "44.44.00",
+            "Groceries Index": "57.07.00",
+            "Restaurant Price Index": "71.56.00",
+            "Local Purchasing Power Index": "90.00.00"
+          },
+          {
+            "Rank": 207,
+            "City": "Salt Lake City, UT, United States",
+            "costOfLivingIndex": "65.36.00",
+            "Rent Index": "47.29.00",
+            "Cost of Living Plus Rent Index": "56.36.00",
+            "Groceries Index": "61.37.00",
+            "Restaurant Price Index": "70.34.00",
+            "Local Purchasing Power Index": "121.20.00"
+          },
+          {
+            "Rank": 208,
+            "City": "Kansas City, MO, United States",
+            "costOfLivingIndex": "65.28.00",
+            "Rent Index": "38.45.00",
+            "Cost of Living Plus Rent Index": "52.30.00",
+            "Groceries Index": "59.07.00",
+            "Restaurant Price Index": "72.15.00",
+            "Local Purchasing Power Index": "114.37.00"
+          },
+          {
+            "Rank": 209,
+            "City": "Boise, ID, United States",
+            "costOfLivingIndex": "65.20.00",
+            "Rent Index": "45.23.00",
+            "Cost of Living Plus Rent Index": "55.29.00",
+            "Groceries Index": "60.01.00",
+            "Restaurant Price Index": "63.23.00",
+            "Local Purchasing Power Index": "78.01.00"
+          },
+          {
+            "Rank": 210,
+            "City": "Gothenburg, Sweden",
+            "costOfLivingIndex": "65.00.00",
+            "Rent Index": "26.36.00",
+            "Cost of Living Plus Rent Index": "46.40.00",
+            "Groceries Index": "58.58.00",
+            "Restaurant Price Index": "60.34.00",
+            "Local Purchasing Power Index": "100.19.00"
+          },
+          {
+            "Rank": 211,
+            "City": "Burnaby, Canada",
+            "costOfLivingIndex": "64.56.00",
+            "Rent Index": "43.54.00",
+            "Cost of Living Plus Rent Index": "54.55.00",
+            "Groceries Index": "65.06.00",
+            "Restaurant Price Index": "55.01.00",
+            "Local Purchasing Power Index": "106.38.00"
+          },
+          {
+            "Rank": 212,
+            "City": "Osaka, Japan",
+            "costOfLivingIndex": "64.46.00",
+            "Rent Index": 23.04,
+            "Cost of Living Plus Rent Index": "44.55.00",
+            "Groceries Index": "68.01.00",
+            "Restaurant Price Index": "37.22.00",
+            "Local Purchasing Power Index": "87.41.00"
+          },
+          {
+            "Rank": 213,
+            "City": "Belfast, United Kingdom",
+            "costOfLivingIndex": "64.39.00",
+            "Rent Index": "24.39.00",
+            "Cost of Living Plus Rent Index": "45.35.00",
+            "Groceries Index": "53.16.00",
+            "Restaurant Price Index": "76.11.00",
+            "Local Purchasing Power Index": "75.44.00"
+          },
+          {
+            "Rank": 214,
+            "City": "Trieste, Italy",
+            "costOfLivingIndex": "64.39.00",
+            "Rent Index": "24.06.00",
+            "Cost of Living Plus Rent Index": "45.00.00",
+            "Groceries Index": "57.34.00",
+            "Restaurant Price Index": "62.10.00",
+            "Local Purchasing Power Index": "55.49.00"
+          },
+          {
+            "Rank": 215,
+            "City": "Plymouth, United Kingdom",
+            "costOfLivingIndex": "64.34.00",
+            "Rent Index": "26.18.00",
+            "Cost of Living Plus Rent Index": "46.17.00",
+            "Groceries Index": "53.12.00",
+            "Restaurant Price Index": "62.22.00",
+            "Local Purchasing Power Index": "63.00.00"
+          },
+          {
+            "Rank": 216,
+            "City": "Berlin, Germany",
+            "costOfLivingIndex": "64.33.00",
+            "Rent Index": "35.36.00",
+            "Cost of Living Plus Rent Index": "50.35.00",
+            "Groceries Index": "53.16.00",
+            "Restaurant Price Index": "53.07.00",
+            "Local Purchasing Power Index": "98.32.00"
+          },
+          {
+            "Rank": 217,
+            "City": "Florence, Italy",
+            "costOfLivingIndex": "64.20.00",
+            "Rent Index": "25.32.00",
+            "Cost of Living Plus Rent Index": "45.50.00",
+            "Groceries Index": "59.11.00",
+            "Restaurant Price Index": "63.20.00",
+            "Local Purchasing Power Index": "49.16.00"
+          },
+          {
+            "Rank": 218,
+            "City": "Cologne, Germany",
+            "costOfLivingIndex": "64.15.00",
+            "Rent Index": "27.32.00",
+            "Cost of Living Plus Rent Index": "47.01.00",
+            "Groceries Index": "52.01.00",
+            "Restaurant Price Index": "56.27.00",
+            "Local Purchasing Power Index": "81.38.00"
+          },
+          {
+            "Rank": 219,
+            "City": "Darmstadt, Germany",
+            "costOfLivingIndex": "64.05.00",
+            "Rent Index": "27.09.00",
+            "Cost of Living Plus Rent Index": "46.26.00",
+            "Groceries Index": "56.03.00",
+            "Restaurant Price Index": "54.37.00",
+            "Local Purchasing Power Index": "105.54.00"
+          },
+          {
+            "Rank": 220,
+            "City": "Glasgow, United Kingdom",
+            "costOfLivingIndex": "64.39.00",
+            "Rent Index": "28.26.00",
+            "Cost of Living Plus Rent Index": "47.38.00",
+            "Groceries Index": "51.14.00",
+            "Restaurant Price Index": "67.31.00",
+            "Local Purchasing Power Index": "106.44.00"
+          },
+          {
+            "Rank": 221,
+            "City": "Bologna, Italy",
+            "costOfLivingIndex": "64.36.00",
+            "Rent Index": 23.16,
+            "Cost of Living Plus Rent Index": "44.54.00",
+            "Groceries Index": "56.14.00",
+            "Restaurant Price Index": "62.05.00",
+            "Local Purchasing Power Index": "55.45.00"
+          },
+          {
+            "Rank": 222,
+            "City": "Vienna, Austria",
+            "costOfLivingIndex": "64.31.00",
+            "Rent Index": "30.44.00",
+            "Cost of Living Plus Rent Index": "48.37.00",
+            "Groceries Index": "59.01.00",
+            "Restaurant Price Index": "58.58.00",
+            "Local Purchasing Power Index": "78.47.00"
+          },
+          {
+            "Rank": 223,
+            "City": "Dusseldorf, Germany",
+            "costOfLivingIndex": "64.17.00",
+            "Rent Index": "31.01.00",
+            "Cost of Living Plus Rent Index": "48.38.00",
+            "Groceries Index": "52.19.00",
+            "Restaurant Price Index": "55.06.00",
+            "Local Purchasing Power Index": "111.29.00"
+          },
+          {
+            "Rank": 224,
+            "City": "Edinburgh, United Kingdom",
+            "costOfLivingIndex": "64.08.00",
+            "Rent Index": "33.58.00",
+            "Cost of Living Plus Rent Index": "49.35.00",
+            "Groceries Index": "51.44.00",
+            "Restaurant Price Index": "73.09.00",
+            "Local Purchasing Power Index": "95.25.00"
+          },
+          {
+            "Rank": 225,
+            "City": "Salzburg, Austria",
+            "costOfLivingIndex": "63.32.00",
+            "Rent Index": "29.30.00",
+            "Cost of Living Plus Rent Index": "47.33.00",
+            "Groceries Index": "57.45.00",
+            "Restaurant Price Index": "61.28.00",
+            "Local Purchasing Power Index": "72.15.00"
+          },
+          {
+            "Rank": 226,
+            "City": "Derby, United Kingdom",
+            "costOfLivingIndex": "63.03.00",
+            "Rent Index": 19.07,
+            "Cost of Living Plus Rent Index": "42.31.00",
+            "Groceries Index": "51.29.00",
+            "Restaurant Price Index": "64.47.00",
+            "Local Purchasing Power Index": "103.35.00"
+          },
+          {
+            "Rank": 227,
+            "City": "Leeds, United Kingdom",
+            "costOfLivingIndex": "63.38.00",
+            "Rent Index": "27.35.00",
+            "Cost of Living Plus Rent Index": "46.23.00",
+            "Groceries Index": "52.45.00",
+            "Restaurant Price Index": "64.09.00",
+            "Local Purchasing Power Index": "75.38.00"
+          },
+          {
+            "Rank": 228,
+            "City": "Cincinnati, OH, United States",
+            "costOfLivingIndex": "63.28.00",
+            "Rent Index": "36.08.00",
+            "Cost of Living Plus Rent Index": "50.33.00",
+            "Groceries Index": "63.17.00",
+            "Restaurant Price Index": "59.24.00",
+            "Local Purchasing Power Index": "122.00.00"
+          },
+          {
+            "Rank": 229,
+            "City": "Rome, Italy",
+            "costOfLivingIndex": "63.15.00",
+            "Rent Index": "34.24.00",
+            "Cost of Living Plus Rent Index": "49.38.00",
+            "Groceries Index": "56.14.00",
+            "Restaurant Price Index": "60.05.00",
+            "Local Purchasing Power Index": "49.22.00"
+          },
+          {
+            "Rank": 230,
+            "City": "Hanover, Germany",
+            "costOfLivingIndex": "63.14.00",
+            "Rent Index": 22.43,
+            "Cost of Living Plus Rent Index": "43.55.00",
+            "Groceries Index": "53.28.00",
+            "Restaurant Price Index": "56.06.00",
+            "Local Purchasing Power Index": "89.13.00"
+          },
+          {
+            "Rank": 231,
+            "City": "Mesa, AZ, United States",
+            "costOfLivingIndex": "62.59.00",
+            "Rent Index": "44.34.00",
+            "Cost of Living Plus Rent Index": "54.30.00",
+            "Groceries Index": "61.54.00",
+            "Restaurant Price Index": "66.58.00",
+            "Local Purchasing Power Index": "87.25.00"
+          },
+          {
+            "Rank": 232,
+            "City": "Augsburg, Germany",
+            "costOfLivingIndex": "62.48.00",
+            "Rent Index": "25.01.00",
+            "Cost of Living Plus Rent Index": "45.04.00",
+            "Groceries Index": "47.19.00",
+            "Restaurant Price Index": "59.01.00",
+            "Local Purchasing Power Index": "74.12.00"
+          },
+          {
+            "Rank": 233,
+            "City": "Doha, Qatar",
+            "costOfLivingIndex": "62.37.00",
+            "Rent Index": "50.29.00",
+            "Cost of Living Plus Rent Index": "57.02.00",
+            "Groceries Index": "54.03.00",
+            "Restaurant Price Index": "57.29.00",
+            "Local Purchasing Power Index": "100.15.00"
+          },
+          {
+            "Rank": 234,
+            "City": "Taipei, Taiwan",
+            "costOfLivingIndex": "62.36.00",
+            "Rent Index": 22.21,
+            "Cost of Living Plus Rent Index": "43.24.00",
+            "Groceries Index": "77.39.00",
+            "Restaurant Price Index": "34.35.00",
+            "Local Purchasing Power Index": "58.10.00"
+          },
+          {
+            "Rank": 235,
+            "City": "Verona, Italy",
+            "costOfLivingIndex": "62.21.00",
+            "Rent Index": 18.16,
+            "Cost of Living Plus Rent Index": "41.05.00",
+            "Groceries Index": "57.27.00",
+            "Restaurant Price Index": "60.10.00",
+            "Local Purchasing Power Index": "63.18.00"
+          },
+          {
+            "Rank": 236,
+            "City": "Memphis, TN, United States",
+            "costOfLivingIndex": "62.14.00",
+            "Rent Index": "33.27.00",
+            "Cost of Living Plus Rent Index": "48.21.00",
+            "Groceries Index": "59.01.00",
+            "Restaurant Price Index": "65.16.00",
+            "Local Purchasing Power Index": "145.55.00"
+          },
+          {
+            "Rank": 237,
+            "City": "Dubai, United Arab Emirates",
+            "costOfLivingIndex": "62.13.00",
+            "Rent Index": "44.10.00",
+            "Cost of Living Plus Rent Index": "53.36.00",
+            "Groceries Index": "47.24.00",
+            "Restaurant Price Index": "67.35.00",
+            "Local Purchasing Power Index": "129.40.00"
+          },
+          {
+            "Rank": 238,
+            "City": "San Antonio, TX, United States",
+            "costOfLivingIndex": "62.12.00",
+            "Rent Index": "37.20.00",
+            "Cost of Living Plus Rent Index": "50.26.00",
+            "Groceries Index": "58.21.00",
+            "Restaurant Price Index": "62.33.00",
+            "Local Purchasing Power Index": "145.24.00"
+          },
+          {
+            "Rank": 239,
+            "City": "Cardiff, United Kingdom",
+            "costOfLivingIndex": "62.28.00",
+            "Rent Index": "27.12.00",
+            "Cost of Living Plus Rent Index": "45.14.00",
+            "Groceries Index": "51.33.00",
+            "Restaurant Price Index": "69.38.00",
+            "Local Purchasing Power Index": "82.34.00"
+          },
+          {
+            "Rank": 240,
+            "City": "Albuquerque, NM, United States",
+            "costOfLivingIndex": "62.26.00",
+            "Rent Index": "38.00.00",
+            "Cost of Living Plus Rent Index": "50.50.00",
+            "Groceries Index": "64.36.00",
+            "Restaurant Price Index": "65.04.00",
+            "Local Purchasing Power Index": "145.35.00"
+          },
+          {
+            "Rank": 241,
+            "City": "Birmingham, United Kingdom",
+            "costOfLivingIndex": "62.21.00",
+            "Rent Index": "34.38.00",
+            "Cost of Living Plus Rent Index": "48.56.00",
+            "Groceries Index": "51.06.00",
+            "Restaurant Price Index": "58.08.00",
+            "Local Purchasing Power Index": "85.25.00"
+          },
+          {
+            "Rank": 242,
+            "City": "Bournemouth, United Kingdom",
+            "costOfLivingIndex": "62.13.00",
+            "Rent Index": "33.07.00",
+            "Cost of Living Plus Rent Index": "48.30.00",
+            "Groceries Index": "47.18.00",
+            "Restaurant Price Index": "72.34.00",
+            "Local Purchasing Power Index": "78.33.00"
+          },
+          {
+            "Rank": 243,
+            "City": "Freiburg im Breisgau, Germany",
+            "costOfLivingIndex": "62.03.00",
+            "Rent Index": "32.11.00",
+            "Cost of Living Plus Rent Index": "47.57.00",
+            "Groceries Index": "52.21.00",
+            "Restaurant Price Index": "52.26.00",
+            "Local Purchasing Power Index": "103.38.00"
+          },
+          {
+            "Rank": 244,
+            "City": "Leipzig, Germany",
+            "costOfLivingIndex": "61.59.00",
+            "Rent Index": 22.38,
+            "Cost of Living Plus Rent Index": "43.32.00",
+            "Groceries Index": "51.49.00",
+            "Restaurant Price Index": "52.03.00",
+            "Local Purchasing Power Index": "84.01.00"
+          },
+          {
+            "Rank": 245,
+            "City": "Bremen, Germany",
+            "costOfLivingIndex": "61.55.00",
+            "Rent Index": 20.19,
+            "Cost of Living Plus Rent Index": "42.26.00",
+            "Groceries Index": "54.32.00",
+            "Restaurant Price Index": "54.24.00",
+            "Local Purchasing Power Index": "74.22.00"
+          },
+          {
+            "Rank": 246,
+            "City": "Southampton, United Kingdom",
+            "costOfLivingIndex": "61.49.00",
+            "Rent Index": "29.01.00",
+            "Cost of Living Plus Rent Index": "46.03.00",
+            "Groceries Index": "50.08.00",
+            "Restaurant Price Index": "60.01.00",
+            "Local Purchasing Power Index": "95.32.00"
+          },
+          {
+            "Rank": 247,
+            "City": "Exeter, United Kingdom",
+            "costOfLivingIndex": "61.47.00",
+            "Rent Index": "30.38.00",
+            "Cost of Living Plus Rent Index": "46.48.00",
+            "Groceries Index": "49.40.00",
+            "Restaurant Price Index": "65.22.00",
+            "Local Purchasing Power Index": "92.02.00"
+          },
+          {
+            "Rank": 248,
+            "City": "Lexington, KY, United States",
+            "costOfLivingIndex": "61.20.00",
+            "Rent Index": "33.12.00",
+            "Cost of Living Plus Rent Index": "48.23.00",
+            "Groceries Index": "64.44.00",
+            "Restaurant Price Index": "56.26.00",
+            "Local Purchasing Power Index": "85.07.00"
+          },
+          {
+            "Rank": 249,
+            "City": "Coventry, United Kingdom",
+            "costOfLivingIndex": "61.08.00",
+            "Rent Index": 22.04,
+            "Cost of Living Plus Rent Index": "42.30.00",
+            "Groceries Index": "50.51.00",
+            "Restaurant Price Index": "52.42.00",
+            "Local Purchasing Power Index": "138.01.00"
+          },
+          {
+            "Rank": 250,
+            "City": "Essen, Germany",
+            "costOfLivingIndex": "61.00.00",
+            "Rent Index": 19.06,
+            "Cost of Living Plus Rent Index": "41.24.00",
+            "Groceries Index": "48.39.00",
+            "Restaurant Price Index": "58.47.00",
+            "Local Purchasing Power Index": "88.11.00"
+          },
+          {
+            "Rank": 251,
+            "City": "Treviso, Italy",
+            "costOfLivingIndex": "61.32.00",
+            "Rent Index": 19.06,
+            "Cost of Living Plus Rent Index": "41.20.00",
+            "Groceries Index": "54.19.00",
+            "Restaurant Price Index": "61.36.00",
+            "Local Purchasing Power Index": "56.39.00"
+          },
+          {
+            "Rank": 252,
+            "City": "Tulsa, OK, United States",
+            "costOfLivingIndex": "61.29.00",
+            "Rent Index": "29.00.00",
+            "Cost of Living Plus Rent Index": "45.52.00",
+            "Groceries Index": "58.46.00",
+            "Restaurant Price Index": "53.39.00",
+            "Local Purchasing Power Index": "128.56.00"
+          },
+          {
+            "Rank": 253,
+            "City": "Norwich, United Kingdom",
+            "costOfLivingIndex": "61.03.00",
+            "Rent Index": "27.23.00",
+            "Cost of Living Plus Rent Index": "44.53.00",
+            "Groceries Index": "52.20.00",
+            "Restaurant Price Index": "67.24.00",
+            "Local Purchasing Power Index": "75.09.00"
+          },
+          {
+            "Rank": 254,
+            "City": "Cagliari, Italy",
+            "costOfLivingIndex": "60.45.00",
+            "Rent Index": 16.08,
+            "Cost of Living Plus Rent Index": "39.13.00",
+            "Groceries Index": "52.27.00",
+            "Restaurant Price Index": "57.05.00",
+            "Local Purchasing Power Index": "55.34.00"
+          },
+          {
+            "Rank": 255,
+            "City": "Padova, Italy",
+            "costOfLivingIndex": "60.35.00",
+            "Rent Index": 22.28,
+            "Cost of Living Plus Rent Index": "42.03.00",
+            "Groceries Index": "49.31.00",
+            "Restaurant Price Index": "61.49.00",
+            "Local Purchasing Power Index": "55.35.00"
+          },
+          {
+            "Rank": 256,
+            "City": "Turin, Italy",
+            "costOfLivingIndex": "60.22.00",
+            "Rent Index": 17.48,
+            "Cost of Living Plus Rent Index": "40.06.00",
+            "Groceries Index": "55.11.00",
+            "Restaurant Price Index": "54.47.00",
+            "Local Purchasing Power Index": "63.58.00"
+          },
+          {
+            "Rank": 257,
+            "City": "Limassol, Cyprus",
+            "costOfLivingIndex": "60.07.00",
+            "Rent Index": "31.22.00",
+            "Cost of Living Plus Rent Index": "46.34.00",
+            "Groceries Index": "50.00.00",
+            "Restaurant Price Index": "57.12.00",
+            "Local Purchasing Power Index": "52.11.00"
+          },
+          {
+            "Rank": 258,
+            "City": "Nuremberg, Germany",
+            "costOfLivingIndex": "59.41.00",
+            "Rent Index": 21.37,
+            "Cost of Living Plus Rent Index": "41.30.00",
+            "Groceries Index": "47.18.00",
+            "Restaurant Price Index": "50.37.00",
+            "Local Purchasing Power Index": "118.26.00"
+          },
+          {
+            "Rank": 259,
+            "City": "Little Rock, AR, United States",
+            "costOfLivingIndex": "59.30.00",
+            "Rent Index": "26.39.00",
+            "Cost of Living Plus Rent Index": "43.44.00",
+            "Groceries Index": "59.29.00",
+            "Restaurant Price Index": "60.04.00",
+            "Local Purchasing Power Index": "121.06.00"
+          },
+          {
+            "Rank": 260,
+            "City": "Ramallah, Palestine",
+            "costOfLivingIndex": "59.23.00",
+            "Rent Index": 14.36,
+            "Cost of Living Plus Rent Index": "38.27.00",
+            "Groceries Index": "52.07.00",
+            "Restaurant Price Index": "50.04.00",
+            "Local Purchasing Power Index": "37.23.00"
+          },
+          {
+            "Rank": 261,
+            "City": "Dresden, Germany",
+            "costOfLivingIndex": "59.09.00",
+            "Rent Index": 18.39,
+            "Cost of Living Plus Rent Index": "39.53.00",
+            "Groceries Index": "49.09.00",
+            "Restaurant Price Index": "50.34.00",
+            "Local Purchasing Power Index": "98.17.00"
+          },
+          {
+            "Rank": 262,
+            "City": "Newcastle upon Tyne, United Kingdom",
+            "costOfLivingIndex": "59.09.00",
+            "Rent Index": "25.25.00",
+            "Cost of Living Plus Rent Index": "43.19.00",
+            "Groceries Index": "49.04.00",
+            "Restaurant Price Index": "62.02.00",
+            "Local Purchasing Power Index": "92.10.00"
+          },
+          {
+            "Rank": 263,
+            "City": "Aberdeen, United Kingdom",
+            "costOfLivingIndex": "59.13.00",
+            "Rent Index": 23.1,
+            "Cost of Living Plus Rent Index": "41.58.00",
+            "Groceries Index": "47.18.00",
+            "Restaurant Price Index": "67.57.00",
+            "Local Purchasing Power Index": "104.09.00"
+          },
+          {
+            "Rank": 264,
+            "City": "Bilbao, Spain",
+            "costOfLivingIndex": "58.41.00",
+            "Rent Index": "25.36.00",
+            "Cost of Living Plus Rent Index": "43.08.00",
+            "Groceries Index": "51.31.00",
+            "Restaurant Price Index": "56.02.00",
+            "Local Purchasing Power Index": "67.07.00"
+          },
+          {
+            "Rank": 265,
+            "City": "Sheffield, United Kingdom",
+            "costOfLivingIndex": "58.20.00",
+            "Rent Index": "25.05.00",
+            "Cost of Living Plus Rent Index": "42.22.00",
+            "Groceries Index": "48.14.00",
+            "Restaurant Price Index": "55.28.00",
+            "Local Purchasing Power Index": "79.23.00"
+          },
+          {
+            "Rank": 266,
+            "City": "Stoke-on-Trent, United Kingdom",
+            "costOfLivingIndex": "58.00.00",
+            "Rent Index": 20.37,
+            "Cost of Living Plus Rent Index": "40.08.00",
+            "Groceries Index": "47.47.00",
+            "Restaurant Price Index": "58.24.00",
+            "Local Purchasing Power Index": "92.28.00"
+          },
+          {
+            "Rank": 267,
+            "City": "Dundee, United Kingdom",
+            "costOfLivingIndex": "58.26.00",
+            "Rent Index": 22.4,
+            "Cost of Living Plus Rent Index": "41.38.00",
+            "Groceries Index": "50.25.00",
+            "Restaurant Price Index": "62.00.00",
+            "Local Purchasing Power Index": "80.06.00"
+          },
+          {
+            "Rank": 268,
+            "City": "Larnaca, Cyprus",
+            "costOfLivingIndex": "58.22.00",
+            "Rent Index": 22.36,
+            "Cost of Living Plus Rent Index": "41.15.00",
+            "Groceries Index": "48.29.00",
+            "Restaurant Price Index": "56.36.00",
+            "Local Purchasing Power Index": "49.32.00"
+          },
+          {
+            "Rank": 269,
+            "City": "Wichita, KS, United States",
+            "costOfLivingIndex": "58.13.00",
+            "Rent Index": "29.21.00",
+            "Cost of Living Plus Rent Index": "44.36.00",
+            "Groceries Index": "56.17.00",
+            "Restaurant Price Index": "53.11.00",
+            "Local Purchasing Power Index": "97.22.00"
+          },
+          {
+            "Rank": 270,
+            "City": "Montevideo, Uruguay",
+            "costOfLivingIndex": "58.01.00",
+            "Rent Index": 18.18,
+            "Cost of Living Plus Rent Index": "39.24.00",
+            "Groceries Index": "48.01.00",
+            "Restaurant Price Index": "54.00.00",
+            "Local Purchasing Power Index": "28.48.00"
+          },
+          {
+            "Rank": 271,
+            "City": "Bari, Italy",
+            "costOfLivingIndex": "57.46.00",
+            "Rent Index": 22.05,
+            "Cost of Living Plus Rent Index": "41.01.00",
+            "Groceries Index": "51.28.00",
+            "Restaurant Price Index": "55.46.00",
+            "Local Purchasing Power Index": "55.29.00"
+          },
+          {
+            "Rank": 272,
+            "City": "Leicester, United Kingdom",
+            "costOfLivingIndex": "57.12.00",
+            "Rent Index": "24.45.00",
+            "Cost of Living Plus Rent Index": "41.57.00",
+            "Groceries Index": "47.26.00",
+            "Restaurant Price Index": "62.06.00",
+            "Local Purchasing Power Index": "106.14.00"
+          },
+          {
+            "Rank": 273,
+            "City": "Nicosia, Cyprus",
+            "costOfLivingIndex": "57.37.00",
+            "Rent Index": 19.12,
+            "Cost of Living Plus Rent Index": "39.35.00",
+            "Groceries Index": "49.30.00",
+            "Restaurant Price Index": "55.35.00",
+            "Local Purchasing Power Index": "59.33.00"
+          },
+          {
+            "Rank": 274,
+            "City": "Abu Dhabi, United Arab Emirates",
+            "costOfLivingIndex": "57.13.00",
+            "Rent Index": "53.04.00",
+            "Cost of Living Plus Rent Index": "55.37.00",
+            "Groceries Index": "48.46.00",
+            "Restaurant Price Index": "54.10.00",
+            "Local Purchasing Power Index": "93.58.00"
+          },
+          {
+            "Rank": 275,
+            "City": "Naples, Italy",
+            "costOfLivingIndex": "57.12.00",
+            "Rent Index": 17.56,
+            "Cost of Living Plus Rent Index": "38.07.00",
+            "Groceries Index": "48.36.00",
+            "Restaurant Price Index": "53.42.00",
+            "Local Purchasing Power Index": "56.05.00"
+          },
+          {
+            "Rank": 276,
+            "City": "Aachen, Germany",
+            "costOfLivingIndex": "57.02.00",
+            "Rent Index": 18.4,
+            "Cost of Living Plus Rent Index": "38.42.00",
+            "Groceries Index": "47.29.00",
+            "Restaurant Price Index": "50.38.00",
+            "Local Purchasing Power Index": "120.11.00"
+          },
+          {
+            "Rank": 277,
+            "City": "Port of Spain, Trinidad And Tobago",
+            "costOfLivingIndex": "56.42.00",
+            "Rent Index": 16.32,
+            "Cost of Living Plus Rent Index": "37.33.00",
+            "Groceries Index": "49.14.00",
+            "Restaurant Price Index": "67.35.00",
+            "Local Purchasing Power Index": "42.34.00"
+          },
+          {
+            "Rank": 278,
+            "City": "Barcelona, Spain",
+            "costOfLivingIndex": "56.31.00",
+            "Rent Index": "30.20.00",
+            "Cost of Living Plus Rent Index": "44.09.00",
+            "Groceries Index": "45.54.00",
+            "Restaurant Price Index": "53.32.00",
+            "Local Purchasing Power Index": "71.35.00"
+          },
+          {
+            "Rank": 279,
+            "City": "Male, Maldives",
+            "costOfLivingIndex": "56.00.00",
+            "Rent Index": "27.06.00",
+            "Cost of Living Plus Rent Index": "42.04.00",
+            "Groceries Index": "54.55.00",
+            "Restaurant Price Index": "34.26.00",
+            "Local Purchasing Power Index": "29.38.00"
+          },
+          {
+            "Rank": 280,
+            "City": "Madrid, Spain",
+            "costOfLivingIndex": "56.17.00",
+            "Rent Index": "31.37.00",
+            "Cost of Living Plus Rent Index": "44.36.00",
+            "Groceries Index": "45.38.00",
+            "Restaurant Price Index": "58.31.00",
+            "Local Purchasing Power Index": "68.50.00"
+          },
+          {
+            "Rank": 281,
+            "City": "Kaohsiung, Taiwan",
+            "costOfLivingIndex": "55.42.00",
+            "Rent Index": 13.36,
+            "Cost of Living Plus Rent Index": "35.39.00",
+            "Groceries Index": "68.01.00",
+            "Restaurant Price Index": "25.34.00",
+            "Local Purchasing Power Index": "60.31.00"
+          },
+          {
+            "Rank": 282,
+            "City": "Moscow, Russia",
+            "costOfLivingIndex": "55.12.00",
+            "Rent Index": "33.08.00",
+            "Cost of Living Plus Rent Index": "45.03.00",
+            "Groceries Index": "45.33.00",
+            "Restaurant Price Index": "55.46.00",
+            "Local Purchasing Power Index": "43.03.00"
+          },
+          {
+            "Rank": 283,
+            "City": "Palermo, Italy",
+            "costOfLivingIndex": "55.07.00",
+            "Rent Index": 12.3,
+            "Cost of Living Plus Rent Index": "35.11.00",
+            "Groceries Index": "47.22.00",
+            "Restaurant Price Index": "48.34.00",
+            "Local Purchasing Power Index": "61.27.00"
+          },
+          {
+            "Rank": 284,
+            "City": "Manama, Bahrain",
+            "costOfLivingIndex": "55.38.00",
+            "Rent Index": "29.15.00",
+            "Cost of Living Plus Rent Index": "43.08.00",
+            "Groceries Index": "43.31.00",
+            "Restaurant Price Index": "47.28.00",
+            "Local Purchasing Power Index": "63.36.00"
+          },
+          {
+            "Rank": 285,
+            "City": "Athens, Greece",
+            "costOfLivingIndex": "55.18.00",
+            "Rent Index": 16.34,
+            "Cost of Living Plus Rent Index": "36.48.00",
+            "Groceries Index": "44.22.00",
+            "Restaurant Price Index": "55.45.00",
+            "Local Purchasing Power Index": "37.27.00"
+          },
+          {
+            "Rank": 286,
+            "City": "Havana, Cuba",
+            "costOfLivingIndex": "55.14.00",
+            "Rent Index": 16.06,
+            "Cost of Living Plus Rent Index": "36.14.00",
+            "Groceries Index": "46.02.00",
+            "Restaurant Price Index": "41.00.00",
+            "Local Purchasing Power Index": 1.57
+          },
+          {
+            "Rank": 287,
+            "City": "El Paso, TX, United States",
+            "costOfLivingIndex": "54.34.00",
+            "Rent Index": 21.32,
+            "Cost of Living Plus Rent Index": "38.42.00",
+            "Groceries Index": "53.00.00",
+            "Restaurant Price Index": "46.42.00",
+            "Local Purchasing Power Index": "116.59.00"
+          },
+          {
+            "Rank": 288,
+            "City": "Tallinn, Estonia",
+            "costOfLivingIndex": "54.04.00",
+            "Rent Index": 18.1,
+            "Cost of Living Plus Rent Index": "37.33.00",
+            "Groceries Index": "41.03.00",
+            "Restaurant Price Index": "53.35.00",
+            "Local Purchasing Power Index": "60.29.00"
+          },
+          {
+            "Rank": 289,
+            "City": "Riyadh, Saudi Arabia",
+            "costOfLivingIndex": "53.56.00",
+            "Rent Index": 16.51,
+            "Cost of Living Plus Rent Index": "36.32.00",
+            "Groceries Index": "43.21.00",
+            "Restaurant Price Index": "43.33.00",
+            "Local Purchasing Power Index": "90.24.00"
+          },
+          {
+            "Rank": 290,
+            "City": "Catania, Italy",
+            "costOfLivingIndex": "53.49.00",
+            "Rent Index": 18.55,
+            "Cost of Living Plus Rent Index": "37.26.00",
+            "Groceries Index": "41.22.00",
+            "Restaurant Price Index": "53.00.00",
+            "Local Purchasing Power Index": "49.22.00"
+          },
+          {
+            "Rank": 291,
+            "City": "Ljubljana, Slovenia",
+            "costOfLivingIndex": "53.44.00",
+            "Rent Index": 21.22,
+            "Cost of Living Plus Rent Index": "38.10.00",
+            "Groceries Index": "47.54.00",
+            "Restaurant Price Index": "44.37.00",
+            "Local Purchasing Power Index": "56.16.00"
+          },
+          {
+            "Rank": 292,
+            "City": "Jeddah (Jiddah), Saudi Arabia",
+            "costOfLivingIndex": "53.37.00",
+            "Rent Index": 12.3,
+            "Cost of Living Plus Rent Index": "34.02.00",
+            "Groceries Index": "44.29.00",
+            "Restaurant Price Index": "37.00.00",
+            "Local Purchasing Power Index": "80.26.00"
+          },
+          {
+            "Rank": 293,
+            "City": "Thessaloniki, Greece",
+            "costOfLivingIndex": "53.11.00",
+            "Rent Index": 12.14,
+            "Cost of Living Plus Rent Index": "34.01.00",
+            "Groceries Index": "40.25.00",
+            "Restaurant Price Index": "48.36.00",
+            "Local Purchasing Power Index": "36.13.00"
+          },
+          {
+            "Rank": 294,
+            "City": "Amarillo, TX, United States",
+            "costOfLivingIndex": "53.01.00",
+            "Rent Index": "24.36.00",
+            "Cost of Living Plus Rent Index": "39.37.00",
+            "Groceries Index": "61.27.00",
+            "Restaurant Price Index": "43.07.00",
+            "Local Purchasing Power Index": "121.23.00"
+          },
+          {
+            "Rank": 295,
+            "City": "Dubrovnik, Croatia",
+            "costOfLivingIndex": "53.28.00",
+            "Rent Index": 13.48,
+            "Cost of Living Plus Rent Index": "34.12.00",
+            "Groceries Index": "40.05.00",
+            "Restaurant Price Index": "55.09.00",
+            "Local Purchasing Power Index": "37.21.00"
+          },
+          {
+            "Rank": 296,
+            "City": "Kingston, Jamaica",
+            "costOfLivingIndex": "52.28.00",
+            "Rent Index": 16.55,
+            "Cost of Living Plus Rent Index": "35.27.00",
+            "Groceries Index": "54.16.00",
+            "Restaurant Price Index": "35.14.00",
+            "Local Purchasing Power Index": 22.02
+          },
+          {
+            "Rank": 297,
+            "City": "Muscat, Oman",
+            "costOfLivingIndex": "52.28.00",
+            "Rent Index": 19.02,
+            "Cost of Living Plus Rent Index": "36.23.00",
+            "Groceries Index": "48.02.00",
+            "Restaurant Price Index": "47.16.00",
+            "Local Purchasing Power Index": "77.30.00"
+          },
+          {
+            "Rank": 298,
+            "City": "Heraklion, Greece",
+            "costOfLivingIndex": "52.09.00",
+            "Rent Index": 12.11,
+            "Cost of Living Plus Rent Index": "33.06.00",
+            "Groceries Index": "43.49.00",
+            "Restaurant Price Index": "40.24.00",
+            "Local Purchasing Power Index": "31.27.00"
+          },
+          {
+            "Rank": 299,
+            "City": "Palma de Mallorca, Spain",
+            "costOfLivingIndex": "51.40.00",
+            "Rent Index": "25.46.00",
+            "Cost of Living Plus Rent Index": "39.05.00",
+            "Groceries Index": "42.55.00",
+            "Restaurant Price Index": "52.37.00",
+            "Local Purchasing Power Index": "65.46.00"
+          },
+          {
+            "Rank": 300,
+            "City": "Beijing, China",
+            "costOfLivingIndex": "51.16.00",
+            "Rent Index": "41.25.00",
+            "Cost of Living Plus Rent Index": "46.44.00",
+            "Groceries Index": "51.08.00",
+            "Restaurant Price Index": "34.04.00",
+            "Local Purchasing Power Index": "44.55.00"
+          },
+          {
+            "Rank": 301,
+            "City": "Panama City, Panama",
+            "costOfLivingIndex": "51.25.00",
+            "Rent Index": "24.24.00",
+            "Cost of Living Plus Rent Index": "38.39.00",
+            "Groceries Index": "50.27.00",
+            "Restaurant Price Index": "44.42.00",
+            "Local Purchasing Power Index": "33.37.00"
+          },
+          {
+            "Rank": 302,
+            "City": "Saint Petersburg, Russia",
+            "costOfLivingIndex": "51.00.00",
+            "Rent Index": 21.21,
+            "Cost of Living Plus Rent Index": "36.42.00",
+            "Groceries Index": "43.39.00",
+            "Restaurant Price Index": "45.01.00",
+            "Local Purchasing Power Index": "39.00.00"
+          },
+          {
+            "Rank": 303,
+            "City": "Shanghai, China",
+            "costOfLivingIndex": "50.09.00",
+            "Rent Index": "41.09.00",
+            "Cost of Living Plus Rent Index": "46.02.00",
+            "Groceries Index": "53.31.00",
+            "Restaurant Price Index": "39.29.00",
+            "Local Purchasing Power Index": "48.22.00"
+          },
+          {
+            "Rank": 304,
+            "City": "Makati, Philippines",
+            "costOfLivingIndex": "49.54.00",
+            "Rent Index": "30.13.00",
+            "Cost of Living Plus Rent Index": "40.11.00",
+            "Groceries Index": "54.36.00",
+            "Restaurant Price Index": "28.00.00",
+            "Local Purchasing Power Index": 18.51
+          },
+          {
+            "Rank": 305,
+            "City": "Riga, Latvia",
+            "costOfLivingIndex": "49.45.00",
+            "Rent Index": 13.31,
+            "Cost of Living Plus Rent Index": "32.05.00",
+            "Groceries Index": "37.33.00",
+            "Restaurant Price Index": "47.13.00",
+            "Local Purchasing Power Index": "49.14.00"
+          },
+          {
+            "Rank": 306,
+            "City": "Valencia, Spain",
+            "costOfLivingIndex": "49.41.00",
+            "Rent Index": 22.17,
+            "Cost of Living Plus Rent Index": "36.25.00",
+            "Groceries Index": "44.02.00",
+            "Restaurant Price Index": "49.36.00",
+            "Local Purchasing Power Index": "66.05.00"
+          },
+          {
+            "Rank": 307,
+            "City": "Seville (Sevilla), Spain",
+            "costOfLivingIndex": "49.24.00",
+            "Rent Index": 15.34,
+            "Cost of Living Plus Rent Index": "33.31.00",
+            "Groceries Index": "46.06.00",
+            "Restaurant Price Index": "43.31.00",
+            "Local Purchasing Power Index": "75.39.00"
+          },
+          {
+            "Rank": 308,
+            "City": "Prague, Czech Republic",
+            "costOfLivingIndex": "49.13.00",
+            "Rent Index": "24.24.00",
+            "Cost of Living Plus Rent Index": "37.09.00",
+            "Groceries Index": "42.23.00",
+            "Restaurant Price Index": "38.11.00",
+            "Local Purchasing Power Index": "67.54.00"
+          },
+          {
+            "Rank": 309,
+            "City": "Bratislava, Slovakia",
+            "costOfLivingIndex": "49.03.00",
+            "Rent Index": 19.26,
+            "Cost of Living Plus Rent Index": "35.26.00",
+            "Groceries Index": "45.24.00",
+            "Restaurant Price Index": "40.53.00",
+            "Local Purchasing Power Index": "60.42.00"
+          },
+          {
+            "Rank": 310,
+            "City": "Amman, Jordan",
+            "costOfLivingIndex": "49.26.00",
+            "Rent Index": 10.23,
+            "Cost of Living Plus Rent Index": "30.28.00",
+            "Groceries Index": "40.54.00",
+            "Restaurant Price Index": "42.33.00",
+            "Local Purchasing Power Index": "32.17.00"
+          },
+          {
+            "Rank": 311,
+            "City": "Bangkok, Thailand",
+            "costOfLivingIndex": "49.23.00",
+            "Rent Index": "25.39.00",
+            "Cost of Living Plus Rent Index": "37.48.00",
+            "Groceries Index": "49.14.00",
+            "Restaurant Price Index": 23.42,
+            "Local Purchasing Power Index": "25.46.00"
+          },
+          {
+            "Rank": 312,
+            "City": "Novosibirsk, Russia",
+            "costOfLivingIndex": "48.57.00",
+            "Rent Index": 14.2,
+            "Cost of Living Plus Rent Index": "32.01.00",
+            "Groceries Index": "42.26.00",
+            "Restaurant Price Index": "43.05.00",
+            "Local Purchasing Power Index": "29.49.00"
+          },
+          {
+            "Rank": 313,
+            "City": "Malaga, Spain",
+            "costOfLivingIndex": "48.45.00",
+            "Rent Index": 21.45,
+            "Cost of Living Plus Rent Index": "35.59.00",
+            "Groceries Index": "40.36.00",
+            "Restaurant Price Index": "44.46.00",
+            "Local Purchasing Power Index": "69.39.00"
+          },
+          {
+            "Rank": 314,
+            "City": "Phnom Penh, Cambodia",
+            "costOfLivingIndex": "48.28.00",
+            "Rent Index": 19.01,
+            "Cost of Living Plus Rent Index": "34.15.00",
+            "Groceries Index": "49.28.00",
+            "Restaurant Price Index": 22.36,
+            "Local Purchasing Power Index": 14.18
+          },
+          {
+            "Rank": 315,
+            "City": "Tartu, Estonia",
+            "costOfLivingIndex": "48.18.00",
+            "Rent Index": 13.19,
+            "Cost of Living Plus Rent Index": "31.52.00",
+            "Groceries Index": "41.45.00",
+            "Restaurant Price Index": "46.43.00",
+            "Local Purchasing Power Index": "63.15.00"
+          },
+          {
+            "Rank": 316,
+            "City": "Granada, Spain",
+            "costOfLivingIndex": "48.05.00",
+            "Rent Index": 14.05,
+            "Cost of Living Plus Rent Index": "32.26.00",
+            "Groceries Index": "40.31.00",
+            "Restaurant Price Index": "48.23.00",
+            "Local Purchasing Power Index": "94.28.00"
+          },
+          {
+            "Rank": 317,
+            "City": "Las Palmas de Gran Canaria, Spain",
+            "costOfLivingIndex": "47.50.00",
+            "Rent Index": 21.33,
+            "Cost of Living Plus Rent Index": "35.25.00",
+            "Groceries Index": "44.28.00",
+            "Restaurant Price Index": "44.37.00",
+            "Local Purchasing Power Index": "49.13.00"
+          },
+          {
+            "Rank": 318,
+            "City": "Vilnius, Lithuania",
+            "costOfLivingIndex": "47.48.00",
+            "Rent Index": 19.5,
+            "Cost of Living Plus Rent Index": "34.16.00",
+            "Groceries Index": "37.29.00",
+            "Restaurant Price Index": "46.26.00",
+            "Local Purchasing Power Index": "55.28.00"
+          },
+          {
+            "Rank": 319,
+            "City": "Zagreb, Croatia",
+            "costOfLivingIndex": "47.32.00",
+            "Rent Index": 15.15,
+            "Cost of Living Plus Rent Index": "32.01.00",
+            "Groceries Index": "41.03.00",
+            "Restaurant Price Index": "38.32.00",
+            "Local Purchasing Power Index": "52.19.00"
+          },
+          {
+            "Rank": 320,
+            "City": "Alicante, Spain",
+            "costOfLivingIndex": "47.23.00",
+            "Rent Index": 17.36,
+            "Cost of Living Plus Rent Index": "33.01.00",
+            "Groceries Index": "40.56.00",
+            "Restaurant Price Index": "46.08.00",
+            "Local Purchasing Power Index": "73.48.00"
+          },
+          {
+            "Rank": 321,
+            "City": "Yekaterinburg, Russia",
+            "costOfLivingIndex": "47.10.00",
+            "Rent Index": 13.25,
+            "Cost of Living Plus Rent Index": "31.19.00",
+            "Groceries Index": "44.09.00",
+            "Restaurant Price Index": "40.12.00",
+            "Local Purchasing Power Index": "53.36.00"
+          },
+          {
+            "Rank": 322,
+            "City": "Shenzhen, China",
+            "costOfLivingIndex": "47.01.00",
+            "Rent Index": "24.11.00",
+            "Cost of Living Plus Rent Index": "36.32.00",
+            "Groceries Index": "50.35.00",
+            "Restaurant Price Index": "31.51.00",
+            "Local Purchasing Power Index": "69.25.00"
+          },
+          {
+            "Rank": 323,
+            "City": "Brno, Czech Republic",
+            "costOfLivingIndex": "47.25.00",
+            "Rent Index": 19.51,
+            "Cost of Living Plus Rent Index": "34.24.00",
+            "Groceries Index": "39.16.00",
+            "Restaurant Price Index": "35.34.00",
+            "Local Purchasing Power Index": "63.55.00"
+          },
+          {
+            "Rank": 324,
+            "City": "Santo Domingo, Dominican Republic",
+            "costOfLivingIndex": "47.20.00",
+            "Rent Index": 11.15,
+            "Cost of Living Plus Rent Index": "30.22.00",
+            "Groceries Index": "42.11.00",
+            "Restaurant Price Index": "39.17.00",
+            "Local Purchasing Power Index": 20.36
+          },
+          {
+            "Rank": 325,
+            "City": "Georgetown, Guyana",
+            "costOfLivingIndex": "47.17.00",
+            "Rent Index": 9.57,
+            "Cost of Living Plus Rent Index": "29.05.00",
+            "Groceries Index": "51.37.00",
+            "Restaurant Price Index": "36.23.00",
+            "Local Purchasing Power Index": 20.1
+          },
+          {
+            "Rank": 326,
+            "City": "Zaragoza (Saragossa), Spain",
+            "costOfLivingIndex": "47.15.00",
+            "Rent Index": 16.56,
+            "Cost of Living Plus Rent Index": "32.38.00",
+            "Groceries Index": "42.12.00",
+            "Restaurant Price Index": "42.59.00",
+            "Local Purchasing Power Index": "84.20.00"
+          },
+          {
+            "Rank": 327,
+            "City": "Maribor, Slovenia",
+            "costOfLivingIndex": "47.05.00",
+            "Rent Index": 12.54,
+            "Cost of Living Plus Rent Index": "30.41.00",
+            "Groceries Index": "41.18.00",
+            "Restaurant Price Index": "37.01.00",
+            "Local Purchasing Power Index": "70.18.00"
+          },
+          {
+            "Rank": 328,
+            "City": "Ad Dammam, Saudi Arabia",
+            "costOfLivingIndex": "46.56.00",
+            "Rent Index": 13.13,
+            "Cost of Living Plus Rent Index": "31.05.00",
+            "Groceries Index": "41.40.00",
+            "Restaurant Price Index": "31.59.00",
+            "Local Purchasing Power Index": "102.46.00"
+          },
+          {
+            "Rank": 329,
+            "City": "Faro, Portugal",
+            "costOfLivingIndex": "46.50.00",
+            "Rent Index": "25.48.00",
+            "Cost of Living Plus Rent Index": "36.49.00",
+            "Groceries Index": "37.10.00",
+            "Restaurant Price Index": "42.27.00",
+            "Local Purchasing Power Index": "48.54.00"
+          },
+          {
+            "Rank": 330,
+            "City": "Addis Ababa, Ethiopia",
+            "costOfLivingIndex": "46.34.00",
+            "Rent Index": 17.59,
+            "Cost of Living Plus Rent Index": "33.05.00",
+            "Groceries Index": "35.12.00",
+            "Restaurant Price Index": 23.02,
+            "Local Purchasing Power Index": 10.02
+          },
+          {
+            "Rank": 331,
+            "City": "Sharjah, United Arab Emirates",
+            "costOfLivingIndex": "46.33.00",
+            "Rent Index": "66.46.00",
+            "Cost of Living Plus Rent Index": "56.31.00",
+            "Groceries Index": "40.02.00",
+            "Restaurant Price Index": "34.58.00",
+            "Local Purchasing Power Index": "40.54.00"
+          },
+          {
+            "Rank": 332,
+            "City": "Kuwait City, Kuwait",
+            "costOfLivingIndex": "46.20.00",
+            "Rent Index": "28.50.00",
+            "Cost of Living Plus Rent Index": "38.18.00",
+            "Groceries Index": "34.37.00",
+            "Restaurant Price Index": "41.16.00",
+            "Local Purchasing Power Index": "62.06.00"
+          },
+          {
+            "Rank": 333,
+            "City": "Dakar, Senegal",
+            "costOfLivingIndex": "46.09.00",
+            "Rent Index": 23.3,
+            "Cost of Living Plus Rent Index": "35.05.00",
+            "Groceries Index": "40.30.00",
+            "Restaurant Price Index": "44.41.00",
+            "Local Purchasing Power Index": 19.12
+          },
+          {
+            "Rank": 334,
+            "City": "Santa Cruz de Tenerife, Spain",
+            "costOfLivingIndex": "46.05.00",
+            "Rent Index": 19.39,
+            "Cost of Living Plus Rent Index": "33.17.00",
+            "Groceries Index": "39.59.00",
+            "Restaurant Price Index": "47.25.00",
+            "Local Purchasing Power Index": "74.38.00"
+          },
+          {
+            "Rank": 335,
+            "City": "Murcia, Spain",
+            "costOfLivingIndex": "46.00.00",
+            "Rent Index": 15.24,
+            "Cost of Living Plus Rent Index": "31.35.00",
+            "Groceries Index": "39.34.00",
+            "Restaurant Price Index": "45.25.00",
+            "Local Purchasing Power Index": "70.53.00"
+          },
+          {
+            "Rank": 336,
+            "City": "Lisbon, Portugal",
+            "costOfLivingIndex": "46.26.00",
+            "Rent Index": "28.10.00",
+            "Cost of Living Plus Rent Index": "37.21.00",
+            "Groceries Index": "35.56.00",
+            "Restaurant Price Index": "42.55.00",
+            "Local Purchasing Power Index": "45.11.00"
+          },
+          {
+            "Rank": 337,
+            "City": "Ostrava, Czech Republic",
+            "costOfLivingIndex": "46.19.00",
+            "Rent Index": 15.29,
+            "Cost of Living Plus Rent Index": "31.08.00",
+            "Groceries Index": "38.32.00",
+            "Restaurant Price Index": "31.17.00",
+            "Local Purchasing Power Index": "61.51.00"
+          },
+          {
+            "Rank": 338,
+            "City": "Porto, Portugal",
+            "costOfLivingIndex": "45.50.00",
+            "Rent Index": 21.43,
+            "Cost of Living Plus Rent Index": "34.04.00",
+            "Groceries Index": "37.18.00",
+            "Restaurant Price Index": "39.34.00",
+            "Local Purchasing Power Index": "47.02.00"
+          },
+          {
+            "Rank": 339,
+            "City": "San Jose, Costa Rica",
+            "costOfLivingIndex": "45.34.00",
+            "Rent Index": 18.39,
+            "Cost of Living Plus Rent Index": "32.51.00",
+            "Groceries Index": "44.14.00",
+            "Restaurant Price Index": "39.36.00",
+            "Local Purchasing Power Index": "37.04.00"
+          },
+          {
+            "Rank": 340,
+            "City": "Kosice, Slovakia",
+            "costOfLivingIndex": "45.29.00",
+            "Rent Index": 15.33,
+            "Cost of Living Plus Rent Index": "31.03.00",
+            "Groceries Index": "40.55.00",
+            "Restaurant Price Index": "37.18.00",
+            "Local Purchasing Power Index": "47.49.00"
+          },
+          {
+            "Rank": 341,
+            "City": "San Salvador, El Salvador",
+            "costOfLivingIndex": "45.28.00",
+            "Rent Index": 14.49,
+            "Cost of Living Plus Rent Index": "31.02.00",
+            "Groceries Index": "45.39.00",
+            "Restaurant Price Index": "35.26.00",
+            "Local Purchasing Power Index": 20.57
+          },
+          {
+            "Rank": 342,
+            "City": "Split, Croatia",
+            "costOfLivingIndex": "45.23.00",
+            "Rent Index": 15.16,
+            "Cost of Living Plus Rent Index": "31.12.00",
+            "Groceries Index": "39.35.00",
+            "Restaurant Price Index": "37.11.00",
+            "Local Purchasing Power Index": "45.51.00"
+          },
+          {
+            "Rank": 343,
+            "City": "Funchal, Portugal",
+            "costOfLivingIndex": "45.37.00",
+            "Rent Index": 22.27,
+            "Cost of Living Plus Rent Index": "34.37.00",
+            "Groceries Index": "35.00.00",
+            "Restaurant Price Index": "34.21.00",
+            "Local Purchasing Power Index": "51.29.00"
+          },
+          {
+            "Rank": 344,
+            "City": "Krasnodar, Russia",
+            "costOfLivingIndex": "45.18.00",
+            "Rent Index": 9.21,
+            "Cost of Living Plus Rent Index": "28.24.00",
+            "Groceries Index": "36.58.00",
+            "Restaurant Price Index": "46.34.00",
+            "Local Purchasing Power Index": "32.01.00"
+          },
+          {
+            "Rank": 345,
+            "City": "Caracas, Venezuela",
+            "costOfLivingIndex": "44.30.00",
+            "Rent Index": 11.01,
+            "Cost of Living Plus Rent Index": "28.45.00",
+            "Groceries Index": "36.26.00",
+            "Restaurant Price Index": "44.01.00",
+            "Local Purchasing Power Index": 13.05
+          },
+          {
+            "Rank": 346,
+            "City": "Rijeka, Croatia",
+            "costOfLivingIndex": "44.39.00",
+            "Rent Index": 12.12,
+            "Cost of Living Plus Rent Index": "29.03.00",
+            "Groceries Index": "40.16.00",
+            "Restaurant Price Index": "37.29.00",
+            "Local Purchasing Power Index": "45.49.00"
+          },
+          {
+            "Rank": 347,
+            "City": "Harare, Zimbabwe",
+            "costOfLivingIndex": "44.05.00",
+            "Rent Index": 10.38,
+            "Cost of Living Plus Rent Index": "28.21.00",
+            "Groceries Index": "35.38.00",
+            "Restaurant Price Index": "38.27.00",
+            "Local Purchasing Power Index": 17.48
+          },
+          {
+            "Rank": 348,
+            "City": "Guatemala City, Guatemala",
+            "costOfLivingIndex": "43.16.00",
+            "Rent Index": 17.03,
+            "Cost of Living Plus Rent Index": "30.53.00",
+            "Groceries Index": "40.11.00",
+            "Restaurant Price Index": "32.16.00",
+            "Local Purchasing Power Index": "24.17.00"
+          },
+          {
+            "Rank": 349,
+            "City": "Coimbra, Portugal",
+            "costOfLivingIndex": "43.16.00",
+            "Rent Index": 14.24,
+            "Cost of Living Plus Rent Index": "29.20.00",
+            "Groceries Index": "36.00.00",
+            "Restaurant Price Index": "34.25.00",
+            "Local Purchasing Power Index": "62.10.00"
+          },
+          {
+            "Rank": 350,
+            "City": "Hangzhou, China",
+            "costOfLivingIndex": "43.14.00",
+            "Rent Index": 17.37,
+            "Cost of Living Plus Rent Index": "31.08.00",
+            "Groceries Index": "52.09.00",
+            "Restaurant Price Index": "31.03.00",
+            "Local Purchasing Power Index": "68.22.00"
+          },
+          {
+            "Rank": 351,
+            "City": "Sofia, Bulgaria",
+            "costOfLivingIndex": "43.12.00",
+            "Rent Index": 13.4,
+            "Cost of Living Plus Rent Index": "29.37.00",
+            "Groceries Index": "37.31.00",
+            "Restaurant Price Index": "38.32.00",
+            "Local Purchasing Power Index": "49.48.00"
+          },
+          {
+            "Rank": 352,
+            "City": "Santiago, Chile",
+            "costOfLivingIndex": "43.10.00",
+            "Rent Index": 14.39,
+            "Cost of Living Plus Rent Index": "29.24.00",
+            "Groceries Index": "39.39.00",
+            "Restaurant Price Index": "42.49.00",
+            "Local Purchasing Power Index": "34.37.00"
+          },
+          {
+            "Rank": 353,
+            "City": "Kaunas, Lithuania",
+            "costOfLivingIndex": "43.19.00",
+            "Rent Index": 12.17,
+            "Cost of Living Plus Rent Index": "28.02.00",
+            "Groceries Index": "35.21.00",
+            "Restaurant Price Index": "40.23.00",
+            "Local Purchasing Power Index": "63.19.00"
+          },
+          {
+            "Rank": 354,
+            "City": "Braga, Portugal",
+            "costOfLivingIndex": "43.14.00",
+            "Rent Index": 16.17,
+            "Cost of Living Plus Rent Index": "30.30.00",
+            "Groceries Index": "35.59.00",
+            "Restaurant Price Index": "34.17.00",
+            "Local Purchasing Power Index": "43.27.00"
+          },
+          {
+            "Rank": 355,
+            "City": "Nizhny Novgorod, Russia",
+            "costOfLivingIndex": "43.08.00",
+            "Rent Index": 11.24,
+            "Cost of Living Plus Rent Index": "28.11.00",
+            "Groceries Index": "39.37.00",
+            "Restaurant Price Index": "36.26.00",
+            "Local Purchasing Power Index": "36.13.00"
+          },
+          {
+            "Rank": 356,
+            "City": "Sao Paulo, Brazil",
+            "costOfLivingIndex": "42.46.00",
+            "Rent Index": 16.14,
+            "Cost of Living Plus Rent Index": "30.14.00",
+            "Groceries Index": "36.12.00",
+            "Restaurant Price Index": "35.10.00",
+            "Local Purchasing Power Index": "28.15.00"
+          },
+          {
+            "Rank": 357,
+            "City": "Gdynia, Poland",
+            "costOfLivingIndex": "42.38.00",
+            "Rent Index": 13.34,
+            "Cost of Living Plus Rent Index": "28.55.00",
+            "Groceries Index": "33.53.00",
+            "Restaurant Price Index": "36.53.00",
+            "Local Purchasing Power Index": "54.30.00"
+          },
+          {
+            "Rank": 358,
+            "City": "Aveiro, Portugal",
+            "costOfLivingIndex": "42.33.00",
+            "Rent Index": 17.46,
+            "Cost of Living Plus Rent Index": "30.49.00",
+            "Groceries Index": "35.11.00",
+            "Restaurant Price Index": "33.34.00",
+            "Local Purchasing Power Index": "45.04.00"
+          },
+          {
+            "Rank": 359,
+            "City": "Suzhou, China",
+            "costOfLivingIndex": "42.23.00",
+            "Rent Index": 15.32,
+            "Cost of Living Plus Rent Index": "29.42.00",
+            "Groceries Index": "50.25.00",
+            "Restaurant Price Index": "31.25.00",
+            "Local Purchasing Power Index": "51.11.00"
+          },
+          {
+            "Rank": 360,
+            "City": "Quezon City, Philippines",
+            "costOfLivingIndex": "42.03.00",
+            "Rent Index": 12.39,
+            "Cost of Living Plus Rent Index": "28.13.00",
+            "Groceries Index": "41.30.00",
+            "Restaurant Price Index": "25.04.00",
+            "Local Purchasing Power Index": 18.12
+          },
+          {
+            "Rank": 361,
+            "City": "Rostov-na-donu, Russia",
+            "costOfLivingIndex": "42.38.00",
+            "Rent Index": 10.57,
+            "Cost of Living Plus Rent Index": "27.03.00",
+            "Groceries Index": "38.26.00",
+            "Restaurant Price Index": "37.12.00",
+            "Local Purchasing Power Index": "28.27.00"
+          },
+          {
+            "Rank": 362,
+            "City": "Klaipeda, Lithuania",
+            "costOfLivingIndex": "42.34.00",
+            "Rent Index": 10.16,
+            "Cost of Living Plus Rent Index": "27.21.00",
+            "Groceries Index": "33.55.00",
+            "Restaurant Price Index": "35.10.00",
+            "Local Purchasing Power Index": "63.26.00"
+          },
+          {
+            "Rank": 363,
+            "City": "Phuket, Thailand",
+            "costOfLivingIndex": "42.01.00",
+            "Rent Index": 15.17,
+            "Cost of Living Plus Rent Index": "29.23.00",
+            "Groceries Index": "43.18.00",
+            "Restaurant Price Index": "27.10.00",
+            "Local Purchasing Power Index": "26.21.00"
+          },
+          {
+            "Rank": 364,
+            "City": "Johannesburg, South Africa",
+            "costOfLivingIndex": "41.47.00",
+            "Rent Index": 15.16,
+            "Cost of Living Plus Rent Index": "29.34.00",
+            "Groceries Index": "34.08.00",
+            "Restaurant Price Index": "37.11.00",
+            "Local Purchasing Power Index": "83.15.00"
+          },
+          {
+            "Rank": 365,
+            "City": "Brasilia, Brazil",
+            "costOfLivingIndex": "41.40.00",
+            "Rent Index": 12.33,
+            "Cost of Living Plus Rent Index": "27.37.00",
+            "Groceries Index": "34.59.00",
+            "Restaurant Price Index": "34.33.00",
+            "Local Purchasing Power Index": "37.39.00"
+          },
+          {
+            "Rank": 366,
+            "City": "Abidjan, Ivory Coast",
+            "costOfLivingIndex": "41.02.00",
+            "Rent Index": 16.59,
+            "Cost of Living Plus Rent Index": "29.39.00",
+            "Groceries Index": "36.42.00",
+            "Restaurant Price Index": "26.43.00",
+            "Local Purchasing Power Index": 7.15
+          },
+          {
+            "Rank": 367,
+            "City": "Pretoria, South Africa",
+            "costOfLivingIndex": "41.36.00",
+            "Rent Index": 13.47,
+            "Cost of Living Plus Rent Index": "28.27.00",
+            "Groceries Index": "33.39.00",
+            "Restaurant Price Index": "33.47.00",
+            "Local Purchasing Power Index": "82.11.00"
+          },
+          {
+            "Rank": 368,
+            "City": "Bucharest, Romania",
+            "costOfLivingIndex": "41.05.00",
+            "Rent Index": 13.48,
+            "Cost of Living Plus Rent Index": "28.11.00",
+            "Groceries Index": "34.49.00",
+            "Restaurant Price Index": "38.10.00",
+            "Local Purchasing Power Index": "47.21.00"
+          },
+          {
+            "Rank": 369,
+            "City": "Bursa, Turkey",
+            "costOfLivingIndex": "41.02.00",
+            "Rent Index": 4.28,
+            "Cost of Living Plus Rent Index": 23.32,
+            "Groceries Index": "27.10.00",
+            "Restaurant Price Index": "42.30.00",
+            "Local Purchasing Power Index": 21.34
+          },
+          {
+            "Rank": 370,
+            "City": "Rio de Janeiro, Brazil",
+            "costOfLivingIndex": "40.53.00",
+            "Rent Index": 12.39,
+            "Cost of Living Plus Rent Index": "27.34.00",
+            "Groceries Index": "34.59.00",
+            "Restaurant Price Index": "30.54.00",
+            "Local Purchasing Power Index": 21.14
+          },
+          {
+            "Rank": 371,
+            "City": "Tijuana, Mexico",
+            "costOfLivingIndex": "40.38.00",
+            "Rent Index": 17.03,
+            "Cost of Living Plus Rent Index": "29.27.00",
+            "Groceries Index": "33.13.00",
+            "Restaurant Price Index": "41.37.00",
+            "Local Purchasing Power Index": "40.59.00"
+          },
+          {
+            "Rank": 372,
+            "City": "Gaborone, Botswana",
+            "costOfLivingIndex": "40.25.00",
+            "Rent Index": 10.13,
+            "Cost of Living Plus Rent Index": "26.31.00",
+            "Groceries Index": "34.42.00",
+            "Restaurant Price Index": "44.51.00",
+            "Local Purchasing Power Index": "49.15.00"
+          },
+          {
+            "Rank": 373,
+            "City": "Budapest, Hungary",
+            "costOfLivingIndex": "40.18.00",
+            "Rent Index": 13.44,
+            "Cost of Living Plus Rent Index": "27.45.00",
+            "Groceries Index": "35.00.00",
+            "Restaurant Price Index": "36.14.00",
+            "Local Purchasing Power Index": "55.24.00"
+          },
+          {
+            "Rank": 374,
+            "City": "Monterrey, Mexico",
+            "costOfLivingIndex": "40.38.00",
+            "Rent Index": 16.14,
+            "Cost of Living Plus Rent Index": "28.44.00",
+            "Groceries Index": "39.06.00",
+            "Restaurant Price Index": "40.21.00",
+            "Local Purchasing Power Index": "47.12.00"
+          },
+          {
+            "Rank": 375,
+            "City": "Bali, Indonesia",
+            "costOfLivingIndex": "40.26.00",
+            "Rent Index": 16.49,
+            "Cost of Living Plus Rent Index": "29.13.00",
+            "Groceries Index": "44.05.00",
+            "Restaurant Price Index": 21.04,
+            "Local Purchasing Power Index": 15.2
+          },
+          {
+            "Rank": 376,
+            "City": "Durban, South Africa",
+            "costOfLivingIndex": "40.19.00",
+            "Rent Index": 12.58,
+            "Cost of Living Plus Rent Index": "27.23.00",
+            "Groceries Index": "32.43.00",
+            "Restaurant Price Index": "37.23.00",
+            "Local Purchasing Power Index": "73.00.00"
+          },
+          {
+            "Rank": 377,
+            "City": "Wroclaw, Poland",
+            "costOfLivingIndex": "40.15.00",
+            "Rent Index": 16.05,
+            "Cost of Living Plus Rent Index": "28.47.00",
+            "Groceries Index": "33.35.00",
+            "Restaurant Price Index": "33.29.00",
+            "Local Purchasing Power Index": "55.23.00"
+          },
+          {
+            "Rank": 378,
+            "City": "Cape Town, South Africa",
+            "costOfLivingIndex": "40.14.00",
+            "Rent Index": 22.35,
+            "Cost of Living Plus Rent Index": "31.27.00",
+            "Groceries Index": "34.33.00",
+            "Restaurant Price Index": "37.00.00",
+            "Local Purchasing Power Index": "68.53.00"
+          },
+          {
+            "Rank": 379,
+            "City": "Katowice, Poland",
+            "costOfLivingIndex": "40.07.00",
+            "Rent Index": 12.33,
+            "Cost of Living Plus Rent Index": "27.05.00",
+            "Groceries Index": "33.43.00",
+            "Restaurant Price Index": "32.32.00",
+            "Local Purchasing Power Index": "62.06.00"
+          },
+          {
+            "Rank": 380,
+            "City": "Lagos, Nigeria",
+            "costOfLivingIndex": "39.58.00",
+            "Rent Index": "59.23.00",
+            "Cost of Living Plus Rent Index": "49.34.00",
+            "Groceries Index": "41.37.00",
+            "Restaurant Price Index": "34.12.00",
+            "Local Purchasing Power Index": 7.4
+          },
+          {
+            "Rank": 381,
+            "City": "Warsaw, Poland",
+            "costOfLivingIndex": "39.55.00",
+            "Rent Index": 19.04,
+            "Cost of Living Plus Rent Index": "30.00.00",
+            "Groceries Index": "32.22.00",
+            "Restaurant Price Index": "35.38.00",
+            "Local Purchasing Power Index": "63.06.00"
+          },
+          {
+            "Rank": 382,
+            "City": "Manila, Philippines",
+            "costOfLivingIndex": "39.49.00",
+            "Rent Index": 22.21,
+            "Cost of Living Plus Rent Index": "31.08.00",
+            "Groceries Index": "39.21.00",
+            "Restaurant Price Index": "25.25.00",
+            "Local Purchasing Power Index": 22.48
+          },
+          {
+            "Rank": 383,
+            "City": "Chengdu, China",
+            "costOfLivingIndex": "39.20.00",
+            "Rent Index": 12.37,
+            "Cost of Living Plus Rent Index": "26.42.00",
+            "Groceries Index": "45.52.00",
+            "Restaurant Price Index": "24.18.00",
+            "Local Purchasing Power Index": "54.39.00"
+          },
+          {
+            "Rank": 384,
+            "City": "Mexico City, Mexico",
+            "costOfLivingIndex": "39.14.00",
+            "Rent Index": 21.04,
+            "Cost of Living Plus Rent Index": "30.33.00",
+            "Groceries Index": "38.20.00",
+            "Restaurant Price Index": "36.02.00",
+            "Local Purchasing Power Index": "35.17.00"
+          },
+          {
+            "Rank": 385,
+            "City": "Cluj-Napoca, Romania",
+            "costOfLivingIndex": "39.11.00",
+            "Rent Index": 13.42,
+            "Cost of Living Plus Rent Index": "27.28.00",
+            "Groceries Index": "34.25.00",
+            "Restaurant Price Index": "34.24.00",
+            "Local Purchasing Power Index": "50.23.00"
+          },
+          {
+            "Rank": 386,
+            "City": "Cancun, Mexico",
+            "costOfLivingIndex": "39.04.00",
+            "Rent Index": 15.15,
+            "Cost of Living Plus Rent Index": "27.48.00",
+            "Groceries Index": "36.48.00",
+            "Restaurant Price Index": "40.08.00",
+            "Local Purchasing Power Index": "36.54.00"
+          },
+          {
+            "Rank": 387,
+            "City": "Krakow (Cracow), Poland",
+            "costOfLivingIndex": "39.03.00",
+            "Rent Index": 15.33,
+            "Cost of Living Plus Rent Index": "28.15.00",
+            "Groceries Index": "32.05.00",
+            "Restaurant Price Index": "34.35.00",
+            "Local Purchasing Power Index": "59.03.00"
+          },
+          {
+            "Rank": 388,
+            "City": "Osijek, Croatia",
+            "costOfLivingIndex": "39.02.00",
+            "Rent Index": 8.32,
+            "Cost of Living Plus Rent Index": "24.41.00",
+            "Groceries Index": "33.43.00",
+            "Restaurant Price Index": "30.25.00",
+            "Local Purchasing Power Index": "53.02.00"
+          },
+          {
+            "Rank": 389,
+            "City": "Constanta, Romania",
+            "costOfLivingIndex": "39.28.00",
+            "Rent Index": 12.29,
+            "Cost of Living Plus Rent Index": "26.03.00",
+            "Groceries Index": "33.39.00",
+            "Restaurant Price Index": "30.18.00",
+            "Local Purchasing Power Index": "39.41.00"
+          },
+          {
+            "Rank": 390,
+            "City": "Ho Chi Minh City, Vietnam",
+            "costOfLivingIndex": "39.12.00",
+            "Rent Index": 16.26,
+            "Cost of Living Plus Rent Index": "28.03.00",
+            "Groceries Index": "40.23.00",
+            "Restaurant Price Index": 21.08,
+            "Local Purchasing Power Index": "32.32.00"
+          },
+          {
+            "Rank": 391,
+            "City": "Tirana, Albania",
+            "costOfLivingIndex": "39.10.00",
+            "Rent Index": 11.17,
+            "Cost of Living Plus Rent Index": "25.59.00",
+            "Groceries Index": "31.14.00",
+            "Restaurant Price Index": "29.12.00",
+            "Local Purchasing Power Index": "28.01.00"
+          },
+          {
+            "Rank": 392,
+            "City": "Pattaya, Thailand",
+            "costOfLivingIndex": "39.02.00",
+            "Rent Index": 13.06,
+            "Cost of Living Plus Rent Index": "26.26.00",
+            "Groceries Index": "40.16.00",
+            "Restaurant Price Index": 22.08,
+            "Local Purchasing Power Index": 23.05
+          },
+          {
+            "Rank": 393,
+            "City": "Quito, Ecuador",
+            "costOfLivingIndex": "39.02.00",
+            "Rent Index": 11.29,
+            "Cost of Living Plus Rent Index": "26.00.00",
+            "Groceries Index": "36.40.00",
+            "Restaurant Price Index": "33.06.00",
+            "Local Purchasing Power Index": "29.27.00"
+          },
+          {
+            "Rank": 394,
+            "City": "Guangzhou, China",
+            "costOfLivingIndex": "39.01.00",
+            "Rent Index": 19.38,
+            "Cost of Living Plus Rent Index": "29.46.00",
+            "Groceries Index": "40.30.00",
+            "Restaurant Price Index": "24.39.00",
+            "Local Purchasing Power Index": "77.23.00"
+          },
+          {
+            "Rank": 395,
+            "City": "Florianopolis, Brazil",
+            "costOfLivingIndex": "38.43.00",
+            "Rent Index": 11.37,
+            "Cost of Living Plus Rent Index": "25.54.00",
+            "Groceries Index": "32.15.00",
+            "Restaurant Price Index": "33.55.00",
+            "Local Purchasing Power Index": "26.17.00"
+          },
+          {
+            "Rank": 396,
+            "City": "Belgrade, Serbia",
+            "costOfLivingIndex": "38.34.00",
+            "Rent Index": 13.59,
+            "Cost of Living Plus Rent Index": "26.55.00",
+            "Groceries Index": "29.34.00",
+            "Restaurant Price Index": "34.41.00",
+            "Local Purchasing Power Index": "37.02.00"
+          },
+          {
+            "Rank": 397,
+            "City": "Plovdiv, Bulgaria",
+            "costOfLivingIndex": "38.30.00",
+            "Rent Index": 8.47,
+            "Cost of Living Plus Rent Index": "24.10.00",
+            "Groceries Index": "35.52.00",
+            "Restaurant Price Index": "33.53.00",
+            "Local Purchasing Power Index": "45.01.00"
+          },
+          {
+            "Rank": 398,
+            "City": "Chiang Mai, Thailand",
+            "costOfLivingIndex": "38.30.00",
+            "Rent Index": 11.12,
+            "Cost of Living Plus Rent Index": "25.15.00",
+            "Groceries Index": "43.29.00",
+            "Restaurant Price Index": 16.16,
+            "Local Purchasing Power Index": "33.12.00"
+          },
+          {
+            "Rank": 399,
+            "City": "Cuenca, Ecuador",
+            "costOfLivingIndex": "38.25.00",
+            "Rent Index": 11.48,
+            "Cost of Living Plus Rent Index": "25.30.00",
+            "Groceries Index": "36.40.00",
+            "Restaurant Price Index": "28.49.00",
+            "Local Purchasing Power Index": "28.29.00"
+          },
+          {
+            "Rank": 400,
+            "City": "Kuala Lumpur, Malaysia",
+            "costOfLivingIndex": "38.22.00",
+            "Rent Index": 12.09,
+            "Cost of Living Plus Rent Index": "25.57.00",
+            "Groceries Index": "41.24.00",
+            "Restaurant Price Index": 22.21,
+            "Local Purchasing Power Index": "69.46.00"
+          },
+          {
+            "Rank": 401,
+            "City": "Poznan, Poland",
+            "costOfLivingIndex": "37.50.00",
+            "Rent Index": 13.55,
+            "Cost of Living Plus Rent Index": "26.10.00",
+            "Groceries Index": "29.58.00",
+            "Restaurant Price Index": "32.09.00",
+            "Local Purchasing Power Index": "55.54.00"
+          },
+          {
+            "Rank": 402,
+            "City": "Cebu, Philippines",
+            "costOfLivingIndex": "37.41.00",
+            "Rent Index": 13.19,
+            "Cost of Living Plus Rent Index": "26.28.00",
+            "Groceries Index": "41.33.00",
+            "Restaurant Price Index": 22.29,
+            "Local Purchasing Power Index": 17.02
+          },
+          {
+            "Rank": 403,
+            "City": "Gdansk, Poland",
+            "costOfLivingIndex": "37.27.00",
+            "Rent Index": 15.35,
+            "Cost of Living Plus Rent Index": "27.23.00",
+            "Groceries Index": "31.01.00",
+            "Restaurant Price Index": "33.35.00",
+            "Local Purchasing Power Index": "61.36.00"
+          },
+          {
+            "Rank": 404,
+            "City": "Jakarta, Indonesia",
+            "costOfLivingIndex": "37.21.00",
+            "Rent Index": 14.17,
+            "Cost of Living Plus Rent Index": "26.05.00",
+            "Groceries Index": "41.21.00",
+            "Restaurant Price Index": 20.37,
+            "Local Purchasing Power Index": "31.34.00"
+          },
+          {
+            "Rank": 405,
+            "City": "Varna, Bulgaria",
+            "costOfLivingIndex": "37.13.00",
+            "Rent Index": 8.45,
+            "Cost of Living Plus Rent Index": 23.48,
+            "Groceries Index": "32.06.00",
+            "Restaurant Price Index": "32.56.00",
+            "Local Purchasing Power Index": "47.09.00"
+          },
+          {
+            "Rank": 406,
+            "City": "Szczecin, Poland",
+            "costOfLivingIndex": "37.12.00",
+            "Rent Index": 14.03,
+            "Cost of Living Plus Rent Index": "26.34.00",
+            "Groceries Index": "31.09.00",
+            "Restaurant Price Index": "32.46.00",
+            "Local Purchasing Power Index": "53.15.00"
+          },
+          {
+            "Rank": 407,
+            "City": "Belo Horizonte, Brazil",
+            "costOfLivingIndex": "37.09.00",
+            "Rent Index": 9.16,
+            "Cost of Living Plus Rent Index": "24.00.00",
+            "Groceries Index": "30.21.00",
+            "Restaurant Price Index": "24.06.00",
+            "Local Purchasing Power Index": "26.04.00"
+          },
+          {
+            "Rank": 408,
+            "City": "Nairobi, Kenya",
+            "costOfLivingIndex": "37.05.00",
+            "Rent Index": 12.27,
+            "Cost of Living Plus Rent Index": "25.25.00",
+            "Groceries Index": "35.42.00",
+            "Restaurant Price Index": "30.26.00",
+            "Local Purchasing Power Index": "30.38.00"
+          },
+          {
+            "Rank": 409,
+            "City": "Merida, Mexico",
+            "costOfLivingIndex": "37.27.00",
+            "Rent Index": 12.13,
+            "Cost of Living Plus Rent Index": "25.30.00",
+            "Groceries Index": "39.32.00",
+            "Restaurant Price Index": "35.16.00",
+            "Local Purchasing Power Index": "34.35.00"
+          },
+          {
+            "Rank": 410,
+            "City": "Porto Alegre, Brazil",
+            "costOfLivingIndex": "37.18.00",
+            "Rent Index": 9.44,
+            "Cost of Living Plus Rent Index": "24.16.00",
+            "Groceries Index": "30.58.00",
+            "Restaurant Price Index": "26.34.00",
+            "Local Purchasing Power Index": "26.05.00"
+          },
+          {
+            "Rank": 411,
+            "City": "Debrecen, Hungary",
+            "costOfLivingIndex": "37.11.00",
+            "Rent Index": 10.01,
+            "Cost of Living Plus Rent Index": "24.21.00",
+            "Groceries Index": "34.01.00",
+            "Restaurant Price Index": "30.43.00",
+            "Local Purchasing Power Index": "47.15.00"
+          },
+          {
+            "Rank": 412,
+            "City": "Yerevan, Armenia",
+            "costOfLivingIndex": "37.06.00",
+            "Rent Index": 18.5,
+            "Cost of Living Plus Rent Index": "28.01.00",
+            "Groceries Index": "32.29.00",
+            "Restaurant Price Index": "31.23.00",
+            "Local Purchasing Power Index": "25.11.00"
+          },
+          {
+            "Rank": 413,
+            "City": "Guayaquil, Ecuador",
+            "costOfLivingIndex": "36.57.00",
+            "Rent Index": 11.34,
+            "Cost of Living Plus Rent Index": "24.56.00",
+            "Groceries Index": "32.34.00",
+            "Restaurant Price Index": "26.31.00",
+            "Local Purchasing Power Index": "38.53.00"
+          },
+          {
+            "Rank": 414,
+            "City": "Guadalajara, Mexico",
+            "costOfLivingIndex": "36.56.00",
+            "Rent Index": 15.36,
+            "Cost of Living Plus Rent Index": "26.28.00",
+            "Groceries Index": "39.08.00",
+            "Restaurant Price Index": "30.12.00",
+            "Local Purchasing Power Index": "45.24.00"
+          },
+          {
+            "Rank": 415,
+            "City": "Petaling Jaya, Malaysia",
+            "costOfLivingIndex": "36.27.00",
+            "Rent Index": 11.21,
+            "Cost of Living Plus Rent Index": "24.15.00",
+            "Groceries Index": "40.34.00",
+            "Restaurant Price Index": 22.2,
+            "Local Purchasing Power Index": "62.23.00"
+          },
+          {
+            "Rank": 416,
+            "City": "La Paz, Bolivia",
+            "costOfLivingIndex": "36.18.00",
+            "Rent Index": 9,
+            "Cost of Living Plus Rent Index": 23.24,
+            "Groceries Index": "33.29.00",
+            "Restaurant Price Index": "24.09.00",
+            "Local Purchasing Power Index": "34.38.00"
+          },
+          {
+            "Rank": 417,
+            "City": "Sarajevo, Bosnia And Herzegovina",
+            "costOfLivingIndex": "36.13.00",
+            "Rent Index": 8.2,
+            "Cost of Living Plus Rent Index": 23.05,
+            "Groceries Index": "31.49.00",
+            "Restaurant Price Index": 23.48,
+            "Local Purchasing Power Index": "52.07.00"
+          },
+          {
+            "Rank": 418,
+            "City": "Brasov, Romania",
+            "costOfLivingIndex": "36.13.00",
+            "Rent Index": 10.59,
+            "Cost of Living Plus Rent Index": "24.37.00",
+            "Groceries Index": "32.28.00",
+            "Restaurant Price Index": "32.02.00",
+            "Local Purchasing Power Index": "41.48.00"
+          },
+          {
+            "Rank": 419,
+            "City": "Lodz, Poland",
+            "costOfLivingIndex": "36.12.00",
+            "Rent Index": 12.37,
+            "Cost of Living Plus Rent Index": "25.02.00",
+            "Groceries Index": "29.30.00",
+            "Restaurant Price Index": "29.11.00",
+            "Local Purchasing Power Index": "54.49.00"
+          },
+          {
+            "Rank": 420,
+            "City": "Tbilisi, Georgia",
+            "costOfLivingIndex": "36.11.00",
+            "Rent Index": 16,
+            "Cost of Living Plus Rent Index": "26.53.00",
+            "Groceries Index": "31.12.00",
+            "Restaurant Price Index": "34.33.00",
+            "Local Purchasing Power Index": "25.00.00"
+          },
+          {
+            "Rank": 421,
+            "City": "Kota Kinabalu, Malaysia",
+            "costOfLivingIndex": "36.08.00",
+            "Rent Index": 7.26,
+            "Cost of Living Plus Rent Index": 22.36,
+            "Groceries Index": "44.18.00",
+            "Restaurant Price Index": 18.13,
+            "Local Purchasing Power Index": "42.04.00"
+          },
+          {
+            "Rank": 422,
+            "City": "Penang, Malaysia",
+            "costOfLivingIndex": "36.30.00",
+            "Rent Index": 9.31,
+            "Cost of Living Plus Rent Index": 23.05,
+            "Groceries Index": "39.51.00",
+            "Restaurant Price Index": 19.28,
+            "Local Purchasing Power Index": "57.02.00"
+          },
+          {
+            "Rank": 423,
+            "City": "Suva, Fiji",
+            "costOfLivingIndex": "36.17.00",
+            "Rent Index": 17.04,
+            "Cost of Living Plus Rent Index": "27.25.00",
+            "Groceries Index": "37.29.00",
+            "Restaurant Price Index": "31.43.00",
+            "Local Purchasing Power Index": "47.17.00"
+          },
+          {
+            "Rank": 424,
+            "City": "Queretaro, Mexico",
+            "costOfLivingIndex": "36.17.00",
+            "Rent Index": 12.2,
+            "Cost of Living Plus Rent Index": "24.35.00",
+            "Groceries Index": "38.26.00",
+            "Restaurant Price Index": "30.42.00",
+            "Local Purchasing Power Index": "50.24.00"
+          },
+          {
+            "Rank": 425,
+            "City": "Kampala, Uganda",
+            "costOfLivingIndex": "35.55.00",
+            "Rent Index": 14.23,
+            "Cost of Living Plus Rent Index": "25.40.00",
+            "Groceries Index": "33.13.00",
+            "Restaurant Price Index": "24.47.00",
+            "Local Purchasing Power Index": 9
+          },
+          {
+            "Rank": 426,
+            "City": "Erbil (Irbil), Iraq",
+            "costOfLivingIndex": "35.51.00",
+            "Rent Index": 13.09,
+            "Cost of Living Plus Rent Index": "25.23.00",
+            "Groceries Index": "30.20.00",
+            "Restaurant Price Index": "30.46.00",
+            "Local Purchasing Power Index": "41.40.00"
+          },
+          {
+            "Rank": 427,
+            "City": "Curitiba, Brazil",
+            "costOfLivingIndex": "35.49.00",
+            "Rent Index": 9.19,
+            "Cost of Living Plus Rent Index": 23.18,
+            "Groceries Index": "31.06.00",
+            "Restaurant Price Index": "27.20.00",
+            "Local Purchasing Power Index": "38.23.00"
+          },
+          {
+            "Rank": 428,
+            "City": "Hanoi, Vietnam",
+            "costOfLivingIndex": "35.48.00",
+            "Rent Index": 12.46,
+            "Cost of Living Plus Rent Index": "24.52.00",
+            "Groceries Index": "36.16.00",
+            "Restaurant Price Index": 19.29,
+            "Local Purchasing Power Index": "28.00.00"
+          },
+          {
+            "Rank": 429,
+            "City": "Szeged, Hungary",
+            "costOfLivingIndex": "35.45.00",
+            "Rent Index": 9.08,
+            "Cost of Living Plus Rent Index": 23.11,
+            "Groceries Index": "33.19.00",
+            "Restaurant Price Index": "28.54.00",
+            "Local Purchasing Power Index": "49.55.00"
+          },
+          {
+            "Rank": 430,
+            "City": "Podgorica, Montenegro",
+            "costOfLivingIndex": "35.44.00",
+            "Rent Index": 10.38,
+            "Cost of Living Plus Rent Index": 23.32,
+            "Groceries Index": "30.36.00",
+            "Restaurant Price Index": "26.10.00",
+            "Local Purchasing Power Index": "40.47.00"
+          },
+          {
+            "Rank": 431,
+            "City": "Iasi, Romania",
+            "costOfLivingIndex": "35.38.00",
+            "Rent Index": 10.21,
+            "Cost of Living Plus Rent Index": 23.4,
+            "Groceries Index": "30.10.00",
+            "Restaurant Price Index": "31.05.00",
+            "Local Purchasing Power Index": "44.35.00"
+          },
+          {
+            "Rank": 432,
+            "City": "Sibiu, Romania",
+            "costOfLivingIndex": "35.01.00",
+            "Rent Index": 9.08,
+            "Cost of Living Plus Rent Index": 22.48,
+            "Groceries Index": "30.51.00",
+            "Restaurant Price Index": "28.13.00",
+            "Local Purchasing Power Index": "40.26.00"
+          },
+          {
+            "Rank": 433,
+            "City": "Lima, Peru",
+            "costOfLivingIndex": "35.29.00",
+            "Rent Index": 15,
+            "Cost of Living Plus Rent Index": "25.42.00",
+            "Groceries Index": "34.10.00",
+            "Restaurant Price Index": "24.06.00",
+            "Local Purchasing Power Index": "29.39.00"
+          },
+          {
+            "Rank": 434,
+            "City": "Dhaka, Bangladesh",
+            "costOfLivingIndex": "35.22.00",
+            "Rent Index": 5.15,
+            "Cost of Living Plus Rent Index": 20.5,
+            "Groceries Index": "32.18.00",
+            "Restaurant Price Index": 22.09,
+            "Local Purchasing Power Index": 23.07
+          },
+          {
+            "Rank": 435,
+            "City": "Timisoara, Romania",
+            "costOfLivingIndex": "35.17.00",
+            "Rent Index": 10.21,
+            "Cost of Living Plus Rent Index": 23.29,
+            "Groceries Index": "30.06.00",
+            "Restaurant Price Index": "30.39.00",
+            "Local Purchasing Power Index": "53.31.00"
+          },
+          {
+            "Rank": 436,
+            "City": "Marrakech, Morocco",
+            "costOfLivingIndex": "35.11.00",
+            "Rent Index": 10.16,
+            "Cost of Living Plus Rent Index": 23.02,
+            "Groceries Index": "28.27.00",
+            "Restaurant Price Index": "28.17.00",
+            "Local Purchasing Power Index": "27.08.00"
+          },
+          {
+            "Rank": 437,
+            "City": "Novi Sad, Serbia",
+            "costOfLivingIndex": "34.53.00",
+            "Rent Index": 9.22,
+            "Cost of Living Plus Rent Index": 22.48,
+            "Groceries Index": "28.18.00",
+            "Restaurant Price Index": "25.19.00",
+            "Local Purchasing Power Index": "43.21.00"
+          },
+          {
+            "Rank": 438,
+            "City": "Isfahan (Esfahan), Iran",
+            "costOfLivingIndex": "34.53.00",
+            "Rent Index": 16.14,
+            "Cost of Living Plus Rent Index": "26.17.00",
+            "Groceries Index": 20.43,
+            "Restaurant Price Index": 16.36,
+            "Local Purchasing Power Index": 19.36
+          },
+          {
+            "Rank": 439,
+            "City": "Kiev (Kyiv), Ukraine",
+            "costOfLivingIndex": "34.39.00",
+            "Rent Index": 17.36,
+            "Cost of Living Plus Rent Index": "26.28.00",
+            "Groceries Index": "30.09.00",
+            "Restaurant Price Index": "29.16.00",
+            "Local Purchasing Power Index": "41.30.00"
+          },
+          {
+            "Rank": 440,
+            "City": "Bandung, Indonesia",
+            "costOfLivingIndex": "34.13.00",
+            "Rent Index": 7.01,
+            "Cost of Living Plus Rent Index": 21.03,
+            "Groceries Index": "36.21.00",
+            "Restaurant Price Index": 16.07,
+            "Local Purchasing Power Index": 23.11
+          },
+          {
+            "Rank": 441,
+            "City": "Ulaanbaatar, Mongolia",
+            "costOfLivingIndex": "34.12.00",
+            "Rent Index": 10.38,
+            "Cost of Living Plus Rent Index": 23.03,
+            "Groceries Index": "35.05.00",
+            "Restaurant Price Index": "27.32.00",
+            "Local Purchasing Power Index": 23.08
+          },
+          {
+            "Rank": 442,
+            "City": "Skopje, North Macedonia",
+            "costOfLivingIndex": "34.07.00",
+            "Rent Index": 7.56,
+            "Cost of Living Plus Rent Index": 21.45,
+            "Groceries Index": "29.36.00",
+            "Restaurant Price Index": "26.01.00",
+            "Local Purchasing Power Index": "33.30.00"
+          },
+          {
+            "Rank": 443,
+            "City": "Banja Luka, Bosnia And Herzegovina",
+            "costOfLivingIndex": "34.07.00",
+            "Rent Index": 7.26,
+            "Cost of Living Plus Rent Index": 21.12,
+            "Groceries Index": "30.01.00",
+            "Restaurant Price Index": 23.32,
+            "Local Purchasing Power Index": "39.30.00"
+          },
+          {
+            "Rank": 444,
+            "City": "Accra, Ghana",
+            "costOfLivingIndex": "34.17.00",
+            "Rent Index": 21.22,
+            "Cost of Living Plus Rent Index": "28.00.00",
+            "Groceries Index": "33.36.00",
+            "Restaurant Price Index": "31.28.00",
+            "Local Purchasing Power Index": 19.14
+          },
+          {
+            "Rank": 445,
+            "City": "Buenos Aires, Argentina",
+            "costOfLivingIndex": "34.15.00",
+            "Rent Index": 11.01,
+            "Cost of Living Plus Rent Index": 23.14,
+            "Groceries Index": "28.26.00",
+            "Restaurant Price Index": "30.12.00",
+            "Local Purchasing Power Index": "26.20.00"
+          },
+          {
+            "Rank": 446,
+            "City": "Surabaya, Indonesia",
+            "costOfLivingIndex": "34.02.00",
+            "Rent Index": 8.18,
+            "Cost of Living Plus Rent Index": 21.51,
+            "Groceries Index": "36.22.00",
+            "Restaurant Price Index": 16.22,
+            "Local Purchasing Power Index": "24.14.00"
+          },
+          {
+            "Rank": 447,
+            "City": "Casablanca, Morocco",
+            "costOfLivingIndex": "33.42.00",
+            "Rent Index": 11.47,
+            "Cost of Living Plus Rent Index": 23.37,
+            "Groceries Index": "29.18.00",
+            "Restaurant Price Index": 22.47,
+            "Local Purchasing Power Index": "34.07.00"
+          },
+          {
+            "Rank": 448,
+            "City": "Craiova, Romania",
+            "costOfLivingIndex": "33.42.00",
+            "Rent Index": 7.06,
+            "Cost of Living Plus Rent Index": 21.27,
+            "Groceries Index": "32.29.00",
+            "Restaurant Price Index": 21.29,
+            "Local Purchasing Power Index": "45.36.00"
+          },
+          {
+            "Rank": 449,
+            "City": "Odessa (Odesa), Ukraine",
+            "costOfLivingIndex": "33.34.00",
+            "Rent Index": 10.01,
+            "Cost of Living Plus Rent Index": 22.23,
+            "Groceries Index": "29.55.00",
+            "Restaurant Price Index": "28.05.00",
+            "Local Purchasing Power Index": "29.23.00"
+          },
+          {
+            "Rank": 450,
+            "City": "Rabat, Morocco",
+            "costOfLivingIndex": "33.09.00",
+            "Rent Index": 12.45,
+            "Cost of Living Plus Rent Index": 23.05,
+            "Groceries Index": "30.01.00",
+            "Restaurant Price Index": "24.24.00",
+            "Local Purchasing Power Index": "29.30.00"
+          },
+          {
+            "Rank": 451,
+            "City": "Baghdad, Iraq",
+            "costOfLivingIndex": "32.50.00",
+            "Rent Index": 11.23,
+            "Cost of Living Plus Rent Index": 22.37,
+            "Groceries Index": "28.13.00",
+            "Restaurant Price Index": "24.37.00",
+            "Local Purchasing Power Index": "38.14.00"
+          },
+          {
+            "Rank": 452,
+            "City": "Almaty, Kazakhstan",
+            "costOfLivingIndex": "32.12.00",
+            "Rent Index": 13.19,
+            "Cost of Living Plus Rent Index": 23.11,
+            "Groceries Index": "29.12.00",
+            "Restaurant Price Index": "31.54.00",
+            "Local Purchasing Power Index": "34.25.00"
+          },
+          {
+            "Rank": 453,
+            "City": "Istanbul, Turkey",
+            "costOfLivingIndex": "32.12.00",
+            "Rent Index": 10.15,
+            "Cost of Living Plus Rent Index": 21.45,
+            "Groceries Index": "27.07.00",
+            "Restaurant Price Index": 20.31,
+            "Local Purchasing Power Index": "26.03.00"
+          },
+          {
+            "Rank": 454,
+            "City": "Kigali, Rwanda",
+            "costOfLivingIndex": "32.10.00",
+            "Rent Index": 15.11,
+            "Cost of Living Plus Rent Index": "24.01.00",
+            "Groceries Index": "28.21.00",
+            "Restaurant Price Index": "27.10.00",
+            "Local Purchasing Power Index": "26.18.00"
+          },
+          {
+            "Rank": 455,
+            "City": "Dar es Salaam, Tanzania",
+            "costOfLivingIndex": "32.02.00",
+            "Rent Index": 13.4,
+            "Cost of Living Plus Rent Index": 23.35,
+            "Groceries Index": "29.19.00",
+            "Restaurant Price Index": 21.26,
+            "Local Purchasing Power Index": 15.21
+          },
+          {
+            "Rank": 456,
+            "City": "Kharkiv, Ukraine",
+            "costOfLivingIndex": "31.53.00",
+            "Rent Index": 11.19,
+            "Cost of Living Plus Rent Index": 22.05,
+            "Groceries Index": "27.06.00",
+            "Restaurant Price Index": "25.34.00",
+            "Local Purchasing Power Index": "34.17.00"
+          },
+          {
+            "Rank": 457,
+            "City": "Tangier, Morocco",
+            "costOfLivingIndex": "31.43.00",
+            "Rent Index": 9.16,
+            "Cost of Living Plus Rent Index": 21.04,
+            "Groceries Index": "30.24.00",
+            "Restaurant Price Index": 22.1,
+            "Local Purchasing Power Index": "30.26.00"
+          },
+          {
+            "Rank": 458,
+            "City": "Chisinau, Moldova",
+            "costOfLivingIndex": "31.41.00",
+            "Rent Index": 9,
+            "Cost of Living Plus Rent Index": 21.14,
+            "Groceries Index": "26.10.00",
+            "Restaurant Price Index": "25.19.00",
+            "Local Purchasing Power Index": "34.20.00"
+          },
+          {
+            "Rank": 459,
+            "City": "Nis, Serbia",
+            "costOfLivingIndex": "31.34.00",
+            "Rent Index": 6.41,
+            "Cost of Living Plus Rent Index": 19.47,
+            "Groceries Index": "25.21.00",
+            "Restaurant Price Index": "25.19.00",
+            "Local Purchasing Power Index": "41.44.00"
+          },
+          {
+            "Rank": 460,
+            "City": "Batumi, Ajara, Georgia",
+            "costOfLivingIndex": "31.13.00",
+            "Rent Index": 12.07,
+            "Cost of Living Plus Rent Index": 22.26,
+            "Groceries Index": "31.04.00",
+            "Restaurant Price Index": "26.12.00",
+            "Local Purchasing Power Index": "27.14.00"
+          },
+          {
+            "Rank": 461,
+            "City": "Baku, Azerbaijan",
+            "costOfLivingIndex": "31.05.00",
+            "Rent Index": 8.13,
+            "Cost of Living Plus Rent Index": 20.13,
+            "Groceries Index": "27.51.00",
+            "Restaurant Price Index": "28.13.00",
+            "Local Purchasing Power Index": "28.29.00"
+          },
+          {
+            "Rank": 462,
+            "City": "Astana (Nur-Sultan), Kazakhstan",
+            "costOfLivingIndex": "31.17.00",
+            "Rent Index": 12.06,
+            "Cost of Living Plus Rent Index": 22.07,
+            "Groceries Index": "29.27.00",
+            "Restaurant Price Index": "27.37.00",
+            "Local Purchasing Power Index": "40.04.00"
+          },
+          {
+            "Rank": 463,
+            "City": "Tehran, Iran",
+            "costOfLivingIndex": "31.01.00",
+            "Rent Index": 21.45,
+            "Cost of Living Plus Rent Index": "26.25.00",
+            "Groceries Index": 22,
+            "Restaurant Price Index": 23.13,
+            "Local Purchasing Power Index": 16.13
+          },
+          {
+            "Rank": 464,
+            "City": "Antalya, Turkey",
+            "costOfLivingIndex": "30.47.00",
+            "Rent Index": 11.24,
+            "Cost of Living Plus Rent Index": 21.13,
+            "Groceries Index": "24.14.00",
+            "Restaurant Price Index": 18.23,
+            "Local Purchasing Power Index": "24.13.00"
+          },
+          {
+            "Rank": 465,
+            "City": "Izmir, Turkey",
+            "costOfLivingIndex": "30.30.00",
+            "Rent Index": 6.31,
+            "Cost of Living Plus Rent Index": 19.28,
+            "Groceries Index": "25.53.00",
+            "Restaurant Price Index": 18.21,
+            "Local Purchasing Power Index": "29.02.00"
+          },
+          {
+            "Rank": 466,
+            "City": "Agadir, Morocco",
+            "costOfLivingIndex": "30.28.00",
+            "Rent Index": 6.02,
+            "Cost of Living Plus Rent Index": 18.54,
+            "Groceries Index": "27.14.00",
+            "Restaurant Price Index": "27.06.00",
+            "Local Purchasing Power Index": "30.41.00"
+          },
+          {
+            "Rank": 467,
+            "City": "Medellin, Colombia",
+            "costOfLivingIndex": "30.24.00",
+            "Rent Index": 9.51,
+            "Cost of Living Plus Rent Index": 20.37,
+            "Groceries Index": "27.32.00",
+            "Restaurant Price Index": "24.33.00",
+            "Local Purchasing Power Index": "32.20.00"
+          },
+          {
+            "Rank": 468,
+            "City": "Gurgaon, India",
+            "costOfLivingIndex": "30.10.00",
+            "Rent Index": 8.03,
+            "Cost of Living Plus Rent Index": 19.4,
+            "Groceries Index": "31.26.00",
+            "Restaurant Price Index": 23.48,
+            "Local Purchasing Power Index": "91.13.00"
+          },
+          {
+            "Rank": 469,
+            "City": "Noida, India",
+            "costOfLivingIndex": "30.05.00",
+            "Rent Index": 5.56,
+            "Cost of Living Plus Rent Index": 18.39,
+            "Groceries Index": "30.21.00",
+            "Restaurant Price Index": "27.56.00",
+            "Local Purchasing Power Index": "117.22.00"
+          },
+          {
+            "Rank": 470,
+            "City": "Asuncion, Paraguay",
+            "costOfLivingIndex": "30.38.00",
+            "Rent Index": 11.34,
+            "Cost of Living Plus Rent Index": 21.31,
+            "Groceries Index": "25.23.00",
+            "Restaurant Price Index": "24.20.00",
+            "Local Purchasing Power Index": "26.16.00"
+          },
+          {
+            "Rank": 471,
+            "City": "Lviv, Ukraine",
+            "costOfLivingIndex": "30.19.00",
+            "Rent Index": 11.3,
+            "Cost of Living Plus Rent Index": 21.38,
+            "Groceries Index": "27.14.00",
+            "Restaurant Price Index": "24.59.00",
+            "Local Purchasing Power Index": "41.30.00"
+          },
+          {
+            "Rank": 472,
+            "City": "Tunis, Tunisia",
+            "costOfLivingIndex": "29.31.00",
+            "Rent Index": 7.18,
+            "Cost of Living Plus Rent Index": 18.58,
+            "Groceries Index": "27.46.00",
+            "Restaurant Price Index": 16.13,
+            "Local Purchasing Power Index": 23.26
+          },
+          {
+            "Rank": 473,
+            "City": "Ankara, Turkey",
+            "costOfLivingIndex": "29.17.00",
+            "Rent Index": 5.01,
+            "Cost of Living Plus Rent Index": 18.06,
+            "Groceries Index": "25.15.00",
+            "Restaurant Price Index": 18.18,
+            "Local Purchasing Power Index": "32.18.00"
+          },
+          {
+            "Rank": 474,
+            "City": "Kathmandu, Nepal",
+            "costOfLivingIndex": "29.31.00",
+            "Rent Index": 5.21,
+            "Cost of Living Plus Rent Index": 17.44,
+            "Groceries Index": "27.13.00",
+            "Restaurant Price Index": 22.43,
+            "Local Purchasing Power Index": 19.16
+          },
+          {
+            "Rank": 475,
+            "City": "Algiers, Algeria",
+            "costOfLivingIndex": "29.20.00",
+            "Rent Index": 6.38,
+            "Cost of Living Plus Rent Index": 18.34,
+            "Groceries Index": "30.18.00",
+            "Restaurant Price Index": 18.17,
+            "Local Purchasing Power Index": 22.16
+          },
+          {
+            "Rank": 476,
+            "City": "Tashkent, Uzbekistan",
+            "costOfLivingIndex": "29.14.00",
+            "Rent Index": 10.57,
+            "Cost of Living Plus Rent Index": 20.09,
+            "Groceries Index": "27.36.00",
+            "Restaurant Price Index": "25.27.00",
+            "Local Purchasing Power Index": "24.29.00"
+          },
+          {
+            "Rank": 477,
+            "City": "Mashhad, Iran",
+            "costOfLivingIndex": "29.02.00",
+            "Rent Index": 15.03,
+            "Cost of Living Plus Rent Index": 22.36,
+            "Groceries Index": 20.12,
+            "Restaurant Price Index": 23.59,
+            "Local Purchasing Power Index": 23.28
+          },
+          {
+            "Rank": 478,
+            "City": "Cairo, Egypt",
+            "costOfLivingIndex": "28.46.00",
+            "Rent Index": 7.03,
+            "Cost of Living Plus Rent Index": 18.06,
+            "Groceries Index": "26.35.00",
+            "Restaurant Price Index": "25.09.00",
+            "Local Purchasing Power Index": 22.31
+          },
+          {
+            "Rank": 479,
+            "City": "Barranquilla, Colombia",
+            "costOfLivingIndex": "28.34.00",
+            "Rent Index": 8.56,
+            "Cost of Living Plus Rent Index": 19.32,
+            "Groceries Index": "26.55.00",
+            "Restaurant Price Index": 19.04,
+            "Local Purchasing Power Index": "30.05.00"
+          },
+          {
+            "Rank": 480,
+            "City": "Mumbai, India",
+            "costOfLivingIndex": "28.30.00",
+            "Rent Index": 19.05,
+            "Cost of Living Plus Rent Index": "24.11.00",
+            "Groceries Index": "29.27.00",
+            "Restaurant Price Index": "24.43.00",
+            "Local Purchasing Power Index": "61.08.00"
+          },
+          {
+            "Rank": 481,
+            "City": "Bogota, Colombia",
+            "costOfLivingIndex": "28.05.00",
+            "Rent Index": 11.06,
+            "Cost of Living Plus Rent Index": 20.37,
+            "Groceries Index": "26.03.00",
+            "Restaurant Price Index": 20.03,
+            "Local Purchasing Power Index": "24.00.00"
+          },
+          {
+            "Rank": 482,
+            "City": "Minsk, Belarus",
+            "costOfLivingIndex": "28.26.00",
+            "Rent Index": 10.58,
+            "Cost of Living Plus Rent Index": 20.03,
+            "Groceries Index": "25.51.00",
+            "Restaurant Price Index": "29.13.00",
+            "Local Purchasing Power Index": "30.25.00"
+          },
+          {
+            "Rank": 483,
+            "City": "Cali, Colombia",
+            "costOfLivingIndex": "28.16.00",
+            "Rent Index": 6.41,
+            "Cost of Living Plus Rent Index": 17.59,
+            "Groceries Index": "26.21.00",
+            "Restaurant Price Index": 18.07,
+            "Local Purchasing Power Index": "30.35.00"
+          },
+          {
+            "Rank": 484,
+            "City": "Bishkek, Kyrgyzstan",
+            "costOfLivingIndex": "27.29.00",
+            "Rent Index": 7.12,
+            "Cost of Living Plus Rent Index": 17.48,
+            "Groceries Index": "25.25.00",
+            "Restaurant Price Index": 23.27,
+            "Local Purchasing Power Index": 22.11
+          },
+          {
+            "Rank": 485,
+            "City": "Pristina, Kosovo (Disputed Territory)",
+            "costOfLivingIndex": "27.13.00",
+            "Rent Index": 8.51,
+            "Cost of Living Plus Rent Index": 18.05,
+            "Groceries Index": "24.43.00",
+            "Restaurant Price Index": 20.25,
+            "Local Purchasing Power Index": "40.04.00"
+          },
+          {
+            "Rank": 486,
+            "City": "Bangalore, India",
+            "costOfLivingIndex": "27.12.00",
+            "Rent Index": 8.05,
+            "Cost of Living Plus Rent Index": 18.23,
+            "Groceries Index": "29.29.00",
+            "Restaurant Price Index": 19.2,
+            "Local Purchasing Power Index": "129.39.00"
+          },
+          {
+            "Rank": 487,
+            "City": "Alexandria, Egypt",
+            "costOfLivingIndex": "27.08.00",
+            "Rent Index": 5.39,
+            "Cost of Living Plus Rent Index": 16.55,
+            "Groceries Index": "25.55.00",
+            "Restaurant Price Index": "24.03.00",
+            "Local Purchasing Power Index": 20.04
+          },
+          {
+            "Rank": 488,
+            "City": "Delhi, India",
+            "costOfLivingIndex": "26.57.00",
+            "Rent Index": 8.27,
+            "Cost of Living Plus Rent Index": 18.07,
+            "Groceries Index": "26.49.00",
+            "Restaurant Price Index": 22.02,
+            "Local Purchasing Power Index": "51.17.00"
+          },
+          {
+            "Rank": 489,
+            "City": "Sousse, Tunisia",
+            "costOfLivingIndex": "26.54.00",
+            "Rent Index": 4.51,
+            "Cost of Living Plus Rent Index": 16.05,
+            "Groceries Index": "25.37.00",
+            "Restaurant Price Index": 15.54,
+            "Local Purchasing Power Index": "28.52.00"
+          },
+          {
+            "Rank": 490,
+            "City": "Pune, India",
+            "costOfLivingIndex": "26.32.00",
+            "Rent Index": 7.37,
+            "Cost of Living Plus Rent Index": 17.3,
+            "Groceries Index": "27.48.00",
+            "Restaurant Price Index": 21.36,
+            "Local Purchasing Power Index": "89.06.00"
+          },
+          {
+            "Rank": 491,
+            "City": "Oran, Algeria",
+            "costOfLivingIndex": "25.44.00",
+            "Rent Index": 5.29,
+            "Cost of Living Plus Rent Index": 16.05,
+            "Groceries Index": "27.25.00",
+            "Restaurant Price Index": 13.24,
+            "Local Purchasing Power Index": 21.1
+          },
+          {
+            "Rank": 492,
+            "City": "Hyderabad, India",
+            "costOfLivingIndex": "25.28.00",
+            "Rent Index": 6.04,
+            "Cost of Living Plus Rent Index": 16.33,
+            "Groceries Index": "28.45.00",
+            "Restaurant Price Index": 17.12,
+            "Local Purchasing Power Index": "44.01.00"
+          },
+          {
+            "Rank": 493,
+            "City": "Ahmedabad, India",
+            "costOfLivingIndex": "25.28.00",
+            "Rent Index": 8.02,
+            "Cost of Living Plus Rent Index": 17.06,
+            "Groceries Index": "26.49.00",
+            "Restaurant Price Index": 18.39,
+            "Local Purchasing Power Index": "74.55.00"
+          },
+          {
+            "Rank": 494,
+            "City": "Indore, India",
+            "costOfLivingIndex": "25.03.00",
+            "Rent Index": 6.19,
+            "Cost of Living Plus Rent Index": 16.06,
+            "Groceries Index": "26.39.00",
+            "Restaurant Price Index": 16.1,
+            "Local Purchasing Power Index": "54.50.00"
+          },
+          {
+            "Rank": 495,
+            "City": "Kolkata, India",
+            "costOfLivingIndex": "25.00.00",
+            "Rent Index": 5.22,
+            "Cost of Living Plus Rent Index": 15.18,
+            "Groceries Index": "27.17.00",
+            "Restaurant Price Index": 16.46,
+            "Local Purchasing Power Index": "63.30.00"
+          },
+          {
+            "Rank": 496,
+            "City": "Coimbatore, India",
+            "costOfLivingIndex": "24.03.00",
+            "Rent Index": 5.11,
+            "Cost of Living Plus Rent Index": 15.23,
+            "Groceries Index": "28.12.00",
+            "Restaurant Price Index": 14.57,
+            "Local Purchasing Power Index": "72.23.00"
+          },
+          {
+            "Rank": 497,
+            "City": "Bhubaneswar, India",
+            "costOfLivingIndex": "24.00.00",
+            "Rent Index": 6.02,
+            "Cost of Living Plus Rent Index": 15.44,
+            "Groceries Index": "26.17.00",
+            "Restaurant Price Index": 14.58,
+            "Local Purchasing Power Index": "78.01.00"
+          },
+          {
+            "Rank": 498,
+            "City": "Bucaramanga, Colombia",
+            "costOfLivingIndex": "24.26.00",
+            "Rent Index": 6.23,
+            "Cost of Living Plus Rent Index": 15.27,
+            "Groceries Index": 20.33,
+            "Restaurant Price Index": 16.5,
+            "Local Purchasing Power Index": "26.31.00"
+          },
+          {
+            "Rank": 499,
+            "City": "Jaipur, India",
+            "costOfLivingIndex": "24.24.00",
+            "Rent Index": 4.44,
+            "Cost of Living Plus Rent Index": 15,
+            "Groceries Index": "25.14.00",
+            "Restaurant Price Index": 15.43,
+            "Local Purchasing Power Index": "117.38.00"
+          },
+          {
+            "Rank": 500,
+            "City": "Chennai, India",
+            "costOfLivingIndex": "24.21.00",
+            "Rent Index": 6.37,
+            "Cost of Living Plus Rent Index": 15.32,
+            "Groceries Index": "27.09.00",
+            "Restaurant Price Index": 14.3,
+            "Local Purchasing Power Index": "57.31.00"
+          },
+          {
+            "Rank": 501,
+            "City": "Kochi, India",
+            "costOfLivingIndex": "24.03.00",
+            "Rent Index": 6.13,
+            "Cost of Living Plus Rent Index": 15.3,
+            "Groceries Index": "26.27.00",
+            "Restaurant Price Index": 13.41,
+            "Local Purchasing Power Index": "74.19.00"
+          },
+          {
+            "Rank": 502,
+            "City": "Colombo, Sri Lanka",
+            "costOfLivingIndex": 20.59,
+            "Rent Index": 8.06,
+            "Cost of Living Plus Rent Index": 15.02,
+            "Groceries Index": "26.15.00",
+            "Restaurant Price Index": 11.29,
+            "Local Purchasing Power Index": 17.18
+          },
+          {
+            "Rank": 503,
+            "City": "Islamabad, Pakistan",
+            "costOfLivingIndex": 20.3,
+            "Rent Index": 5.28,
+            "Cost of Living Plus Rent Index": 13.15,
+            "Groceries Index": 18.31,
+            "Restaurant Price Index": 17.1,
+            "Local Purchasing Power Index": "28.59.00"
+          },
+          {
+            "Rank": 504,
+            "City": "Karachi, Pakistan",
+            "costOfLivingIndex": 20.17,
+            "Rent Index": 4.23,
+            "Cost of Living Plus Rent Index": 12.58,
+            "Groceries Index": 18.17,
+            "Restaurant Price Index": 13.5,
+            "Local Purchasing Power Index": "25.36.00"
+          },
+          {
+            "Rank": 505,
+            "City": "Lahore, Pakistan",
+            "costOfLivingIndex": 20.1,
+            "Rent Index": 4.15,
+            "Cost of Living Plus Rent Index": 12.11,
+            "Groceries Index": 17.25,
+            "Restaurant Price Index": 15.03,
+            "Local Purchasing Power Index": 23.5
+          },
+          {
+            "Rank": 506,
+            "City": "Rawalpindi, Pakistan",
+            "costOfLivingIndex": 18.53,
+            "Rent Index": 3.25,
+            "Cost of Living Plus Rent Index": 11.26,
+            "Groceries Index": 17.13,
+            "Restaurant Price Index": 14.07,
+            "Local Purchasing Power Index": "27.06.00"
+          }
+        ]
+        }
