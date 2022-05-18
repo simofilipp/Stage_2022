@@ -14,7 +14,7 @@ public class Rotazione_chenonfunzoina : MonoBehaviour
         //transform.LeanRotate(new Vector3(360, 360, 360), 5);
         luna.LeanRotateAround(luna.transform.up, 360f, 6).setRepeat(-1);
         //parent_luna.LeanRotateAround(parent_luna.transform.forward, 360f, 10).setRepeat(-1);
-        this.transform.LeanRotateAroundLocal(transform.right, 360f, 10).setRepeat(-1);
+        this.transform.LeanRotateAround(transform.up, -360f, 10).setRepeat(-1);
     }
 
     // Update is called once per frame

@@ -12,6 +12,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject tastiera;
     [SerializeField] GameObject canvasFinale;
     [SerializeField] GameObject terra;
+    [SerializeField] GameObject luna;
     [SerializeField] List<GameObject> sferette;
 
 
@@ -43,7 +44,7 @@ public class StartSequenceManager : MonoBehaviour
             tastiera.SetActive(true);
             canvasFinale.SetActive(true);
             //animazione terra che sale
-            terra.transform.LeanMoveY(0, 5f);
+            terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => { luna.SetActive(false); }).delay=0.5f;
             
 
             //Animazione entrata palline con dissolve

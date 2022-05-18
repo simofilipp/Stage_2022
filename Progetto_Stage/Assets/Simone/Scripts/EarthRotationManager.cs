@@ -39,7 +39,8 @@ public class EarthRotationManager : MonoBehaviour
         void Start()
     {
         terraRicerca_initial_rotation = terraPerRicerca.rotation;
-        terra_initial_scale = terra.localScale;
+        //modificare in base a quanto si scala inizialmente la terra
+        terra_initial_scale = terra.localScale*10;
         id=terra.LeanRotateAroundLocal(terra.up, -360, 60f).setLoopCount(-1).id;
     }
 
