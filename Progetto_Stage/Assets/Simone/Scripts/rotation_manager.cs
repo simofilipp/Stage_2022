@@ -38,10 +38,13 @@ public class rotation_manager : MonoBehaviour
         {
             for(int i = 0; i < altreSfere.Count; i++)
             {
+                //faccio in modo che le altre sferette non siano interagibili
                 altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
             }
             selezionato = true;
+            //resetto rotazione sferetta per evitare dei movimenti bruschi della terra
+            this.transform.rotation= new Quaternion(0,0,0,0);
             StartCoroutine(Rotazione());
         }
     }
@@ -60,6 +63,7 @@ public class rotation_manager : MonoBehaviour
 
             id = terra.LeanRotateAroundLocal(terra.transform.up, -1, 0.05f).id;
 
+            //la terra segue tramite un tween le sferette, aggiunto un threshold per limitare la vibrazione sugli assi
             while (selezionato == true)
             {
                 rot_sucessivaX = transform.rotation.eulerAngles.x;
@@ -90,6 +94,7 @@ public class rotation_manager : MonoBehaviour
             selezionato = false;
             for (int i = 0; i < altreSfere.Count; i++)
             {
+                //rendo nuovamente interagibili le sferette
                 altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
             }

@@ -39,6 +39,7 @@ public class KeyBoardOpener : MonoBehaviour
 
     public void OpenCloseKeyboard()
     {
+        //se non aperta la tastiera, fermo la terra e apro la tastiera e blocco le sferette
         if (!open)
         {
             open=true;
@@ -54,6 +55,7 @@ public class KeyBoardOpener : MonoBehaviour
                 sferetta.GetComponentInChildren<HandGrabInteractable>().enabled = false;
             }
         }
+        //se è aperta, riprendo il tween della terra, faccio scomparire la tastiera e blocco le sferette
         else
         {
             open = false;
