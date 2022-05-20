@@ -15,6 +15,8 @@ public class EarthRotationManager : MonoBehaviour
     Quaternion terraRicerca_initial_rotation;
     Quaternion terra_initial_rotation;
 
+    public bool sferaLasciata=false;
+
     public static EarthRotationManager _instance;
     public static EarthRotationManager instance
     {
@@ -107,9 +109,13 @@ public class EarthRotationManager : MonoBehaviour
         counterSelezionato -= 1;
         if(counterSelezionato == 0)
         {
+            sferaLasciata = true;
             terra.LeanScale(terra_initial_scale, 0.7f);
             //riporto in asse la terra
-            terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() => { LeanTween.resume(id); });
+            terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() => { 
+                LeanTween.resume(id);
+                sferaLasciata=false;
+            });
         }
     }
 }

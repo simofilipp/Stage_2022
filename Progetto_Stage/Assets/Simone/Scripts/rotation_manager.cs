@@ -29,7 +29,17 @@ public class rotation_manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //controllo che la terra si sia rimessa in asse prima di poterci interagire nuovamente
+        if (EarthRotationManager.instance.sferaLasciata)
+        {
+            GetComponentInChildren<GrabInteractable>().enabled = false;
+            GetComponentInChildren<HandGrabInteractable>().enabled = false;
+        }
+        else
+        {
+            GetComponentInChildren<GrabInteractable>().enabled = true;
+            GetComponentInChildren<HandGrabInteractable>().enabled = true;
+        }
     }
     public void AvviaCoroutine()
     {
