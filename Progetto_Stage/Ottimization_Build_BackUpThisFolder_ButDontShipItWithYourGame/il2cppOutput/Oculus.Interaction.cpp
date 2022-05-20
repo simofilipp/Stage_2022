@@ -19822,7 +19822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoGrabFreeTransformer__ctor_mA054C903DD
 	{
 		// private float _initialScale = 1.0f;
 		__this->____initialScale_7 = (1.0f);
-		// private float _activeScale = 1.0f;
+		// public float _activeScale = 1.0f;
 		__this->____activeScale_8 = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
