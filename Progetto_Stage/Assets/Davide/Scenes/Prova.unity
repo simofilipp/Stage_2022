@@ -126,6 +126,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &13594661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1829333679157806078, guid: d27ac1ffd4cdd7c40a39dcfa6012355c,
+    type: 3}
+  m_PrefabInstance: {fileID: 901140171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &13594664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13594661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2728d4cd2e5956445bcf3ded585c0ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 0}
+  _rayInteractor: {fileID: 0}
+  _cursor: {fileID: 0}
+  _renderer: {fileID: 0}
+  _outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  _offsetAlongNormal: 0.005
+  _selectObject: {fileID: 0}
 --- !u!1 &24960598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1097,7 @@ MonoBehaviour:
   terra: {fileID: 8482397537264485165}
   terraPerRicerca: {fileID: 3516523305263804778}
   cameraMain: {fileID: 1854188709}
+  sferaLasciata: 0
 --- !u!4 &159246789
 Transform:
   m_ObjectHideFlags: 0
@@ -9089,6 +9115,11 @@ PrefabInstance:
       propertyPath: _controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7956160891979918893, guid: 44cf50d1a2e68b64791a3e3143ccda19,
+        type: 3}
+      propertyPath: _maxRayVisualLength
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7983261105550752962, guid: 44cf50d1a2e68b64791a3e3143ccda19,
         type: 3}
       propertyPath: _controller
@@ -11511,6 +11542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _controller
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956160891979918893, guid: 44cf50d1a2e68b64791a3e3143ccda19,
+        type: 3}
+      propertyPath: _maxRayVisualLength
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7983261105550752962, guid: 44cf50d1a2e68b64791a3e3143ccda19,
         type: 3}
