@@ -8,6 +8,7 @@ public class Scale_Manager : MonoBehaviour
     [SerializeField] GameObject pianeta;
 
     float percentuale;
+    float percentualeRilascio;
     float scala_Corrente_Pianeta;
     float scala_ini_value_Pianeta;
     Vector3 scala_iniziale_Pianeta;
@@ -53,7 +54,7 @@ public class Scale_Manager : MonoBehaviour
         if (counterSelezionato == 0)
         {
             selezionato = false;
-            percentuale = 0;
+            //percentuale = 0;
             this.transform.localScale = scala_iniziale_Sferetta;
             twograbTransf.MarkAsBaseScale();
         }
@@ -62,19 +63,8 @@ public class Scale_Manager : MonoBehaviour
     IEnumerator Scalatura()
     {
         while (selezionato)
-        {
-            percentuale = twograbTransf.scalePercentage;
-            Debug.Log(scala_ini_value_Pianeta);
-            if (percentuale != 0f)
-            {
-                scala_Corrente_Pianeta = (scala_ini_value_Pianeta / 10f) * percentuale;
-                if (scala_Corrente_Pianeta > limiteMinimo && scala_Corrente_Pianeta < limiteMassimo)
-                {
-                    pianeta.transform.localScale = scala_iniziale_Pianeta * scala_Corrente_Pianeta;
-
-                }
-            }
-
+        { 
+            pianeta.transform.localScale = scala_iniziale_Pianeta * twograbTransf._activeScale;
             yield return null;
         }
     }

@@ -28,7 +28,7 @@ namespace Oculus.Interaction
         private Vector3 _initialLocalScale;
         private float _initialDistance;
         private float _initialScale = 1.0f;
-        private float _activeScale = 1.0f;
+        public float _activeScale = 1.0f;
 
         private Pose _previousGrabPointA;
         private Pose _previousGrabPointB;
