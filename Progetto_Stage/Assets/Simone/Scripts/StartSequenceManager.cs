@@ -14,6 +14,9 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terra;
     [SerializeField] GameObject luna;
     [SerializeField] List<GameObject> sferette;
+    [SerializeField] GameObject freccia;
+    [SerializeField] GameObject freccia1;
+    [SerializeField] GameObject freccia2;
 
 
 
@@ -38,12 +41,17 @@ public class StartSequenceManager : MonoBehaviour
             foreach (var obj in sferette)
             {
                 obj.SetActive(true);
-                var solveSfera = obj.GetComponentInChildren<MeshRenderer>().material;
+                
+                var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
                 LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
                 {
                     solveSfera.SetFloat("_Dissolvenza_animazione", value);
                 });
             }
+
+            freccia.SetActive(true);
+            freccia1.SetActive(true);
+            freccia2.SetActive(true);
         });
 
     }
