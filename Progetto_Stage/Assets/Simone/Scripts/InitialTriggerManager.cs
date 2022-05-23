@@ -7,6 +7,7 @@ public class InitialTriggerManager : MonoBehaviour
     [SerializeField] Transform earth;
     [SerializeField] Transform moon;
     [SerializeField] GameObject cassetto;
+    [SerializeField] Transform padre;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class InitialTriggerManager : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if(other.gameObject.tag == "InitialInteractor")
         {
-            LeanTween.move(gameObject, earth.position, 5f).setEaseInOutQuart().setOnComplete(ActivateEarth);
+            LeanTween.move(padre.gameObject, earth.position, 5f).setEaseInOutQuart().setOnComplete(ActivateEarth);
         }
     }
 
@@ -37,7 +38,7 @@ public class InitialTriggerManager : MonoBehaviour
         earth.gameObject.SetActive(true);
         LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
         {
-            this.gameObject.SetActive(false);
+            padre.gameObject.SetActive(false);
             moon.localScale = Vector3.zero;
             moon.gameObject.SetActive(true);
             LeanTween.scale(moon.gameObject, moonScale, 3f).setEaseInOutSine();
