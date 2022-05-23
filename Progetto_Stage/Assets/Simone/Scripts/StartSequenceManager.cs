@@ -28,6 +28,7 @@ public class StartSequenceManager : MonoBehaviour
         LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
         {
             solve[1].SetFloat("_Dissolvenza_animazione", value);
+            solve[2].SetFloat("_Dissolvenza_animazione", value);
         }).setOnComplete(() =>
         {
             LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
