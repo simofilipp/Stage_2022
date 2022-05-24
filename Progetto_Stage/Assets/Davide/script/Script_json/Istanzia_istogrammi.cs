@@ -44,7 +44,7 @@ public class Istanzia_istogrammi : MonoBehaviour
             //    }
             //}
 
-           if(dato.population> 200000)
+           if(dato.capital =="primary")
             {
                 var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
                 punto.transform.parent = parent_punti.transform;
