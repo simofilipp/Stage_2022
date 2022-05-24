@@ -93,9 +93,24 @@ public class EarthRotationManager : MonoBehaviour
 
     public void RiprendiTweenTerra()
     {
-        terra.LeanScale(terra_initial_scale, 2f);
+        //disattivo le sfere finchè la terra non è tornata in asse
+        foreach (var sfera in sferette)
+        {
+            sfera.GetComponentInChildren<HandGrabInteractable>().enabled = false;
+            sfera.GetComponentInChildren<GrabInteractable>().enabled = false;
+        }
+        terra.LeanScale(terra_initial_scale, 0.7f);
         //riporto in asse la terra per ricerca
-        terraPerRicerca.LeanRotate(terraRicerca_initial_rotation.eulerAngles, 2f).setOnComplete(() => { LeanTween.resume(id); });
+        terraPerRicerca.LeanRotate(terraRicerca_initial_rotation.eulerAngles, 0.8f).setOnComplete(() => 
+        { 
+            LeanTween.resume(id);
+            foreach (var sfera in sferette)
+            {
+                sfera.GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                sfera.GetComponentInChildren<GrabInteractable>().enabled = true;
+            }
+        }
+        );
         
     }
     public void PausaTweenTerraSferette()
@@ -113,6 +128,7 @@ public class EarthRotationManager : MonoBehaviour
         counterSelezionato -= 1;
         if(counterSelezionato == 0)
         {
+            //disattivo le sfere finchè la terra non è tornata in asse
             foreach(var sfera in sferette)
             {
                 sfera.GetComponentInChildren<HandGrabInteractable>().enabled = false;

@@ -61,15 +61,9 @@ public class KeyBoardOpener : MonoBehaviour
             open = false;
             EarthRotationManager.instance.RiprendiTweenTerra();
             APIManager.instance.turn = false;
-            keyboard.transform.LeanMoveLocal(transform.localPosition, 0.7f).setEaseInQuad();
+            keyboard.transform.LeanMoveLocal(transform.localPosition, 0.5f).setEaseInQuad();
             keyboard.transform.LeanScaleY(0, 0.5f);
             keyboard.transform.LeanScaleX(0, 0.3f);
-
-            foreach (var sferetta in sferette)
-            {
-                sferetta.GetComponentInChildren<GrabInteractable>().enabled = true;
-                sferetta.GetComponentInChildren<HandGrabInteractable>().enabled=true;
-            }
         }
     }
 }
