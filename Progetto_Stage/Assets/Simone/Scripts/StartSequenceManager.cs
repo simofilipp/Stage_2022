@@ -14,9 +14,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terra;
     [SerializeField] GameObject luna;
     [SerializeField] List<GameObject> sferette;
-    [SerializeField] GameObject freccia;
-    [SerializeField] GameObject freccia1;
-    [SerializeField] GameObject freccia2;
+
 
 
 
@@ -55,9 +53,7 @@ public class StartSequenceManager : MonoBehaviour
                         });
                 }
 
-                freccia.SetActive(true);
-                freccia1.SetActive(true);
-                freccia2.SetActive(true);
+               
             });
         }
             );

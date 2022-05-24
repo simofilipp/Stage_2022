@@ -11,6 +11,8 @@ public class rotation_manager : MonoBehaviour
     bool selezionato;
     [SerializeField]
     GameObject terra;
+    [SerializeField] GameObject freccia;
+  
 
     float rotazioneX;
     float rotazioneY;
@@ -55,6 +57,7 @@ public class rotation_manager : MonoBehaviour
             selezionato = true;
             //resetto rotazione sferetta per evitare dei movimenti bruschi della terra
             this.transform.rotation= new Quaternion(0,0,0,0);
+            freccia.SetActive(true);
             StartCoroutine(Rotazione());
         }
     }
@@ -108,6 +111,7 @@ public class rotation_manager : MonoBehaviour
                 altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
             }
+            freccia.SetActive(false);
         }
     }
 
