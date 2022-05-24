@@ -68,7 +68,7 @@ public class KeyBoardOpener : MonoBehaviour
             foreach (var sferetta in sferette)
             {
                 sferetta.GetComponentInChildren<GrabInteractable>().enabled = true;
-                sferetta.GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                sferetta.GetComponentInChildren<HandGrabInteractable>().enabled=true;
             }
         }
     }

@@ -1,3 +1,5 @@
+using Oculus.Interaction;
+using Oculus.Interaction.HandPosing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +9,9 @@ public class EarthRotationManager : MonoBehaviour
     [SerializeField] Transform terra;
     [SerializeField] Transform terraPerRicerca;
     [SerializeField] Transform cameraMain;
+    [SerializeField] List<GameObject> sferette;
+
+
     Transform stato;
 
     int id;
@@ -15,7 +20,6 @@ public class EarthRotationManager : MonoBehaviour
     Quaternion terraRicerca_initial_rotation;
     Quaternion terra_initial_rotation;
 
-    public bool sferaLasciata=false;
 
     public static EarthRotationManager _instance;
     public static EarthRotationManager instance
@@ -109,12 +113,20 @@ public class EarthRotationManager : MonoBehaviour
         counterSelezionato -= 1;
         if(counterSelezionato == 0)
         {
-            sferaLasciata = true;
+            foreach(var sfera in sferette)
+            {
+                sfera.GetComponentInChildren<HandGrabInteractable>().enabled = false;
+                sfera.GetComponentInChildren<GrabInteractable>().enabled = false;
+            }
             terra.LeanScale(terra_initial_scale, 0.7f);
             //riporto in asse la terra
             terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() => { 
                 LeanTween.resume(id);
-                sferaLasciata=false;
+                foreach (var sfera in sferette)
+                {
+                    sfera.GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                    sfera.GetComponentInChildren<GrabInteractable>().enabled = true;
+                }
             });
         }
     }

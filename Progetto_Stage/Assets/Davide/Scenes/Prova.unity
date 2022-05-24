@@ -832,7 +832,10 @@ MonoBehaviour:
   terra: {fileID: 8482397537264485165}
   terraPerRicerca: {fileID: 3516523305263804778}
   cameraMain: {fileID: 1854188709}
-  sferaLasciata: 0
+  sferette:
+  - {fileID: 770602064}
+  - {fileID: 1196375343}
+  - {fileID: 1286084936}
 --- !u!4 &159246789
 Transform:
   m_ObjectHideFlags: 0
@@ -9133,6 +9136,11 @@ PrefabInstance:
       propertyPath: sferette.Array.data[2]
       value: 
       objectReference: {fileID: 1286084936}
+    - target: {fileID: 1934091473764409179, guid: 7b1a72b12b43e564d9e013a6afe9edd4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3298297548161677073, guid: 7b1a72b12b43e564d9e013a6afe9edd4,
         type: 3}
       propertyPath: m_RootOrder

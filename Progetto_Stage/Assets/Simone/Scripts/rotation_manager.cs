@@ -28,21 +28,7 @@ public class rotation_manager : MonoBehaviour
         rotazioneZ = 1f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //controllo che la terra si sia rimessa in asse prima di poterci interagire nuovamente
-        if (EarthRotationManager.instance.sferaLasciata)
-        {
-            GetComponentInChildren<GrabInteractable>().enabled = false;
-            GetComponentInChildren<HandGrabInteractable>().enabled = false;
-        }
-        else
-        {
-            GetComponentInChildren<GrabInteractable>().enabled = true;
-            GetComponentInChildren<HandGrabInteractable>().enabled = true;
-        }
-    }
+
     public void AvviaCoroutine()
     {
         counterSelezionato += 1;
@@ -52,7 +38,7 @@ public class rotation_manager : MonoBehaviour
             {
                 //faccio in modo che le altre sferette non siano interagibili
                 altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
-                altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = false;
+                altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled=false;
             }
             selezionato = true;
             //resetto rotazione sferetta per evitare dei movimenti bruschi della terra
