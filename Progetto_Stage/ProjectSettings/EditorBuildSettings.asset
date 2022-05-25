@@ -23,10 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Simone/Scenes/ProvaSimone.unity
     guid: 5cc81723a44d3ab44b2d04d6626b0b0e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Davide/Scenes/Prova.unity
     guid: b49e9ec8ca72cdf49a75bd72a171b52c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Davide/Scenes/test_materiali.unity
     guid: 8f15fb34d628e4d418939d70c10d6401
   m_configObjects:
