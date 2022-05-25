@@ -81,9 +81,10 @@ public class WorldMapManager : MonoBehaviour
                 case State.Population:
                     EarthRenderer.sharedMaterial = Population;
 
-                    ShowMap();
-                    Clouds.SetActive(false);
-                    Glow.SetActive(false);
+                    //ShowMap();
+                    Clouds.SetActive(true);
+                    Glow.SetActive(true);
+                    HideMap();
                     break;
                 case State.Science:
                     EarthRenderer.sharedMaterial = Science;

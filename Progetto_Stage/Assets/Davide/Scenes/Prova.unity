@@ -7409,8 +7409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableView: {fileID: 999167665}
-  materialStato: {fileID: 2100000, guid: 86bf976675e4e404f9bcebffd9d62df7, type: 2}
-  layerShader: {fileID: 4800000, guid: 314e3034937b50349a70af5d749e7eae, type: 3}
+  materialStato: {fileID: 2100000, guid: 0ca50896cbbee464fb6a9eb0b708e501, type: 2}
+  layerShader: {fileID: 0}
   _testObj: {fileID: 6878579548575592768}
 --- !u!114 &1296344332 stripped
 MonoBehaviour:
@@ -18046,6 +18046,7 @@ GameObject:
   - component: {fileID: 3166609273258586977}
   - component: {fileID: 3166609273260846498}
   - component: {fileID: 3166609273260846496}
+  - component: {fileID: 3166609273260880258}
   m_Layer: 4
   m_Name: ocean_Pacific
   m_TagString: Untagged
@@ -18080,6 +18081,7 @@ GameObject:
   - component: {fileID: 3166609273258586979}
   - component: {fileID: 3166609273260846502}
   - component: {fileID: 3166609273260846500}
+  - component: {fileID: 3166609273260880260}
   m_Layer: 4
   m_Name: ocean_Indian
   m_TagString: Untagged
@@ -18117,6 +18119,7 @@ GameObject:
   - component: {fileID: 3166609273258586981}
   - component: {fileID: 3166609273260846504}
   - component: {fileID: 3166609273260846505}
+  - component: {fileID: 3166609273260880262}
   m_Layer: 4
   m_Name: ocean_Atlantic
   m_TagString: Untagged
@@ -18151,6 +18154,7 @@ GameObject:
   - component: {fileID: 3166609273258586983}
   - component: {fileID: 3166609273260846506}
   - component: {fileID: 3166609273260846507}
+  - component: {fileID: 3166609273260880264}
   m_Layer: 4
   m_Name: ocean_Arctic
   m_TagString: Untagged
@@ -18266,6 +18270,7 @@ GameObject:
   - component: {fileID: 3166609273258586991}
   - component: {fileID: 3166609273260846513}
   - component: {fileID: 3166609273260846510}
+  - component: {fileID: 3166609273260880272}
   m_Layer: 4
   m_Name: ocean_Southern
   m_TagString: Untagged
@@ -18302,6 +18307,23 @@ Transform:
   m_Father: {fileID: 3166609273260880269}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3166609273260880258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166609273260846497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 0}
+  _collider: {fileID: 3166609273260846498}
+  _surface: {fileID: 0}
 --- !u!4 &3166609273260880259
 Transform:
   m_ObjectHideFlags: 0
@@ -18317,6 +18339,23 @@ Transform:
   m_Father: {fileID: 3166609273260880269}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3166609273260880260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166609273260846499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 0}
+  _collider: {fileID: 3166609273260846502}
+  _surface: {fileID: 0}
 --- !u!4 &3166609273260880261
 Transform:
   m_ObjectHideFlags: 0
@@ -18332,6 +18371,23 @@ Transform:
   m_Father: {fileID: 3166609273260880269}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3166609273260880262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166609273260846501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 0}
+  _collider: {fileID: 3166609273260846504}
+  _surface: {fileID: 0}
 --- !u!4 &3166609273260880263
 Transform:
   m_ObjectHideFlags: 0
@@ -18347,6 +18403,23 @@ Transform:
   m_Father: {fileID: 3166609273260880269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3166609273260880264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166609273260846503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 0}
+  _collider: {fileID: 3166609273260846506}
+  _surface: {fileID: 0}
 --- !u!4 &3166609273260880269
 Transform:
   m_ObjectHideFlags: 0
@@ -18382,6 +18455,23 @@ Transform:
   m_Father: {fileID: 3166609273260880269}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3166609273260880272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166609273260846511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 0}
+  _collider: {fileID: 3166609273260846513}
+  _surface: {fileID: 0}
 --- !u!23 &3174622391484452133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45604,7 +45694,7 @@ MonoBehaviour:
   - {fileID: 6878579548575593221}
   - {fileID: 6878579548575593220}
   Earth: {fileID: 2100000, guid: f72df2c248e02df4fb2299c5191b68f9, type: 2}
-  Population: {fileID: 2100000, guid: 86bf976675e4e404f9bcebffd9d62df7, type: 2}
+  Population: {fileID: 2100000, guid: 0ca50896cbbee464fb6a9eb0b708e501, type: 2}
   Science: {fileID: 2100000, guid: c65586a78e7f6b1448e12a51b6a8d2da, type: 2}
   Transport: {fileID: 2100000, guid: e4e7f19f1dd76e9428bc4918cba42515, type: 2}
   Disaster: {fileID: 2100000, guid: bed067e6baa84df47a6c83b9642eb325, type: 2}
@@ -45612,7 +45702,6 @@ MonoBehaviour:
   WorldLayersTextures:
   - {fileID: 2800000, guid: 230e7f2732dacf24787709062cfe0185, type: 3}
   - {fileID: 2800000, guid: b217b9b20082ef34285d5b069139559f, type: 3}
-  - {fileID: 2800000, guid: 230e7f2732dacf24787709062cfe0185, type: 3}
   - {fileID: 2800000, guid: b217b9b20082ef34285d5b069139559f, type: 3}
   - {fileID: 2800000, guid: 167390da253a30b4d9a1effa7c90dcae, type: 3}
   - {fileID: 2800000, guid: c8564e689e3e7d848af0d1b880099766, type: 3}
