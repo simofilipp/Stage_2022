@@ -22,18 +22,14 @@ public class StartSequenceManager : MonoBehaviour
     public void StartFreeMode()
     {
         ponte.SetActive(false);
-        var solve = pannelli.GetComponent<MeshRenderer>().materials;
+        var solve = pannelli.GetComponent<MeshRenderer>().material;
         LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
         {
-            solve[1].SetFloat("_Dissolvenza_animazione", value);
-            solve[2].SetFloat("_Dissolvenza_animazione", value);
+            solve.SetFloat("_Dissolvenza_animazione", value);
+            
         }).setOnComplete(() =>
         {
-            LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
-            {
-                solve[0].SetFloat("_Dissolvenza_animazione", value);
-            }).setOnComplete(() =>
-            {
+           
             //attivare tastiera e canvas
             tastiera.SetActive(true);
                 canvasFinale.SetActive(true);
@@ -54,7 +50,7 @@ public class StartSequenceManager : MonoBehaviour
                 }
 
                
-            });
+      
         }
             );
 

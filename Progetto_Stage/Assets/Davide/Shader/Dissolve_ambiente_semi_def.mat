@@ -34,6 +34,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2D_0fb5e6a4718b4e39825b9697af643f98_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6b22b2f58ce65e44695ac23d4f0c7024, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_1b38fea00ad34f78aa068abd35685e6f_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 3efbeb5349ab17847be1961f3045e309, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5f6d7a5f83444cbc9db74ea7f00526b7_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 90c96ae11ccd76c418dabaae1dd0f86a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a772eaa68ebd48ea95f7b71e73b629c2_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9803dce7e5a99cc449cba1db5f11573c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_ca6529e5b6b04a37ad5604eebf2cb6db_Texture_1:
         m_Texture: {fileID: 2800000, guid: e85d4abd4795da742958a200b29071db, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -60,7 +76,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolvenza_animazione: 0
+    - _Dissolvenza_animazione: -0.52
     - _Dissolvenza_spessore: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0
