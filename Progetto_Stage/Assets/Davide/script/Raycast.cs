@@ -35,8 +35,8 @@ public class Raycast : MonoBehaviour
         //Debug.Log(codice);
         if(iiv.State == InteractableState.Select)
         {
-            TMP_Text testo = canvasFinale.GetComponentInChildren<TMP_Text>();
-            testo.text = this.GetComponent<Country>().Name;
+            //TMP_Text testo = canvasFinale.GetComponentInChildren<TMP_Text>();
+            //testo.text = this.GetComponent<Country>().Name;
             Debug.Log(GetComponent<Country>().Name);
             APIManager.instance.GetCountryData(GetComponent<Country>().Name);
         }
