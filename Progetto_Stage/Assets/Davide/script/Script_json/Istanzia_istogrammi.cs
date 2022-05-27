@@ -12,7 +12,6 @@ public class Istanzia_istogrammi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        IstanziaPunto();
     }
 
     // Update is called once per frame
@@ -31,7 +30,7 @@ public class Istanzia_istogrammi : MonoBehaviour
         return pos;
     }
 
-    void IstanziaPunto()
+    public void IstanziaPunto()
     {
         foreach (var dato in jdata.gameData.dati)
         {

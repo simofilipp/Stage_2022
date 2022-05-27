@@ -73,9 +73,10 @@ public class WorldMapManager : MonoBehaviour
                     break;
                 case State.Politic:
                     EarthRenderer.sharedMaterial = Earth;
-                    ShowMap();
+                    //ShowMap();
+                    Camera.main.cullingMask |= 1 << 14;
                     Clouds.SetActive(false);
-                    Glow.SetActive(false);
+                    Glow.SetActive(true);
 
                     break;
                 case State.Population:
@@ -139,24 +140,20 @@ public class WorldMapManager : MonoBehaviour
         if (instance == null) instance = this;
         else if (instance != this) { Destroy(gameObject); return; };
 
-
-        HideMap();
-        
-
+        Camera.main.cullingMask &= ~(1 << 4);
+        Camera.main.cullingMask &= ~(1 << 14);
     }
 
 
 
     void ShowMap()
     {
-        Camera.main.cullingMask = ~0;
-
-
+        //Camera.main.cullingMask = ~LayerMask.GetMask("State");
     }
     void HideMap()
     {
-        Camera.main.cullingMask = ~LayerMask.GetMask("Water");
-
+        Camera.main.cullingMask &= ~(1 << 4);
+        Camera.main.cullingMask &= ~(1 << 14);
     }
     void Update()
     {
@@ -262,6 +259,7 @@ public class WorldMapManager : MonoBehaviour
             foreach (var item in countries)
             {
                 if (str.Substring(11, 2) == item.name) item.Name = str.Substring(25, str.Length - 26);
+
                 item.meshRenderer = item.GetComponent<MeshRenderer>();
             }
 
