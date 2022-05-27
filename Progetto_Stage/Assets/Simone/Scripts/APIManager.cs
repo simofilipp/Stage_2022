@@ -174,5 +174,5 @@ public class APIManager : MonoBehaviour
         StartCoroutine(GetData());
     }
 
-    //string url= "https://api.covid19api.com/country/italy/status/confirmed?from=2022-5-3T00:00:00Z&to=2022-5-4T00:00:00Z"
+    //string url= "https://api.covid19api.com/country/Netherlands/status/confirmed?from=2022-5-3T00:00:00Z&to=2022-5-4T00:00:00Z"
 }

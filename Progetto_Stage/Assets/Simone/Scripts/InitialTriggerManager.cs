@@ -32,10 +32,11 @@ public class InitialTriggerManager : MonoBehaviour
     void ActivateEarth()
     {
         cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
+        earth.gameObject.SetActive(true);
         Vector3 earthScale= earth.localScale;
         Vector3 moonScale= moon.localScale;
         earth.localScale = Vector3.zero;
-        earth.gameObject.SetActive(true);
+        earth.localScale = Vector3.zero;
         LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
         {
             padre.gameObject.SetActive(false);

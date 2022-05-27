@@ -612,7 +612,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral35E15D296C3E134EC54B9CF8B29DDB00E1DB706F
 IL2CPP_EXTERN_C String_t* _stringLiteral3B7BFC1BF5823F197B8A7C6A7ECF4B98F5647494;
 IL2CPP_EXTERN_C String_t* _stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3FD8F8AC6AC464169FFBE67A817A867D6B67538B;
-IL2CPP_EXTERN_C String_t* _stringLiteral46580D65357E6BC22728934BD6BC047227EFE0E6;
 IL2CPP_EXTERN_C String_t* _stringLiteral49EB2BDDEAEB4B350FD0426B74A415CAA4154818;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B139373BC21065B9D5AD4CD7A6DA4B183830CE2;
 IL2CPP_EXTERN_C String_t* _stringLiteral4CF83EF9C835E8180C7A24EE907EAF9AAF67CADD;
@@ -5379,8 +5378,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HealthData_GetCity_m5F5CD56633DFC91
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HealthData_LivingIndexClear_m6524B7620B6F6D823C450B80757BDB36A14DCE0B (HealthData_tA0391F82F97952A07CF9754807E848FF96AC0B4D* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mF8B69BE42B5C5ABCAD3C176FBBE3010E0815D65D (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
-// System.Void Istanzia_istogrammi::IstanziaPunto()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Istanzia_istogrammi_IstanziaPunto_m7EF6CB959311290B44E9193D8071E4618155A2E7 (Istanzia_istogrammi_t8006457E64FE7130F97C17346604B6E90E4FFF07* __this, const RuntimeMethod* method) ;
 // System.Boolean System.String::op_Equality(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Istanzia_istogrammi::CalcolaPunto(System.Single,System.Single)
@@ -5622,6 +5619,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_ChangeAllCountriesMateri
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void WorldMapManager::HideMap()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) ;
+// UnityEngine.Camera UnityEngine.Camera::get_main()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43 (const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.Camera::get_cullingMask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Camera::set_cullingMask(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.Void WorldMapManager::ShowMap()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<WorldMapManager>()
@@ -5633,12 +5636,6 @@ inline WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* Object_FindObj
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_set_instance_m7A12D1501066A7F95C6BADF257445D3395C75545 (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
-// UnityEngine.Camera UnityEngine.Camera::get_main()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43 (const RuntimeMethod* method) ;
-// System.Void UnityEngine.Camera::set_cullingMask(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, int32_t ___value0, const RuntimeMethod* method) ;
-// System.Int32 UnityEngine.LayerMask::GetMask(System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_GetMask_mB1925EDF21896C48C8E2AE1C11BB1944F279181E (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___layerNames0, const RuntimeMethod* method) ;
 // System.Void WorldMapManager::SelectCountry()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_SelectCountry_mC417FEBB65B3403CDCBBAFAAE63C5FF65DE298A1 (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) ;
 // System.Void WorldMapManager/<>c__DisplayClass38_0::.ctor()
@@ -7670,8 +7667,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HealthDatas__ctor_m9C15D1763962153C843C4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Istanzia_istogrammi_Start_m6991653DA201A5EECACA30304413487128EA6DD6 (Istanzia_istogrammi_t8006457E64FE7130F97C17346604B6E90E4FFF07* __this, const RuntimeMethod* method) 
 {
 	{
-		// IstanziaPunto();
-		Istanzia_istogrammi_IstanziaPunto_m7EF6CB959311290B44E9193D8071E4618155A2E7(__this, NULL);
 		// }
 		return;
 	}
@@ -11804,28 +11799,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_set_CurrentState_m9F56B9
 			}
 			case 2:
 			{
-				goto IL_00af;
+				goto IL_00bf;
 			}
 			case 3:
 			{
-				goto IL_00e7;
+				goto IL_00f7;
 			}
 			case 4:
 			{
-				goto IL_011f;
+				goto IL_012f;
 			}
 			case 5:
 			{
-				goto IL_0154;
+				goto IL_0164;
 			}
 			case 6:
 			{
-				goto IL_0189;
+				goto IL_0199;
 			}
 		}
 	}
 	{
-		goto IL_01be;
+		goto IL_01ce;
 	}
 
 IL_003f:
@@ -11846,7 +11841,7 @@ IL_003f:
 		// HideMap();
 		WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F(__this, NULL);
 		// break;
-		goto IL_01c0;
+		goto IL_01d0;
 	}
 
 IL_0077:
@@ -11856,136 +11851,143 @@ IL_0077:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_11 = __this->___Earth_8;
 		NullCheck(L_10);
 		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_10, L_11, NULL);
-		// ShowMap();
-		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
-		// Clouds.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___Clouds_5;
-		NullCheck(L_12);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
-		// Glow.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___Glow_6;
+		// Camera.main.cullingMask |= 1 << 14;
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_12;
+		L_12 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_13 = L_12;
 		NullCheck(L_13);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)0, NULL);
-		// break;
-		goto IL_01c0;
-	}
-
-IL_00af:
-	{
-		// EarthRenderer.sharedMaterial = Population;
-		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_14 = __this->___EarthRenderer_4;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_15 = __this->___Population_9;
-		NullCheck(L_14);
-		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_14, L_15, NULL);
-		// Clouds.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___Clouds_5;
+		int32_t L_14;
+		L_14 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_13, NULL);
+		NullCheck(L_13);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_13, ((int32_t)(L_14|((int32_t)16384))), NULL);
+		// Clouds.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___Clouds_5;
+		NullCheck(L_15);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)0, NULL);
+		// Glow.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___Glow_6;
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)1, NULL);
-		// Glow.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___Glow_6;
+		// break;
+		goto IL_01d0;
+	}
+
+IL_00bf:
+	{
+		// EarthRenderer.sharedMaterial = Population;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_17 = __this->___EarthRenderer_4;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_18 = __this->___Population_9;
 		NullCheck(L_17);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)1, NULL);
+		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_17, L_18, NULL);
+		// Clouds.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___Clouds_5;
+		NullCheck(L_19);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
+		// Glow.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___Glow_6;
+		NullCheck(L_20);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)1, NULL);
 		// HideMap();
 		WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F(__this, NULL);
 		// break;
-		goto IL_01c0;
+		goto IL_01d0;
 	}
 
-IL_00e7:
+IL_00f7:
 	{
 		// EarthRenderer.sharedMaterial = Science;
-		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_18 = __this->___EarthRenderer_4;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_19 = __this->___Science_10;
-		NullCheck(L_18);
-		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_18, L_19, NULL);
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_21 = __this->___EarthRenderer_4;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_22 = __this->___Science_10;
+		NullCheck(L_21);
+		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_21, L_22, NULL);
 		// Glow.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___Glow_6;
-		NullCheck(L_20);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___Glow_6;
+		NullCheck(L_23);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)0, NULL);
 		// ShowMap();
 		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
 		// Clouds.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___Clouds_5;
-		NullCheck(L_21);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)0, NULL);
-		// break;
-		goto IL_01c0;
-	}
-
-IL_011f:
-	{
-		// EarthRenderer.sharedMaterial = Transport;
-		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_22 = __this->___EarthRenderer_4;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = __this->___Transport_11;
-		NullCheck(L_22);
-		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_22, L_23, NULL);
-		// Glow.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___Glow_6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___Clouds_5;
 		NullCheck(L_24);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_24, (bool)0, NULL);
+		// break;
+		goto IL_01d0;
+	}
+
+IL_012f:
+	{
+		// EarthRenderer.sharedMaterial = Transport;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_25 = __this->___EarthRenderer_4;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_26 = __this->___Transport_11;
+		NullCheck(L_25);
+		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_25, L_26, NULL);
+		// Glow.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___Glow_6;
+		NullCheck(L_27);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)0, NULL);
 		// ShowMap();
 		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
 		// Clouds.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___Clouds_5;
-		NullCheck(L_25);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)0, NULL);
-		// break;
-		goto IL_01c0;
-	}
-
-IL_0154:
-	{
-		// EarthRenderer.sharedMaterial = Disaster;
-		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_26 = __this->___EarthRenderer_4;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_27 = __this->___Disaster_12;
-		NullCheck(L_26);
-		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_26, L_27, NULL);
-		// Glow.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___Glow_6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___Clouds_5;
 		NullCheck(L_28);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_28, (bool)0, NULL);
-		// Clouds.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___Clouds_5;
-		NullCheck(L_29);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_29, (bool)0, NULL);
-		// ShowMap();
-		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
 		// break;
-		goto IL_01c0;
+		goto IL_01d0;
 	}
 
-IL_0189:
+IL_0164:
 	{
-		// EarthRenderer.sharedMaterial = Climat;
-		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_30 = __this->___EarthRenderer_4;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_31 = __this->___Climat_13;
-		NullCheck(L_30);
-		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_30, L_31, NULL);
+		// EarthRenderer.sharedMaterial = Disaster;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_29 = __this->___EarthRenderer_4;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_30 = __this->___Disaster_12;
+		NullCheck(L_29);
+		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_29, L_30, NULL);
 		// Glow.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___Glow_6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___Glow_6;
+		NullCheck(L_31);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
+		// Clouds.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___Clouds_5;
 		NullCheck(L_32);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_32, (bool)0, NULL);
-		// Clouds.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = __this->___Clouds_5;
-		NullCheck(L_33);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_33, (bool)0, NULL);
 		// ShowMap();
 		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
 		// break;
-		goto IL_01c0;
+		goto IL_01d0;
 	}
 
-IL_01be:
+IL_0199:
+	{
+		// EarthRenderer.sharedMaterial = Climat;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_33 = __this->___EarthRenderer_4;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_34 = __this->___Climat_13;
+		NullCheck(L_33);
+		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_33, L_34, NULL);
+		// Glow.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = __this->___Glow_6;
+		NullCheck(L_35);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_35, (bool)0, NULL);
+		// Clouds.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = __this->___Clouds_5;
+		NullCheck(L_36);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)0, NULL);
+		// ShowMap();
+		WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD(__this, NULL);
+		// break;
+		goto IL_01d0;
+	}
+
+IL_01ce:
 	{
 		// break;
-		goto IL_01c0;
+		goto IL_01d0;
 	}
 
-IL_01c0:
+IL_01d0:
 	{
 		// _currentState = value;
-		int32_t L_34 = ___value0;
-		__this->____currentState_26 = L_34;
+		int32_t L_37 = ___value0;
+		__this->____currentState_26 = L_37;
 		// }
 		return;
 	}
@@ -12111,16 +12113,32 @@ IL_0019:
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_6, NULL);
 		// else if (instance != this) { Destroy(gameObject); return; };
-		goto IL_003f;
+		goto IL_0063;
 	}
 
 IL_0037:
 	{
-		// HideMap();
-		WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F(__this, NULL);
+		// Camera.main.cullingMask &= ~(1 << 4);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_7;
+		L_7 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = L_7;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_8, NULL);
+		NullCheck(L_8);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_8, ((int32_t)(L_9&((int32_t)-17))), NULL);
+		// Camera.main.cullingMask &= ~(1 << 14);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_10;
+		L_10 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_11 = L_10;
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_11, NULL);
+		NullCheck(L_11);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_11, ((int32_t)(L_12&((int32_t)-16385))), NULL);
 	}
 
-IL_003f:
+IL_0063:
 	{
 		// }
 		return;
@@ -12130,11 +12148,6 @@ IL_003f:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_ShowMap_m9D21785F682ADF53BC4D2DCEAEBFE90A2FCD59BD (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) 
 {
 	{
-		// Camera.main.cullingMask = ~0;
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
-		L_0 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
-		NullCheck(L_0);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_0, (-1), NULL);
 		// }
 		return;
 	}
@@ -12142,26 +12155,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_ShowMap_m9D21785F682ADF5
 // System.Void WorldMapManager::HideMap()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46580D65357E6BC22728934BD6BC047227EFE0E6);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Camera.main.cullingMask = ~LayerMask.GetMask("Water");
+		// Camera.main.cullingMask &= ~(1 << 4);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
 		L_0 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)1);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, _stringLiteral46580D65357E6BC22728934BD6BC047227EFE0E6);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral46580D65357E6BC22728934BD6BC047227EFE0E6);
-		int32_t L_3;
-		L_3 = LayerMask_GetMask_mB1925EDF21896C48C8E2AE1C11BB1944F279181E(L_2, NULL);
-		NullCheck(L_0);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_0, ((~L_3)), NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = L_0;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_1, NULL);
+		NullCheck(L_1);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_1, ((int32_t)(L_2&((int32_t)-17))), NULL);
+		// Camera.main.cullingMask &= ~(1 << 14);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_3;
+		L_3 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = L_3;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_4, NULL);
+		NullCheck(L_4);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_4, ((int32_t)(L_5&((int32_t)-16385))), NULL);
 		// }
 		return;
 	}

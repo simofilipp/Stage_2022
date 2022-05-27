@@ -9,6 +9,8 @@ public class Istanzia_istogrammi : MonoBehaviour
     public GameObject cubo_scala;
     [SerializeField]
     GameObject parent_punti;
+
+    bool datiAttivati = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     Vector3 CalcolaPunto(float lat, float lng)
@@ -32,48 +34,60 @@ public class Istanzia_istogrammi : MonoBehaviour
 
     public void IstanziaPunto()
     {
-        foreach (var dato in jdata.gameData.dati)
+        if (!datiAttivati)
         {
-            //float valore_scala=1 ;
-            //foreach(var citta in jdata.healthDatas.dati)
-            //{
-            //    if(citta.GetCity() == dato.city)
-            //    {
-            //        valore_scala = citta.LivingIndexClear();
-            //    }
-            //}
-
-           if(dato.capital =="primary")
+            datiAttivati = true;
+            parent_punti.SetActive(true);
+            foreach (var dato in jdata.gameData.dati)
             {
-                var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
-                punto.transform.parent = parent_punti.transform;
-                punto.transform.LookAt(punto.transform.position * 2);
-                punto.transform.localScale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
-                punto.name = dato.city;
-                punto.GetComponent<MeshRenderer>().material.color = Color.green;
-                if (dato.population > 1000000)
-                {
+                //float valore_scala=1 ;
+                //foreach(var citta in jdata.healthDatas.dati)
+                //{
+                //    if(citta.GetCity() == dato.city)
+                //    {
+                //        valore_scala = citta.LivingIndexClear();
+                //    }
+                //}
 
-                    punto.GetComponent<MeshRenderer>().material.color = Color.yellow;
-                }
-                if (dato.population > 5000000)
+                if (dato.capital == "primary")
                 {
+                    var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
+                    punto.transform.parent = parent_punti.transform;
+                    punto.transform.LookAt(punto.transform.position * 2);
+                    punto.transform.localScale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
+                    punto.name = dato.city;
+                    punto.GetComponent<MeshRenderer>().material.color = Color.green;
+                    if (dato.population > 1000000)
+                    {
 
-                    punto.GetComponent<MeshRenderer>().material.color = Color.red;
-                }
-                if (dato.population > 25000000)
-                {
+                        punto.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                    }
+                    if (dato.population > 5000000)
+                    {
 
-                    punto.GetComponent<MeshRenderer>().material.color = Color.black;
+                        punto.GetComponent<MeshRenderer>().material.color = Color.red;
+                    }
+                    if (dato.population > 25000000)
+                    {
+
+                        punto.GetComponent<MeshRenderer>().material.color = Color.black;
+                    }
                 }
+
+
             }
-           
 
+            parent_punti.transform.position = this.transform.position;
+            parent_punti.transform.parent = this.transform;
         }
-
-        parent_punti.transform.position = this.transform.position;
-        parent_punti.transform.parent = this.transform;
+        if (parent_punti.gameObject.activeSelf)
+        {
+            parent_punti.gameObject.SetActive(false);
+        }
+        else
+        {
+            parent_punti.gameObject.SetActive(true);
+        }
     }
-
-
 }
+
