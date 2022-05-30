@@ -9,11 +9,17 @@ public class Istanzia_istogrammi : MonoBehaviour
     public GameObject cubo_scala;
     [SerializeField]
     GameObject parent_punti;
+    [SerializeField] float raggio;
 
     bool datiAttivati = false;
     // Start is called before the first frame update
+    private void Awake()
+    {
+    
+    }
     void Start()
     {
+       //Invoke("IstanziaPunto", 2.0f);
     }
 
     // Update is called once per frame
@@ -25,15 +31,23 @@ public class Istanzia_istogrammi : MonoBehaviour
     Vector3 CalcolaPunto(float lat, float lng)
     {
         Vector3 pos;
-        pos.x = 5f * Mathf.Cos((lng) * Mathf.Deg2Rad) * Mathf.Cos(lat * Mathf.Deg2Rad);
-        pos.y = 5f * Mathf.Sin(lat * Mathf.Deg2Rad);
-        pos.z = 5f * Mathf.Sin((lng) * Mathf.Deg2Rad) * Mathf.Cos(lat * Mathf.Deg2Rad);
+        pos.x = raggio * Mathf.Cos((lng) * Mathf.Deg2Rad) * Mathf.Cos(lat * Mathf.Deg2Rad);
+        pos.y =  raggio * Mathf.Sin(lat * Mathf.Deg2Rad);
+        pos.z = raggio * Mathf.Sin((lng) * Mathf.Deg2Rad) * Mathf.Cos(lat * Mathf.Deg2Rad);
 
         return pos;
     }
 
     public void IstanziaPunto()
     {
+        if (parent_punti.gameObject.activeSelf)
+        {
+            parent_punti.gameObject.SetActive(false);
+        }
+        else
+        {
+            parent_punti.gameObject.SetActive(true);
+        }
         if (!datiAttivati)
         {
             datiAttivati = true;
@@ -78,15 +92,10 @@ public class Istanzia_istogrammi : MonoBehaviour
             }
 
             parent_punti.transform.position = this.transform.position;
+           
             parent_punti.transform.parent = this.transform;
-        }
-        if (parent_punti.gameObject.activeSelf)
-        {
-            parent_punti.gameObject.SetActive(false);
-        }
-        else
-        {
-            parent_punti.gameObject.SetActive(true);
+            Debug.Log(parent_punti.transform.localRotation);
+            parent_punti.transform.localRotation = Quaternion.Euler(0.09f, -90f, -90);
         }
     }
 }
