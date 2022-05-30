@@ -71,20 +71,24 @@ public class Istanzia_istogrammi : MonoBehaviour
                     punto.transform.localScale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
                     punto.name = dato.city;
                     punto.GetComponent<MeshRenderer>().material.color = Color.green;
+                    punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
                     if (dato.population > 1000000)
                     {
 
                         punto.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
                     }
                     if (dato.population > 5000000)
                     {
 
                         punto.GetComponent<MeshRenderer>().material.color = Color.red;
+                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
                     }
                     if (dato.population > 25000000)
                     {
 
-                        punto.GetComponent<MeshRenderer>().material.color = Color.black;
+                        punto.GetComponent<MeshRenderer>().material.color = Color.white;
+                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
                     }
                 }
 
