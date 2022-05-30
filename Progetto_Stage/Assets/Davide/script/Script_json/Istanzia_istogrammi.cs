@@ -68,7 +68,8 @@ public class Istanzia_istogrammi : MonoBehaviour
                     var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
                     punto.transform.parent = parent_punti.transform;
                     punto.transform.LookAt(punto.transform.position * 2);
-                    punto.transform.localScale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
+                    var scalaFinale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
+                    punto.transform.LeanScale(scalaFinale, 5);
                     punto.name = dato.city;
                     punto.GetComponent<MeshRenderer>().material.color = Color.green;
                     punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
