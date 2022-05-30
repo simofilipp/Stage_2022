@@ -18,7 +18,7 @@ using UnityEngine.Serialization;
 
 namespace Oculus.Interaction
 {
-    public class RayInteractorPinchVisual : MonoBehaviour
+    public class RayInteractorPinchVisual1 : MonoBehaviour
     {
         [SerializeField, Interface(typeof(IHand))]
         private MonoBehaviour _hand;
@@ -127,7 +127,7 @@ namespace Oculus.Interaction
 
             var mappedPinchStrength = _remapCurve.Evaluate(Hand.GetFingerPinchStrength(HandFinger.Index));
 
-            _skinnedMeshRenderer.material.color = isPinching ? Color.red : new Color(1f, 0f, 0f, Mathf.Lerp(_alphaRange.x, _alphaRange.y, mappedPinchStrength));
+            _skinnedMeshRenderer.material.color = isPinching ? Color.green : new Color(0f, 1f, 0f, Mathf.Lerp(_alphaRange.x, _alphaRange.y, mappedPinchStrength));
             _skinnedMeshRenderer.SetBlendShapeWeight(0, mappedPinchStrength * 100f);
             _skinnedMeshRenderer.SetBlendShapeWeight(1, mappedPinchStrength * 100f);
         }

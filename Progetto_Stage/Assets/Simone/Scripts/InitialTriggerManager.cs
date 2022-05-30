@@ -8,10 +8,14 @@ public class InitialTriggerManager : MonoBehaviour
     [SerializeField] Transform moon;
     [SerializeField] GameObject cassetto;
     [SerializeField] Transform padre;
+    Vector3 earthScale;
+    Vector3 moonScale;
     // Start is called before the first frame update
     void Start()
     {
         LeanTween.rotateAround(gameObject, transform.forward, -360f, 30f).setRepeat(-1);
+        earthScale = earth.localScale;
+        moonScale = moon.localScale;
     }
 
     // Update is called once per frame
@@ -33,15 +37,12 @@ public class InitialTriggerManager : MonoBehaviour
     {
         cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
         earth.gameObject.SetActive(true);
-        Vector3 earthScale= earth.localScale;
-        Vector3 moonScale= moon.localScale;
-        earth.localScale = Vector3.zero;
         earth.localScale = Vector3.zero;
         LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
         {
             padre.gameObject.SetActive(false);
-            moon.localScale = Vector3.zero;
             moon.gameObject.SetActive(true);
+            moon.localScale = Vector3.zero;
             LeanTween.scale(moon.gameObject, moonScale, 3f).setEaseInOutSine();
         });
     }

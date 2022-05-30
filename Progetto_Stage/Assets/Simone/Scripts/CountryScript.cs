@@ -25,7 +25,7 @@ public class CountryScript
 
     public string PrintAllData()
     {
-        string allData = "Country - " + name + "\nCode - " + code + "\nYesterday Total Cases - " + yesterdayTotalCases + "\nToday Total Cases - " + todayTotalCases + "\n New Cases - " + newCases;
+        string allData = "Country - " + name + "\nCode - " + code + "\nYesterday Total Cases - " + yesterdayTotalCases + "\nToday Total Cases - " + todayTotalCases + "\nNew Cases - " + newCases;
         return allData;
     }
 
