@@ -1,3 +1,4 @@
+using OVR;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class InitialTriggerManager : MonoBehaviour
     [SerializeField] Transform moon;
     [SerializeField] GameObject cassetto;
     [SerializeField] Transform padre;
+    public SoundFXRef testSound1;
+    public SoundFXRef cassettoSuono;
     Vector3 earthScale;
     Vector3 moonScale;
     // Start is called before the first frame update
@@ -30,12 +33,14 @@ public class InitialTriggerManager : MonoBehaviour
         if(other.gameObject.tag == "InitialInteractor")
         {
             LeanTween.move(padre.gameObject, earth.position, 5f).setEaseInOutQuart().setOnComplete(ActivateEarth);
+            testSound1.PlaySound();
         }
     }
 
     void ActivateEarth()
     {
         cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
+        //cassettoSuono.PlaySoundAt(cassetto.transform.position);
         earth.gameObject.SetActive(true);
         earth.localScale = Vector3.zero;
         LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 

@@ -1,3 +1,4 @@
+using OVR;
 using System.Collections;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ public class GlitchControl : MonoBehaviour
 {
     //How often should the glitch effect happen (higher value means more frequently)
     public float glitchChance = 0.1f;
+    public SoundFXRef glitchSound;
+
 
     Material hologramMaterial;
     WaitForSeconds glitchLoopWait = new WaitForSeconds(0.1f);
@@ -30,6 +33,8 @@ public class GlitchControl : MonoBehaviour
                 yield return new WaitForSeconds(Random.Range(0.05f, 0.1f));
                 hologramMaterial.SetFloat("_GlitchIntensity", 0f);
                 hologramMaterial.SetFloat("_GlowIntensity", originalGlowIntensity);
+
+                glitchSound.PlaySoundAt(this.transform.position);
             }
 
             yield return glitchLoopWait;
