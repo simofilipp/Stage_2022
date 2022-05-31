@@ -40,7 +40,7 @@ public class InitialTriggerManager : MonoBehaviour
     void ActivateEarth()
     {
         cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
-        //cassettoSuono.PlaySoundAt(cassetto.transform.position);
+        cassettoSuono.PlaySoundAt(cassetto.transform.position);
         earth.gameObject.SetActive(true);
         earth.localScale = Vector3.zero;
         LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 

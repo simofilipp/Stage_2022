@@ -140,7 +140,6 @@ public class WorldMapManager : MonoBehaviour
         if (instance == null) instance = this;
         else if (instance != this) { Destroy(gameObject); return; };
 
-        Camera.main.cullingMask &= ~(1 << 4);
         Camera.main.cullingMask &= ~(1 << 14);
     }
 
@@ -152,7 +151,6 @@ public class WorldMapManager : MonoBehaviour
     }
     void HideMap()
     {
-        Camera.main.cullingMask &= ~(1 << 4);
         Camera.main.cullingMask &= ~(1 << 14);
     }
     void Update()
