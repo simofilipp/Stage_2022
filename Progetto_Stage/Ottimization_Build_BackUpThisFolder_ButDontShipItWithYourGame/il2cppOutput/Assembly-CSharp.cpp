@@ -12248,12 +12248,12 @@ IL_0019:
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_6, NULL);
 		// else if (instance != this) { Destroy(gameObject); return; };
-		goto IL_0063;
+		goto IL_004f;
 	}
 
 IL_0037:
 	{
-		// Camera.main.cullingMask &= ~(1 << 4);
+		// Camera.main.cullingMask &= ~(1 << 14);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_7;
 		L_7 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = L_7;
@@ -12261,19 +12261,10 @@ IL_0037:
 		int32_t L_9;
 		L_9 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_8, NULL);
 		NullCheck(L_8);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_8, ((int32_t)(L_9&((int32_t)-17))), NULL);
-		// Camera.main.cullingMask &= ~(1 << 14);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_10;
-		L_10 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_11 = L_10;
-		NullCheck(L_11);
-		int32_t L_12;
-		L_12 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_11, NULL);
-		NullCheck(L_11);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_11, ((int32_t)(L_12&((int32_t)-16385))), NULL);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_8, ((int32_t)(L_9&((int32_t)-16385))), NULL);
 	}
 
-IL_0063:
+IL_004f:
 	{
 		// }
 		return;
@@ -12291,7 +12282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_ShowMap_m9D21785F682ADF5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_HideMap_m00798EC21970D9171CECEFEE01B72548A7033C9F (WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* __this, const RuntimeMethod* method) 
 {
 	{
-		// Camera.main.cullingMask &= ~(1 << 4);
+		// Camera.main.cullingMask &= ~(1 << 14);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
 		L_0 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1 = L_0;
@@ -12299,16 +12290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorldMapManager_HideMap_m00798EC21970D91
 		int32_t L_2;
 		L_2 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_1, NULL);
 		NullCheck(L_1);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_1, ((int32_t)(L_2&((int32_t)-17))), NULL);
-		// Camera.main.cullingMask &= ~(1 << 14);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_3;
-		L_3 = Camera_get_main_mF222B707D3BF8CC9C7544609EFC71CFB62E81D43(NULL);
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = L_3;
-		NullCheck(L_4);
-		int32_t L_5;
-		L_5 = Camera_get_cullingMask_m6F5AFF8FB522F876D99E839BF77D8F27F26A1EF8(L_4, NULL);
-		NullCheck(L_4);
-		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_4, ((int32_t)(L_5&((int32_t)-16385))), NULL);
+		Camera_set_cullingMask_m14F426710530BA8FA53AEC02F79C418AA558CB32(L_1, ((int32_t)(L_2&((int32_t)-16385))), NULL);
 		// }
 		return;
 	}
