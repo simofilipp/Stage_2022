@@ -14,10 +14,16 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terra;
     [SerializeField] GameObject luna;
     [SerializeField] List<GameObject> sferette;
+    [SerializeField] List<GameObject> tastiModalita;
+    [SerializeField] List<GameObject> tastiOpzioniFreeMode;
 
 
+    Mode actualMode;
 
-
+    private void Start()
+    {
+        actualMode = Mode.Initial;
+    }
 
     public void StartFreeMode()
     {
@@ -29,12 +35,13 @@ public class StartSequenceManager : MonoBehaviour
             
         }).setOnComplete(() =>
         {
-           
-            //attivare tastiera e canvas
-            tastiera.SetActive(true);
-                canvasFinale.SetActive(true);
-            //animazione terra che si ingrandisce, luna che scompare
-            terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => { luna.SetActive(false); }).delay = 0.5f;
+            //disattivare i tasti modalità
+            foreach(var t in tastiModalita)
+            {
+                t.gameObject.SetActive(false);
+            }
+            
+            //lasciare attivo solo il tasto per tornare alla fase iniziale
 
 
             //Animazione entrata palline con dissolve
@@ -49,10 +56,38 @@ public class StartSequenceManager : MonoBehaviour
                         });
                 }
 
+            //animazione terra che si ingrandisce, luna che scompare
+            terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => 
+            { 
+                luna.SetActive(false); 
+
+                //attivare tastiera
+                tastiera.SetActive(true);
+
+                //attivare e scalare canvas
+                Vector3 canvasScale = canvasFinale.transform.localScale;
+                canvasFinale.transform.localScale = Vector3.zero;
+                canvasFinale.SetActive(true);
+                canvasFinale.transform.LeanScale(canvasScale, 1.5f).setEaseOutBack();
+
+                //attivare i tasti opzione
+                foreach (var t in tastiOpzioniFreeMode)
+                {
+                    t.gameObject.SetActive(true);
+                }
+
+            }).delay = 0.5f;
                
       
         }
             );
 
     }
+}
+
+public enum Mode
+{
+    Initial,
+    FreeMode,
+    StoryMode
 }

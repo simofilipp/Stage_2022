@@ -9,7 +9,9 @@ public class Istanzia_istogrammi : MonoBehaviour
     public GameObject cubo_scala;
     [SerializeField]
     GameObject parent_punti;
-    [SerializeField] float raggio;
+    [SerializeField]
+    GameObject terraInterazioni;
+    float raggio;
 
     bool datiAttivati = false;
     // Start is called before the first frame update
@@ -25,7 +27,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(terraInterazioni.transform.localScale.x);
     }
 
     Vector3 CalcolaPunto(float lat, float lng)
@@ -52,6 +54,7 @@ public class Istanzia_istogrammi : MonoBehaviour
         {
             datiAttivati = true;
             parent_punti.SetActive(true);
+            raggio = terraInterazioni.transform.localScale.x / 2;
             foreach (var dato in jdata.gameData.dati)
             {
                 //float valore_scala=1 ;
