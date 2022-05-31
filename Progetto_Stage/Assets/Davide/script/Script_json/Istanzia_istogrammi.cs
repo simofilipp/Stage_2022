@@ -11,12 +11,13 @@ public class Istanzia_istogrammi : MonoBehaviour
     GameObject parent_punti;
     [SerializeField]
     GameObject terraInterazioni;
+
+    ShowedData datoMostrato;
     float raggio;
 
     public List<GameObject> punti;
     List<float> dataValues;
 
-    bool datiAttivati = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     void Start()
     {
         dataValues = new List<float>();
+        datoMostrato = ShowedData.None;
     }
 
     // Update is called once per frame
@@ -118,7 +120,6 @@ public class Istanzia_istogrammi : MonoBehaviour
 
     public void IstanziaBaseIstogrammi()
     {
-        parent_punti.SetActive(true);
         raggio = terraInterazioni.transform.localScale.x / 2;
         foreach (var dato in jdata.gameData.dati)
         {
@@ -131,12 +132,13 @@ public class Istanzia_istogrammi : MonoBehaviour
                 punti.Add(punto);
                 punto.name = dato.city;
                 //mettere a 0 la scala se si vedono
-                //var scalaFinale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, 0);
+                punto.transform.localScale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, 0);
             }
         }
         parent_punti.transform.position = this.transform.position;
         parent_punti.transform.parent = this.transform;
         parent_punti.transform.localRotation = Quaternion.Euler(0.09f, -90f, -90);
+        parent_punti.SetActive(false);
     }
 
     public void ScalaConDati(int i)
@@ -145,78 +147,111 @@ public class Istanzia_istogrammi : MonoBehaviour
         {
             //Popolazione
             case 0:
-                dataValues.Clear();
-                foreach (var dato in jdata.gameData.dati)
+                if (datoMostrato!=ShowedData.CapitalPopulation)
                 {
-                    if (dato.capital == "primary")
+                    parent_punti.SetActive(true);
+                    datoMostrato = ShowedData.CapitalPopulation;
+                    dataValues.Clear();
+                    foreach (var dato in jdata.gameData.dati)
                     {
-                        dataValues.Add(dato.population);
+                        if (dato.capital == "primary")
+                        {
+                            dataValues.Add(dato.population);
+                        }
+                    }
+                    for (int j = 0; j < dataValues.Count; j++)
+                    {
+                        //scala in base al dato, le liste devono essere lunghe uguali e precise
+                        var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
+                        punti[j].transform.LeanScale(scalaFinale, 5f);
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
+                        if (dataValues[j] > 1000000)
+                        {
+
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
+                        }
+                        if (dataValues[j] > 5000000)
+                        {
+
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+                        }
+                        if (dataValues[j] > 25000000)
+                        {
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                        }
                     }
                 }
-                for (int j = 0; j < dataValues.Count; j++)
+                else
                 {
-                    //scala in base al dato, le liste devono essere lunghe uguali e precise
-                    var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
-                    punti[j].transform.LeanScale(scalaFinale, 5f);
-                    punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
-                    punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
-                    if (dataValues[j] > 1000000)
+                    //se ho già visualizzato i dati li scalo a 0
+                    foreach(var punto in punti)
                     {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
-                    }
-                    if (dataValues[j] > 5000000)
-                    {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
-                    }
-                    if (dataValues[j] > 25000000)
-                    {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                        var scalaZero = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, 0f);
+                        punto.transform.LeanScale(scalaZero, 5f).setOnComplete(() => { parent_punti.SetActive(false); });
                     }
                 }
                 break;
             case 1:
-                dataValues.Clear();
-                foreach (var dato in jdata.gameData.dati)
+                if (datoMostrato != ShowedData.Latitude)
                 {
-                    if (dato.capital == "primary")
+                    parent_punti.SetActive(true);
+                    datoMostrato = ShowedData.Latitude;
+                    dataValues.Clear();
+                    foreach (var dato in jdata.gameData.dati)
                     {
-                        dataValues.Add(Mathf.Abs(dato.lat));
+                        if (dato.capital == "primary")
+                        {
+                            dataValues.Add(Mathf.Abs(dato.lat));
+                        }
+                    }
+                    for (int j = 0; j < dataValues.Count; j++)
+                    {
+                        //scala in base al dato, le liste devono essere lunghe uguali e precise
+                        var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j]);
+                        punti[j].transform.LeanScale(scalaFinale, 5f);
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
+                        if (dataValues[j] > 30)
+                        {
+
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
+                        }
+                        if (dataValues[j] > 45)
+                        {
+
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+                        }
+                        if (dataValues[j] > 70)
+                        {
+
+                            punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
+                            punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                        }
                     }
                 }
-                for (int j = 0; j < dataValues.Count; j++)
+                else
                 {
-                    //scala in base al dato, le liste devono essere lunghe uguali e precise
-                    var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j]);
-                    punti[j].transform.LeanScale(scalaFinale, 5f);
-                    punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
-                    punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
-                    if (dataValues[j] > 30)
+                    //se ho già visualizzato i dati li scalo a 0
+                    foreach (var punto in punti)
                     {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
-                    }
-                    if (dataValues[j] > 45)
-                    {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
-                    }
-                    if (dataValues[j] > 70)
-                    {
-
-                        punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
-                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                        var scalaZero = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, 0f);
+                        punto.transform.LeanScale(scalaZero, 5f).setOnComplete(()=> { parent_punti.SetActive(false); });
                     }
                 }
                 break;
         }
     }
+}
+
+public enum ShowedData{
+    None,
+    CapitalPopulation,
+    Latitude
 }
 
