@@ -60,7 +60,8 @@ public class WorldMapManager : MonoBehaviour
         get => _currentState;
         set
         {
-            ChangeAllCountriesMaterials(EarthMaterialsByTypeOnCountries[(int)value]);
+            if(value != State.Population)
+                ChangeAllCountriesMaterials(EarthMaterialsByTypeOnCountries[(int)value]);
 
             switch (value)
             {

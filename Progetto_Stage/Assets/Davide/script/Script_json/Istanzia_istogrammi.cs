@@ -145,15 +145,15 @@ public class Istanzia_istogrammi : MonoBehaviour
         {
             //Popolazione
             case 0:
-                foreach(var dato in jdata.gameData.dati)
+                dataValues.Clear();
+                foreach (var dato in jdata.gameData.dati)
                 {
                     if (dato.capital == "primary")
                     {
-                        dataValues.Clear();
                         dataValues.Add(dato.population);
                     }
                 }
-                for(int j = 0; j < dataValues.Count; j++)
+                for (int j = 0; j < dataValues.Count; j++)
                 {
                     //scala in base al dato, le liste devono essere lunghe uguali e precise
                     var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
@@ -173,6 +173,42 @@ public class Istanzia_istogrammi : MonoBehaviour
                         punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
                     }
                     if (dataValues[j] > 25000000)
+                    {
+
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                    }
+                }
+                break;
+            case 1:
+                dataValues.Clear();
+                foreach (var dato in jdata.gameData.dati)
+                {
+                    if (dato.capital == "primary")
+                    {
+                        dataValues.Add(Mathf.Abs(dato.lat));
+                    }
+                }
+                for (int j = 0; j < dataValues.Count; j++)
+                {
+                    //scala in base al dato, le liste devono essere lunghe uguali e precise
+                    var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j]);
+                    punti[j].transform.LeanScale(scalaFinale, 5f);
+                    punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
+                    punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
+                    if (dataValues[j] > 30)
+                    {
+
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
+                    }
+                    if (dataValues[j] > 45)
+                    {
+
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+                    }
+                    if (dataValues[j] > 70)
                     {
 
                         punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
