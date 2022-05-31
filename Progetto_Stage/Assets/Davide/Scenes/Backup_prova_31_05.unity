@@ -14143,7 +14143,6 @@ MonoBehaviour:
   - {fileID: 374971979}
   tastiOpzioniFreeMode:
   - {fileID: 1807069592}
-  ii: {fileID: 8482397536239753844}
 --- !u!4 &1677719766
 Transform:
   m_ObjectHideFlags: 0
@@ -15117,8 +15116,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8482397536239753844}
         m_TargetAssemblyTypeName: Istanzia_istogrammi, Assembly-CSharp
-        m_MethodName: ScalaConDati
-        m_Mode: 3
+        m_MethodName: IstanziaPunto
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30197,7 +30196,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166609273260846497}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30239,7 +30238,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166609273260846499}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30281,7 +30280,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166609273260846501}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30323,7 +30322,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166609273260846503}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30365,7 +30364,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166609273260846511}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60932,7 +60931,6 @@ MonoBehaviour:
     type: 3}
   parent_punti: {fileID: 1567921231}
   terraInterazioni: {fileID: 8482397537264485169}
-  punti: []
 --- !u!114 &8482397536239753845
 MonoBehaviour:
   m_ObjectHideFlags: 0

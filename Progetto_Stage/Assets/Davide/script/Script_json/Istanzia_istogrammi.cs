@@ -13,6 +13,9 @@ public class Istanzia_istogrammi : MonoBehaviour
     GameObject terraInterazioni;
     float raggio;
 
+    public List<GameObject> punti;
+    List<float> dataValues;
+
     bool datiAttivati = false;
     // Start is called before the first frame update
     private void Awake()
@@ -21,7 +24,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     }
     void Start()
     {
-       //Invoke("IstanziaPunto", 2.0f);
+        dataValues = new List<float>();
     }
 
     // Update is called once per frame
@@ -40,70 +43,143 @@ public class Istanzia_istogrammi : MonoBehaviour
         return pos;
     }
 
-    public void IstanziaPunto()
+    //public void IstanziaPunto()
+    //{
+    //    if (parent_punti.gameObject.activeSelf)
+    //    {
+    //        parent_punti.gameObject.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        parent_punti.gameObject.SetActive(true);
+    //    }
+    //    if (!datiAttivati)
+    //    {
+    //        datiAttivati = true;
+    //        parent_punti.SetActive(true);
+    //        raggio = terraInterazioni.transform.localScale.x / 2;
+    //        foreach (var dato in jdata.gameData.dati)
+    //        {
+    //            //float valore_scala=1 ;
+    //            //foreach(var citta in jdata.healthDatas.dati)
+    //            //{
+    //            //    if(citta.GetCity() == dato.city)
+    //            //    {
+    //            //        valore_scala = citta.LivingIndexClear();
+    //            //    }
+    //            //}
+
+    //            if (dato.capital == "primary")
+    //            {
+    //                var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
+    //                punto.transform.parent = parent_punti.transform;
+    //                punto.transform.LookAt(punto.transform.position * 2);
+    //                var scalaFinale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
+    //                ScalaIstogramma(punto, scalaFinale);
+    //                punto.name = dato.city;
+    //                punto.GetComponent<MeshRenderer>().material.color = Color.green;
+    //                punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
+    //                if (dato.population > 1000000)
+    //                {
+
+    //                    punto.GetComponent<MeshRenderer>().material.color = Color.yellow;
+    //                    punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
+    //                }
+    //                if (dato.population > 5000000)
+    //                {
+
+    //                    punto.GetComponent<MeshRenderer>().material.color = Color.red;
+    //                    punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+    //                }
+    //                if (dato.population > 25000000)
+    //                {
+
+    //                    punto.GetComponent<MeshRenderer>().material.color = Color.white;
+    //                    punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+    //                }
+    //            }
+
+
+    //        }
+
+    //        parent_punti.transform.position = this.transform.position;
+
+    //        parent_punti.transform.parent = this.transform;
+    //        Debug.Log(parent_punti.transform.localRotation);
+    //        parent_punti.transform.localRotation = Quaternion.Euler(0.09f, -90f, -90);
+    //    }
+    //}
+
+    //private static void ScalaIstogramma(GameObject punto, Vector3 scalaFinale)
+    //{
+    //    punto.transform.localScale = Vector3.zero;
+    //    punto.transform.LeanScale(scalaFinale, 5);
+    //}
+
+    public void IstanziaBaseIstogrammi()
     {
-        if (parent_punti.gameObject.activeSelf)
+        parent_punti.SetActive(true);
+        raggio = terraInterazioni.transform.localScale.x / 2;
+        foreach (var dato in jdata.gameData.dati)
         {
-            parent_punti.gameObject.SetActive(false);
-        }
-        else
-        {
-            parent_punti.gameObject.SetActive(true);
-        }
-        if (!datiAttivati)
-        {
-            datiAttivati = true;
-            parent_punti.SetActive(true);
-            raggio = terraInterazioni.transform.localScale.x / 2;
-            foreach (var dato in jdata.gameData.dati)
+            if (dato.capital == "primary")
             {
-                //float valore_scala=1 ;
-                //foreach(var citta in jdata.healthDatas.dati)
-                //{
-                //    if(citta.GetCity() == dato.city)
-                //    {
-                //        valore_scala = citta.LivingIndexClear();
-                //    }
-                //}
+                Debug.Log("Entrato nel foreach di idtanzia...");
+                var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
+                punto.transform.parent = parent_punti.transform;
+                punto.transform.LookAt(punto.transform.position * 2);
+                punti.Add(punto);
+                punto.name = dato.city;
+                //mettere a 0 la scala se si vedono
+                //var scalaFinale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, 0);
+            }
+        }
+        parent_punti.transform.position = this.transform.position;
+        parent_punti.transform.parent = this.transform;
+        parent_punti.transform.localRotation = Quaternion.Euler(0.09f, -90f, -90);
+    }
 
-                if (dato.capital == "primary")
+    public void ScalaConDati(int i)
+    {
+        switch (i)
+        {
+            //Popolazione
+            case 0:
+                foreach(var dato in jdata.gameData.dati)
                 {
-                    var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
-                    punto.transform.parent = parent_punti.transform;
-                    punto.transform.LookAt(punto.transform.position * 2);
-                    var scalaFinale = new Vector3(punto.transform.localScale.x, punto.transform.localScale.y, punto.transform.localScale.z * dato.population / 100000);
-                    punto.transform.LeanScale(scalaFinale, 5);
-                    punto.name = dato.city;
-                    punto.GetComponent<MeshRenderer>().material.color = Color.green;
-                    punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
-                    if (dato.population > 1000000)
+                    if (dato.capital == "primary")
                     {
-
-                        punto.GetComponent<MeshRenderer>().material.color = Color.yellow;
-                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
-                    }
-                    if (dato.population > 5000000)
-                    {
-
-                        punto.GetComponent<MeshRenderer>().material.color = Color.red;
-                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
-                    }
-                    if (dato.population > 25000000)
-                    {
-
-                        punto.GetComponent<MeshRenderer>().material.color = Color.white;
-                        punto.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                        dataValues.Clear();
+                        dataValues.Add(dato.population);
                     }
                 }
+                for(int j = 0; j < dataValues.Count; j++)
+                {
+                    //scala in base al dato, le liste devono essere lunghe uguali e precise
+                    var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
+                    punti[j].transform.LeanScale(scalaFinale, 5f);
+                    punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
+                    punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
+                    if (dataValues[j] > 1000000)
+                    {
 
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.yellow;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.yellow);
+                    }
+                    if (dataValues[j] > 5000000)
+                    {
 
-            }
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.red;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+                    }
+                    if (dataValues[j] > 25000000)
+                    {
 
-            parent_punti.transform.position = this.transform.position;
-           
-            parent_punti.transform.parent = this.transform;
-            Debug.Log(parent_punti.transform.localRotation);
-            parent_punti.transform.localRotation = Quaternion.Euler(0.09f, -90f, -90);
+                        punti[j].GetComponent<MeshRenderer>().material.color = Color.white;
+                        punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white);
+                    }
+                }
+                break;
         }
     }
 }

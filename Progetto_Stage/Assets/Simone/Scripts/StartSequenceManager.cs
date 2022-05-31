@@ -16,6 +16,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
+    [SerializeField] Istanzia_istogrammi ii;
 
 
     Mode actualMode;
@@ -70,6 +71,8 @@ public class StartSequenceManager : MonoBehaviour
                 canvasFinale.SetActive(true);
                 canvasFinale.transform.LeanScale(canvasScale, 1.5f).setEaseOutBack();
 
+                //istanziare cubetti capitali
+                ii.IstanziaBaseIstogrammi();
                 //attivare i tasti opzione
                 foreach (var t in tastiOpzioniFreeMode)
                 {
