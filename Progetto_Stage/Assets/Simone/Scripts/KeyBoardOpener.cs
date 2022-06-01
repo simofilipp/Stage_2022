@@ -23,12 +23,17 @@ public class KeyBoardOpener : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initialPositionKB=keyboard.transform.localPosition;
-        initialScaleKB=keyboard.transform.localScale;
-        keyboard.transform.localPosition=this.transform.localPosition;
+
+        //OpenCloseKeyboard();
+    }
+
+    private void OnEnable()
+    {
+        initialPositionKB = keyboard.transform.localPosition;
+        initialScaleKB = keyboard.transform.localScale;
+        keyboard.transform.localPosition = this.transform.localPosition;
         keyboard.transform.LeanScaleY(0, 0.01f);
         keyboard.transform.LeanScaleX(0, 0.01f);
-        //OpenCloseKeyboard();
     }
 
     // Update is called once per frame

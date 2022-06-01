@@ -14170,6 +14170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+--- !u!1 &1618284576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8140034528131886623, guid: b6ce09c04338d4e4ab2e988a4cc043d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1131176957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1623331420
 GameObject:
   m_ObjectHideFlags: 0
@@ -15383,6 +15389,7 @@ MonoBehaviour:
   canvasFinale: {fileID: 1649254939}
   terra: {fileID: 8482397537264485169}
   luna: {fileID: 1984672723}
+  holoEarth: {fileID: 1618284576}
   sferette:
   - {fileID: 770602064}
   - {fileID: 1196375343}

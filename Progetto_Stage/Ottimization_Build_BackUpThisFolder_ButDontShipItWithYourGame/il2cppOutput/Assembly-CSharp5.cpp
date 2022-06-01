@@ -4996,10 +4996,12 @@ struct Istanzia_istogrammi_t8006457E64FE7130F97C17346604B6E90E4FFF07  : public M
 	int32_t ___datoMostrato_8;
 	// System.Single Istanzia_istogrammi::raggio
 	float ___raggio_9;
+	// System.Boolean Istanzia_istogrammi::scalando
+	bool ___scalando_10;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Istanzia_istogrammi::punti
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___punti_10;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___punti_11;
 	// System.Collections.Generic.List`1<System.Single> Istanzia_istogrammi::dataValues
-	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___dataValues_11;
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___dataValues_12;
 };
 
 // KeyBoardOpener
