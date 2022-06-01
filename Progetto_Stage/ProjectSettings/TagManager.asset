@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - InitialInteractor
+  - Sferette
   layers:
   - Default
   - TransparentFX
