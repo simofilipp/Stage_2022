@@ -9,6 +9,7 @@ public class rotation_manager : MonoBehaviour
     [SerializeField]
     List<GameObject> altreSfere;
     bool selezionato;
+    
     [SerializeField]
     GameObject terra;
     [SerializeField] GameObject freccia;
@@ -34,6 +35,7 @@ public class rotation_manager : MonoBehaviour
         counterSelezionato += 1;
         if (counterSelezionato == 1)
         {
+            EarthRotationManager.instance.bloccata = false;
             for(int i = 0; i < altreSfere.Count; i++)
             {
                 //faccio in modo che le altre sferette non siano interagibili
@@ -87,18 +89,35 @@ public class rotation_manager : MonoBehaviour
 
     public void StoppaCoroutine()
     {
-        counterSelezionato -= 1;
-        if(counterSelezionato == 0)
-        {
-            selezionato = false;
-            for (int i = 0; i < altreSfere.Count; i++)
+            counterSelezionato -= 1;
+            if (counterSelezionato == 0)
             {
-                //rendo nuovamente interagibili le sferette
-                altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
-                altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                var my_rigidbody = GetComponent<Rigidbody>();
+                if (!EarthRotationManager.instance.bloccata)
+                {
+                    selezionato = false;
+                    for (int i = 0; i < altreSfere.Count; i++)
+                    {
+                        //rendo nuovamente interagibili le sferette
+                        altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = true;
+                        altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                    }
+                    freccia.SetActive(false);
+                my_rigidbody.constraints = RigidbodyConstraints.None;
+                my_rigidbody.useGravity = true;
             }
-            freccia.SetActive(false);
-        }
+                else
+                {
+                my_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                my_rigidbody.useGravity = false;
+            }
+            }
+    }
+
+    public void BloccaSfera()
+    {
+        EarthRotationManager.instance.bloccata = true;
     }
 
 }
+

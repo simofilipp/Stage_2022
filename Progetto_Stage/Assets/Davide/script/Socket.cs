@@ -40,15 +40,18 @@ public class Socket : MonoBehaviour
            
         
     }
-    //public void FreezSferetta()
-    //{
-    //    Debug.Log("Sono dentro");
-    //    Rigidbody my_rigidbody = GameObject.Find("Sferetta").GetComponent<Rigidbody>();
-    //    Debug.Log(my_rigidbody.name);
-       
-        
-    //    my_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-    //    my_rigidbody.useGravity = false;
-    //}
+    public void FreezSferetta()
+    {
+        Debug.Log("Sono dentro");
+        Rigidbody my_rigidbody = GameObject.Find("Sferetta").GetComponent<Rigidbody>();
+        Debug.Log(my_rigidbody.name);
+
+
+        my_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        my_rigidbody.useGravity = false;
+        my_rigidbody.angularVelocity = Vector3.zero;
+        my_rigidbody.angularDrag = 0;
+        my_rigidbody.velocity = Vector3.zero;                                   
+    }
 
 }

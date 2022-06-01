@@ -10,6 +10,7 @@ public class EarthRotationManager : MonoBehaviour
     [SerializeField] Transform terraPerRicerca;
     [SerializeField] Transform cameraMain;
     [SerializeField] List<GameObject> sferette;
+    public bool bloccata = false;
 
 
     Transform stato;
@@ -93,6 +94,7 @@ public class EarthRotationManager : MonoBehaviour
 
     public void RiprendiTweenTerra()
     {
+       
         //disattivo le sfere finchè la terra non è tornata in asse
         foreach (var sfera in sferette)
         {
@@ -125,25 +127,30 @@ public class EarthRotationManager : MonoBehaviour
     }
     public void RiprendiTweenTerraSferette()
     {
-        counterSelezionato -= 1;
-        if(counterSelezionato == 0)
-        {
-            //disattivo le sfere finchè la terra non è tornata in asse
-            foreach(var sfera in sferette)
+        
+            counterSelezionato -= 1;
+            if (counterSelezionato == 0)
             {
-                sfera.GetComponentInChildren<HandGrabInteractable>().enabled = false;
-                sfera.GetComponentInChildren<GrabInteractable>().enabled = false;
-            }
-            terra.LeanScale(terra_initial_scale, 0.7f);
-            //riporto in asse la terra
-            terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() => { 
-                LeanTween.resume(id);
-                foreach (var sfera in sferette)
+                if (!bloccata)
                 {
-                    sfera.GetComponentInChildren<HandGrabInteractable>().enabled = true;
-                    sfera.GetComponentInChildren<GrabInteractable>().enabled = true;
+                    //disattivo le sfere finchè la terra non è tornata in asse
+                    foreach (var sfera in sferette)
+                    {
+                        sfera.GetComponentInChildren<HandGrabInteractable>().enabled = false;
+                        sfera.GetComponentInChildren<GrabInteractable>().enabled = false;
+                    }
+                    terra.LeanScale(terra_initial_scale, 0.7f);
+                    //riporto in asse la terra
+                    terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() =>
+                    {
+                        LeanTween.resume(id);
+                        foreach (var sfera in sferette)
+                        {
+                            sfera.GetComponentInChildren<HandGrabInteractable>().enabled = true;
+                            sfera.GetComponentInChildren<GrabInteractable>().enabled = true;
+                        }
+                    });
                 }
-            });
+            }
         }
-    }
 }
