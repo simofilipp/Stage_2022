@@ -9,6 +9,9 @@ public class Allineamento00 : MonoBehaviour
     [SerializeField] Transform terra;
     [SerializeField] Transform camera;
     [SerializeField] GameObject Terraobj;
+    public float lat;
+    public float longi;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,14 +41,15 @@ public class Allineamento00 : MonoBehaviour
         Debug.Log(centroterra_a_camera.magnitude + " centrot a cam");
         float angoloinDegreee = angolo * Mathf.Rad2Deg;
         Debug.Log(angoloinDegreee);
-        if (angolo > 180)
-        {
-            Terraobj.transform.LeanRotateAroundLocal(Vector3.forward, -angoloinDegreee, 5f);
-        }
-        else
-        {
-            Terraobj.transform.LeanRotateAroundLocal(Vector3.forward, angoloinDegreee, 5f);
-        }
+       
+        Terraobj.transform.LeanRotateAroundLocal(Vector3.forward, angoloinDegreee, 5f).setOnComplete(()=> 
+        { 
+            Terraobj.transform.LeanRotateAroundLocal(Vector3.forward, longi, 5f).setOnComplete(() =>
+            {
+                Terraobj.transform.LeanRotateAround(Vector3.right, lat*-1f, 5f);
+            }); ; 
+        });
+        
         
 
         //var toCamera = Quaternion.LookRotation(camera.position - terra.position);
