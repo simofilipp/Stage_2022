@@ -44,6 +44,7 @@ public class EarthRotationManager : MonoBehaviour
 
         void Start()
     {
+        terra_initial_rotation = terra.rotation;
         terraRicerca_initial_rotation = terraPerRicerca.rotation;
         //modificare in base a quanto si scala inizialmente la terra
         terra_initial_scale = terra.localScale*5;
@@ -122,7 +123,7 @@ public class EarthRotationManager : MonoBehaviour
         {
             LeanTween.pause(id);
             //salvo l'ultimo valore della terra
-            terra_initial_rotation = terra.rotation;
+            //terra_initial_rotation = terra.rotation;
         }
     }
     public void RiprendiTweenTerraSferette()
