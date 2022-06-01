@@ -41,14 +41,15 @@ public class InitialTriggerManager : MonoBehaviour
     {
         cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
         cassettoSuono.PlaySoundAt(cassetto.transform.position);
-        earth.gameObject.SetActive(true);
-        earth.localScale = Vector3.zero;
-        LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
-        {
-            padre.gameObject.SetActive(false);
-            moon.gameObject.SetActive(true);
-            moon.localScale = Vector3.zero;
-            LeanTween.scale(moon.gameObject, moonScale, 3f).setEaseInOutSine();
-        });
+        //earth.gameObject.SetActive(true);
+        //earth.localScale = Vector3.zero;
+        //LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
+        //{
+        //    padre.gameObject.SetActive(false);
+        //    moon.gameObject.SetActive(true);
+        //    moon.localScale = Vector3.zero;
+        //    LeanTween.scale(moon.gameObject, moonScale, 3f).setEaseInOutSine();
+        //});
+        LeanTween.scale(padre.gameObject, padre.transform.localScale*5,3f).setEaseInOutQuart();
     }
 }

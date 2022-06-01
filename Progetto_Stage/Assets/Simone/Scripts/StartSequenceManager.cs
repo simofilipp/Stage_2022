@@ -13,6 +13,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject canvasFinale;
     [SerializeField] GameObject terra;
     [SerializeField] GameObject luna;
+    [SerializeField] GameObject holoEarth;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
@@ -58,8 +59,10 @@ public class StartSequenceManager : MonoBehaviour
                 }
 
             //animazione terra che si ingrandisce, luna che scompare
+            terra.SetActive(true);
             terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => 
             { 
+                holoEarth.SetActive(false);
                 luna.SetActive(false); 
 
                 //attivare tastiera
