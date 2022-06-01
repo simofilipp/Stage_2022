@@ -60,7 +60,6 @@ public class WorldMapManager : MonoBehaviour
         get => _currentState;
         set
         {
-            if(value != State.Population)
                 ChangeAllCountriesMaterials(EarthMaterialsByTypeOnCountries[(int)value]);
 
             switch (value)
@@ -69,13 +68,13 @@ public class WorldMapManager : MonoBehaviour
                     EarthRenderer.sharedMaterial = Earth;
                     Clouds.SetActive(true);
                     Glow.SetActive(true);
-                    HideMap();
+                    TurnOffCountriesMaterials();
                     
                     break;
                 case State.Politic:
                     EarthRenderer.sharedMaterial = Earth;
                     //ShowMap();
-                    Camera.main.cullingMask |= 1 << 14;
+                    TurnOnCountriesMaterials();
                     Clouds.SetActive(false);
                     Glow.SetActive(true);
 
@@ -86,7 +85,7 @@ public class WorldMapManager : MonoBehaviour
                     //ShowMap();
                     Clouds.SetActive(true);
                     Glow.SetActive(true);
-                    HideMap();
+                    TurnOffCountriesMaterials();
                     break;
                 case State.Science:
                     EarthRenderer.sharedMaterial = Science;
@@ -141,7 +140,7 @@ public class WorldMapManager : MonoBehaviour
         if (instance == null) instance = this;
         else if (instance != this) { Destroy(gameObject); return; };
 
-        Camera.main.cullingMask &= ~(1 << 14);
+        TurnOffCountriesMaterials();
     }
 
 
@@ -313,6 +312,20 @@ public class WorldMapManager : MonoBehaviour
         foreach (var item in countries)
         {
             item.meshRenderer.sharedMaterial = mat;
+        }
+    }
+    public void TurnOffCountriesMaterials()
+    {
+        foreach (var item in countries)
+        {
+            item.meshRenderer.enabled = false;
+        }
+    }
+    public void TurnOnCountriesMaterials()
+    {
+        foreach (var item in countries)
+        {
+            item.meshRenderer.enabled = true;
         }
     }
 }
