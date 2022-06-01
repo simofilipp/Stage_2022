@@ -4992,14 +4992,14 @@ struct Istanzia_istogrammi_t8006457E64FE7130F97C17346604B6E90E4FFF07  : public M
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___parent_punti_6;
 	// UnityEngine.GameObject Istanzia_istogrammi::terraInterazioni
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___terraInterazioni_7;
+	// ShowedData Istanzia_istogrammi::datoMostrato
+	int32_t ___datoMostrato_8;
 	// System.Single Istanzia_istogrammi::raggio
-	float ___raggio_8;
+	float ___raggio_9;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Istanzia_istogrammi::punti
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___punti_9;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___punti_10;
 	// System.Collections.Generic.List`1<System.Single> Istanzia_istogrammi::dataValues
-	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___dataValues_10;
-	// System.Boolean Istanzia_istogrammi::datiAttivati
-	bool ___datiAttivati_11;
+	List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* ___dataValues_11;
 };
 
 // KeyBoardOpener
