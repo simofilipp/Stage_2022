@@ -70,7 +70,7 @@ public class Rotation_manager : MonoBehaviour
             float rot_sucessivaY;
             float rot_sucessivaZ;
 
-            id = terra.LeanRotateAroundLocal(terra.transform.up, -1, 0.05f).id;
+            id = terra.LeanRotateAroundLocal(terra.transform.up, -1, 0.01f).id;
 
             //la terra segue tramite un tween le sferette, aggiunto un threshold per limitare la vibrazione sugli assi
             while (selezionato == true)
@@ -82,7 +82,7 @@ public class Rotation_manager : MonoBehaviour
                 {
                     //terra.transform.rotation = this.transform.rotation;
                     LeanTween.cancel(id);
-                    id=terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.5f).id;
+                    id=terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.4f).id;
                     Debug.LogWarning(id);
                 }
                 rot_inizialeX = rot_sucessivaX;
@@ -92,7 +92,6 @@ public class Rotation_manager : MonoBehaviour
             }
             LeanTween.cancel(id);
         }
-        //terra.GetComponent<Animator>().SetTrigger("rotazione");
     }
 
     public void StoppaCoroutine()
@@ -130,12 +129,13 @@ public class Rotation_manager : MonoBehaviour
 
     public void SpegniTastiera()
     {
-        keyboard.SetActive(false);
+        if(counterSelezionato==1)
+            keyboard.SetActive(false);
     }
 
     public void AccendiTastiera()
     {
-        if (!EarthRotationManager.instance.bloccata)
+        if (!EarthRotationManager.instance.bloccata && counterSelezionato==0)
         {
             keyboard.SetActive(true);
         }

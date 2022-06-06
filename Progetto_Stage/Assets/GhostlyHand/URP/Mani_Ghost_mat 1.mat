@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mani_Ghost_mat
+  m_Name: Mani_Ghost_mat 1
   m_Shader: {fileID: 4800000, guid: c185d4eced4c868458afd1eb20f9ff5d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -23,13 +23,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
-    - _FresnelBias: 0
-    - _FresnelPower: 1.36
-    - _FresnelScale: 2.41
-    - _Point2: 1
-    - _Point3: -2.09
-    - _WristOpacity: 0.512
+    - _FresnelBias: 21.02
+    - _FresnelPower: 331.1
+    - _FresnelScale: -62.23
+    - _Point2: -0.24
+    - _Point3: 0.49
+    - _WristOpacity: 0.057
     m_Colors:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0.019105216, g: 0.027954068, b: 0.4339623, a: 0}
   m_BuildTextureStacks: []

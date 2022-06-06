@@ -383,8 +383,8 @@ Shader "GhostlyHandURP"
 				float3 ase_worldNormal = IN.ase_texcoord4.xyz;
 				float fresnelNdotV83 = dot( ase_worldNormal, ase_worldViewDir );
 				float fresnelNode83 = ( _FresnelBias + _FresnelScale * pow( max( 1.0 - fresnelNdotV83 , 0.0001 ), _FresnelPower ) );
-				float lerpResult111 = lerp( 0.0 , _Point2 , IN.ase_texcoord5.xyz.z);
-				float lerpResult114 = lerp( lerpResult111 , _Point3 , IN.ase_texcoord5.xyz.z);
+				float lerpResult111 = lerp( 0.0 , _Point2 , IN.ase_texcoord5.xyz.x);
+				float lerpResult114 = lerp( lerpResult111 , _Point3 , IN.ase_texcoord5.xyz.x);
 				float clampResult131 = clamp( lerpResult114 , 0.0 , 1.0 );
 				float lerpResult120 = lerp( clampResult131 , 1.0 , _WristOpacity);
 				
