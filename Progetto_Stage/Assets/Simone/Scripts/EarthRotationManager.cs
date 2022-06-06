@@ -42,7 +42,7 @@ public class EarthRotationManager : MonoBehaviour
         else if (instance != this) { Destroy(gameObject); return; };
     }
 
-        void Start()
+    void Start()
     {
         terra_initial_rotation = terra.rotation;
         terraRicerca_initial_rotation = terraPerRicerca.rotation;
@@ -123,7 +123,7 @@ public class EarthRotationManager : MonoBehaviour
         {
             LeanTween.pause(id);
             //salvo l'ultimo valore della terra
-            //terra_initial_rotation = terra.rotation;
+            terra_initial_rotation = terra.rotation;
         }
     }
     public void RiprendiTweenTerraSferette()
@@ -145,6 +145,7 @@ public class EarthRotationManager : MonoBehaviour
                     terra.LeanRotate(terra_initial_rotation.eulerAngles, 0.7f).setOnComplete(() =>
                     {
                         LeanTween.resume(id);
+                        
                         foreach (var sfera in sferette)
                         {
                             sfera.GetComponentInChildren<HandGrabInteractable>().enabled = true;

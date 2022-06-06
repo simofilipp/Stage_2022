@@ -13,7 +13,9 @@ public class rotation_manager : MonoBehaviour
     [SerializeField]
     GameObject terra;
     [SerializeField] GameObject freccia;
-  
+    [SerializeField] GameObject ghostSfera;
+    [SerializeField] GameObject keyboard;
+
 
     float rotazioneX;
     float rotazioneY;
@@ -36,7 +38,8 @@ public class rotation_manager : MonoBehaviour
         if (counterSelezionato == 1)
         {
             EarthRotationManager.instance.bloccata = false;
-            for(int i = 0; i < altreSfere.Count; i++)
+            ghostSfera.SetActive(false);
+            for (int i = 0; i < altreSfere.Count; i++)
             {
                 //faccio in modo che le altre sferette non siano interagibili
                 altreSfere[i].GetComponentInChildren<GrabInteractable>().enabled = false;
@@ -117,7 +120,20 @@ public class rotation_manager : MonoBehaviour
     public void BloccaSfera()
     {
         EarthRotationManager.instance.bloccata = true;
+        ghostSfera.SetActive(true);
     }
 
+    public void SpegniTastiera()
+    {
+        keyboard.SetActive(false);
+    }
+
+    public void AccendiTastiera()
+    {
+        if (!EarthRotationManager.instance.bloccata)
+        {
+            keyboard.SetActive(true);
+        }
+    }
 }
 
