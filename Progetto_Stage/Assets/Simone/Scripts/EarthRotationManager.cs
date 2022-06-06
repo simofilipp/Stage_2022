@@ -123,7 +123,8 @@ public class EarthRotationManager : MonoBehaviour
         {
             LeanTween.pause(id);
             //salvo l'ultimo valore della terra
-            terra_initial_rotation = terra.rotation;
+            if(!bloccata)
+                terra_initial_rotation = terra.rotation;
         }
     }
     public void RiprendiTweenTerraSferette()

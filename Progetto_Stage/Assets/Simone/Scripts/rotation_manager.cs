@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotation_manager : MonoBehaviour
+public class Rotation_manager : MonoBehaviour
 {
     [SerializeField]
     List<GameObject> altreSfere;
@@ -37,7 +37,6 @@ public class rotation_manager : MonoBehaviour
         counterSelezionato += 1;
         if (counterSelezionato == 1)
         {
-            EarthRotationManager.instance.bloccata = false;
             ghostSfera.SetActive(false);
             for (int i = 0; i < altreSfere.Count; i++)
             {
@@ -46,9 +45,15 @@ public class rotation_manager : MonoBehaviour
                 altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled=false;
             }
             selezionato = true;
-            //resetto rotazione sferetta per evitare dei movimenti bruschi della terra
-            this.transform.rotation= new Quaternion(0,0,0,0);
+            //resetto rotazione sferetta per evitare dei movimenti bruschi della terra se non è bloccata
+            if (!EarthRotationManager.instance.bloccata)
+            {
+                this.transform.rotation= new Quaternion(0,0,0,0);
+            }
+
             freccia.SetActive(true);
+            EarthRotationManager.instance.bloccata = false;
+
             StartCoroutine(Rotazione());
         }
     }
