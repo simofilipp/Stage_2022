@@ -100,9 +100,9 @@ public class Rotation_manager : MonoBehaviour
             if (counterSelezionato == 0)
             {
                 var my_rigidbody = GetComponent<Rigidbody>();
+                selezionato = false;
                 if (!EarthRotationManager.instance.bloccata)
                 {
-                    selezionato = false;
                     for (int i = 0; i < altreSfere.Count; i++)
                     {
                         //rendo nuovamente interagibili le sferette
@@ -110,14 +110,14 @@ public class Rotation_manager : MonoBehaviour
                         altreSfere[i].GetComponentInChildren<HandGrabInteractable>().enabled = true;
                     }
                     freccia.SetActive(false);
-                my_rigidbody.constraints = RigidbodyConstraints.None;
-                my_rigidbody.useGravity = true;
-            }
+                    my_rigidbody.constraints = RigidbodyConstraints.None;
+                    my_rigidbody.useGravity = true;
+                }
                 else
                 {
-                my_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-                my_rigidbody.useGravity = false;
-            }
+                    my_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                    my_rigidbody.useGravity = false;
+                }
             }
     }
 
