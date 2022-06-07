@@ -59,34 +59,39 @@ public class StartSequenceManager : MonoBehaviour
                 }
 
             //animazione terra che si ingrandisce, luna che scompare
-            terra.SetActive(true);
-            terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => 
+            holoEarth.LeanScale(Vector3.zero, 3.5f).setOnComplete(() =>
             { 
+                terra.SetActive(true);
+                terra.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                luna.SetActive(false); 
+              terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => 
+                { 
+                    luna.SetActive(false); 
 
-                //attivare tastiera
-                tastiera.SetActive(true);
+                    //attivare tastiera
+                    tastiera.SetActive(true);
 
-                //attivare e scalare canvas
-                Vector3 canvasScale = canvasFinale.transform.localScale;
-                canvasFinale.transform.localScale = Vector3.zero;
-                canvasFinale.SetActive(true);
-                canvasFinale.transform.LeanScale(canvasScale, 1.5f).setEaseOutBack();
+                    //attivare e scalare canvas
+                    Vector3 canvasScale = canvasFinale.transform.localScale;
+                    canvasFinale.transform.localScale = Vector3.zero;
+                    canvasFinale.SetActive(true);
+                    canvasFinale.transform.LeanScale(canvasScale, 1.5f).setEaseOutBack();
 
-                //istanziare cubetti capitali
-                ii.IstanziaBaseIstogrammi();
-                //attivare i tasti opzione
-                foreach (var t in tastiOpzioniFreeMode)
-                {
-                    t.gameObject.SetActive(true);
-                }
+                    //istanziare cubetti capitali
+                    ii.IstanziaBaseIstogrammi();
+                    //attivare i tasti opzione
+                    foreach (var t in tastiOpzioniFreeMode)
+                    {
+                        t.gameObject.SetActive(true);
+                    }
 
-            }).delay = 0.5f;
+                }).delay = 0.5f;
                
       
-        }
-            );
+            }
+                );
+            });
+  
 
     }
 }
