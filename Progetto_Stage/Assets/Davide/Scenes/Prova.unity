@@ -32845,7 +32845,7 @@ GameObject:
   - component: {fileID: 3166609273260846496}
   - component: {fileID: 3166609273260880258}
   - component: {fileID: 1228974581}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ocean_Pacific
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32881,7 +32881,7 @@ GameObject:
   - component: {fileID: 3166609273260846500}
   - component: {fileID: 3166609273260880260}
   - component: {fileID: 3166609273260880265}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ocean_Indian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32920,7 +32920,7 @@ GameObject:
   - component: {fileID: 3166609273260846505}
   - component: {fileID: 3166609273260880262}
   - component: {fileID: 3166609273260880266}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ocean_Atlantic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32956,7 +32956,7 @@ GameObject:
   - component: {fileID: 3166609273260846507}
   - component: {fileID: 3166609273260880264}
   - component: {fileID: 3166609273260880267}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ocean_Arctic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33034,13 +33034,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3166609273260880269}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: oceans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &3166609273260846510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33073,7 +33073,7 @@ GameObject:
   - component: {fileID: 3166609273260846510}
   - component: {fileID: 3166609273260880272}
   - component: {fileID: 3166609273260880273}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ocean_Southern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63219,11 +63219,6 @@ MonoBehaviour:
   Clouds: {fileID: 7026101865136902859}
   Glow: {fileID: 3713473368920798259}
   countries:
-  - {fileID: 3166609273260846510}
-  - {fileID: 3166609273260846507}
-  - {fileID: 3166609273260846505}
-  - {fileID: 3166609273260846500}
-  - {fileID: 3166609273260846496}
   - {fileID: 6878579548575592783}
   - {fileID: 6878579548575592792}
   - {fileID: 6878579548575592795}
