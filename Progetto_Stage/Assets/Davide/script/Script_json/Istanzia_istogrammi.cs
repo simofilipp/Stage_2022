@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Istanzia_istogrammi : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class Istanzia_istogrammi : MonoBehaviour
     GameObject parent_punti;
     [SerializeField]
     GameObject terraInterazioni;
+    
+    
 
     ShowedData datoMostrato;
     float raggio;
@@ -33,7 +37,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(terraInterazioni.transform.localScale.x);
+       // Debug.Log(terraInterazioni.transform.localScale.x);
     }
 
     Vector3 CalcolaPunto(float lat, float lng)
@@ -96,6 +100,7 @@ public class Istanzia_istogrammi : MonoBehaviour
                             //scala in base al dato, le liste devono essere lunghe uguali e precise
                             var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
                             punti[j].transform.LeanScale(scalaFinale, 5f);
+                            punti[j].GetComponentInChildren<TMP_Text>().text = dataValues[j].ToString();
                             punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
                             punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
                             if (dataValues[j] > 1000000)
