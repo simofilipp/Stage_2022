@@ -29,44 +29,42 @@ public class StartSequenceManager : MonoBehaviour
 
     public void StartFreeMode()
     {
+        //disattivare i tasti modalità dopo averli scalati, aggiungere un delay ad ugnuno per farlo più carino
+        DisattivaTastiMode();
+
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
         LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
         {
             solve.SetFloat("_Dissolvenza_animazione", value);
-            
+
         }).setOnComplete(() =>
         {
-            //disattivare i tasti modalità
-            foreach(var t in tastiModalita)
-            {
-                t.gameObject.SetActive(false);
-            }
-            
+
             //lasciare attivo solo il tasto per tornare alla fase iniziale
 
 
             //Animazione entrata palline con dissolve
             foreach (var obj in sferette)
-                {
-                    obj.SetActive(true);
+            {
+                obj.SetActive(true);
 
-                    var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
-                    LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
-                        {
-                            solveSfera.SetFloat("_Dissolvenza_animazione", value);
-                        });
-                }
+                var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
+                LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
+                {
+                    solveSfera.SetFloat("_Dissolvenza_animazione", value);
+                });
+            }
 
             //animazione terra che si ingrandisce, luna che scompare
             holoEarth.LeanScale(Vector3.zero, 3.5f).setOnComplete(() =>
-            { 
+            {
                 terra.SetActive(true);
                 terra.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-              terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() => 
-                { 
-                    luna.SetActive(false); 
+                terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                {
+                    luna.SetActive(false);
 
                     //attivare tastiera
                     tastiera.SetActive(true);
@@ -85,14 +83,22 @@ public class StartSequenceManager : MonoBehaviour
                         t.gameObject.SetActive(true);
                     }
 
-                }).delay = 0.5f;
-               
-      
+                }).delay = 0.1f;
+
+
             }
                 );
-            });
-  
+        });
 
+
+    }
+
+    private void DisattivaTastiMode()
+    {
+        foreach (var t in tastiModalita)
+        {
+            t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
+        }
     }
 }
 

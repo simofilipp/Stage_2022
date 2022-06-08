@@ -26960,6 +26960,7 @@ GameObject:
   - component: {fileID: 4765066547073040750}
   - component: {fileID: 7876553960206039579}
   - component: {fileID: 3747305345851087841}
+  - component: {fileID: 7876553960206039580}
   m_Layer: 0
   m_Name: Ponte_punta
   m_TagString: Untagged
@@ -62217,6 +62218,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394086696418825286}
   m_Mesh: {fileID: 6676043061577842942, guid: 527e54639da88f640bb54c40666254aa, type: 3}
+--- !u!65 &7876553960206039580
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394086696418825286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02958508, y: 0.035884153, z: 0.014006746}
+  m_Center: {x: 0.0024744614, y: 1.1641519e-10, z: -0.0031354644}
 --- !u!114 &7898588560641989805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63205,6 +63219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132976431948109247, guid: 7bb9641ecf4106944a895d69c556eab8,
+        type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132976431948109247, guid: 7bb9641ecf4106944a895d69c556eab8,
+        type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bb9641ecf4106944a895d69c556eab8, type: 3}
