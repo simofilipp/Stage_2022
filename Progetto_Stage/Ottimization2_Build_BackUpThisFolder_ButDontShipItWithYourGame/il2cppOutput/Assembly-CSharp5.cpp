@@ -5558,28 +5558,30 @@ struct WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554  : public MonoB
 	List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* ___EarthMaterialsByTypeOnCountries_19;
 	// UnityEngine.GameObject WorldMapManager::UnitPoint
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UnitPoint_20;
+	// System.Collections.Generic.List`1<UnityEngine.Color> WorldMapManager::InitialColors
+	List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF* ___InitialColors_21;
 	// Country WorldMapManager::CurrentHoveredCountry
-	Country_tE8BBE9B8041295C043359FE3439A56EDA76B1E4A* ___CurrentHoveredCountry_21;
+	Country_tE8BBE9B8041295C043359FE3439A56EDA76B1E4A* ___CurrentHoveredCountry_22;
 	// Country WorldMapManager::_currentSelectedCountry
-	Country_tE8BBE9B8041295C043359FE3439A56EDA76B1E4A* ____currentSelectedCountry_22;
+	Country_tE8BBE9B8041295C043359FE3439A56EDA76B1E4A* ____currentSelectedCountry_23;
 	// System.Single WorldMapManager::currentPointValue
-	float ___currentPointValue_23;
+	float ___currentPointValue_24;
 	// UnityEngine.LayerMask WorldMapManager::EarthMask
-	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___EarthMask_24;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___EarthMask_25;
 	// UnityEngine.GameObject WorldMapManager::CurrenUnitPoint
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CurrenUnitPoint_25;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CurrenUnitPoint_26;
 	// WorldMapManager/State WorldMapManager::_currentState
-	int32_t ____currentState_26;
+	int32_t ____currentState_27;
 	// UnityEngine.Vector2 WorldMapManager::HoveredEarthUVCoord
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___HoveredEarthUVCoord_28;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___HoveredEarthUVCoord_29;
 	// UnityEngine.Vector2 WorldMapManager::SelectedEarthUVCoord
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___SelectedEarthUVCoord_29;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___SelectedEarthUVCoord_30;
 };
 
 struct WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554_StaticFields
 {
 	// WorldMapManager WorldMapManager::_instance
-	WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* ____instance_27;
+	WorldMapManager_t953D2FD41E61769C747C52D360C3C79CCAE19554* ____instance_28;
 };
 
 // testGrab
@@ -19897,7 +19899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StartSequenceManager_StartFreeMode_m7E63
 		//     }
 		// 
 		//     //animazione terra che si ingrandisce, luna che scompare
-		//     holoEarth.LeanScale(Vector3.zero, 3.5f).setOnComplete(() =>
+		//     holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
 		//     {
 		//         terra.SetActive(true);
 		//         terra.transform.localScale = Vector3.zero;
@@ -20219,7 +20221,7 @@ IL_006c_1:
 
 IL_0086:
 	{
-		// holoEarth.LeanScale(Vector3.zero, 3.5f).setOnComplete(() =>
+		// holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
 		// {
 		//     terra.SetActive(true);
 		//     terra.transform.localScale = Vector3.zero;
@@ -20256,7 +20258,7 @@ IL_0086:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_get_zero_m9D7F7B580B5A276411267E96AA3425736D9BDC83_inline(NULL);
 		LTDescr_t7D2535016B50E5B777CEA4DA359DF39A6C396696* L_22;
-		L_22 = LeanTweenExt_LeanScale_m770708FB8417E981AA2603C101C7ECA779BD9405(L_20, L_21, (3.5f), NULL);
+		L_22 = LeanTweenExt_LeanScale_m770708FB8417E981AA2603C101C7ECA779BD9405(L_20, L_21, (2.0f), NULL);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_23 = __this->___U3CU3E9__2_3;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = L_23;
 		G_B7_0 = L_24;
