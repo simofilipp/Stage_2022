@@ -57,7 +57,7 @@ public class StartSequenceManager : MonoBehaviour
             }
 
             //animazione terra che si ingrandisce, luna che scompare
-            holoEarth.LeanScale(Vector3.zero, 3.5f).setOnComplete(() =>
+            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
             {
                 terra.SetActive(true);
                 terra.transform.localScale = Vector3.zero;

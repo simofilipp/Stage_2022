@@ -25,24 +25,27 @@ public class Country : MonoBehaviour
     }
     void Start()
     {
+        WorldMapManager.instance.InitialColors.Add(ColorCountry);
         ChangeColor();
-        
     }
   
 
-    void ChangeColor()
+    public void ChangeColor()
     {
-        Mesh mesh = GetComponent<MeshFilter>().mesh;
-        Vector3[] vertices = mesh.vertices;
+        //Mesh mesh = GetComponent<MeshFilter>().mesh;
+        //Vector3[] vertices = mesh.vertices;
 
-        // create new colors array where the colors will be created.
-        Color[] colors = new Color[vertices.Length];
+        //// create new colors array where the colors will be created.
+        //Color[] colors = new Color[vertices.Length];
 
-        for (int i = 0; i < vertices.Length; i++)
-            colors[i] = ColorCountry;
+        //for (int i = 0; i < vertices.Length; i++)
+        //    colors[i] = ColorCountry;
 
-        // assign the array of colors to the Mesh.
-        mesh.colors = colors;
+        //// assign the array of colors to the Mesh.
+        //mesh.colors = colors;
+
+        var meshRend=GetComponent<MeshRenderer>();
+        meshRend.material.color = ColorCountry;
     }
     // Update is called once per frame
      

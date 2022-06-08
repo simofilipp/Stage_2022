@@ -28,7 +28,8 @@ public class WorldMapManager : MonoBehaviour
     [SerializeField] public List<Material> EarthMaterialsByTypeOnCountries;
     [Header("Prefab for Select Point on Earth")]
     [SerializeField] GameObject UnitPoint;
-    
+
+    public List<Color> InitialColors;
     public Country CurrentHoveredCountry;
     private Country _currentSelectedCountry;
     public Country CurrentSelectedCountry
@@ -68,6 +69,11 @@ public class WorldMapManager : MonoBehaviour
                     EarthRenderer.sharedMaterial = Earth;
                     Clouds.SetActive(true);
                     Glow.SetActive(true);
+                    for(int i = 0; i < countries.Count; i++)
+                    {
+                        countries[i].ColorCountry=InitialColors[i];
+                        countries[i].ChangeColor();
+                    }
                     TurnOffCountriesMaterials();
                     
                     break;
@@ -75,6 +81,10 @@ public class WorldMapManager : MonoBehaviour
                     EarthRenderer.sharedMaterial = Earth;
                     //ShowMap();
                     TurnOnCountriesMaterials();
+                    foreach(var stato in countries)
+                    {
+                        stato.ChangeColor();
+                    }
                     Clouds.SetActive(false);
                     Glow.SetActive(true);
 
@@ -83,6 +93,11 @@ public class WorldMapManager : MonoBehaviour
                     EarthRenderer.sharedMaterial = Population;
 
                     //ShowMap();
+                    for (int i = 0; i < countries.Count; i++)
+                    {
+                        countries[i].ColorCountry = InitialColors[i];
+                        countries[i].ChangeColor();
+                    }
                     Clouds.SetActive(true);
                     Glow.SetActive(true);
                     TurnOffCountriesMaterials();

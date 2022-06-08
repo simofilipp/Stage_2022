@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using System;
 public class Istanzia_istogrammi : MonoBehaviour
 {
 
@@ -199,6 +199,26 @@ public class Istanzia_istogrammi : MonoBehaviour
         yield return new WaitForSeconds(5.2f);
         scalando = false;
     }
+
+    public void ColoraStati()
+    {
+        foreach(var dato in jdata.gameData.dati)
+        {
+            if (dato.capital == "primary")
+            {
+                foreach(var stato in WorldMapManager.instance.countries)
+                {
+                    if (dato.iso2 == stato.gameObject.name)
+                    {
+                        stato.ColorCountry= new Color(1,1f-(float)Math.Round(dato.population/ 39105000f,2), 1f-(float)Math.Round(dato.population / 39105000f, 2));
+                        stato.ChangeColor();
+                        //break;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
