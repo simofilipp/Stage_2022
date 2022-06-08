@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 92775a4e937e1434a8827ae90d07e0ac
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19 - Default
+    second: {fileID: 2100000, guid: 37508a0c3f9918244811f148f15fe1ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default
+    second: {fileID: 2100000, guid: a8252ce44ec50e046b26c8e722a55c67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material1
+    second: {fileID: 2100000, guid: d148edd599533724faaa024102ca4386, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material2
+    second: {fileID: 2100000, guid: fdd00faf65a9b9a45bf941d658e07b3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material3
+    second: {fileID: 2100000, guid: 9cd651c6600f10643bf1bc722d0884c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bluebg
+    second: {fileID: 2100000, guid: f7036f9c4e4416c478afba60b305fab0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: d_ring with Tex_
+    second: {fileID: 2100000, guid: b47b36e666306214984eb235c1f2104b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: graple with Tex_
+    second: {fileID: 2100000, guid: ba9434f53ed4fa84f9e6344d6777fde2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iss_dc with Tex_
+    second: {fileID: 2100000, guid: 4fefc11f5bc4a9e459621b859b222aad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iss_dcs with Tex
+    second: {fileID: 2100000, guid: 9f0059d0df5bd7f4aa028a6f23f8b427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iss_un with Tex_
+    second: {fileID: 2100000, guid: 3b8abbf41e7d76b4ebc13486a89bd883, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issb with Tex_ I
+    second: {fileID: 2100000, guid: d8dc6783cd0a9404b986f2f806724fc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issb2 with Tex__
+    second: {fileID: 2100000, guid: 99fcbaeb9fc401049bacb0900f18c264, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issb3 with Tex__
+    second: {fileID: 2100000, guid: a1bac6b20a4794c4f92661044d3f4651, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issb4 with Tex__
+    second: {fileID: 2100000, guid: 769682bbd5f9e2f4d8aed087d35e1a76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issbs with Tex__
+    second: {fileID: 2100000, guid: c2afcc406197edc4c879dbe1cbc211c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issbso with Tex_
+    second: {fileID: 2100000, guid: 92c0115d733de3449b31101f803a78ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issbso2 with Tex
+    second: {fileID: 2100000, guid: 7075add83ae6fdc418101e27836c042f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isscov2 with Tex
+    second: {fileID: 2100000, guid: cf93b22fc195a3c4a9fe7d97f7615e40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isscover with Te
+    second: {fileID: 2100000, guid: d394c942cb7035f4b84e9a5f666154de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isscup with Tex_
+    second: {fileID: 2100000, guid: 4ba04b1ed7aa4584499317974d225c83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issdish with Tex
+    second: {fileID: 2100000, guid: df5019e4176757e468299d62176cc8e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issdot with Tex_
+    second: {fileID: 2100000, guid: fa2f6387fc3accc4598a444b65ad25dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issesa with Tex_
+    second: {fileID: 2100000, guid: 787cddada922abd44b0e6b13020877ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isshand with Tex
+    second: {fileID: 2100000, guid: 43cc0dd793615714290d72e405f3e81d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issins with Tex_
+    second: {fileID: 2100000, guid: f7f21e686f1433e468c00e7d5606245a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issku with Tex__
+    second: {fileID: 2100000, guid: 48eed7ff64e1c3949bce4c909809d114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issku1 with Tex_
+    second: {fileID: 2100000, guid: ddd9c8045bd545c41ae698f6dca7beda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issku2 with Tex_
+    second: {fileID: 2100000, guid: 8e6f0b44b6bcc0645a8ab0f6a9a760fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issleo with Tex_
+    second: {fileID: 2100000, guid: ad2ec2fe4c33d324c9b3f4f57438302c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issmb with Tex__
+    second: {fileID: 2100000, guid: 4408374887fa45f4abbda79096fd3f82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issmod with Tex_
+    second: {fileID: 2100000, guid: 15c9eedae5ec9f843ad0f96996455e28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issp2 with Tex__
+    second: {fileID: 2100000, guid: f7f419d571a3db54cb320ae0848e688e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isspanel with Te
+    second: {fileID: 2100000, guid: 39eac2061a2937840b9a91a698cd857a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issrad with Tex_
+    second: {fileID: 2100000, guid: f3e416b8aa2437a468dd9e8a1af6c64b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issred with Tex_
+    second: {fileID: 2100000, guid: aa27274112b328d41956ac2d84827c29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isssolar with Te
+    second: {fileID: 2100000, guid: 4c885c62ac9995342a655fe4bc76c5f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issusa with Tex_
+    second: {fileID: 2100000, guid: ea341f3e25993f9418cd07a46fef8823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issusaf with 1
+    second: {fileID: 2100000, guid: 857f508815e20e24985a728ab40158a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: issusaf with Tex
+    second: {fileID: 2100000, guid: d24a3024a2ae5624ba71fb4e83f1cbfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: isszmod with Tex
+    second: {fileID: 2100000, guid: 44ff4925f613a7743850251775ee2d9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material04
+    second: {fileID: 2100000, guid: f78b2b7ab5135a84186bb502f624a6b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalcon with Te
+    second: {fileID: 2100000, guid: 86353c8d3df4ddc4599c8fcac7714533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nasda with Tex__
+    second: {fileID: 2100000, guid: 303b79bea0745be4097e0172eb886850, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: questcov with Te
+    second: {fileID: 2100000, guid: 81750df5ef5878d46b53ad8ed05cef3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white.001
+    second: {fileID: 2100000, guid: 589400d544abf2e44ac3c9a1893edc8a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d_ring
+    second: {fileID: 2800000, guid: 3859716ecf78c2c45953d9bf6c7b26f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: graple
+    second: {fileID: 2800000, guid: 5db195c6c07dc364ebbc99c4d6ab85b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: iss_dc
+    second: {fileID: 2800000, guid: b0a6249d8bdbf2e4e988f106ac03e46f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: iss_dcs
+    second: {fileID: 2800000, guid: d752a92568f84a34cabfa722fce2f6ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: iss_un
+    second: {fileID: 2800000, guid: b13c6233ef7967c46984343bdcfece50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issb2
+    second: {fileID: 2800000, guid: ccae19a9941284149be8707db64faf3b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issb3
+    second: {fileID: 2800000, guid: 79ae348e93f404c49a880bd05d783d78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issb4
+    second: {fileID: 2800000, guid: 63f7226c2570f93469525d2d4c6a1722, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issbs
+    second: {fileID: 2800000, guid: 8a5eebba30762d3469907310b47185dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issbso
+    second: {fileID: 2800000, guid: 6719684cd94fadd49b1e01c05cd76af7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isscov2
+    second: {fileID: 2800000, guid: cb16b758b99a14e43a709a94d6f66e84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isscup
+    second: {fileID: 2800000, guid: e55ca89ec19b2c348bb1822df20b06b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issdish
+    second: {fileID: 2800000, guid: e911b7b83a961b6449c473dd6f669c49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issdot
+    second: {fileID: 2800000, guid: 134a5e36d6f8f944eb6f68d81211fda1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issesa
+    second: {fileID: 2800000, guid: 95483492b82910944b07275f1d6e9eef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isshand
+    second: {fileID: 2800000, guid: 878c78730a21b0246903525b2061430f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issins
+    second: {fileID: 2800000, guid: e32d45ddc6cee5e49a1c38d6ad05c2ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issku
+    second: {fileID: 2800000, guid: 127b22dbc3f8cad419c107a6a7ebe3f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issku1
+    second: {fileID: 2800000, guid: 664531fd0b34b18409674c107954a534, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issku2
+    second: {fileID: 2800000, guid: 7c1cf16933e6f6d4a972cadc84f225dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issmb
+    second: {fileID: 2800000, guid: b49828d8f3afd0f4db122f5add92f427, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issmod
+    second: {fileID: 2800000, guid: 6ac11b961a2fce54693a4323ee590261, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issp2
+    second: {fileID: 2800000, guid: 36dbe42d315b890428baa377ceae0502, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isspanel
+    second: {fileID: 2800000, guid: 5c1c18485ddbd9d4e8c72f477b42baf6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issrad
+    second: {fileID: 2800000, guid: ece8a4a32143a764c8759105184b57f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issred
+    second: {fileID: 2800000, guid: 5329a10ea2cc866439e1d28e878f0602, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isssolar
+    second: {fileID: 2800000, guid: 79a8ac9b06633174eb42b84e8507ee0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: issusa
+    second: {fileID: 2800000, guid: 80d444a2b249a3d418843a395e3f0095, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: isszmod
+    second: {fileID: 2800000, guid: c00d70ea7a04d314eac5715f47b543cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalcon
+    second: {fileID: 2800000, guid: 12d81f5b026e9b741ab43e16b58b9f95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nasda
+    second: {fileID: 2800000, guid: 052bb1668bea0b140aa08f8186f4ef2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: questcov
+    second: {fileID: 2800000, guid: 2b064ba883c66fd4e8e2450b3e879002, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
