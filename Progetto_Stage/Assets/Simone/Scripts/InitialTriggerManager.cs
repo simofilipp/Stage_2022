@@ -63,6 +63,6 @@ public class InitialTriggerManager : MonoBehaviour
         tavolo.SetActive(true);
         tablet.SetActive(true);
         tablet.LeanMove(new Vector3(0.0829999968f, 1.02189505f, 1.00300002f), 2f).setEaseInOutQuart();
-        tablet.LeanRotate(new Vector3(322.821472f, 0, 0), 3f).setEaseOutQuart();
+        tablet.LeanRotate(new Vector3(322.821472f, 180f, 0), 3f).setEaseOutQuart();
     }
 }
