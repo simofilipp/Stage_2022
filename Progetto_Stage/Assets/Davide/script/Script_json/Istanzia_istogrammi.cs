@@ -13,8 +13,12 @@ public class Istanzia_istogrammi : MonoBehaviour
     GameObject parent_punti;
     [SerializeField]
     GameObject terraInterazioni;
-    
-    
+    [SerializeField]
+    List<GameObject> capitaliEuropa;
+    [SerializeField]
+    List<GameObject> statiEuropa;
+
+
 
     ShowedData datoMostrato;
     float raggio;
@@ -32,6 +36,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     {
         dataValues = new List<float>();
         datoMostrato = ShowedData.None;
+        IstanziaIstoEuropa();
     }
 
     // Update is called once per frame
@@ -208,7 +213,7 @@ public class Istanzia_istogrammi : MonoBehaviour
             {
                 foreach(var stato in WorldMapManager.instance.countries)
                 {
-                    if (dato.iso2 == stato.gameObject.name)
+                    if (dato.city == stato.gameObject.name)
                     {
                         stato.ColorCountry= new Color(1,1f-(float)Math.Round(dato.population/ 39105000f,2), 1f-(float)Math.Round(dato.population / 39105000f, 2));
                         stato.ChangeColor();
@@ -217,6 +222,30 @@ public class Istanzia_istogrammi : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void IstanziaIstoEuropa()
+    {
+        
+        foreach (var dato in jdata.gameData.dati)
+        {
+            if (dato.capital == "primary")
+            {
+                
+                foreach (var capital in capitaliEuropa)
+                {
+                    if (capital.name == dato.city)
+                    {
+                        var istoEu = Instantiate(cubo_scala, capital.transform);
+                        var scalaFinale = new Vector3(istoEu.transform.localScale.x, istoEu.transform.localScale.y, dato.population / 100000);
+                        istoEu.LeanScale(scalaFinale, 3);
+                    }
+        }
+            }
+
+
+        }
+        
     }
 
 }
