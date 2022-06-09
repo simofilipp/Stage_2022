@@ -225,6 +225,7 @@ public class Istanzia_istogrammi : MonoBehaviour
 public enum ShowedData{
     None,
     CapitalPopulation,
-    Latitude
+    Latitude,
+    EuropeMap
 }
 
