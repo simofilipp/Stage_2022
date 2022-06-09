@@ -14,6 +14,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terra;
     [SerializeField] GameObject luna;
     [SerializeField] GameObject holoEarth;
+    [SerializeField] GameObject serranda;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
@@ -31,6 +32,9 @@ public class StartSequenceManager : MonoBehaviour
     {
         //disattivare i tasti modalità dopo averli scalati, aggiungere un delay ad ugnuno per farlo più carino
         DisattivaTastiMode();
+
+        //apri serranda
+        serranda.GetComponent<Animator>().SetTrigger("Apri");
 
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;

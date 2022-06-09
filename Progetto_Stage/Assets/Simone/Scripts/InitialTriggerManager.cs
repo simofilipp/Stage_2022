@@ -7,10 +7,12 @@ public class InitialTriggerManager : MonoBehaviour
 {
     [SerializeField] Transform earth;
     [SerializeField] Transform moon;
-    [SerializeField] GameObject cassetto;
+    [SerializeField] GameObject console;
+    [SerializeField] GameObject tavolo;
+    [SerializeField] GameObject tablet;
     [SerializeField] Transform padre;
     public SoundFXRef testSound1;
-    public SoundFXRef cassettoSuono;
+    //public SoundFXRef cassettoSuono;
     Vector3 earthScale;
     Vector3 moonScale;
     // Start is called before the first frame update
@@ -39,8 +41,11 @@ public class InitialTriggerManager : MonoBehaviour
 
     void ActivateEarth()
     {
-        cassetto.GetComponent<Animator>().SetTrigger("scomparsa");
-        cassettoSuono.PlaySoundAt(cassetto.transform.position);
+        console.GetComponent<Animator>().SetTrigger("Comparsa_tavolo");
+        StartCoroutine(EnableTabletAndTable());
+        EnableTabletAndTable();
+        LeanTween.scale(padre.gameObject, padre.transform.localScale * 5, 3f).setEaseInOutQuart();
+        //cassettoSuono.PlaySoundAt(console.transform.position);
         //earth.gameObject.SetActive(true);
         //earth.localScale = Vector3.zero;
         //LeanTween.scale(earth.gameObject, earthScale, 3f).setEaseInOutQuart().setOnComplete(() => 
@@ -50,6 +55,14 @@ public class InitialTriggerManager : MonoBehaviour
         //    moon.localScale = Vector3.zero;
         //    LeanTween.scale(moon.gameObject, moonScale, 3f).setEaseInOutSine();
         //});
-        LeanTween.scale(padre.gameObject, padre.transform.localScale*5,3f).setEaseInOutQuart();
+    }
+
+    IEnumerator EnableTabletAndTable()
+    {
+        yield return new WaitForSeconds(4.1f);
+        tavolo.SetActive(true);
+        tablet.SetActive(true);
+        tablet.LeanMove(new Vector3(0.0829999968f, 1.02189505f, 1.00300002f), 2f).setEaseInOutQuart();
+        tablet.LeanRotate(new Vector3(322.821472f, 0, 0), 3f).setEaseOutQuart();
     }
 }
