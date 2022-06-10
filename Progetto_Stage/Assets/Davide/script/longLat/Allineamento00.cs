@@ -48,6 +48,8 @@ public class Allineamento00 : MonoBehaviour
             {
                 Terraobj.transform.LeanRotateAround(Vector3.right, lat*-1f, 5f);
             }); ; 
+
+
         });
         
         
