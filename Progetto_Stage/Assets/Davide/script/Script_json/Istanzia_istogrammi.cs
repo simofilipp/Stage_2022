@@ -36,7 +36,7 @@ public class Istanzia_istogrammi : MonoBehaviour
     {
         dataValues = new List<float>();
         datoMostrato = ShowedData.None;
-        IstanziaIstoEuropa();
+       
     }
 
     // Update is called once per frame
@@ -229,13 +229,16 @@ public class Istanzia_istogrammi : MonoBehaviour
         
         foreach (var dato in jdata.gameData.dati)
         {
+            Debug.LogWarning("Sono nel primo foreach");
             if (dato.capital == "primary")
             {
-                
+                Debug.LogWarning("Sono nel primo if");
                 foreach (var capital in capitaliEuropa)
                 {
+                    Debug.LogWarning("Sono nel secondo foreach");
                     if (capital.name == dato.city)
                     {
+                        Debug.LogWarning("Sono nel secondo if");
                         var istoEu = Instantiate(cubo_scala, capital.transform);
                         var scalaFinale = new Vector3(istoEu.transform.localScale.x, istoEu.transform.localScale.y, dato.population / 100000);
                         istoEu.LeanScale(scalaFinale, 3);
@@ -246,6 +249,25 @@ public class Istanzia_istogrammi : MonoBehaviour
 
         }
         
+    }
+
+    public void ColoraStatiEU()
+    {
+        foreach (var dato in jdata.gameData.dati)
+        {
+            if (dato.capital == "primary")
+            {
+                foreach (var stato in statiEuropa)
+                {
+                    if (dato.iso2 == stato.name)
+                    {
+                        stato.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color( 1f - (float)Math.Round(dato.population / 5000000f, 2), 1f - (float)Math.Round(dato.population / 5000000f, 2), 1f));
+                        
+                        //break;
+                    }
+                }
+            }
+        }
     }
 
 }

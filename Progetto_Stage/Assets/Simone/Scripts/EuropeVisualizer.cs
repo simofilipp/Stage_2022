@@ -5,9 +5,13 @@ using UnityEngine;
 public class EuropeVisualizer : MonoBehaviour
 {
     [SerializeField] GameObject earth;
+    [SerializeField] GameObject europa;
     [SerializeField] List<GameObject> optionButtons;
     bool mapShown=false;
     Vector3 initialScaleEarth;
+    [SerializeField]
+    Istanzia_istogrammi istanziaIsto;
+    bool istoIstanziati;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +37,23 @@ public class EuropeVisualizer : MonoBehaviour
                 }
             }
             initialScaleEarth = earth.transform.localScale;
-            earth.transform.LeanScale(Vector3.zero, 3f).setEaseInBack().setEaseOutQuad();
+            earth.transform.LeanScale(Vector3.zero, 3f).setEaseInBack().setEaseOutQuad().setOnComplete(()=> 
+            {
+                europa.SetActive(true);
+                istanziaIsto.ColoraStatiEU();
+                if (!istoIstanziati)
+                {
+                    istanziaIsto.IstanziaIstoEuropa();
+                    istoIstanziati = true;
+                }
+               
+
+            });
             mapShown=true;
         }
         else
         {
+            europa.SetActive(false);
             earth.transform.LeanScale(initialScaleEarth, 3f).setEaseOutQuad().setOnComplete(() => 
             { 
                 foreach(GameObject go in optionButtons)

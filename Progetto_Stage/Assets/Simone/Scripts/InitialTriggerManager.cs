@@ -62,7 +62,7 @@ public class InitialTriggerManager : MonoBehaviour
         yield return new WaitForSeconds(4.1f);
         tavolo.SetActive(true);
         tablet.SetActive(true);
-        tablet.LeanMove(new Vector3(0.0829999968f, 1.02189505f, 1.00300002f), 2f).setEaseInOutQuart();
-        tablet.LeanRotate(new Vector3(322.821472f, 180f, 0), 3f).setEaseOutQuart();
+        tablet.LeanMove(new Vector3(0f, 1.02189505f, 1.00300002f), 2f).setEaseInOutQuart();
+        tablet.LeanRotate(new Vector3(46f, 180f, 0), 3f).setEaseOutQuart();
     }
 }
