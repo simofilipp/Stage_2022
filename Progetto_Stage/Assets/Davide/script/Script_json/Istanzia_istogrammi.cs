@@ -213,7 +213,7 @@ public class Istanzia_istogrammi : MonoBehaviour
             {
                 foreach(var stato in WorldMapManager.instance.countries)
                 {
-                    if (dato.city == stato.gameObject.name)
+                    if (dato.iso2 == stato.gameObject.name)
                     {
                         stato.ColorCountry= new Color(1,1f-(float)Math.Round(dato.population/ 39105000f,2), 1f-(float)Math.Round(dato.population / 39105000f, 2));
                         stato.ChangeColor();
