@@ -19,6 +19,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
+    [SerializeField] List<GameObject> tastiOpzioniEarthSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
 
@@ -89,7 +90,7 @@ public class StartSequenceManager : MonoBehaviour
                     //attivare i tasti opzione
                     foreach (var t in tastiOpzioniFreeMode)
                     {
-                        t.gameObject.SetActive(true);
+                        GeneraBottone(t);
                     }
 
                 }).delay = 0.1f;
@@ -105,12 +106,10 @@ public class StartSequenceManager : MonoBehaviour
         DisattivaTastiMode();
         foreach (var t in tastiPlanetarioSubmode)
         {
-            var initialButtonScale= t.transform.localScale;
-            t.transform.localScale = Vector3.zero;
-            t.SetActive(true);
-            t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack().setOnComplete(() => { });
+            GeneraBottone(t);
         }
     }
+
 
     public void StartSolarSystem()
     {
@@ -147,6 +146,11 @@ public class StartSequenceManager : MonoBehaviour
                     luna.SetActive(true);
                     luna.transform.localScale = Vector3.zero;
                     LeanTween.scale(luna.gameObject, moonScale, 3f).setEaseInOutSine();
+                    //attivare i tasti opzione
+                    foreach (var t in tastiOpzioniEarthSystem)
+                    {
+                        GeneraBottone(t);
+                    }
                 });
             });
         });
@@ -156,15 +160,29 @@ public class StartSequenceManager : MonoBehaviour
     {
         foreach (var t in tastiModalita)
         {
-            t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
+            NascondiBottone(t);
         }
     }
+
+
     private void DisattivaTastiSubMode()
     {
         foreach (var t in tastiPlanetarioSubmode)
         {
-            t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
+            NascondiBottone(t);
         }
+    }
+
+    private static void GeneraBottone(GameObject t)
+    {
+        var initialButtonScale = t.transform.localScale;
+        t.transform.localScale = Vector3.zero;
+        t.SetActive(true);
+        t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack();
+    }
+    private static void NascondiBottone(GameObject t)
+    {
+        t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
     }
 }
 
