@@ -18,6 +18,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
+    [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
 
 
@@ -94,6 +95,17 @@ public class StartSequenceManager : MonoBehaviour
                 );
         });
 
+    }
+    public void StartPlanetariumMode()
+    {
+        DisattivaTastiMode();
+        foreach (var t in tastiPlanetarioSubmode)
+        {
+            var initialButtonScale= t.transform.localScale;
+            t.transform.localScale = Vector3.zero;
+            t.SetActive(true);
+            t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack().setOnComplete(() => { });
+        }
 
     }
 
