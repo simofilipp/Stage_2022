@@ -33,6 +33,7 @@ public class StartSequenceManager : MonoBehaviour
     {
         //disattivare i tasti modalità dopo averli scalati, aggiungere un delay ad ugnuno per farlo più carino
         DisattivaTastiMode();
+        actualMode = Mode.FreeMode;
 
         //apri serranda
         serranda.GetComponent<Animator>().SetTrigger("Apri");
