@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartSequenceManager : MonoBehaviour
 {
-    [SerializeField] GameObject cassetto;
+    //[SerializeField] GameObject cassetto;
     [SerializeField] GameObject pannelli;
     [SerializeField] float dissolveTimeGabbia;
     [SerializeField] float dissolveTimeSfere;
@@ -12,6 +12,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject tastiera;
     [SerializeField] GameObject canvasFinale;
     [SerializeField] GameObject terra;
+    [SerializeField] GameObject terraNoStati;
     [SerializeField] GameObject luna;
     [SerializeField] GameObject holoEarth;
     [SerializeField] GameObject serranda;
@@ -23,10 +24,12 @@ public class StartSequenceManager : MonoBehaviour
 
 
     Mode actualMode;
+    private Vector3 moonScale;
 
     private void Start()
     {
         actualMode = Mode.Initial;
+        moonScale=luna.transform.localScale;
     }
 
     public void StartFreeMode()
@@ -107,12 +110,58 @@ public class StartSequenceManager : MonoBehaviour
             t.SetActive(true);
             t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack().setOnComplete(() => { });
         }
+    }
 
+    public void StartSolarSystem()
+    {
+        DisattivaTastiSubMode();
+        ponte.SetActive(false);
+        var solve = pannelli.GetComponent<MeshRenderer>().material;
+        LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
+        {
+            solve.SetFloat("_Dissolvenza_animazione", value);
+
+        }).setOnComplete(() =>
+        {
+            holoEarth.LeanScale(Vector3.zero, 2f);
+        });
+    }
+    public void StartEarthSystem()
+    {
+        DisattivaTastiSubMode();
+        ponte.SetActive(false);
+        var solve = pannelli.GetComponent<MeshRenderer>().material;
+        LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
+        {
+            solve.SetFloat("_Dissolvenza_animazione", value);
+
+        }).setOnComplete(() =>
+        {
+            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
+            {
+                terra.SetActive(true);
+                terra.transform.localScale = Vector3.zero;
+                holoEarth.SetActive(false);
+                terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                {
+                    luna.SetActive(true);
+                    luna.transform.localScale = Vector3.zero;
+                    LeanTween.scale(luna.gameObject, moonScale, 3f).setEaseInOutSine();
+                });
+            });
+        });
     }
 
     private void DisattivaTastiMode()
     {
         foreach (var t in tastiModalita)
+        {
+            t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
+        }
+    }
+    private void DisattivaTastiSubMode()
+    {
+        foreach (var t in tastiPlanetarioSubmode)
         {
             t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
         }
