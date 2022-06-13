@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InitialInteractor
   - Sferette
+  - Modulo
   layers:
   - Default
   - TransparentFX

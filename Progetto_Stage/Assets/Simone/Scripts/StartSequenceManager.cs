@@ -138,10 +138,10 @@ public class StartSequenceManager : MonoBehaviour
         {
             holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
             {
-                terra.SetActive(true);
-                terra.transform.localScale = Vector3.zero;
+                terraNoStati.SetActive(true);
+                terraNoStati.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                terraNoStati.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(true);
                     luna.transform.localScale = Vector3.zero;
