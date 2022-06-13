@@ -22,6 +22,7 @@ public class Modulo : MonoBehaviour
     public float direzioneOrbita;
 
     public bool afferrato;
+    public bool hasTrail;
     // Start is called before the first frame update
     void Start()
     {

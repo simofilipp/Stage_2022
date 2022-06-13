@@ -33,6 +33,10 @@ public class LancioModuli : MonoBehaviour
                 {
                     //other.transform.LeanRotateAroundLocal
                 }
+                if (other.GetComponent<Modulo>().hasTrail)
+                {
+                    other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
+                }
                 parent_modulo.SetActive(false);
             });
 
