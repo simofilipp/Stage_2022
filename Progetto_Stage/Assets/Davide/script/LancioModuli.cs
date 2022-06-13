@@ -22,7 +22,7 @@ public class LancioModuli : MonoBehaviour
         if(other.gameObject.tag == "Modulo" && !other.GetComponent<Modulo>().afferrato)
         {
             GameObject parent_modulo = other.transform.parent.parent.gameObject;
-
+            other.transform.parent = null;
             //leggere posizione su orbita e fare un lean in quella posizione 
             LeanTween.scale(other.gameObject,other.transform.localScale *= other.GetComponent<Modulo>().scalaFinale,2.5f);
             LeanTween.move(other.gameObject, other.GetComponent<Modulo>().posizioneSuOrbita, 3f).setOnComplete(() =>
