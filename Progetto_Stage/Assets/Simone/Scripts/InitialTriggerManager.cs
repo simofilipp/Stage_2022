@@ -98,15 +98,15 @@ public class InitialTriggerManager : MonoBehaviour
         tablet.SetActive(true);
         tabletModel.GetChild(2).localScale = Vector3.zero;
         tabletModel.GetChild(0).localScale = new Vector3(0, 0.3762262f, 0.3762262f);
-        tabletModel.GetChild(1).LeanMoveLocalZ(0, 1f).setOnComplete(() =>
+        tabletModel.GetChild(1).LeanMoveLocalZ(0, 1.2f).setEaseOutQuart().setOnComplete(() =>
         {
-            tabletModel.GetChild(0).LeanScaleX(0.3762262f, 1).setOnComplete(() =>
+            tabletModel.GetChild(0).LeanScaleX(0.3762262f, 1).setEaseOutQuint().setOnComplete(() =>
             {
 
-                tabletModel.GetChild(2).LeanScale(new Vector3(0.3762262f, 0.3762262f, 0.3762262f), 1).setOnComplete(() =>
+                tabletModel.GetChild(2).LeanScale(new Vector3(0.3762262f, 0.3762262f, 0.3762262f), 0.8f).setOnComplete(() =>
                 {
-                    tablet.LeanMove(new Vector3(0f, 1.02189505f, 1.00300002f), 2f).setEaseInOutQuart();
-                    tablet.LeanRotate(new Vector3(46f, 180f, 0), 3f).setEaseOutQuart();
+                    tablet.LeanMove(new Vector3(0f, 1.206f, 1.317f), 2f).setEaseInOutQuart();
+                    tablet.LeanRotate(new Vector3(58f, 180f, 0), 3f).setEaseOutQuart();
                 });
             });
         });
