@@ -15,6 +15,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terraNoStati;
     [SerializeField] GameObject luna;
     [SerializeField] GameObject holoEarth;
+    [SerializeField] GameObject puntoRilascioModuli;
     [SerializeField] GameObject serranda;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
@@ -152,6 +153,8 @@ public class StartSequenceManager : MonoBehaviour
                     {
                         GeneraBottone(t);
                     }
+                    //attivare punto rilascio
+                    puntoRilascioModuli.SetActive(true);
                 });
             });
         });
