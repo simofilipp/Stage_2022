@@ -15,6 +15,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terraNoStati;
     [SerializeField] GameObject luna;
     [SerializeField] GameObject holoEarth;
+    [SerializeField] GameObject puntoRilascioModuli;
     [SerializeField] GameObject serranda;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
@@ -72,7 +73,7 @@ public class StartSequenceManager : MonoBehaviour
                 terra.SetActive(true);
                 terra.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                terra.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(false);
 
@@ -142,7 +143,7 @@ public class StartSequenceManager : MonoBehaviour
                 terraNoStati.SetActive(true);
                 terraNoStati.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terraNoStati.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                terraNoStati.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(true);
                     luna.transform.localScale = Vector3.zero;
@@ -152,6 +153,8 @@ public class StartSequenceManager : MonoBehaviour
                     {
                         GeneraBottone(t);
                     }
+                    //attivare punto rilascio
+                    puntoRilascioModuli.SetActive(true);
                 });
             });
         });
