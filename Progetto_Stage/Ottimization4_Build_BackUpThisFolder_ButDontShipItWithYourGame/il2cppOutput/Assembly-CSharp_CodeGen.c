@@ -4159,40 +4159,40 @@ extern void StartSequenceManager_GeneraBottone_mD9D76A9B0C3A5D9DA9573780B0C2068C
 extern void StartSequenceManager_NascondiBottone_mE2651642DC7D85F91D44C1020A55CE32E3651F23 (void);
 // 0x00000824 System.Void StartSequenceManager::.ctor()
 extern void StartSequenceManager__ctor_m859D7AF5675C7FE0D25A39D9964F1F13D8F6DEB9 (void);
-// 0x00000825 System.Void StartSequenceManager/<>c__DisplayClass20_0::.ctor()
-extern void U3CU3Ec__DisplayClass20_0__ctor_m3FD7331BB055E00552BFB402070E451778494C7D (void);
-// 0x00000826 System.Void StartSequenceManager/<>c__DisplayClass20_0::<StartFreeMode>b__0(System.Single)
-extern void U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__0_m2E714B4FE4307BF42AA83E38E54FBC25AB522B7F (void);
-// 0x00000827 System.Void StartSequenceManager/<>c__DisplayClass20_0::<StartFreeMode>b__1()
-extern void U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__1_mD4F92BF44082221464FBCF5B6DD3D5A47F02F8A7 (void);
-// 0x00000828 System.Void StartSequenceManager/<>c__DisplayClass20_0::<StartFreeMode>b__2()
-extern void U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__2_m0E6E9E5424B67AC161282AD040016CD00FC31D08 (void);
-// 0x00000829 System.Void StartSequenceManager/<>c__DisplayClass20_0::<StartFreeMode>b__4()
-extern void U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__4_mCC55B420C4107DF95F45470486992BA4D4470F59 (void);
-// 0x0000082A System.Void StartSequenceManager/<>c__DisplayClass20_1::.ctor()
-extern void U3CU3Ec__DisplayClass20_1__ctor_mD6F848CA2FB5AF0FDD7023A2C47461ADFB9A1075 (void);
-// 0x0000082B System.Void StartSequenceManager/<>c__DisplayClass20_1::<StartFreeMode>b__3(System.Single)
-extern void U3CU3Ec__DisplayClass20_1_U3CStartFreeModeU3Eb__3_m4B2E16DC39B10E7FB77A6516D86652C235CDD2F8 (void);
-// 0x0000082C System.Void StartSequenceManager/<>c__DisplayClass22_0::.ctor()
-extern void U3CU3Ec__DisplayClass22_0__ctor_m52EA49C3D67C068B5C1D5F4CCFE5BE64121FD47C (void);
-// 0x0000082D System.Void StartSequenceManager/<>c__DisplayClass22_0::<StartSolarSystem>b__0(System.Single)
-extern void U3CU3Ec__DisplayClass22_0_U3CStartSolarSystemU3Eb__0_mEA7D18A94F7879642C31B9280DAB85B0070A206E (void);
-// 0x0000082E System.Void StartSequenceManager/<>c__DisplayClass22_0::<StartSolarSystem>b__1()
-extern void U3CU3Ec__DisplayClass22_0_U3CStartSolarSystemU3Eb__1_m7ABC16441B7DA89B0689E4497FE24E699D925F28 (void);
-// 0x0000082F System.Void StartSequenceManager/<>c__DisplayClass23_0::.ctor()
+// 0x00000825 System.Void StartSequenceManager/<>c__DisplayClass21_0::.ctor()
+extern void U3CU3Ec__DisplayClass21_0__ctor_m18565B4AC0CAEAC66C78C2E0FDED886B69038BDC (void);
+// 0x00000826 System.Void StartSequenceManager/<>c__DisplayClass21_0::<StartFreeMode>b__0(System.Single)
+extern void U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__0_m9E0DC12C33459BFDA14178A6EC31A316EF6B29E6 (void);
+// 0x00000827 System.Void StartSequenceManager/<>c__DisplayClass21_0::<StartFreeMode>b__1()
+extern void U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__1_m3081B763800872A692DE0D1D14A21D953CBAAAC8 (void);
+// 0x00000828 System.Void StartSequenceManager/<>c__DisplayClass21_0::<StartFreeMode>b__2()
+extern void U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__2_mE6D3FD0AD272269C054F444F122135703D473B14 (void);
+// 0x00000829 System.Void StartSequenceManager/<>c__DisplayClass21_0::<StartFreeMode>b__4()
+extern void U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__4_mFFEFBA6F94A594C942C73109F21373D4F6FF99E9 (void);
+// 0x0000082A System.Void StartSequenceManager/<>c__DisplayClass21_1::.ctor()
+extern void U3CU3Ec__DisplayClass21_1__ctor_mBD1F86011147D079F55FADFB02732E256C61E25F (void);
+// 0x0000082B System.Void StartSequenceManager/<>c__DisplayClass21_1::<StartFreeMode>b__3(System.Single)
+extern void U3CU3Ec__DisplayClass21_1_U3CStartFreeModeU3Eb__3_m5D09DF1685836C0BF76BA8FEC2433118C52FE2A2 (void);
+// 0x0000082C System.Void StartSequenceManager/<>c__DisplayClass23_0::.ctor()
 extern void U3CU3Ec__DisplayClass23_0__ctor_mB2343C8C00EC6277319BD2AD8AAF82B8A9BC0131 (void);
-// 0x00000830 System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartEarthSystem>b__0(System.Single)
-extern void U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__0_m54DC0B456E201D912EACE929E41C789F6390A24D (void);
-// 0x00000831 System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartEarthSystem>b__1()
-extern void U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__1_mD510528AA22993DCA8EC57C089D64FE18B5391FB (void);
-// 0x00000832 System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartEarthSystem>b__2()
-extern void U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__2_mD095D12CDAB8550AA2939CBEB5B1BBF03E02352F (void);
-// 0x00000833 System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartEarthSystem>b__3()
-extern void U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__3_mDF1336A081412E38E99FD21F468E163B830BC945 (void);
-// 0x00000834 System.Void StartSequenceManager/<>c__DisplayClass27_0::.ctor()
-extern void U3CU3Ec__DisplayClass27_0__ctor_m5216E276D41D5F460E90B1DE5F43FE21F2D9AC10 (void);
-// 0x00000835 System.Void StartSequenceManager/<>c__DisplayClass27_0::<NascondiBottone>b__0()
-extern void U3CU3Ec__DisplayClass27_0_U3CNascondiBottoneU3Eb__0_m0FC5183C32BE901CED244BB7ABD9FB772353540A (void);
+// 0x0000082D System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartSolarSystem>b__0(System.Single)
+extern void U3CU3Ec__DisplayClass23_0_U3CStartSolarSystemU3Eb__0_m5CC254CCD3F7236CA7A5378405063848AB1F8515 (void);
+// 0x0000082E System.Void StartSequenceManager/<>c__DisplayClass23_0::<StartSolarSystem>b__1()
+extern void U3CU3Ec__DisplayClass23_0_U3CStartSolarSystemU3Eb__1_mC21B9A066A7D61B9F4DE44715EC527ED591649D3 (void);
+// 0x0000082F System.Void StartSequenceManager/<>c__DisplayClass24_0::.ctor()
+extern void U3CU3Ec__DisplayClass24_0__ctor_m866E1E8673AC6A274C806E7E67B20DEA98038C1C (void);
+// 0x00000830 System.Void StartSequenceManager/<>c__DisplayClass24_0::<StartEarthSystem>b__0(System.Single)
+extern void U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__0_m067CB72A97255D8B99C9FD0C63538CE74CB56BDD (void);
+// 0x00000831 System.Void StartSequenceManager/<>c__DisplayClass24_0::<StartEarthSystem>b__1()
+extern void U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__1_mAB2CDB23BBF3B5A261C9B93895F2D9424C9DA94F (void);
+// 0x00000832 System.Void StartSequenceManager/<>c__DisplayClass24_0::<StartEarthSystem>b__2()
+extern void U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__2_m8F85CBA99D51B9B754757450ED761B2ABC0E4893 (void);
+// 0x00000833 System.Void StartSequenceManager/<>c__DisplayClass24_0::<StartEarthSystem>b__3()
+extern void U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__3_m7C6120A023ADB8D771932355AAF1C5A6C79FD710 (void);
+// 0x00000834 System.Void StartSequenceManager/<>c__DisplayClass28_0::.ctor()
+extern void U3CU3Ec__DisplayClass28_0__ctor_m12FB5A5090B1C634826FACA8404C4150FD4E89ED (void);
+// 0x00000835 System.Void StartSequenceManager/<>c__DisplayClass28_0::<NascondiBottone>b__0()
+extern void U3CU3Ec__DisplayClass28_0_U3CNascondiBottoneU3Eb__0_m7EDB27EB095F23ED700BC1E6A3AFEE0C1C535F36 (void);
 // 0x00000836 System.Void TerraNoStatiRot::Start()
 extern void TerraNoStatiRot_Start_m9BEA4351D27C3033782840C18AFD5C656931B6D9 (void);
 // 0x00000837 System.Void TerraNoStatiRot::Update()
@@ -10189,23 +10189,23 @@ static Il2CppMethodPointer s_methodPointers[4066] =
 	StartSequenceManager_GeneraBottone_mD9D76A9B0C3A5D9DA9573780B0C2068C94085C7B,
 	StartSequenceManager_NascondiBottone_mE2651642DC7D85F91D44C1020A55CE32E3651F23,
 	StartSequenceManager__ctor_m859D7AF5675C7FE0D25A39D9964F1F13D8F6DEB9,
-	U3CU3Ec__DisplayClass20_0__ctor_m3FD7331BB055E00552BFB402070E451778494C7D,
-	U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__0_m2E714B4FE4307BF42AA83E38E54FBC25AB522B7F,
-	U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__1_mD4F92BF44082221464FBCF5B6DD3D5A47F02F8A7,
-	U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__2_m0E6E9E5424B67AC161282AD040016CD00FC31D08,
-	U3CU3Ec__DisplayClass20_0_U3CStartFreeModeU3Eb__4_mCC55B420C4107DF95F45470486992BA4D4470F59,
-	U3CU3Ec__DisplayClass20_1__ctor_mD6F848CA2FB5AF0FDD7023A2C47461ADFB9A1075,
-	U3CU3Ec__DisplayClass20_1_U3CStartFreeModeU3Eb__3_m4B2E16DC39B10E7FB77A6516D86652C235CDD2F8,
-	U3CU3Ec__DisplayClass22_0__ctor_m52EA49C3D67C068B5C1D5F4CCFE5BE64121FD47C,
-	U3CU3Ec__DisplayClass22_0_U3CStartSolarSystemU3Eb__0_mEA7D18A94F7879642C31B9280DAB85B0070A206E,
-	U3CU3Ec__DisplayClass22_0_U3CStartSolarSystemU3Eb__1_m7ABC16441B7DA89B0689E4497FE24E699D925F28,
+	U3CU3Ec__DisplayClass21_0__ctor_m18565B4AC0CAEAC66C78C2E0FDED886B69038BDC,
+	U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__0_m9E0DC12C33459BFDA14178A6EC31A316EF6B29E6,
+	U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__1_m3081B763800872A692DE0D1D14A21D953CBAAAC8,
+	U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__2_mE6D3FD0AD272269C054F444F122135703D473B14,
+	U3CU3Ec__DisplayClass21_0_U3CStartFreeModeU3Eb__4_mFFEFBA6F94A594C942C73109F21373D4F6FF99E9,
+	U3CU3Ec__DisplayClass21_1__ctor_mBD1F86011147D079F55FADFB02732E256C61E25F,
+	U3CU3Ec__DisplayClass21_1_U3CStartFreeModeU3Eb__3_m5D09DF1685836C0BF76BA8FEC2433118C52FE2A2,
 	U3CU3Ec__DisplayClass23_0__ctor_mB2343C8C00EC6277319BD2AD8AAF82B8A9BC0131,
-	U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__0_m54DC0B456E201D912EACE929E41C789F6390A24D,
-	U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__1_mD510528AA22993DCA8EC57C089D64FE18B5391FB,
-	U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__2_mD095D12CDAB8550AA2939CBEB5B1BBF03E02352F,
-	U3CU3Ec__DisplayClass23_0_U3CStartEarthSystemU3Eb__3_mDF1336A081412E38E99FD21F468E163B830BC945,
-	U3CU3Ec__DisplayClass27_0__ctor_m5216E276D41D5F460E90B1DE5F43FE21F2D9AC10,
-	U3CU3Ec__DisplayClass27_0_U3CNascondiBottoneU3Eb__0_m0FC5183C32BE901CED244BB7ABD9FB772353540A,
+	U3CU3Ec__DisplayClass23_0_U3CStartSolarSystemU3Eb__0_m5CC254CCD3F7236CA7A5378405063848AB1F8515,
+	U3CU3Ec__DisplayClass23_0_U3CStartSolarSystemU3Eb__1_mC21B9A066A7D61B9F4DE44715EC527ED591649D3,
+	U3CU3Ec__DisplayClass24_0__ctor_m866E1E8673AC6A274C806E7E67B20DEA98038C1C,
+	U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__0_m067CB72A97255D8B99C9FD0C63538CE74CB56BDD,
+	U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__1_mAB2CDB23BBF3B5A261C9B93895F2D9424C9DA94F,
+	U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__2_m8F85CBA99D51B9B754757450ED761B2ABC0E4893,
+	U3CU3Ec__DisplayClass24_0_U3CStartEarthSystemU3Eb__3_m7C6120A023ADB8D771932355AAF1C5A6C79FD710,
+	U3CU3Ec__DisplayClass28_0__ctor_m12FB5A5090B1C634826FACA8404C4150FD4E89ED,
+	U3CU3Ec__DisplayClass28_0_U3CNascondiBottoneU3Eb__0_m7EDB27EB095F23ED700BC1E6A3AFEE0C1C535F36,
 	TerraNoStatiRot_Start_m9BEA4351D27C3033782840C18AFD5C656931B6D9,
 	TerraNoStatiRot_Update_mC1F6EDCA7C6DF5C1766C404753BA4F7B3F2AB9E3,
 	TerraNoStatiRot__ctor_m4050E8064C4E9FEABAD34D3179456E58CF020EDE,

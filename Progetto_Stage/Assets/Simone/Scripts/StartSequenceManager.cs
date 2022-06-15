@@ -73,7 +73,7 @@ public class StartSequenceManager : MonoBehaviour
                 terra.SetActive(true);
                 terra.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terra.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                terra.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(false);
 
@@ -143,7 +143,7 @@ public class StartSequenceManager : MonoBehaviour
                 terraNoStati.SetActive(true);
                 terraNoStati.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terraNoStati.transform.LeanScale(new Vector3(10, 10, 10), 5f).setEaseInOutQuart().setOnComplete(() =>
+                terraNoStati.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(true);
                     luna.transform.localScale = Vector3.zero;
