@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 4e10865835bcb1a4ab5f8714bac52adb
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: 6266944800322031735
+    second: terra|GioveAction
+  - first:
+      74: 338833239035932795
+    second: terra|MarteAction
+  - first:
+      74: -2886563938462850037
+    second: terra|MercurioAction
+  - first:
+      74: 1295334442824947719
+    second: terra|NettunoAction
+  - first:
+      74: -5083029178166236301
+    second: terra|SaturnoAction
+  - first:
+      74: -7034316235024226034
+    second: terra|terraAction
+  - first:
+      74: -5661266373509668102
+    second: terra|UranoAction
+  - first:
+      74: -1578918416044158260
+    second: terra|VenereAction
+  - first:
+      74: -6120539024331024167
+    second: Marte|GioveAction
+  - first:
+      74: -1924417145952568186
+    second: Marte|MarteAction
+  - first:
+      74: 4733812320891277062
+    second: Marte|MercurioAction
+  - first:
+      74: -7173561949735978619
+    second: Marte|NettunoAction
+  - first:
+      74: -3966008010375658361
+    second: Marte|SaturnoAction
+  - first:
+      74: 385851731206802557
+    second: Marte|terraAction
+  - first:
+      74: 253365272769996585
+    second: Marte|UranoAction
+  - first:
+      74: -6967411752290171816
+    second: Marte|VenereAction
+  - first:
+      74: -225342319923436348
+    second: Mercurio|GioveAction
+  - first:
+      74: 7655991117429566156
+    second: Mercurio|MarteAction
+  - first:
+      74: 3302527448125032222
+    second: Mercurio|MercurioAction
+  - first:
+      74: 225120024840020281
+    second: Mercurio|NettunoAction
+  - first:
+      74: 7244154743169030416
+    second: Mercurio|SaturnoAction
+  - first:
+      74: -1403341373293662000
+    second: Mercurio|terraAction
+  - first:
+      74: -1947562520015968827
+    second: Mercurio|UranoAction
+  - first:
+      74: -7130232824768517150
+    second: Mercurio|VenereAction
+  - first:
+      74: 7362208082420520793
+    second: Venere|GioveAction
+  - first:
+      74: 8012097703883125288
+    second: Venere|MarteAction
+  - first:
+      74: 533756601239266415
+    second: Venere|MercurioAction
+  - first:
+      74: 3943707128423729372
+    second: Venere|NettunoAction
+  - first:
+      74: 6905837866669518140
+    second: Venere|SaturnoAction
+  - first:
+      74: 8669678484110150652
+    second: Venere|terraAction
+  - first:
+      74: 5612484345160767127
+    second: Venere|UranoAction
+  - first:
+      74: 7546409693889573817
+    second: Venere|VenereAction
+  - first:
+      74: -568822506516345740
+    second: Giove|GioveAction
+  - first:
+      74: -4528209059844308527
+    second: Giove|MarteAction
+  - first:
+      74: 3262860280810176895
+    second: Giove|MercurioAction
+  - first:
+      74: -7077033375936138204
+    second: Giove|NettunoAction
+  - first:
+      74: 2077289847408113890
+    second: Giove|SaturnoAction
+  - first:
+      74: -7184976729855363233
+    second: Giove|terraAction
+  - first:
+      74: 5472785592576296900
+    second: Giove|UranoAction
+  - first:
+      74: 6463860239119660656
+    second: Giove|VenereAction
+  - first:
+      74: 7040755662853347930
+    second: Saturno|GioveAction
+  - first:
+      74: -5943380044853246470
+    second: Saturno|MarteAction
+  - first:
+      74: 6801482467389481219
+    second: Saturno|MercurioAction
+  - first:
+      74: -8297147413634567266
+    second: Saturno|NettunoAction
+  - first:
+      74: 7486716302475209210
+    second: Saturno|SaturnoAction
+  - first:
+      74: 6316005466280396171
+    second: Saturno|terraAction
+  - first:
+      74: -454679116774854873
+    second: Saturno|UranoAction
+  - first:
+      74: -7777472376279052427
+    second: Saturno|VenereAction
+  - first:
+      74: 661709064000362900
+    second: Urano|GioveAction
+  - first:
+      74: 6792572853294858100
+    second: Urano|MarteAction
+  - first:
+      74: -7754171318192491301
+    second: Urano|MercurioAction
+  - first:
+      74: -4323427255408327820
+    second: Urano|NettunoAction
+  - first:
+      74: -804401309309912449
+    second: Urano|SaturnoAction
+  - first:
+      74: -776201551009428708
+    second: Urano|terraAction
+  - first:
+      74: -1369234999687814855
+    second: Urano|UranoAction
+  - first:
+      74: 4454628829990399384
+    second: Urano|VenereAction
+  - first:
+      74: -6764706614745817011
+    second: Nettuno|GioveAction
+  - first:
+      74: 332985006119663818
+    second: Nettuno|MarteAction
+  - first:
+      74: -5577645822152393596
+    second: Nettuno|MercurioAction
+  - first:
+      74: 5572725339096293979
+    second: Nettuno|NettunoAction
+  - first:
+      74: -6764987815147054277
+    second: Nettuno|SaturnoAction
+  - first:
+      74: -8668823792117879960
+    second: Nettuno|terraAction
+  - first:
+      74: 7410460254335907235
+    second: Nettuno|UranoAction
+  - first:
+      74: -6473870185954334396
+    second: Nettuno|VenereAction
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Giove
+    second: {fileID: 2100000, guid: 67fde57ebb1f51e4e8e9bf2edffb13c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marte
+    second: {fileID: 2100000, guid: 7356c716de683f544b174f09d9fe5b65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 01cd9237b4d7cf042be32715e682b081, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mercurio
+    second: {fileID: 2100000, guid: d4a67042e510f0e43b1f277d228cfd9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nettuno
+    second: {fileID: 2100000, guid: a5e569d93ffce554ebe2c7d3cb0b6fad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Saturno
+    second: {fileID: 2100000, guid: 350a88941b0fdac45a2f011dabe8523b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Urano
+    second: {fileID: 2100000, guid: da1afc79a61d8be498e25964d30cfa15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venere.001
+    second: {fileID: 2100000, guid: 137038ba5c2cbec40afffaf5e144ffba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terra
+    second: {fileID: 2100000, guid: 2b0f7edd28c18b842bf6b2255cc3f526, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Giove_Tiff
+    second: {fileID: 2800000, guid: 1b99db5bb6a2c36429988f480969d1a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Marte_Tiff
+    second: {fileID: 2800000, guid: 2a6baffded01655408f58209dc9173ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Mercurio_Tiff
+    second: {fileID: 2800000, guid: ecd539c07a09d164fbbc1b490fc99115, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nettuno_Tiff
+    second: {fileID: 2800000, guid: 9e1399414b1200f4e929429f06049861, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Orbite_png
+    second: {fileID: 2800000, guid: 586ec01f1bb38304f9b2e785f26d75c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Saturno_Tiff
+    second: {fileID: 2800000, guid: 852d1921d2d1d7440946a2e0fccbc7c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Terra_Tiff
+    second: {fileID: 2800000, guid: b544d7957e37fc244935d3f768bc7eac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Urano_Tiff
+    second: {fileID: 2800000, guid: c96aa01e72db6994abe9203c78608c14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Venere_Tiff
+    second: {fileID: 2800000, guid: 0ecf03aeb6663284388512f67f31e054, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
