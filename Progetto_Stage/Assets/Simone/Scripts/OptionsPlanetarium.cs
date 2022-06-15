@@ -5,6 +5,7 @@ using UnityEngine;
 public class OptionsPlanetarium : MonoBehaviour
 {
     [SerializeField] GameObject iss;
+    [SerializeField] GameObject hubble;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,9 @@ public class OptionsPlanetarium : MonoBehaviour
     public void EnableISS()
     {
         iss.SetActive(true);
+    }
+    public void EnableHubble()
+    {
+        hubble.SetActive(true);
     }
 }

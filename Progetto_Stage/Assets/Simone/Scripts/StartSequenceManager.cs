@@ -14,6 +14,8 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject terra;
     [SerializeField] GameObject terraNoStati;
     [SerializeField] GameObject luna;
+    [SerializeField] GameObject sole;
+    [SerializeField] GameObject planetario2D;
     [SerializeField] GameObject holoEarth;
     [SerializeField] GameObject puntoRilascioModuli;
     [SerializeField] GameObject serranda;
@@ -123,7 +125,11 @@ public class StartSequenceManager : MonoBehaviour
 
         }).setOnComplete(() =>
         {
-            holoEarth.LeanScale(Vector3.zero, 2f);
+            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
+            {
+                sole.SetActive(true);
+                planetario2D.SetActive(true);
+            });
         });
     }
     public void StartEarthSystem()
