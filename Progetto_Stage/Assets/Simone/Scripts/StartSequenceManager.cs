@@ -126,6 +126,7 @@ public class StartSequenceManager : MonoBehaviour
 
         }).setOnComplete(() =>
         {
+            pannelli.SetActive(false);
             holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
             {
                 //attivo sole e planetario 2D

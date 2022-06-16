@@ -24,6 +24,10 @@ public class LancioModuli : MonoBehaviour
         {
 
             GameObject parent_modulo = other.transform.parent.parent.gameObject;
+            if (parent_modulo.transform.localScale.x > 1f)
+            {
+                parent_modulo.transform.localScale = Vector3.one;
+            }
             other.transform.parent = null;
             //leggere posizione su orbita e fare un lean in quella posizione 
             LeanTween.scale(other.gameObject,other.transform.localScale *= other.GetComponent<Modulo>().scalaFinale,2.5f);

@@ -47908,6 +47908,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1921351805280294621, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875439692445744458, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334689786363012944, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608279719946247425, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179306748254968846, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740523272699593744, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187782360649027316, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 7114668876842920095, guid: f43031a23ca84a441a16362eff6afed5,
         type: 3}
       propertyPath: m_Name
@@ -47987,6 +48022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156104796669658414, guid: f43031a23ca84a441a16362eff6afed5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f43031a23ca84a441a16362eff6afed5, type: 3}
