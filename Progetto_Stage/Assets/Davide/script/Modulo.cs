@@ -7,6 +7,7 @@ public class Modulo : MonoBehaviour
 
     string nome;
 
+    public GameObject triggerOrbita;
     
     public Transform posizioneSuOrbita;
 
@@ -23,6 +24,8 @@ public class Modulo : MonoBehaviour
 
     public bool afferrato;
     public bool hasTrail;
+
+    int countSelezionato=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +37,23 @@ public class Modulo : MonoBehaviour
     {
         
     }
-    public void SwitchAfferrato()
+    public void TrueAfferrato()
     {
-        afferrato = !afferrato;
+        countSelezionato += 1;
+        if (countSelezionato == 1)
+        {
+            afferrato = true;
+            triggerOrbita.SetActive(true);
+        }
+    }
+    public void FalseAfferrato()
+    {
+        countSelezionato -= 1;
+        if (countSelezionato == 0)
+        {
+            afferrato = false;
+            if(!triggerOrbita.GetComponent<LancioModuli>().moduloIsColliding)
+                triggerOrbita.SetActive(false);
+        }
     }
 }

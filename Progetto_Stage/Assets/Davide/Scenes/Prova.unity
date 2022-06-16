@@ -15439,6 +15439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68b493a78a92db448b4a2748764b1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 1510289837}
   velRotazioneOrbita: 5
   velRotazioneSelf: 0
@@ -24278,6 +24279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68b493a78a92db448b4a2748764b1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 840957651}
   velRotazioneOrbita: 5.4
   velRotazioneSelf: 0
@@ -32761,9 +32763,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1468097680}
-        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
-        m_MethodName: StopCoroutine
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Modulo, Assembly-CSharp
+        m_MethodName: TrueAfferrato
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -32789,7 +32791,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1468097680}
         m_TargetAssemblyTypeName: Modulo, Assembly-CSharp
-        m_MethodName: SwitchAfferrato
+        m_MethodName: FalseAfferrato
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -87977,7 +87979,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 951424344}
         m_TargetAssemblyTypeName: Modulo, Assembly-CSharp
-        m_MethodName: SwitchAfferrato
+        m_MethodName: TrueAfferrato
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -88004,7 +88006,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 951424344}
         m_TargetAssemblyTypeName: Modulo, Assembly-CSharp
-        m_MethodName: SwitchAfferrato
+        m_MethodName: FalseAfferrato
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

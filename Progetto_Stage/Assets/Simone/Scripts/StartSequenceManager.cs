@@ -160,7 +160,7 @@ public class StartSequenceManager : MonoBehaviour
                         GeneraBottone(t);
                     }
                     //attivare punto rilascio
-                    puntoRilascioModuli.SetActive(true);
+                    //puntoRilascioModuli.SetActive(true);
                 });
             });
         });

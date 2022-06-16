@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LancioModuli : MonoBehaviour
 {
+    public bool moduloIsColliding = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class LancioModuli : MonoBehaviour
 
         if(other.gameObject.tag == "Modulo" && !other.GetComponent<Modulo>().afferrato)
         {
+
             GameObject parent_modulo = other.transform.parent.parent.gameObject;
             other.transform.parent = null;
             //leggere posizione su orbita e fare un lean in quella posizione 
@@ -39,10 +41,21 @@ public class LancioModuli : MonoBehaviour
                 }
                 parent_modulo.SetActive(false);
             });
-
-            
-            
         }
+        else if(other.gameObject.tag == "Modulo")
+        {
+            moduloIsColliding = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Modulo")
+        {
+            moduloIsColliding = false;
+            this.gameObject.SetActive(false);
+        }
+        
     }
 
 
