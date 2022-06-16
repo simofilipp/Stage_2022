@@ -5879,8 +5879,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 661214917108786061}
-  velRotazioneOrbita: 60148
-  velRotazioneSelf: 17
+  velRotazioneOrbita: 3007.4
+  velRotazioneSelf: 0.85
   scalaFinale: 0.2631579
   direzioneOrbita: -360
   afferrato: 0
@@ -9274,12 +9274,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b021ade9eab91a14fbbf1df9aca25f70, type: 3}
---- !u!1 &322218041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1993366716494494120, guid: b021ade9eab91a14fbbf1df9aca25f70,
-    type: 3}
-  m_PrefabInstance: {fileID: 322218040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322437377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9393,8 +9387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 3500612251011564591}
-  velRotazioneOrbita: 225
-  velRotazioneSelf: 5832
+  velRotazioneOrbita: 11.25
+  velRotazioneSelf: 291.6
   scalaFinale: 0.06666667
   direzioneOrbita: -360
   afferrato: 0
@@ -11607,8 +11601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 2151761820965151890}
-  velRotazioneOrbita: 176
-  velRotazioneSelf: 1416
+  velRotazioneOrbita: 8.8
+  velRotazioneSelf: 70.8
   scalaFinale: 0.028571429
   direzioneOrbita: -360
   afferrato: 0
@@ -15102,8 +15096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 2477139225620717989}
-  velRotazioneOrbita: 30660
-  velRotazioneSelf: 17
+  velRotazioneOrbita: 1533
+  velRotazioneSelf: 0.85
   scalaFinale: 0.3125
   direzioneOrbita: -360
   afferrato: 0
@@ -26327,8 +26321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 1636401932825579153}
-  velRotazioneOrbita: 365
-  velRotazioneSelf: 24
+  velRotazioneOrbita: 18.25
+  velRotazioneSelf: 1.2
   scalaFinale: 0.083333336
   direzioneOrbita: -360
   afferrato: 0
@@ -39815,8 +39809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 28222643363108205}
-  velRotazioneOrbita: 4380
-  velRotazioneSelf: 9
+  velRotazioneOrbita: 219
+  velRotazioneSelf: 0.45
   scalaFinale: 0.8333333
   direzioneOrbita: -360
   afferrato: 0
@@ -45390,8 +45384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 5321502706992169469}
-  velRotazioneOrbita: 10585
-  velRotazioneSelf: 10
+  velRotazioneOrbita: 529.25
+  velRotazioneSelf: 0.5
   scalaFinale: 0.6666667
   direzioneOrbita: -360
   afferrato: 0
@@ -51120,7 +51114,7 @@ MonoBehaviour:
   terra: {fileID: 8482397537264485169}
   terraNoStati: {fileID: 560745283}
   luna: {fileID: 1984672723}
-  sole: {fileID: 322218041}
+  sole: {fileID: 3510753055771078224}
   planetario2D: {fileID: 1557638815}
   holoEarth: {fileID: 1618284576}
   puntoRilascioModuli: {fileID: 933101659}
@@ -61305,8 +61299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
   posizioneSuOrbita: {fileID: 2969769764093131069}
-  velRotazioneOrbita: 686
-  velRotazioneSelf: 25
+  velRotazioneOrbita: 34.3
+  velRotazioneSelf: 1.25
   scalaFinale: 0.04
   direzioneOrbita: -360
   afferrato: 0
@@ -81527,7 +81521,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3510753055771078224}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -81540,7 +81534,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a3c80c41cef4dc4aa6ffb5d9892f012, type: 2}
+  - {fileID: 2100000, guid: f6552e568b8d890499d94f90659077ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81832,7 +81826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3516523305263804778
 Transform:
   m_ObjectHideFlags: 0
