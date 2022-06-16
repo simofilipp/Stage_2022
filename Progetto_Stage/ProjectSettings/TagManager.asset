@@ -7,6 +7,9 @@ TagManager:
   - InitialInteractor
   - Sferette
   - Modulo
+  - TrackingObject
+  - Terra_view
+  - arrivato
   layers:
   - Default
   - TransparentFX
