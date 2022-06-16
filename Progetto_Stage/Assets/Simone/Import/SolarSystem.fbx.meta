@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 46f3fe723500c7c4e918c6986db45d38
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Earth
+    second: {fileID: 2100000, guid: e71b31422713be24eb1384c29b6bf312, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Environment
+    second: {fileID: 2100000, guid: f2e534b02cb80464d9a936e41521ba93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jupiter
+    second: {fileID: 2100000, guid: 3124c6a7f1d8e054697beafe862719df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mars
+    second: {fileID: 2100000, guid: 7016eed4ede9a5647b85e21a017ad9eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mercury
+    second: {fileID: 2100000, guid: c220746d9794b1c4387d4ed6a4db5137, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Neptune
+    second: {fileID: 2100000, guid: 44934d7f1e6793e48a9148ecf4763e63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SUN
+    second: {fileID: 2100000, guid: 6a3c80c41cef4dc4aa6ffb5d9892f012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Saturn
+    second: {fileID: 2100000, guid: 27d8dba8799f49644bab588219f33715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SaturnRing
+    second: {fileID: 2100000, guid: f8c41ba923f3c78488709a0c02b85087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Uranus
+    second: {fileID: 2100000, guid: 53a5c0d5a6ff3d348a981fe438a66568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venus
+    second: {fileID: 2100000, guid: e09180611258c8748990b2c1c7c44b06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceres
+    second: {fileID: 2100000, guid: 4fe18378d24d48642bb559e6c70e9ce9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eris
+    second: {fileID: 2100000, guid: 8233deac56b89fa4d87929ab0c09a9d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haumea
+    second: {fileID: 2100000, guid: 7cbe539bd648edd458946013dfd8e4b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: makemake
+    second: {fileID: 2100000, guid: c4b31edb347dfcb49ad13272419547bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: moon
+    second: {fileID: 2100000, guid: 599163f20c0acba47b88890c519e2513, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_ceres_fictional
+    second: {fileID: 2800000, guid: 75415490a19208546a010bc963f41e04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_eris_fictional
+    second: {fileID: 2800000, guid: 69b340f73b06b4144a9b0ea3c31067e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_haumea_fictional
+    second: {fileID: 2800000, guid: 215f885d99499e446afbc5bcb78c4580, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_jupiter
+    second: {fileID: 2800000, guid: df2ac6922187b6a4ebd64a47dac440ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_makemake_fictional
+    second: {fileID: 2800000, guid: 841580ad23a410a40b2e7f9560a4eef1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_mars
+    second: {fileID: 2800000, guid: 5fd863606d7011c49b5233acabecb324, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_mercury
+    second: {fileID: 2800000, guid: 2b7f95ebc8f07f4498904b154ffff6f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_moon
+    second: {fileID: 2800000, guid: a3896972a0508654b8d01962f2063de2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_neptune
+    second: {fileID: 2800000, guid: 64840166bed1e8e428309cf4a9034e66, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_saturn
+    second: {fileID: 2800000, guid: 63c243b18bb947a46b76cd21a556f18c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_saturn_ring_alpha
+    second: {fileID: 2800000, guid: ebc98ef913b242148be90014243aff72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_uranus
+    second: {fileID: 2800000, guid: 03879204b03d1c74b906ecb0295efada, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2k_venus_atmosphere
+    second: {fileID: 2800000, guid: 04c5d8d41104b144d8c941bd86bf4362, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 8k_stars_milky_way
+    second: {fileID: 2800000, guid: e4c125319494c9b4da42c33a1936aca7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Adjusted2k_earth_specular_map
+    second: {fileID: 2800000, guid: 0429039f67dfc114fac5cc7dd50fda36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: EarthComposited_2k
+    second: {fileID: 2800000, guid: ffdf500a7055f894b9fe788cbaebc36f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

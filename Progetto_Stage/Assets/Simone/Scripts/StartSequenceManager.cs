@@ -23,6 +23,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
     [SerializeField] List<GameObject> tastiOpzioniEarthSystem;
+    [SerializeField] List<GameObject> tastiOpzioniSolarSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
 
@@ -127,8 +128,15 @@ public class StartSequenceManager : MonoBehaviour
         {
             holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
             {
+                //attivo sole e planetario 2D
                 sole.SetActive(true);
                 planetario2D.SetActive(true);
+                holoEarth.SetActive(false);
+                //attivo tasti pianeti
+                foreach (var t in tastiOpzioniSolarSystem)
+                {
+                    GeneraBottone(t);
+                }
             });
         });
     }
