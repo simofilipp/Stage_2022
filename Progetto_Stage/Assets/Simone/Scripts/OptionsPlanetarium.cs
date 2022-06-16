@@ -26,4 +26,10 @@ public class OptionsPlanetarium : MonoBehaviour
     {
         hubble.SetActive(true);
     }
+
+    public void EnablePlanet(GameObject planet)
+    {
+        if(planet.GetComponentInChildren<MeshRenderer>() != null)
+            planet.SetActive(true);
+    }
 }
