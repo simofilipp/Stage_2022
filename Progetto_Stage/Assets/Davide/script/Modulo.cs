@@ -22,8 +22,12 @@ public class Modulo : MonoBehaviour
 
     public float direzioneOrbita;
 
+    public int leanID;
+
     public bool afferrato;
     public bool hasTrail;
+
+    public GameObject sole;
 
     int countSelezionato=0;
     // Start is called before the first frame update
@@ -55,5 +59,21 @@ public class Modulo : MonoBehaviour
             if(!triggerOrbita.GetComponent<LancioModuli>().moduloIsColliding)
                 triggerOrbita.SetActive(false);
         }
+    }
+
+    public void ResumeTween()
+    {
+        LeanTween.resume(leanID);
+    }
+
+    public void PauseTween()
+    {
+        LeanTween.pause(leanID);
+    }
+
+    public void RuotaSole()
+    {
+        LeanTween.cancel(sole);
+        sole.transform.LeanRotateAroundLocal(Vector3.up, 360, velRotazioneOrbita).setRepeat(-1);
     }
 }

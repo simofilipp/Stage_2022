@@ -23,6 +23,11 @@ public class ParentMovimento_manager : MonoBehaviour
     [SerializeField]
     GameObject planetario;
 
+    [SerializeField]
+    GameObject pianeta;
+
+    
+
     bool arrivato;
 
     int id;
@@ -31,17 +36,8 @@ public class ParentMovimento_manager : MonoBehaviour
 
     [SerializeField]
     GameObject destinazione;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
+    
 
     public void SetParentViaggio()
     {
@@ -57,41 +53,27 @@ public class ParentMovimento_manager : MonoBehaviour
         if (other.gameObject.tag == "InitialInteractor")
         {
             SetParentViaggio();
+            var module = pianeta.GetComponent<Modulo>();
+            LeanTween.resumeAll();
+            module.PauseTween();
+            
+            parent_spostamento.LeanMove(destinazione.transform.position, 5f).setOnComplete(() =>
+            {
+                parent_spostamento.transform.parent= destinazione.transform;
+                module.RuotaSole();
+                
+            });
 
-            StartCoroutine(Segui());
+            //StartCoroutine(Segui());
 
             //parent_spostamento.LeanMove(destinazione.transform.position,10);
             
         }
-        if (other.gameObject.tag == "arrivato")
-        {
-            parent_spostamento.transform.parent = destinazione.transform;
-            arrivato = true;
-        }
+       
     }
 
    
-    IEnumerator Segui()
-    {
-        Debug.Log("sono in coroutines");
-        id = parent_spostamento.LeanMove(destinazione.transform.position, 0.1f).id;
-        yield return null;
-        do
-        {
-            LeanTween.cancel(id);
-            id= parent_spostamento.LeanMove(destinazione.transform.position,0.1f).id;
-            if(parent_spostamento.transform.position== destinazione.transform.position)
-            {
-                arrivato = true;
-                
-            }
-            yield return null;
-        }
-        while (!arrivato);
-        
-      
-        
-    }
+    
 
 
 }

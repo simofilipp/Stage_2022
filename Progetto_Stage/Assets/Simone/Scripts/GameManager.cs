@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] List<GameObject> planetInteractables;
+
+    bool orbiteAttive = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,4 +29,16 @@ public class GameManager : MonoBehaviour
     {
         OVRManager.display.RecenterPose();
     }
+
+    //public void SwitchOrbits()
+    //{
+    //    foreach (var planet in planetInteractables)
+    //    {
+    //        if(planet.GetComponentInChildren<TrailRenderer>() != null)
+    //        {
+    //            planet.GetComponentInChildren<TrailRenderer>().enabled = orbiteAttive;
+    //            orbiteAttive = !orbiteAttive;
+    //        }
+    //    }
+    //}
 }

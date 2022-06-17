@@ -41,7 +41,7 @@ public class LancioModuli : MonoBehaviour
                 this.gameObject.SetActive(false);
                 other.transform.parent = other.GetComponent<Modulo>().posizioneSuOrbita;
                 other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                other.GetComponent<Modulo>().posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, other.GetComponent<Modulo>().direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                other.GetComponent<Modulo>().leanID= other.GetComponent<Modulo>().posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, other.GetComponent<Modulo>().direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
                 if (other.GetComponent<Modulo>().velRotazioneSelf != 0)
                 {
                     //other.transform.LeanRotateAroundLocal
