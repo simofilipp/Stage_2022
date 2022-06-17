@@ -57,9 +57,11 @@ public class ParentMovimento_manager : MonoBehaviour
             LeanTween.resumeAll();
             module.PauseTween();
             
-            parent_spostamento.LeanMove(destinazione.transform.position, 5f).setOnComplete(() =>
+            parent_spostamento.LeanMove(destinazione.transform.position, 5f).setEaseInOutQuart().setOnComplete(() =>
             {
                 parent_spostamento.transform.parent= destinazione.transform;
+                parent_spostamento.transform.LeanRotate(destinazione.transform.rotation.eulerAngles, 3f).setOnComplete(() => { parent_spostamento.LeanRotateAroundLocal(Vector3.up, -90, 3f);});
+                
                 module.RuotaSole();
                 
             });
