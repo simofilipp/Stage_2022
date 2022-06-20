@@ -27,9 +27,12 @@ public class Modulo : MonoBehaviour
     public bool afferrato;
     public bool hasTrail;
 
+    public GameObject pianeta2D;
+
     public GameObject sole;
 
     int countSelezionato=0;
+
     // Start is called before the first frame update
     void Start()
     {

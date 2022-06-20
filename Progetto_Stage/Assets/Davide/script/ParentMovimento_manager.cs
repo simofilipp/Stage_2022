@@ -26,7 +26,12 @@ public class ParentMovimento_manager : MonoBehaviour
     [SerializeField]
     GameObject pianeta;
 
-    
+    [SerializeField]
+    GameObject spawnPianeti;
+
+    [SerializeField]
+    GameObject triggerOrbita;
+
 
     bool arrivato;
 
@@ -46,12 +51,20 @@ public class ParentMovimento_manager : MonoBehaviour
         scifiConsole.transform.parent = parent_spostamento.transform;
         tablet.transform.parent = parent_spostamento.transform;
         planetario.transform.parent = parent_spostamento.transform;
+        spawnPianeti.transform.parent = parent_spostamento.transform;
+        triggerOrbita.transform.parent = parent_spostamento.transform;
     }
+
+
     public void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "InitialInteractor")
         {
+            foreach(var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
+            {
+                pianetino2d.enabled = false;
+            }
             SetParentViaggio();
             var module = pianeta.GetComponent<Modulo>();
             LeanTween.resumeAll();
@@ -60,7 +73,15 @@ public class ParentMovimento_manager : MonoBehaviour
             parent_spostamento.LeanMove(destinazione.transform.position, 5f).setEaseInOutQuart().setOnComplete(() =>
             {
                 parent_spostamento.transform.parent= destinazione.transform;
-                parent_spostamento.transform.LeanRotate(destinazione.transform.rotation.eulerAngles, 3f).setOnComplete(() => { parent_spostamento.LeanRotateAroundLocal(Vector3.up, -90, 3f);});
+                parent_spostamento.transform.LeanRotate(destinazione.transform.rotation.eulerAngles, 3f).setOnComplete(() => 
+                { 
+                    parent_spostamento.LeanRotateAroundLocal(Vector3.up, -90, 3f);
+                    foreach (var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
+                    {
+                        pianetino2d.enabled = true;
+                    }
+
+                });
                 
                 module.RuotaSole();
                 

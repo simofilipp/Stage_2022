@@ -6055,26 +6055,6 @@ Transform:
   m_Father: {fileID: 122355557}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &190654869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 863285295}
-  destinazione: {fileID: 614941021}
 --- !u!1 &197197766
 GameObject:
   m_ObjectHideFlags: 0
@@ -10183,26 +10163,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &359542732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 518104817}
-  destinazione: {fileID: 1168727642}
 --- !u!1 &369407338
 GameObject:
   m_ObjectHideFlags: 0
@@ -14990,26 +14950,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515518868}
   m_CullTransparentMesh: 1
---- !u!114 &517862732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 322437377}
-  destinazione: {fileID: 1008003197}
 --- !u!1 &518104817
 GameObject:
   m_ObjectHideFlags: 0
@@ -33697,7 +33637,7 @@ PrefabInstance:
     - target: {fileID: 8140034528131886623, guid: b6ce09c04338d4e4ab2e988a4cc043d2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8610195549449190435, guid: b6ce09c04338d4e4ab2e988a4cc043d2,
         type: 3}
@@ -47822,12 +47762,6 @@ Transform:
   m_Father: {fileID: 1901304215}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1557638815 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7114668876842920095, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1557645264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48200,328 +48134,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583297104}
   m_CullTransparentMesh: 1
---- !u!1001 &1584834410
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 165707343960368351, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 923898554008437940, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1781650447983157457, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1921351805280294621, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2020594630512107486, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2875439692445744458, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4334689786363012944, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4608279719946247425, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179306748254968846, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740523272699593744, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6023891962495938442, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Terra_view
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187782360649027316, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6480961939407365828, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6630436787255620633, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7114668876842920095, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_Name
-      value: planetario_2d
-      objectReference: {fileID: 0}
-    - target: {fileID: 7114668876842920095, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.8319
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635766347054428709, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7679232960591972787, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8156104796669658414, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8377393709367290901, guid: f43031a23ca84a441a16362eff6afed5,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f43031a23ca84a441a16362eff6afed5, type: 3}
---- !u!1 &1584834411 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 581442426043134013, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1344187164806986643, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834413 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6023891962495938442, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834414 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3025474379264145775, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2436119055058622919, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834416 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 917425739257205830, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834417 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2499780598924287885, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1584834418 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4530129387381985586, guid: f43031a23ca84a441a16362eff6afed5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1584834410}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1584834419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 1482543465}
-  destinazione: {fileID: 888593605}
---- !u!114 &1584834420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 188674922}
-  destinazione: {fileID: 1755186850}
---- !u!114 &1584834421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 410720978}
-  destinazione: {fileID: 694251858}
---- !u!114 &1584834422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 2035154890}
-  destinazione: {fileID: 641049002}
---- !u!114 &1584834423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584834418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec9ea072b2b141843bc017c6243f8402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noi: {fileID: 1423362892}
-  piattaforma: {fileID: 2064471752}
-  scifiConsole: {fileID: 919132148338436024}
-  tablet: {fileID: 3651601346779863854}
-  parent_spostamento: {fileID: 663409806}
-  planetario: {fileID: 1557638815}
-  pianeta: {fileID: 1336782611}
-  destinazione: {fileID: 509340855}
 --- !u!114 &1586163590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51613,7 +51225,7 @@ MonoBehaviour:
   terraNoStati: {fileID: 560745283}
   luna: {fileID: 1984672723}
   sole: {fileID: 3510753055771078224}
-  planetario2D: {fileID: 1557638815}
+  planetario2D: {fileID: 7114668875400695797}
   holoEarth: {fileID: 1618284576}
   puntoRilascioModuli: {fileID: 933101659}
   serranda: {fileID: 6909200455911136767}
@@ -62905,125 +62517,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: -46.23, y: 0, z: 0}
---- !u!1001 &2064471750
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 7771199042411803135}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 99.99997
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 57.30171
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 99.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.53
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70710677
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071069
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1a5196cb9e6d59043a256abee4e1dd14, type: 2}
-    - target: {fileID: 919132149155446097, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_Name
-      value: PUNTA_PONTE_NUOVA (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8dfa1b4eb1581bf4db7727f2c3d90020, type: 3}
---- !u!4 &2064471751 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-    type: 3}
-  m_PrefabInstance: {fileID: 2064471750}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2064471752 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8dfa1b4eb1581bf4db7727f2c3d90020,
-    type: 3}
-  m_PrefabInstance: {fileID: 2064471750}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2064471753
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064471752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02958508, y: 0.035884153, z: 0.014006746}
-  m_Center: {x: 0.0024744614, y: 1.1641519e-10, z: -0.0031354644}
 --- !u!1 &2068240398
 GameObject:
   m_ObjectHideFlags: 0
@@ -71217,6 +70710,355 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &842047382441953163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 863285295}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 614941021}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047382297062942, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 322437377}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 1008003197}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047382607491783, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 518104817}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 1168727642}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047382801492039, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 1482543465}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 888593605}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047383691239672, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 1336782611}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 509340855}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047383691239676, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 2035154890}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 641049002}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047383691239677, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 410720978}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 694251858}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047383691239678, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: noi
+      value: 
+      objectReference: {fileID: 1423362892}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: tablet
+      value: 
+      objectReference: {fileID: 3651601346779863854}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: pianeta
+      value: 
+      objectReference: {fileID: 188674922}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: piattaforma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: destinazione
+      value: 
+      objectReference: {fileID: 1755186850}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: scifiConsole
+      value: 
+      objectReference: {fileID: 919132148338436024}
+    - target: {fileID: 842047383691239679, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: parent_spostamento
+      value: 
+      objectReference: {fileID: 663409806}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8319
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086480719693288132, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571654916272900222, guid: 7c7d85582e718994d807b5a1177cee24,
+        type: 3}
+      propertyPath: m_Name
+      value: planetario_2d_con_collider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7d85582e718994d807b5a1177cee24, type: 3}
 --- !u!33 &849593271935609774
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -115103,6 +114945,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7114668875400695797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7571654916272900222, guid: 7c7d85582e718994d807b5a1177cee24,
+    type: 3}
+  m_PrefabInstance: {fileID: 842047382441953163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7134428051549978346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117000,7 +116848,6 @@ Transform:
   - {fileID: 7826830730311076772}
   - {fileID: 431306169}
   - {fileID: 2161296311781973323}
-  - {fileID: 2064471751}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
