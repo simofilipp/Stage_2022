@@ -5966,9 +5966,11 @@ MonoBehaviour:
   velRotazioneSelf: 0.85
   scalaFinale: 0.2631579
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!1 &190354603
 GameObject:
@@ -9322,9 +9324,11 @@ MonoBehaviour:
   velRotazioneSelf: 291.6
   scalaFinale: 0.06666667
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!1 &328096030
 GameObject:
@@ -11538,9 +11542,11 @@ MonoBehaviour:
   velRotazioneSelf: 70.8
   scalaFinale: 0.028571429
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!114 &410895547
 MonoBehaviour:
@@ -15067,9 +15073,11 @@ MonoBehaviour:
   velRotazioneSelf: 0.85
   scalaFinale: 0.3125
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!224 &519685407 stripped
 RectTransform:
@@ -26432,9 +26440,11 @@ MonoBehaviour:
   velRotazioneSelf: 1.2
   scalaFinale: 0.083333336
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!1 &871376527
 GameObject:
@@ -28886,9 +28896,11 @@ MonoBehaviour:
   velRotazioneSelf: 0
   scalaFinale: 1.5
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 0}
 --- !u!1 &951458245
 GameObject:
@@ -40020,9 +40032,11 @@ MonoBehaviour:
   velRotazioneSelf: 0.45
   scalaFinale: 0.8333333
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!114 &1339519142
 MonoBehaviour:
@@ -44310,9 +44324,11 @@ MonoBehaviour:
   velRotazioneSelf: 0
   scalaFinale: 1.5
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 0}
 --- !u!65 &1468097681 stripped
 BoxCollider:
@@ -45599,9 +45615,11 @@ MonoBehaviour:
   velRotazioneSelf: 0.5
   scalaFinale: 0.6666667
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!224 &1484501644 stripped
 RectTransform:
@@ -51229,6 +51247,7 @@ MonoBehaviour:
   holoEarth: {fileID: 1618284576}
   puntoRilascioModuli: {fileID: 933101659}
   serranda: {fileID: 6909200455911136767}
+  puntaStatica: {fileID: 0}
   sferette:
   - {fileID: 770602064}
   - {fileID: 1196375343}
@@ -61444,9 +61463,11 @@ MonoBehaviour:
   velRotazioneSelf: 1.25
   scalaFinale: 0.04
   direzioneOrbita: -360
+  tempoAdOrbita: 0
   leanID: 0
   afferrato: 0
   hasTrail: 1
+  pianeta2D: {fileID: 0}
   sole: {fileID: 50731138}
 --- !u!1 &2035510256
 GameObject:
@@ -82282,7 +82303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3516523305263804778
 Transform:
   m_ObjectHideFlags: 0

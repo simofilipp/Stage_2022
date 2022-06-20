@@ -51,7 +51,7 @@ public class LancioModuli : MonoBehaviour
                 module.leanID= module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
                 if (module.velRotazioneSelf != 0)
                 {
-                    //other.transform.LeanRotateAroundLocal
+                    other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
                 }
                 parent_modulo.SetActive(false);
             });

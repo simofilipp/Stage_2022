@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> planetInteractables;
-
+    [SerializeField] GameObject table;
     bool orbiteAttive = true;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
     public void CenterPose()
     {
         OVRManager.display.RecenterPose();
+    }
+
+    public void DisableTable()
+    {
+        table.SetActive(!table.activeSelf);
     }
 
     //public void SwitchOrbits()
