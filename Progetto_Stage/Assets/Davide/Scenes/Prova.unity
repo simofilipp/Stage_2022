@@ -28877,7 +28877,7 @@ MonoBehaviour:
   afferrato: 0
   hasTrail: 1
   pianeta2D: {fileID: 0}
-  sole: {fileID: 0}
+  sole: {fileID: 1361560464}
 --- !u!1 &951458245
 GameObject:
   m_ObjectHideFlags: 0
@@ -45308,7 +45308,7 @@ MonoBehaviour:
   afferrato: 0
   hasTrail: 1
   pianeta2D: {fileID: 0}
-  sole: {fileID: 0}
+  sole: {fileID: 1361560464}
 --- !u!65 &1468097681 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 247823880114610925, guid: 55c114e53c03f6a40959988689b160ee,
