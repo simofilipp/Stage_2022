@@ -32,13 +32,12 @@ public class LancioModuli : MonoBehaviour
             //leggere posizione su orbita e fare un lean in quella posizione 
             LeanTween.scale(other.gameObject,other.transform.localScale *= other.GetComponent<Modulo>().scalaFinale,2.5f);
            
-            LeanTween.move(other.gameObject, other.GetComponent<Modulo>().posizioneSuOrbita, 1.5f).setOnComplete(() =>
+            LeanTween.move(other.gameObject, other.GetComponent<Modulo>().posizioneSuOrbita, 1.5f).setOnStart(SpegniTrigger).setOnComplete(() =>
             {
                 if (other.GetComponent<Modulo>().hasTrail)
                 {
                     other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
                 }
-                this.gameObject.SetActive(false);
                 other.transform.parent = other.GetComponent<Modulo>().posizioneSuOrbita;
                 other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
                 other.GetComponent<Modulo>().leanID= other.GetComponent<Modulo>().posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, other.GetComponent<Modulo>().direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
@@ -64,5 +63,8 @@ public class LancioModuli : MonoBehaviour
         
     }
 
-
+    private void SpegniTrigger()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
