@@ -5,6 +5,7 @@ using UnityEngine;
 public class LancioModuli : MonoBehaviour
 {
     public bool moduloIsColliding = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,29 +25,31 @@ public class LancioModuli : MonoBehaviour
         {
 
             GameObject parent_modulo = other.transform.parent.parent.gameObject;
+            var module = other.GetComponent<Modulo>();
             if (parent_modulo.transform.localScale.x > 1f)
             {
                 parent_modulo.transform.localScale = Vector3.one;
             }
             other.transform.parent = null;
             //leggere posizione su orbita e fare un lean in quella posizione 
-            LeanTween.scale(other.gameObject,other.transform.localScale *= other.GetComponent<Modulo>().scalaFinale,2.5f);
+            
            
-            LeanTween.move(other.gameObject, other.GetComponent<Modulo>().posizioneSuOrbita, 1.5f).setOnStart(SpegniTrigger).setOnComplete(() =>
+            LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInOutQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
             {
-                if (other.GetComponent<Modulo>().hasTrail)
+                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 2.5f);
+                if (module.hasTrail)
                 {
                     other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
                 }
-                other.transform.parent = other.GetComponent<Modulo>().posizioneSuOrbita;
-                if(other.GetComponent<Modulo>().pianeta2D != null)
+                other.transform.parent = module.posizioneSuOrbita;
+                if(module.pianeta2D != null)
                 {
-                    other.GetComponent<Modulo>().pianeta2D.SetActive(true);
+                    module.pianeta2D.SetActive(true);
                 }
               
                 other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                other.GetComponent<Modulo>().leanID= other.GetComponent<Modulo>().posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, other.GetComponent<Modulo>().direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
-                if (other.GetComponent<Modulo>().velRotazioneSelf != 0)
+                module.leanID= module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
+                if (module.velRotazioneSelf != 0)
                 {
                     //other.transform.LeanRotateAroundLocal
                 }

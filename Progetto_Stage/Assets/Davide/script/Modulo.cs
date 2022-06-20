@@ -22,6 +22,8 @@ public class Modulo : MonoBehaviour
 
     public float direzioneOrbita;
 
+    public float tempoAdOrbita;
+
     public int leanID;
 
     public bool afferrato;
@@ -32,6 +34,8 @@ public class Modulo : MonoBehaviour
     public GameObject sole;
 
     int countSelezionato=0;
+
+
 
     // Start is called before the first frame update
     void Start()

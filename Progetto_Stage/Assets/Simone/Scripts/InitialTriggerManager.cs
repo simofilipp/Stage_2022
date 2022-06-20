@@ -105,7 +105,7 @@ public class InitialTriggerManager : MonoBehaviour
 
                 tabletModel.GetChild(2).LeanScale(new Vector3(0.3762262f, 0.3762262f, 0.3762262f), 0.8f).setOnComplete(() =>
                 {
-                    tablet.LeanMove(new Vector3(0f, 1.206f, 1.317f), 2f).setEaseInOutQuart();
+                    tablet.LeanMove(new Vector3(0f, 1.206f, 0.75f), 2f).setEaseInOutQuart();
                     tablet.LeanRotate(new Vector3(58f, 180f, 0), 3f).setEaseOutQuart();
                 });
             });

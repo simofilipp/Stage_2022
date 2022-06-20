@@ -19,6 +19,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject holoEarth;
     [SerializeField] GameObject puntoRilascioModuli;
     [SerializeField] GameObject serranda;
+    [SerializeField] GameObject puntaStatica;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
@@ -26,6 +27,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiOpzioniSolarSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
+
 
 
     Mode actualMode;
@@ -131,8 +133,15 @@ public class StartSequenceManager : MonoBehaviour
             {
                 //attivo sole e planetario 2D
                 sole.SetActive(true);
+                var solveSole = sole.transform.GetChild(0).GetComponent<MeshRenderer>().material;
+                LeanTween.value(-0.2f, 1.5f, 3f).setOnUpdate((float value) =>
+                {
+                    solveSole.SetFloat("_Dissolvenza_animazione", value);
+
+                });
                 planetario2D.SetActive(true);
                 holoEarth.SetActive(false);
+                puntaStatica.SetActive(false);
                 //attivo tasti pianeti
                 foreach (var t in tastiOpzioniSolarSystem)
                 {
