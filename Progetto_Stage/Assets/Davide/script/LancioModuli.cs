@@ -36,24 +36,27 @@ public class LancioModuli : MonoBehaviour
            
             LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInOutQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
             {
-                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 2.5f);
-                if (module.hasTrail)
+                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 2.5f).setOnComplete(() =>
                 {
-                    other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
-                }
-                other.transform.parent = module.posizioneSuOrbita;
-                if(module.pianeta2D != null)
-                {
-                    module.pianeta2D.SetActive(true);
-                }
+                    if (module.hasTrail)
+                    {
+                        other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
+                    }
+                    other.transform.parent = module.posizioneSuOrbita;
+                    if(module.pianeta2D != null)
+                    {
+                        module.pianeta2D.SetActive(true);
+                    }
               
-                other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                module.leanID= module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
-                if (module.velRotazioneSelf != 0)
-                {
-                    other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
-                }
-                parent_modulo.SetActive(false);
+                    other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
+                    module.leanID= module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
+                    if (module.velRotazioneSelf != 0)
+                    {
+                        other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
+                    }
+                    parent_modulo.SetActive(false);
+
+                });
             });
         }
         else if(other.gameObject.tag == "Modulo")
