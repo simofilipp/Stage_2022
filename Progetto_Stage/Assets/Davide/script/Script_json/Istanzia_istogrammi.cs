@@ -18,6 +18,8 @@ public class Istanzia_istogrammi : MonoBehaviour
     [SerializeField]
     List<GameObject> statiEuropa;
 
+    public List<GameObject> basiIstoEu;
+
 
 
     ShowedData datoMostrato;
@@ -226,29 +228,45 @@ public class Istanzia_istogrammi : MonoBehaviour
 
     public void IstanziaIstoEuropa()
     {
-        
-        foreach (var dato in jdata.gameData.dati)
+        foreach (var capital in capitaliEuropa)
+            
         {
-            Debug.LogWarning("Sono nel primo foreach");
-            if (dato.capital == "primary")
+            //Debug.LogWarning("Sono nel primo if");
+            foreach (var dato in jdata.gameData.dati)
             {
-                Debug.LogWarning("Sono nel primo if");
-                foreach (var capital in capitaliEuropa)
+                //Debug.LogWarning("Sono nel secondo foreach");
+                if (capital.name == dato.city)
                 {
-                    Debug.LogWarning("Sono nel secondo foreach");
-                    if (capital.name == dato.city)
-                    {
-                        Debug.LogWarning("Sono nel secondo if");
-                        var istoEu = Instantiate(cubo_scala, capital.transform);
-                        var scalaFinale = new Vector3(istoEu.transform.localScale.x, istoEu.transform.localScale.y, dato.population / 100000);
-                        istoEu.LeanScale(scalaFinale, 3);
-                    }
-        }
+                    //Debug.LogWarning("Sono nel secondo if");
+                    var istoEu = Instantiate(cubo_scala, capital.transform);
+                    istoEu.name = capital.name;
+                    basiIstoEu.Add(istoEu);
+                    //var scalaFinale = new Vector3(istoEu.transform.localScale.x, istoEu.transform.localScale.y, dato.population / 100000);
+                    //istoEu.LeanScale(scalaFinale, 3);
+                    break;
+                }
             }
 
 
         }
         
+    }
+    public void ScalaIstoEu()
+    {
+        foreach(var basi in basiIstoEu)
+        {
+            foreach(var dato in jdata.gameData.dati) 
+            {
+                if (basi.name == dato.city)
+                {
+                    var scalaFinale = new Vector3(basi.transform.localScale.x, basi.transform.localScale.y, dato.population / 100000);
+                    basi.LeanScale(scalaFinale, 3);
+                    break;
+                }
+            }
+
+           
+        }
     }
 
     public void ColoraStatiEU()

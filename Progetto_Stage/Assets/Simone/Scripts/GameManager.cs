@@ -8,10 +8,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<GameObject> planetInteractables;
     [SerializeField] GameObject table;
     bool orbiteAttive = true;
+
+    [SerializeField]
+    Istanzia_istogrammi istanziaEu;
+
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        istanziaEu.IstanziaIstoEuropa();
     }
 
     // Update is called once per frame

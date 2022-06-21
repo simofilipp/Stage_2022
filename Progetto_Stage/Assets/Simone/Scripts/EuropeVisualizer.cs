@@ -12,6 +12,7 @@ public class EuropeVisualizer : MonoBehaviour
     [SerializeField]
     Istanzia_istogrammi istanziaIsto;
     bool istoIstanziati;
+    [SerializeField] List<GameObject>europeButtons;
 
     // Start is called before the first frame update
     void Start()
@@ -40,12 +41,16 @@ public class EuropeVisualizer : MonoBehaviour
             earth.transform.LeanScale(Vector3.zero, 3f).setEaseInBack().setEaseOutQuad().setOnComplete(()=> 
             {
                 europa.SetActive(true);
-                istanziaIsto.ColoraStatiEU();
-                if (!istoIstanziati)
+                foreach(var bottone in europeButtons)
                 {
-                    istanziaIsto.IstanziaIstoEuropa();
-                    istoIstanziati = true;
+                    bottone.SetActive(true);
                 }
+                //istanziaIsto.ColoraStatiEU();
+                //if (!istoIstanziati)
+                //{
+                //    istanziaIsto.IstanziaIstoEuropa();
+                //    istoIstanziati = true;
+                //}
                
 
             });
@@ -53,6 +58,10 @@ public class EuropeVisualizer : MonoBehaviour
         }
         else
         {
+            foreach (var bottone in europeButtons)
+            {
+                bottone.SetActive(false);
+            }
             europa.SetActive(false);
             earth.transform.LeanScale(initialScaleEarth, 3f).setEaseOutQuad().setOnComplete(() => 
             { 

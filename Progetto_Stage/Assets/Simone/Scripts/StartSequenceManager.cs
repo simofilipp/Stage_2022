@@ -20,6 +20,8 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject puntoRilascioModuli;
     [SerializeField] GameObject serranda;
     [SerializeField] GameObject puntaStatica;
+    [SerializeField] GameObject tavolo_scifi;
+    [SerializeField] GameObject bottoneSpegniTavolo;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
@@ -27,6 +29,9 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiOpzioniSolarSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
+    Vector3 opzioniinitialScale;
+
+    bool bottoniPianetiAccesi;
 
 
 
@@ -119,7 +124,9 @@ public class StartSequenceManager : MonoBehaviour
 
     public void StartSolarSystem()
     {
+        actualMode = Mode.SolarSystemMode;
         DisattivaTastiSubMode();
+        bottoneSpegniTavolo.SetActive(false);
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
         LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
@@ -129,6 +136,11 @@ public class StartSequenceManager : MonoBehaviour
         }).setOnComplete(() =>
         {
             pannelli.SetActive(false);
+            foreach (var t in tastiOpzioniSolarSystem)
+            {
+                GeneraBottone(t);
+
+            }
             holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
             {
                 //attivo sole e planetario 2D
@@ -137,21 +149,23 @@ public class StartSequenceManager : MonoBehaviour
                 LeanTween.value(-0.2f, 1.5f, 3f).setOnUpdate((float value) =>
                 {
                     solveSole.SetFloat("_Dissolvenza_animazione", value);
+                    bottoneSpegniTavolo.SetActive(true);
+                    tavolo_scifi.SetActive(true);
 
                 });
                 planetario2D.SetActive(true);
                 holoEarth.SetActive(false);
                 puntaStatica.SetActive(false);
                 //attivo tasti pianeti
-                foreach (var t in tastiOpzioniSolarSystem)
-                {
-                    GeneraBottone(t);
-                }
+                opzioniinitialScale = tastiOpzioniSolarSystem[0].transform.localScale;
+               
+                bottoniPianetiAccesi = true;
             });
         });
     }
     public void StartEarthSystem()
     {
+        actualMode = Mode.EarthSystemMode;
         DisattivaTastiSubMode();
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
@@ -177,6 +191,7 @@ public class StartSequenceManager : MonoBehaviour
                     {
                         GeneraBottone(t);
                     }
+                    
                     //attivare punto rilascio
                     //puntoRilascioModuli.SetActive(true);
                 });
@@ -212,11 +227,37 @@ public class StartSequenceManager : MonoBehaviour
     {
         t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
     }
+
+    public void SwitchPlanetButton()
+    {
+        if (actualMode == Mode.SolarSystemMode)
+        {
+            if (bottoniPianetiAccesi)
+            {
+                foreach(var bot in tastiOpzioniSolarSystem)
+                {
+                    NascondiBottone(bot);
+                }
+                bottoniPianetiAccesi = false;
+            }
+            else
+            {
+                foreach (var bot in tastiOpzioniSolarSystem)
+                {
+                   
+                   bot.SetActive(true);
+                   bot.LeanScale(opzioniinitialScale, 0.5f).setEaseOutBack();
+                }
+                bottoniPianetiAccesi = true;
+            }
+        }
+    }
 }
 
 public enum Mode
 {
     Initial,
     FreeMode,
-    StoryMode
+    SolarSystemMode,
+    EarthSystemMode
 }
