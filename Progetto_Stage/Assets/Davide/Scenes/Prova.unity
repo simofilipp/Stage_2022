@@ -3392,6 +3392,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+--- !u!1 &110984211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730988485861601215, guid: c86b4ad1f968f9743ac28dbd857aad95,
+    type: 3}
+  m_PrefabInstance: {fileID: 1748025060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &115119173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36395,6 +36401,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1221911066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9072488960100691699, guid: c86b4ad1f968f9743ac28dbd857aad95,
+    type: 3}
+  m_PrefabInstance: {fileID: 1748025060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224482135
 GameObject:
   m_ObjectHideFlags: 0
@@ -85401,6 +85413,7 @@ GameObject:
   - component: {fileID: 3651601346779863847}
   - component: {fileID: 3651601346779863840}
   - component: {fileID: 3651601346779863841}
+  - component: {fileID: 3651601346779863855}
   m_Layer: 0
   m_Name: Tablet3
   m_TagString: Sferette
@@ -85408,6 +85421,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &3651601346779863855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651601346779863854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504f0fe413fc9bd439833c6ef0098234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  immagineASchermo: {fileID: 110984211}
+  vetro: {fileID: 1221911066}
 --- !u!4 &3651601346817475521
 Transform:
   m_ObjectHideFlags: 0
