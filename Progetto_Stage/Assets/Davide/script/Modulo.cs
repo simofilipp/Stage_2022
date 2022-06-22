@@ -28,6 +28,7 @@ public class Modulo : MonoBehaviour
 
     public bool afferrato;
     public bool hasTrail;
+    public bool isSatellite;
 
     public GameObject pianeta2D;
 

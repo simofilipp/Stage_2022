@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotazioni_planetarium : MonoBehaviour
+public class RivoluzioniePianeti : MonoBehaviour
 {
     public float time;
    
     float amplitude;
 
-    float posX, poY, posZ;
+    float posX, posY, posZ;
 
 
     private void Start()
@@ -19,12 +19,12 @@ public class Rotazioni_planetarium : MonoBehaviour
 
     public void MovimentoCircolare()
     {
-        LeanTween.value(0f, -2f*Mathf.PI, time).setOnUpdate((float value) => 
+        LeanTween.value(0f, 2f*Mathf.PI, time).setOnUpdate((float value) => 
         {
             posX = 0 + Mathf.Cos(value) * amplitude;
-            posZ = this.transform.localPosition.z;
-            poY = 0 + Mathf.Sin(value) * amplitude;
-            transform.localPosition = new Vector3(posX, poY, posZ);
+            posY = this.transform.localPosition.y;
+            posZ = 0 + Mathf.Sin(value) * amplitude;
+            transform.localPosition = new Vector3(posX, posY, posZ);
         }).setRepeat(-1);
     }
    

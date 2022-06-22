@@ -43,13 +43,17 @@ public class LancioModuli : MonoBehaviour
                         other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
                     }
                     other.transform.parent = module.posizioneSuOrbita;
+                    other.transform.parent.gameObject.SetActive(true);
                     if(module.pianeta2D != null)
                     {
                         module.pianeta2D.SetActive(true);
                     }
-              
+
                     other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                    module.leanID= module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1).id;
+                    if (module.isSatellite)
+                    {
+                        module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                    }
                     if (module.velRotazioneSelf != 0)
                     {
                         other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
