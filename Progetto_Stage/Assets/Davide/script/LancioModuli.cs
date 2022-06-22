@@ -34,9 +34,9 @@ public class LancioModuli : MonoBehaviour
             //leggere posizione su orbita e fare un lean in quella posizione 
             
            
-            LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInOutQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
+            LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
             {
-                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 2.5f).setOnComplete(() =>
+                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 0.6f).setOnComplete(() =>
                 {
                     if (module.hasTrail)
                     {

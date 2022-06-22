@@ -216,16 +216,17 @@ public class StartSequenceManager : MonoBehaviour
         }
     }
 
-    private static void GeneraBottone(GameObject t)
+    public void GeneraBottone(GameObject t)
     {
         var initialButtonScale = t.transform.localScale;
-        t.transform.localScale = Vector3.zero;
+        t.transform.localScale = new Vector3(0,0,t.transform.localScale.z);
         t.SetActive(true);
-        t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack();
+        t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack();//.setOnComplete(() => { t.transform.GetChild(1).GetChild(0).LeanMoveLocalZ(-0.3f, 0.5f); });
+        
     }
-    private static void NascondiBottone(GameObject t)
+    public void NascondiBottone(GameObject t)
     {
-        t.LeanScale(Vector3.zero, 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
+        t.LeanScale(new Vector3(0, 0, t.transform.localScale.z), 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
     }
 
     public void SwitchPlanetButton()

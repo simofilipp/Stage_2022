@@ -14,6 +14,7 @@ public class InitialTriggerManager : MonoBehaviour
     [SerializeField] GameObject tablet;
     [SerializeField] Transform padre;
     public SoundFXRef testSound1;
+    [SerializeField] StartSequenceManager startSequence;
     //public SoundFXRef cassettoSuono;
     Vector3 earthScale;
     Vector3 moonScale;
@@ -47,6 +48,7 @@ public class InitialTriggerManager : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if(other.gameObject.tag == "InitialInteractor")
         {
+            GetComponent<BoxCollider>().enabled = false;
             LeanTween.move(padre.gameObject, earth.position, 5f).setEaseInOutQuart().setOnComplete(ActivateEarth);
             testSound1.PlaySound();
         }
@@ -107,6 +109,9 @@ public class InitialTriggerManager : MonoBehaviour
                 {
                     tablet.LeanMove(new Vector3(0f, 1.206f, 0.75f), 2f).setEaseInOutQuart();
                     tablet.LeanRotate(new Vector3(58f, 180f, 0), 3f).setEaseOutQuart();
+
+                    startSequence.GeneraBottone(tabletModel.GetChild(3).GetChild(0).gameObject);
+                    startSequence.GeneraBottone(tabletModel.GetChild(4).GetChild(0).gameObject);
                 });
             });
         });
