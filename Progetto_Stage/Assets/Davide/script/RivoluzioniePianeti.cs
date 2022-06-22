@@ -10,6 +10,8 @@ public class RivoluzioniePianeti : MonoBehaviour
 
     float posX, posY, posZ;
 
+    int id;
+
 
     private void Start()
     {
@@ -19,13 +21,17 @@ public class RivoluzioniePianeti : MonoBehaviour
 
     public void MovimentoCircolare()
     {
-        LeanTween.value(0f, 2f*Mathf.PI, time).setOnUpdate((float value) => 
+        id=LeanTween.value(0f, 2f*Mathf.PI, time).setOnUpdate((float value) => 
         {
             posX = 0 + Mathf.Cos(value) * amplitude;
             posY = this.transform.localPosition.y;
             posZ = 0 + Mathf.Sin(value) * amplitude;
             transform.localPosition = new Vector3(posX, posY, posZ);
-        }).setRepeat(-1);
+        }).setRepeat(-1).id;
     }
-   
+
+    private void OnDestroy()
+    {
+        LeanTween.cancel(id);
+    }
 }
