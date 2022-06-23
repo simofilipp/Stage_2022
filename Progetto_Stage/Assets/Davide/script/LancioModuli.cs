@@ -6,6 +6,7 @@ public class LancioModuli : MonoBehaviour
 {
     public bool moduloIsColliding = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class LancioModuli : MonoBehaviour
            
             LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
             {
+                module.isInOrbit = true;
                 LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 0.6f).setOnComplete(() =>
                 {
                     if (module.hasTrail)
@@ -43,6 +45,7 @@ public class LancioModuli : MonoBehaviour
                         other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
                     }
                     other.transform.parent = module.posizioneSuOrbita;
+                    module.scalaBase = other.transform.localScale;
                     other.transform.parent.gameObject.SetActive(true);
                     if(module.pianeta2D != null)
                     {

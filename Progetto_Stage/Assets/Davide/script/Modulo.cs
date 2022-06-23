@@ -29,10 +29,13 @@ public class Modulo : MonoBehaviour
     public bool afferrato;
     public bool hasTrail;
     public bool isSatellite;
+    public bool isInOrbit;
 
     public GameObject pianeta2D;
 
     public GameObject sole;
+
+    public Vector3 scalaBase;
 
     int countSelezionato=0;
 
@@ -47,7 +50,7 @@ public class Modulo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(scalaBase);
     }
     public void TrueAfferrato()
     {
