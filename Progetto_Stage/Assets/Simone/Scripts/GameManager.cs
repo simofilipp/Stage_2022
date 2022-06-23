@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] List<GameObject> planetInteractables;
+    [SerializeField] List<GameObject> bottoniScalaPianeti;
     [SerializeField] GameObject table;
+    [SerializeField] Material materialSelected;
+    [SerializeField] Material materialNormal;
     bool orbiteAttive = true;
 
     [SerializeField]
@@ -38,6 +40,20 @@ public class GameManager : MonoBehaviour
     public void DisableTable()
     {
         table.SetActive(!table.activeSelf);
+    }
+
+    public void BottoneSelezionato(GameObject bottoneDaCambiare)
+    {
+        bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialSelected;
+    }
+
+    public void SelezionaBottoneScalaPianeti(GameObject bottoneSelezionato)
+    {
+        foreach(GameObject bottoneDaCambiare in bottoniScalaPianeti)
+        {
+            bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialNormal;
+        }
+        bottoneSelezionato.GetComponent<MeshRenderer>().material = materialSelected;
     }
 
     //public void SwitchOrbits()

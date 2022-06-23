@@ -17,7 +17,7 @@ Shader "Custom/Hologram-shader"
 
 		SubShader
 		{
-			Tags{ "Queue" = "Overlay" "IgnoreProjector" = "True" "RenderType" = "Transparent" }
+			Tags{ "Queue" = "Overlay" "IgnoreProjector" = "True" "RenderType" = "Opaque" }
 
 			Pass
 			{
