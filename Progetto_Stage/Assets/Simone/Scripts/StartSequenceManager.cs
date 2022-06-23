@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -203,6 +204,8 @@ public class StartSequenceManager : MonoBehaviour
     {
         foreach (var t in tastiModalita)
         {
+            //Spengo il poke, ricordarsi di accenderlo nel caso si voglia tornare alla scelta delle modalità
+            t.GetComponent<PokeInteractable>().enabled = false;
             NascondiBottone(t);
         }
     }
@@ -212,6 +215,7 @@ public class StartSequenceManager : MonoBehaviour
     {
         foreach (var t in tastiPlanetarioSubmode)
         {
+            t.GetComponent<PokeInteractable>().enabled = false;
             NascondiBottone(t);
         }
     }
