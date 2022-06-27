@@ -5,6 +5,7 @@ using UnityEngine;
 public class MostraCanvaPianeti : MonoBehaviour
 {
     [SerializeField] GameObject canvasPianeti;
+    [SerializeField] GameObject pianeti_da_accendere;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class MostraCanvaPianeti : MonoBehaviour
             canvasPianeti.SetActive(true);
         }
         //Spawnare il pianeta cliccato, al centro del canvas
+        for(int i=0;  i<canvasPianeti.transform.GetChild(0).childCount; i++)
+        {
+            canvasPianeti.transform.GetChild(0).GetChild(i).gameObject.SetActive(false);
+        }
         pianeta.SetActive(true);
     }
 
@@ -31,7 +36,7 @@ public class MostraCanvaPianeti : MonoBehaviour
     {
         if(other.tag== "InitialInteractor")
         {
-            AccendiCanvas(other.gameObject);
+            AccendiCanvas(pianeti_da_accendere);
         }
     }
 }
