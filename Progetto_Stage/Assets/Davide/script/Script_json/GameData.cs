@@ -13,11 +13,12 @@ public class GameData
     public string iso2 = "";
     public string capital = "";
     public long population;
+    public double gdp;
     
 
     public string PrintAllData()
     {
-        string dati = "city: " + city + "\ncountry: " + country + "\nlat: " + lat.ToString() + "\nlng: " + lng.ToString() + "\ncode: " + iso2 + "\ncapital: " + capital;
+        string dati = "city: " + city + "\ncountry: " + country + "\nlat: " + lat.ToString() + "\nlng: " + lng.ToString() + "\ncode: " + iso2 + "\ncapital: " + capital + "\ngdp: " + gdp;
         return dati;
     }
 
