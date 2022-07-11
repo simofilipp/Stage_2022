@@ -21,14 +21,14 @@ public class InitialTriggerManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        foreach (var renderer in tavoloMats)
-        {
-                renderer.SetFloat("_Dissolvenza_animazione", 1);
-        }
-        foreach (var renderer in matSpecials)
-        {
-            renderer.SetFloat("_Dissolvenza_animazione", -0.2f);
-        }
+        //foreach (var renderer in tavoloMats)
+        //{
+        //        renderer.SetFloat("_Dissolvenza_animazione", 1);
+        //}
+        //foreach (var renderer in matSpecials)
+        //{
+        //    renderer.SetFloat("_Dissolvenza_animazione", -0.2f);
+        //}
     }
     void Start()
     {

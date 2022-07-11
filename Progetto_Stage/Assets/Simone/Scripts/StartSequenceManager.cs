@@ -9,6 +9,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject pannelli;
     [SerializeField] float dissolveTimeGabbia;
     [SerializeField] float dissolveTimeSfere;
+    [SerializeField] GameObject ologrammiMode;
     [SerializeField] GameObject ponte;
     [SerializeField] GameObject tastiera;
     [SerializeField] GameObject canvasFinale;
@@ -23,6 +24,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] GameObject puntaStatica;
     [SerializeField] GameObject tavolo_scifi;
     [SerializeField] GameObject bottoneSpegniTavolo;
+    [SerializeField] GameObject tastoSTART;
     [SerializeField] List<GameObject> sferette;
     [SerializeField] List<GameObject> tastiModalita;
     [SerializeField] List<GameObject> tastiOpzioniFreeMode;
@@ -45,11 +47,26 @@ public class StartSequenceManager : MonoBehaviour
         moonScale=luna.transform.localScale;
     }
 
+    public void StartExperience()
+    {
+        NascondiBottone(tastoSTART);
+        foreach(var tasto in tastiModalita)
+        {
+            GeneraBottone(tasto);
+        }
+        ologrammiMode.SetActive(true);
+    }
+
     public void StartFreeMode()
     {
         //disattivare i tasti modalità dopo averli scalati, aggiungere un delay ad ugnuno per farlo più carino
         DisattivaTastiMode();
         actualMode = Mode.FreeMode;
+
+        //far scomparire gli ologrammi delle altre modalità e spostare quello corretto al centro
+        //al momento spengiamo tutto
+        ologrammiMode.SetActive(false);
+
 
         //apri serranda
         serranda.GetComponent<Animator>().SetTrigger("Apri");
@@ -120,6 +137,10 @@ public class StartSequenceManager : MonoBehaviour
         {
             GeneraBottone(t);
         }
+
+        //far scomparire gli ologrammi delle altre modalità e spostare quello corretto al centro
+        ologrammiMode.SetActive(false);
+
     }
 
 

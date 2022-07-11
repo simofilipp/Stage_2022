@@ -6,11 +6,10 @@ public class Tablet : MonoBehaviour
 {
 
     [SerializeField]
-    GameObject immagineASchermo;
+    Animator gambaSingola;
 
+    bool alreadyDown;
 
-    [SerializeField]
-    GameObject vetro;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +21,14 @@ public class Tablet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AbbassaGamba()
+    {
+        if (!alreadyDown)
+        {
+            alreadyDown = true;
+            gambaSingola.SetTrigger("ScomparsaGamba");
+        }
     }
 }
