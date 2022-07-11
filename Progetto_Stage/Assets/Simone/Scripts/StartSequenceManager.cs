@@ -55,6 +55,8 @@ public class StartSequenceManager : MonoBehaviour
             GeneraBottone(tasto);
         }
         ologrammiMode.SetActive(true);
+        StartCoroutine(SpawnHolograms());
+    
     }
 
     public void StartFreeMode()
@@ -63,9 +65,10 @@ public class StartSequenceManager : MonoBehaviour
         DisattivaTastiMode();
         actualMode = Mode.FreeMode;
 
+        CheckHologramMode();
+
         //far scomparire gli ologrammi delle altre modalità e spostare quello corretto al centro
         //al momento spengiamo tutto
-        ologrammiMode.SetActive(false);
 
 
         //apri serranda
@@ -81,6 +84,8 @@ public class StartSequenceManager : MonoBehaviour
         {
             pannelli.SetActive(false);
             //lasciare attivo solo il tasto per tornare alla fase iniziale
+
+            ologrammiMode.SetActive(false);
 
 
             //Animazione entrata palline con dissolve
@@ -132,6 +137,8 @@ public class StartSequenceManager : MonoBehaviour
     }
     public void StartPlanetariumMode()
     {
+        actualMode = Mode.PlanetariumMode;
+        CheckHologramMode();
         DisattivaTastiMode();
         foreach (var t in tastiPlanetarioSubmode)
         {
@@ -139,7 +146,6 @@ public class StartSequenceManager : MonoBehaviour
         }
 
         //far scomparire gli ologrammi delle altre modalità e spostare quello corretto al centro
-        ologrammiMode.SetActive(false);
 
     }
 
@@ -147,6 +153,7 @@ public class StartSequenceManager : MonoBehaviour
     public void StartSolarSystem()
     {
         actualMode = Mode.SolarSystemMode;
+        ologrammiMode.SetActive(false);
         DisattivaTastiSubMode();
         bottoneSpegniTavolo.SetActive(false);
         ponte.SetActive(false);
@@ -188,6 +195,7 @@ public class StartSequenceManager : MonoBehaviour
     public void StartEarthSystem()
     {
         actualMode = Mode.EarthSystemMode;
+        ologrammiMode.SetActive(false);
         DisattivaTastiSubMode();
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
@@ -249,6 +257,15 @@ public class StartSequenceManager : MonoBehaviour
         t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack();//.setOnComplete(() => { t.transform.GetChild(1).GetChild(0).LeanMoveLocalZ(-0.3f, 0.5f); });
         
     }
+    
+    public void GeneraBottone(GameObject t, float time)
+    {
+        var initialButtonScale = t.transform.localScale;
+        t.transform.localScale = new Vector3(0,0,t.transform.localScale.z);
+        t.SetActive(true);
+        t.LeanScale(initialButtonScale, time).setEaseOutBack();//.setOnComplete(() => { t.transform.GetChild(1).GetChild(0).LeanMoveLocalZ(-0.3f, 0.5f); });
+        
+    }
     public void NascondiBottone(GameObject t)
     {
         t.LeanScale(new Vector3(0, 0, t.transform.localScale.z), 0.5f).setEaseInBack().setOnComplete(() => { t.gameObject.SetActive(false); });
@@ -278,12 +295,40 @@ public class StartSequenceManager : MonoBehaviour
             }
         }
     }
+    IEnumerator SpawnHolograms()
+    {
+        for(int i = 0; i < ologrammiMode.transform.childCount; i++)
+        {
+            GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, 2);
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    void CheckHologramMode()
+    {
+        switch (actualMode)
+        {
+            case Mode.FreeMode:
+                //spegnere ologrammi diversi e spostare questo al centro
+                ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
+                ologrammiMode.transform.GetChild(2).gameObject.SetActive(false);
+                break;
+            case Mode.PlanetariumMode:
+                //spegnere ologrammi diversi e spostare questo al centro
+                ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
+                ologrammiMode.transform.GetChild(1).gameObject.SetActive(false);
+                break;
+        }
+    }
 }
+
+
 
 public enum Mode
 {
     Initial,
     FreeMode,
+    PlanetariumMode,
     SolarSystemMode,
     EarthSystemMode
 }
