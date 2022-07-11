@@ -8,7 +8,7 @@ public class Pulsing_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        id = LeanTween.value(.8f, 1.5f, 1f).setOnUpdate((float value) =>
+        id = LeanTween.value(.6f, 1.5f, .7f).setOnUpdate((float value) =>
         {
             this.gameObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.white * value);
 

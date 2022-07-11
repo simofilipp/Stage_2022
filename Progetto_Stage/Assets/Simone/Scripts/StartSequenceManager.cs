@@ -101,8 +101,9 @@ public class StartSequenceManager : MonoBehaviour
             }
 
             //animazione terra che si ingrandisce, luna che scompare
-            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
-            {
+
+            //holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
+            //{
                 terra.SetActive(true);
                 terra.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
@@ -130,8 +131,8 @@ public class StartSequenceManager : MonoBehaviour
                 }).delay = 0.1f;
 
 
-            }
-                );
+            //}
+            //    );
         });
 
     }
@@ -170,8 +171,8 @@ public class StartSequenceManager : MonoBehaviour
                 GeneraBottone(t);
 
             }
-            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
-            {
+            //holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
+            //{
                 //attivo sole e planetario 2D
                 sole.SetActive(true);
                 var solveSole = sole.transform.GetChild(0).GetComponent<MeshRenderer>().material;
@@ -189,7 +190,7 @@ public class StartSequenceManager : MonoBehaviour
                 opzioniinitialScale = tastiOpzioniSolarSystem[0].transform.localScale;
                
                 bottoniPianetiAccesi = true;
-            });
+            //});
         });
     }
     public void StartEarthSystem()
@@ -206,8 +207,8 @@ public class StartSequenceManager : MonoBehaviour
         }).setOnComplete(() =>
         {
             pannelli.SetActive(false);
-            holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
-            {
+            //holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>
+            //{
                 terraNoStati.SetActive(true);
                 terraNoStati.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
@@ -225,7 +226,7 @@ public class StartSequenceManager : MonoBehaviour
                     //attivare punto rilascio
                     //puntoRilascioModuli.SetActive(true);
                 });
-            });
+            //});
         });
     }
 
@@ -312,11 +313,15 @@ public class StartSequenceManager : MonoBehaviour
                 //spegnere ologrammi diversi e spostare questo al centro
                 ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
                 ologrammiMode.transform.GetChild(2).gameObject.SetActive(false);
+                //implementare modo per far partire tutto in sequenza di questo leantween
+                ologrammiMode.transform.GetChild(1).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
+
                 break;
             case Mode.PlanetariumMode:
                 //spegnere ologrammi diversi e spostare questo al centro
                 ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
                 ologrammiMode.transform.GetChild(1).gameObject.SetActive(false);
+                ologrammiMode.transform.GetChild(2).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
                 break;
         }
     }
