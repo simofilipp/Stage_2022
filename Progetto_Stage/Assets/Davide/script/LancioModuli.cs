@@ -63,6 +63,7 @@ public class LancioModuli : MonoBehaviour
                     }
                     parent_modulo.SetActive(false);
 
+                    OptionsPlanetarium.moduloAttivo = false;
                 });
             });
         }

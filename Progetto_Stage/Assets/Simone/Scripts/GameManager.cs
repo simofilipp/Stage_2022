@@ -44,7 +44,10 @@ public class GameManager : MonoBehaviour
 
     public void BottoneSelezionato(GameObject bottoneDaCambiare)
     {
-        bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialSelected;
+        if (!OptionsPlanetarium.moduloAttivo)
+        {
+            bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialSelected;
+        }
     }
 
     public void SelezionaBottoneScalaPianeti(GameObject bottoneSelezionato)

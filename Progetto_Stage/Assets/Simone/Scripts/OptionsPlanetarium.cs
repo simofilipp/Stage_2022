@@ -6,6 +6,8 @@ public class OptionsPlanetarium : MonoBehaviour
 {
     [SerializeField] GameObject iss;
     [SerializeField] GameObject hubble;
+
+    public static bool moduloAttivo;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,10 @@ public class OptionsPlanetarium : MonoBehaviour
 
     public void EnablePlanet(GameObject planet)
     {
-        if(planet.GetComponentInChildren<MeshRenderer>() != null)
+        if(planet.GetComponentInChildren<MeshRenderer>() != null && !moduloAttivo)
+        {
+            moduloAttivo = true;
             planet.SetActive(true);
+        }
     }
 }
