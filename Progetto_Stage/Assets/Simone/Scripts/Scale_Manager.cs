@@ -26,15 +26,15 @@ public class Scale_Manager : MonoBehaviour
     {
         scala_iniziale_Sferetta = transform.localScale;
         //cambiare in base a quanto si cambia la scala iniziale della sfera
-        scala_iniziale_Pianeta = pianeta.transform.localScale*4;
-        scala_Corrente_Pianeta = pianeta.transform.localScale.x*4;
+        scala_iniziale_Pianeta = pianeta.transform.localScale;
+        scala_Corrente_Pianeta = pianeta.transform.localScale.x;
         scala_ini_value_Pianeta = scala_Corrente_Pianeta;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(scala_iniziale_Pianeta);
     }
 
     public void OnSelectedScale()

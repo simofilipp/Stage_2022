@@ -32,6 +32,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiOpzioniSolarSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
+    [SerializeField] GameObject tavolo;
     Vector3 opzioniinitialScale;
 
     bool bottoniPianetiAccesi;
@@ -70,6 +71,8 @@ public class StartSequenceManager : MonoBehaviour
         //far scomparire gli ologrammi delle altre modalità e spostare quello corretto al centro
         //al momento spengiamo tutto
 
+        //dissolve e animazione tavolo
+        tavolo.GetComponent<tavolo_script>().CompariTavolo();
 
         //apri serranda
         serranda.GetComponent<Animator>().SetTrigger("Apri");
@@ -88,17 +91,6 @@ public class StartSequenceManager : MonoBehaviour
             ologrammiMode.SetActive(false);
 
 
-            //Animazione entrata palline con dissolve
-            foreach (var obj in sferette)
-            {
-                obj.SetActive(true);
-
-                var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
-                LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
-                {
-                    solveSfera.SetFloat("_Dissolvenza_animazione", value);
-                });
-            }
 
             //animazione terra che si ingrandisce, luna che scompare
 
@@ -109,6 +101,17 @@ public class StartSequenceManager : MonoBehaviour
                 holoEarth.SetActive(false);
                 terra.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
+                    //Animazione entrata palline con dissolve
+                    foreach (var obj in sferette)
+                    {
+                        obj.SetActive(true);
+
+                        var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
+                        LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
+                        {
+                            solveSfera.SetFloat("_Dissolvenza_animazione", value);
+                        });
+                    }
                     luna.SetActive(false);
 
                     //attivare tastiera
@@ -166,6 +169,11 @@ public class StartSequenceManager : MonoBehaviour
         }).setOnComplete(() =>
         {
             pannelli.SetActive(false);
+
+            //dissolve e animazione tavolo
+            tavolo.GetComponent<tavolo_script>().CompariTavolo();
+
+            opzioniinitialScale = tastiOpzioniSolarSystem[0].transform.localScale;
             foreach (var t in tastiOpzioniSolarSystem)
             {
                 GeneraBottone(t);
@@ -187,7 +195,6 @@ public class StartSequenceManager : MonoBehaviour
                 holoEarth.SetActive(false);
                 puntaStatica.SetActive(false);
                 //attivo tasti pianeti
-                opzioniinitialScale = tastiOpzioniSolarSystem[0].transform.localScale;
                
                 bottoniPianetiAccesi = true;
             //});
@@ -212,7 +219,11 @@ public class StartSequenceManager : MonoBehaviour
                 terraNoStati.SetActive(true);
                 terraNoStati.transform.localScale = Vector3.zero;
                 holoEarth.SetActive(false);
-                terraNoStati.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
+
+                //dissolve e animazione tavolo
+                tavolo.GetComponent<tavolo_script>().CompariTavolo();
+
+            terraNoStati.transform.LeanScale(new Vector3(8, 8, 8), 5f).setEaseInOutQuart().setOnComplete(() =>
                 {
                     luna.SetActive(true);
                     luna.transform.localScale = Vector3.zero;
@@ -300,8 +311,9 @@ public class StartSequenceManager : MonoBehaviour
     {
         for(int i = 0; i < ologrammiMode.transform.childCount; i++)
         {
-            GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, 2);
-            yield return new WaitForSeconds(1f);
+            GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, 1);
+            yield return null;
+            //yield return new WaitForSeconds(1f);
         }
     }
 
