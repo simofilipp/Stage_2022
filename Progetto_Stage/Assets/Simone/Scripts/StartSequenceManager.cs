@@ -33,6 +33,7 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
     [SerializeField] Istanzia_istogrammi ii;
     [SerializeField] GameObject tavolo;
+    [SerializeField] GameObject logo;
     Vector3 opzioniinitialScale;
 
     bool bottoniPianetiAccesi;
@@ -50,8 +51,10 @@ public class StartSequenceManager : MonoBehaviour
 
     public void StartExperience()
     {
+
         NascondiBottone(tastoSTART);
-        foreach(var tasto in tastiModalita)
+        NascondiBottone(logo);
+        foreach (var tasto in tastiModalita)
         {
             GeneraBottone(tasto);
         }
@@ -309,7 +312,8 @@ public class StartSequenceManager : MonoBehaviour
     }
     IEnumerator SpawnHolograms()
     {
-        for(int i = 0; i < ologrammiMode.transform.childCount; i++)
+        yield return new WaitForSeconds(1f);
+        for (int i = 0; i < ologrammiMode.transform.childCount; i++)
         {
             GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, 1);
             yield return null;
