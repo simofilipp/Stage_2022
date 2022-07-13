@@ -8,6 +8,7 @@ public class PianetiManager : MonoBehaviour
     [SerializeField] LancioModuli lancio_moduli;
     [SerializeField] GameObject radarPlanetario;
     bool leanSclaInCorso;
+    bool rotazioneRadar;
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +82,10 @@ public class PianetiManager : MonoBehaviour
 
     public void RuotaPlanetario()
     {
-        LeanTween.rotateAroundLocal(radarPlanetario, Vector3.forward, 180, 2f);
+        if (!rotazioneRadar)
+        {
+            rotazioneRadar = true;
+            LeanTween.rotateAroundLocal(radarPlanetario, Vector3.forward, 180, 2f).setOnComplete(() => { rotazioneRadar = false; });
+        }
     }
 }
