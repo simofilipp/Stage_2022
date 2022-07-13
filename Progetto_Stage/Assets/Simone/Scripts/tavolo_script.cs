@@ -10,6 +10,7 @@ public class tavolo_script : MonoBehaviour
     [SerializeField] List<Material> tavoloMats;
     [SerializeField] List<Material> matSpecials;
     [SerializeField] GameObject planetario2D;
+    [SerializeField] StartSequenceManager startSequenceManager;
 
 
 
@@ -69,7 +70,11 @@ public class tavolo_script : MonoBehaviour
             });
         }
         yield return new WaitForSeconds(4.5f);
-        planetario2D.transform.parent.gameObject.SetActive(true);
+        if(startSequenceManager.actualMode == Mode.SolarSystemMode)
+        {
+            planetario2D.transform.parent.gameObject.SetActive(true);
+
+        }
 
 
 

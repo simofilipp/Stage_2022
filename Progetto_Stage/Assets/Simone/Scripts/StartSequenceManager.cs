@@ -40,7 +40,7 @@ public class StartSequenceManager : MonoBehaviour
 
 
 
-    Mode actualMode;
+    public Mode actualMode;
     private Vector3 moonScale;
 
     private void Start()

@@ -54753,7 +54753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1654617633, guid: 7b1a72b12b43e564d9e013a6afe9edd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1286
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 1654617633, guid: 7b1a72b12b43e564d9e013a6afe9edd4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54777,7 +54777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1654617633, guid: 7b1a72b12b43e564d9e013a6afe9edd4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5476
+      value: 0.577
       objectReference: {fileID: 0}
     - target: {fileID: 1654617633, guid: 7b1a72b12b43e564d9e013a6afe9edd4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -55598,7 +55598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOrbita: {fileID: 933101659}
-  posizioneSuOrbita: {fileID: 1611569390}
+  posizioneSuOrbita: {fileID: 1540773007}
   velRotazioneOrbita: 18.25
   velRotazioneSelf: 1
   scalaFinale: 6
@@ -60221,6 +60221,119 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1540773006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1884502792}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33333337
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.33333337
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroidi_exp6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb300ddd9fe54874baf0bc4f236c6adb, type: 3}
+--- !u!4 &1540773007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1540773006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1540773008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb300ddd9fe54874baf0bc4f236c6adb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1540773006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1540773009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540773008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deee5c68cd1f234c81fbafe8922ded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1541478059
 GameObject:
   m_ObjectHideFlags: 0
@@ -65280,6 +65393,7 @@ MonoBehaviour:
   ii: {fileID: 8482397536239753844}
   tavolo: {fileID: 6384770746778790020}
   logo: {fileID: 2129095931}
+  actualMode: 0
 --- !u!4 &1677719766
 Transform:
   m_ObjectHideFlags: 0
@@ -72952,6 +73066,7 @@ Transform:
   - {fileID: 438626056}
   - {fileID: 1709326421}
   - {fileID: 1611569390}
+  - {fileID: 1540773007}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -136039,6 +136154,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f1ef99548ee4c2242b3f62f48c055125, type: 2}
   matSpecials: []
   planetario2D: {fileID: 7571654917315680558}
+  startSequenceManager: {fileID: 0}
   startSequence: {fileID: 1677719765}
 --- !u!114 &7316193875336660297
 MonoBehaviour:
