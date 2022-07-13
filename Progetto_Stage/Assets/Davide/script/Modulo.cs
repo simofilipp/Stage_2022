@@ -30,6 +30,7 @@ public class Modulo : MonoBehaviour
     public bool hasTrail;
     public bool isSatellite;
     public bool isInOrbit;
+    public bool isAsteroid;
 
     public GameObject pianeta2D;
 

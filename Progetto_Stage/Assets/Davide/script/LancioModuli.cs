@@ -24,48 +24,59 @@ public class LancioModuli : MonoBehaviour
 
         if(other.gameObject.tag == "Modulo" && !other.GetComponent<Modulo>().afferrato)
         {
-
-            GameObject parent_modulo = other.transform.parent.parent.gameObject;
-            var module = other.GetComponent<Modulo>();
-            if (parent_modulo.transform.localScale.x > 1f)
+            if (!other.GetComponent<Modulo>().isAsteroid)
             {
-                parent_modulo.transform.localScale = Vector3.one;
-            }
-            other.transform.parent = null;
-            //leggere posizione su orbita e fare un lean in quella posizione 
+
+                GameObject parent_modulo = other.transform.parent.parent.gameObject;
+                var module = other.GetComponent<Modulo>();
+                if (parent_modulo.transform.localScale.x > 1f)
+                {
+                    parent_modulo.transform.localScale = Vector3.one;
+                }
+                other.transform.parent = null;
+                //leggere posizione su orbita e fare un lean in quella posizione 
             
            
-            LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
-            {
-                module.isInOrbit = true;
-                LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 0.6f).setOnComplete(() =>
+                LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
                 {
-                    if (module.hasTrail)
+                    module.isInOrbit = true;
+                    LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 0.6f).setOnComplete(() =>
                     {
-                        other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
-                    }
-                    other.transform.parent = module.posizioneSuOrbita;
-                    module.scalaBase = other.transform.localScale;
-                    other.transform.parent.gameObject.SetActive(true);
-                    if(module.pianeta2D != null)
-                    {
-                        module.pianeta2D.SetActive(true);
-                    }
+                        if (module.hasTrail)
+                        {
+                            other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
+                        }
+                        other.transform.parent = module.posizioneSuOrbita;
+                        module.scalaBase = other.transform.localScale;
+                        other.transform.parent.gameObject.SetActive(true);
+                        if(module.pianeta2D != null)
+                        {
+                            module.pianeta2D.SetActive(true);
+                        }
 
-                    other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
-                    if (module.isSatellite)
-                    {
-                        module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
-                    }
-                    if (module.velRotazioneSelf != 0)
-                    {
-                        other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
-                    }
-                    parent_modulo.SetActive(false);
+                        other.gameObject.transform.rotation = new Quaternion(0,0,0,0);
+                        if (module.isSatellite)
+                        {
+                            module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up,module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                        }
+                        if (module.velRotazioneSelf != 0)
+                        {
+                            other.transform.LeanRotateAroundLocal(Vector3.forward,-360,module.velRotazioneSelf).setRepeat(-1); 
+                        }
+                        parent_modulo.SetActive(false);
 
-                    OptionsPlanetarium.moduloAttivo = false;
+                        OptionsPlanetarium.moduloAttivo = false;
+                    });
                 });
-            });
+            }
+            else
+            {
+                other.GetComponent<Modulo>().posizioneSuOrbita.gameObject.SetActive(true);
+                other.transform.parent.parent.gameObject.SetActive(false);
+                other.GetComponent<Modulo>().isInOrbit = true;
+                SpegniTrigger();
+                OptionsPlanetarium.moduloAttivo = false;
+            }
         }
         else if(other.gameObject.tag == "Modulo")
         {
