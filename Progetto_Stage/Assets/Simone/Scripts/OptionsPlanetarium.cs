@@ -6,6 +6,7 @@ public class OptionsPlanetarium : MonoBehaviour
 {
     [SerializeField] GameObject iss;
     [SerializeField] GameObject hubble;
+    [SerializeField] LancioModuli lancioModuli;
 
     public static bool moduloAttivo;
     // Start is called before the first frame update
@@ -35,6 +36,21 @@ public class OptionsPlanetarium : MonoBehaviour
         {
             moduloAttivo = true;
             planet.SetActive(true);
+            StartCoroutine(AutomaticTransfer(planet));
+        }
+    }
+
+    IEnumerator AutomaticTransfer(GameObject planet)
+    {
+        yield return new WaitForSeconds(15f);
+        if (planet.activeSelf && !lancioModuli.moduloInViaggio)
+        {
+            //manda in orbita automaticamente
+            lancioModuli.TripToOrbit(planet.GetComponentInChildren<Modulo>().gameObject.GetComponent<Collider>(), planet, planet.GetComponentInChildren<Modulo>());
+        }
+        else
+        {
+            //non fa niente
         }
     }
 }

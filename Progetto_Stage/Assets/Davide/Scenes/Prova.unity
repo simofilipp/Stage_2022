@@ -36094,6 +36094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moduloIsColliding: 0
+  moduloInViaggio: 0
 --- !u!65 &933101661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76242,6 +76243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iss: {fileID: 4307838832415629301}
   hubble: {fileID: 929552310}
+  lancioModuli: {fileID: 933101660}
 --- !u!114 &2021360132
 MonoBehaviour:
   m_ObjectHideFlags: 0
