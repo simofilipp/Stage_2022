@@ -25,21 +25,7 @@ public class LancioModuli : MonoBehaviour
 
         if(other.gameObject.tag == "Modulo" && !other.GetComponent<Modulo>().afferrato)
         {
-            if (!other.GetComponent<Modulo>().isAsteroid)
-            {
-
-                GameObject parent_modulo = other.transform.parent.parent.gameObject;
-                var module = other.GetComponent<Modulo>();
-                TripToOrbit(other, parent_modulo, module);
-            }
-            else
-            {
-                other.GetComponent<Modulo>().posizioneSuOrbita.gameObject.SetActive(true);
-                other.transform.parent.parent.gameObject.SetActive(false);
-                other.GetComponent<Modulo>().isInOrbit = true;
-                SpegniTrigger();
-                OptionsPlanetarium.moduloAttivo = false;
-            }
+            CheckForTripTOrbit(other);
         }
         else if(other.gameObject.tag == "Modulo")
         {
@@ -47,7 +33,26 @@ public class LancioModuli : MonoBehaviour
         }
     }
 
-    public void TripToOrbit(Collider other, GameObject parent_modulo, Modulo module)
+    public void CheckForTripTOrbit(Collider other)
+    {
+        if (!other.GetComponent<Modulo>().isAsteroid)
+        {
+
+            GameObject parent_modulo = other.transform.parent.parent.gameObject;
+            var module = other.GetComponent<Modulo>();
+            TripToOrbit(other, parent_modulo, module);
+        }
+        else
+        {
+            other.GetComponent<Modulo>().posizioneSuOrbita.gameObject.SetActive(true);
+            other.transform.parent.parent.gameObject.SetActive(false);
+            other.GetComponent<Modulo>().isInOrbit = true;
+            SpegniTrigger();
+            OptionsPlanetarium.moduloAttivo = false;
+        }
+    }
+
+    private void TripToOrbit(Collider other, GameObject parent_modulo, Modulo module)
     {
         if (parent_modulo.transform.localScale.x > 1f)
         {

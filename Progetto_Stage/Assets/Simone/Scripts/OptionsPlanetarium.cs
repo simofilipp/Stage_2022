@@ -46,7 +46,7 @@ public class OptionsPlanetarium : MonoBehaviour
         if (planet.activeSelf && !lancioModuli.moduloInViaggio)
         {
             //manda in orbita automaticamente
-            lancioModuli.TripToOrbit(planet.GetComponentInChildren<Modulo>().gameObject.GetComponent<Collider>(), planet, planet.GetComponentInChildren<Modulo>());
+            lancioModuli.CheckForTripTOrbit(planet.GetComponentInChildren<Modulo>().gameObject.GetComponent<Collider>());
         }
         else
         {
