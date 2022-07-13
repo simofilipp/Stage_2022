@@ -20,34 +20,46 @@ public class PianetiManager : MonoBehaviour
 
     public void Scala1X()
     {
-        LancioModuli.activeOrbitScale = 1;
-        foreach(Modulo modulo in pianeti_modulo)
+        if(LancioModuli.activeOrbitScale != 1)
         {
-            if (modulo.isInOrbit)
+
+            LancioModuli.activeOrbitScale = 1;
+            foreach(Modulo modulo in pianeti_modulo)
             {
-                LeanTween.scale(modulo.gameObject, modulo.scalaBase, 3).setEaseOutQuart();
+                if (modulo.isInOrbit)
+                {
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase, 3).setEaseOutQuart();
+                }
             }
         }
     }
     public void Scala2X()
     {
-        LancioModuli.activeOrbitScale = 3;
-        foreach (Modulo modulo in pianeti_modulo)
+        if (LancioModuli.activeOrbitScale != 3)
         {
-            if (modulo.isInOrbit)
+
+            LancioModuli.activeOrbitScale = 3;
+            foreach (Modulo modulo in pianeti_modulo)
             {
-                LeanTween.scale(modulo.gameObject, modulo.scalaBase*3, 3).setEaseOutQuart();
+                if (modulo.isInOrbit)
+                {
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*3, 3).setEaseOutQuart();
+                }
             }
         }
     }
     public void Scala3X()
     {
-        LancioModuli.activeOrbitScale = 5;
-        foreach (Modulo modulo in pianeti_modulo)
+        if (LancioModuli.activeOrbitScale != 5)
         {
-            if (modulo.isInOrbit)
+
+            LancioModuli.activeOrbitScale = 5;
+            foreach (Modulo modulo in pianeti_modulo)
             {
-                LeanTween.scale(modulo.gameObject, modulo.scalaBase*5, 3).setEaseOutQuart();
+                if (modulo.isInOrbit)
+                {
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*5, 3).setEaseOutQuart();
+                }
             }
         }
     }

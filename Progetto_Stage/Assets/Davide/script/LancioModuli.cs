@@ -74,7 +74,7 @@ public class LancioModuli : MonoBehaviour
                     other.transform.GetComponentInChildren<TrailRenderer>().enabled = true;
                 }
                 other.transform.parent = module.posizioneSuOrbita;
-                module.scalaBase = other.transform.localScale;
+                module.scalaBase = other.transform.localScale / activeOrbitScale;
                 other.transform.parent.gameObject.SetActive(true);
                 if (module.pianeta2D != null)
                 {
