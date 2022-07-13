@@ -194,7 +194,7 @@ public class StartSequenceManager : MonoBehaviour
                     tavolo_scifi.SetActive(true);
 
                 });
-                planetario2D.SetActive(true);
+                
                 holoEarth.SetActive(false);
                 puntaStatica.SetActive(false);
                 //attivo tasti pianeti

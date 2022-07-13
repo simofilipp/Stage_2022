@@ -9,9 +9,11 @@ public class tavolo_script : MonoBehaviour
     
     [SerializeField] List<Material> tavoloMats;
     [SerializeField] List<Material> matSpecials;
-    
-   
-    
+    [SerializeField] GameObject planetario2D;
+
+
+
+
     [SerializeField] StartSequenceManager startSequence;
     
     
@@ -43,6 +45,7 @@ public class tavolo_script : MonoBehaviour
         console.GetComponent<Animator>().SetTrigger("Comparsa_tavolo");
         StartCoroutine(EnableTabletAndTable());
         EnableTabletAndTable();
+
       
     }
     IEnumerator EnableTabletAndTable()
@@ -66,6 +69,7 @@ public class tavolo_script : MonoBehaviour
             });
         }
         yield return new WaitForSeconds(4.5f);
+        planetario2D.transform.parent.gameObject.SetActive(true);
 
 
 

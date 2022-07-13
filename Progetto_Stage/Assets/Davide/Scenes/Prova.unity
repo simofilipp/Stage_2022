@@ -899,6 +899,101 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &19281028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3914476991801111100}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8185943
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8185949
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.8835416
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000086386564
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.014341558
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0010019579
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999434
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0033868253
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_Name
+      value: disco_planetario
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21285ba1c605b7542a1897b4f7a734ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21285ba1c605b7542a1897b4f7a734ee, type: 3}
+--- !u!4 &19281029 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 21285ba1c605b7542a1897b4f7a734ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 19281028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &20530760
 GameObject:
   m_ObjectHideFlags: 0
@@ -11092,7 +11187,7 @@ GameObject:
   - component: {fileID: 303226694}
   - component: {fileID: 303226695}
   m_Layer: 12
-  m_Name: ButtonLuna_
+  m_Name: ButtonPlanetario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11106,8 +11201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303226692}
   m_LocalRotation: {x: -0.000000021073426, y: 0.70710677, z: -0.7071068, w: -0.000000008728895}
-  m_LocalPosition: {x: -0.0011400002, y: 0.000110000474, z: 0.00209}
-  m_LocalScale: {x: 0.0012482193, y: 0.0012482202, z: 0.0012482196}
+  m_LocalPosition: {x: 0.00687, y: -0.000011915, z: 0.00393}
+  m_LocalScale: {x: 0.00042076223, y: 0.00042076255, z: 0.00042076234}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1541478060}
@@ -11174,13 +11269,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2015227323}
-        m_TargetAssemblyTypeName: OptionsPlanetarium, Assembly-CSharp
-        m_MethodName: EnablePlanet
-        m_Mode: 2
+      - m_Target: {fileID: 1327009243}
+        m_TargetAssemblyTypeName: PianetiManager, Assembly-CSharp
+        m_MethodName: RuotaPlanetario
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1619551365}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19918,7 +20013,7 @@ Transform:
   - {fileID: 1178690071}
   - {fileID: 922568299}
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &572229146
 GameObject:
@@ -23342,7 +23437,7 @@ Transform:
   - {fileID: 625971572}
   - {fileID: 1766963795}
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
 --- !u!114 &636440049
 MonoBehaviour:
@@ -49868,6 +49963,7 @@ MonoBehaviour:
   - {fileID: 1975205244}
   - {fileID: 1521216139}
   lancio_moduli: {fileID: 0}
+  radarPlanetario: {fileID: 1416871838}
 --- !u!1 &1327538268
 GameObject:
   m_ObjectHideFlags: 0
@@ -52226,6 +52322,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasFinale: {fileID: 1649254939}
+--- !u!1 &1416871838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 21285ba1c605b7542a1897b4f7a734ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 19281028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1416871841
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416871838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 21285ba1c605b7542a1897b4f7a734ee, type: 3}
 --- !u!1 &1417855671
 GameObject:
   m_ObjectHideFlags: 0
@@ -54765,7 +54881,7 @@ PrefabInstance:
     - target: {fileID: 3298297548161677073, guid: 7b1a72b12b43e564d9e013a6afe9edd4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3298297548161677073, guid: 7b1a72b12b43e564d9e013a6afe9edd4,
         type: 3}
@@ -65157,6 +65273,7 @@ MonoBehaviour:
   - {fileID: 597521778}
   - {fileID: 2085049756}
   - {fileID: 256389369}
+  - {fileID: 303226692}
   tastiPlanetarioSubmode:
   - {fileID: 653699996}
   - {fileID: 2127116942}
@@ -76546,7 +76663,7 @@ Transform:
   - {fileID: 28727810}
   - {fileID: 1609341109}
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2015227323
 MonoBehaviour:
@@ -86310,9 +86427,8 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1046599446}
-  - {fileID: 7086480720796877716}
   - {fileID: 4564240045098141020}
+  - {fileID: 1046599446}
   - {fileID: 4151384341933461672}
   - {fileID: 6828042539364767839}
   - {fileID: 636440048}
@@ -103735,6 +103851,7 @@ Transform:
   - {fileID: 6387702427153793082}
   - {fileID: 658638931744693936}
   - {fileID: 4164329621155177804}
+  - {fileID: 19281029}
   m_Father: {fileID: 543450652276882690}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104514,7 +104631,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4160392143450568859
 GameObject:
@@ -105724,7 +105841,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4566366300456244474
 MeshFilter:
@@ -113517,7 +113634,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6836734367588036387
 GameObject:
@@ -135175,9 +135292,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7571654917315680558}
-  m_LocalRotation: {x: -0.077348486, y: -0.077348486, z: 0.7028636, w: 0.7028636}
-  m_LocalPosition: {x: 0.00402, y: -0, z: 0.00001}
-  m_LocalScale: {x: 0.3636364, y: 0.36363643, z: 0.50000006}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.00005, y: 0.0101, z: 0.00162}
+  m_LocalScale: {x: 1.8692329, y: 1.8692335, z: 2.5701957}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1222510845}
@@ -135189,9 +135306,9 @@ Transform:
   - {fileID: 193941840}
   - {fileID: 94450450}
   - {fileID: 792273366}
-  m_Father: {fileID: 543450651952011535}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -12.56, z: 90}
+  m_Father: {fileID: 19281029}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &7111995931840752421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135920,6 +136037,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 606d40ca6b8311d449d7c0ffbbc7d8f4, type: 2}
   - {fileID: 2100000, guid: f1ef99548ee4c2242b3f62f48c055125, type: 2}
   matSpecials: []
+  planetario2D: {fileID: 7571654917315680558}
   startSequence: {fileID: 1677719765}
 --- !u!114 &7316193875336660297
 MonoBehaviour:
@@ -136781,7 +136899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &7574453535048548907
 MeshFilter:
   m_ObjectHideFlags: 0

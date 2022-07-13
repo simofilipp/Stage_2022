@@ -6,6 +6,9 @@ public class PianetiManager : MonoBehaviour
 {
     public List<Modulo> pianeti_modulo;
     [SerializeField] LancioModuli lancio_moduli;
+    [SerializeField] GameObject radarPlanetario;
+    bool leanSclaInCorso;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,47 +23,64 @@ public class PianetiManager : MonoBehaviour
 
     public void Scala1X()
     {
-        if(LancioModuli.activeOrbitScale != 1)
+        if(LancioModuli.activeOrbitScale != 1 && leanSclaInCorso == false)
         {
-
+            
             LancioModuli.activeOrbitScale = 1;
             foreach(Modulo modulo in pianeti_modulo)
             {
                 if (modulo.isInOrbit)
                 {
-                    LeanTween.scale(modulo.gameObject, modulo.scalaBase, 3).setEaseOutQuart();
+                    leanSclaInCorso = true;
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase, .2f).setEaseOutQuart().setOnComplete(()=>
+                    {
+                        leanSclaInCorso = false;
+                    });
                 }
             }
         }
     }
     public void Scala2X()
     {
-        if (LancioModuli.activeOrbitScale != 3)
+        if (LancioModuli.activeOrbitScale != 3 && leanSclaInCorso == false)
         {
-
+            
             LancioModuli.activeOrbitScale = 3;
             foreach (Modulo modulo in pianeti_modulo)
             {
                 if (modulo.isInOrbit)
                 {
-                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*3, 3).setEaseOutQuart();
+                    leanSclaInCorso = true;
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*3, .2f).setEaseOutQuart().setOnComplete(() =>
+                    {
+                        leanSclaInCorso = false;
+                    });
                 }
             }
         }
     }
     public void Scala3X()
     {
-        if (LancioModuli.activeOrbitScale != 5)
+        if (LancioModuli.activeOrbitScale != 5 && leanSclaInCorso == false)
         {
-
+            
             LancioModuli.activeOrbitScale = 5;
             foreach (Modulo modulo in pianeti_modulo)
             {
                 if (modulo.isInOrbit)
                 {
-                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*5, 3).setEaseOutQuart();
+                    leanSclaInCorso = true;
+                    LeanTween.scale(modulo.gameObject, modulo.scalaBase*5, .2f).setEaseOutQuart().setOnComplete(() =>
+                    {
+                        leanSclaInCorso = false;
+                    });
                 }
             }
         }
+    }
+
+    public void RuotaPlanetario()
+    {
+        LeanTween.rotateAroundLocal(radarPlanetario, Vector3.forward, 180, 2f);
     }
 }
