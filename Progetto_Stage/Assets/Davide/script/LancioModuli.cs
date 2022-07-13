@@ -7,6 +7,8 @@ public class LancioModuli : MonoBehaviour
     public bool moduloIsColliding = false;
     public bool moduloInViaggio = false;
 
+    public static float activeOrbitScale = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +67,7 @@ public class LancioModuli : MonoBehaviour
         LeanTween.move(other.gameObject, module.posizioneSuOrbita, module.tempoAdOrbita).setEaseInQuart().setOnStart(SpegniTrigger).setOnComplete(() =>
         {
             module.isInOrbit = true;
-            LeanTween.scale(other.gameObject, other.transform.localScale *= module.scalaFinale, 0.6f).setOnComplete(() =>
+            LeanTween.scale(other.gameObject, other.transform.localScale *= (module.scalaFinale*activeOrbitScale), 0.6f).setOnComplete(() =>
             {
                 if (module.hasTrail)
                 {
