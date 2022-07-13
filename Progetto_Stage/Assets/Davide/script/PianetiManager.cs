@@ -7,6 +7,7 @@ public class PianetiManager : MonoBehaviour
     public List<Modulo> pianeti_modulo;
     [SerializeField] LancioModuli lancio_moduli;
     [SerializeField] GameObject radarPlanetario;
+    [SerializeField] GameObject canvasPianeti;
     bool leanSclaInCorso;
     bool rotazioneRadar;
 
@@ -87,5 +88,10 @@ public class PianetiManager : MonoBehaviour
             rotazioneRadar = true;
             LeanTween.rotateAroundLocal(radarPlanetario, Vector3.forward, 180, 2f).setOnComplete(() => { rotazioneRadar = false; });
         }
+    }
+
+    public void AccendiSpegniCanvas()
+    {
+        canvasPianeti.SetActive(!canvasPianeti.activeSelf);
     }
 }
