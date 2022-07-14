@@ -8,6 +8,7 @@ public class PianetiManager : MonoBehaviour
     [SerializeField] LancioModuli lancio_moduli;
     [SerializeField] GameObject radarPlanetario;
     [SerializeField] GameObject canvasPianeti;
+    [SerializeField] GameObject orbite;
     bool leanSclaInCorso;
     bool rotazioneRadar;
 
@@ -93,5 +94,10 @@ public class PianetiManager : MonoBehaviour
     public void AccendiSpegniCanvas()
     {
         canvasPianeti.SetActive(!canvasPianeti.activeSelf);
+    }
+
+    public void AccendiSpegniOrbite()
+    {
+        orbite.SetActive(!orbite.activeSelf);
     }
 }
