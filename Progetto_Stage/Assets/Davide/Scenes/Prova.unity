@@ -55482,24 +55482,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2015227323}
-        m_TargetAssemblyTypeName: OptionsPlanetarium, Assembly-CSharp
-        m_MethodName: EnableISS
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1327009240}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BottoneSelezionato
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2036700559}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2015227323}
+        m_TargetAssemblyTypeName: OptionsPlanetarium, Assembly-CSharp
+        m_MethodName: EnablePlanet
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4307838832415629301}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -59312,7 +59312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490376746}
   m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: -1.4181197, y: -0.13668403, z: 0.5152713}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59361,7 +59361,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4.5
+  m_Time: Infinity
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -65744,7 +65744,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4.5
+  m_Time: Infinity
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -67372,24 +67372,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2015227323}
-        m_TargetAssemblyTypeName: OptionsPlanetarium, Assembly-CSharp
-        m_MethodName: EnableHubble
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1327009240}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BottoneSelezionato
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1984808149}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2015227323}
+        m_TargetAssemblyTypeName: OptionsPlanetarium, Assembly-CSharp
+        m_MethodName: EnablePlanet
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 929552310}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
