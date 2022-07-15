@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> bottoniScalaPianeti;
+    [SerializeField] List<GameObject> bottoniScalaLuna;
     [SerializeField] GameObject table;
     [SerializeField] Material materialSelected;
     [SerializeField] Material materialNormal;
@@ -53,6 +54,14 @@ public class GameManager : MonoBehaviour
     public void SelezionaBottoneScalaPianeti(GameObject bottoneSelezionato)
     {
         foreach(GameObject bottoneDaCambiare in bottoniScalaPianeti)
+        {
+            bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialNormal;
+        }
+        bottoneSelezionato.GetComponent<MeshRenderer>().material = materialSelected;
+    }
+    public void SelezionaBottoneScalaLuna(GameObject bottoneSelezionato)
+    {
+        foreach (GameObject bottoneDaCambiare in bottoniScalaLuna)
         {
             bottoneDaCambiare.GetComponent<MeshRenderer>().material = materialNormal;
         }

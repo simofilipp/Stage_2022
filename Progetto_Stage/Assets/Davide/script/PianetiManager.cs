@@ -9,13 +9,15 @@ public class PianetiManager : MonoBehaviour
     [SerializeField] GameObject radarPlanetario;
     [SerializeField] GameObject canvasPianeti;
     [SerializeField] GameObject orbite;
+    [SerializeField] GameObject luna;
+    Vector3 luna_initial_scale;
     bool leanSclaInCorso;
     bool rotazioneRadar;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        luna_initial_scale = luna.transform.localScale;
     }
 
     // Update is called once per frame
@@ -99,5 +101,10 @@ public class PianetiManager : MonoBehaviour
     public void AccendiSpegniOrbite()
     {
         orbite.SetActive(!orbite.activeSelf);
+    }
+
+    public void ScalaLuna(int scala)
+    {
+        luna.transform.localScale = luna_initial_scale *scala;
     }
 }
