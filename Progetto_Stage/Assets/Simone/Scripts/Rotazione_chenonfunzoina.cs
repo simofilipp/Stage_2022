@@ -11,8 +11,8 @@ public class Rotazione_chenonfunzoina : MonoBehaviour
     void Start()
     {
         //applico una rotazione sia alla luna che ad essa attorno alla terra
-        luna.LeanRotateAround(luna.transform.up, -360f, 100f).setRepeat(-1);
-        this.transform.LeanRotateAround(transform.up, -360f, 100f).setRepeat(-1);
+        luna.LeanRotateAround(luna.transform.up, -360f, 2430f).setRepeat(-1);
+        this.transform.LeanRotateAround(transform.up, -360f, 2430f).setRepeat(-1);
     }
 
     // Update is called once per frame
