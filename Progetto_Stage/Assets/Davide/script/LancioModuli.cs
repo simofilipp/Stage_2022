@@ -84,7 +84,15 @@ public class LancioModuli : MonoBehaviour
                 other.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
                 if (module.isSatellite)
                 {
-                    module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                    if (!module.isGPS)
+                    {
+                        module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.up, module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                    }
+                    else
+                    {
+                        module.posizioneSuOrbita.parent.LeanRotateAroundLocal(Vector3.forward, module.direzioneOrbita, other.GetComponent<Modulo>().velRotazioneOrbita).setRepeat(-1);
+                    }
+                    
                 }
                 if (module.velRotazioneSelf != 0)
                 {

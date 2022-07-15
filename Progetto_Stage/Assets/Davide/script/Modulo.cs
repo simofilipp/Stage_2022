@@ -31,6 +31,7 @@ public class Modulo : MonoBehaviour
     public bool isSatellite;
     public bool isInOrbit;
     public bool isAsteroid;
+    public bool isGPS;
 
     public GameObject pianeta2D;
 
