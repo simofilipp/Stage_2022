@@ -6,7 +6,10 @@ using TMPro;
 public class KeypadManager : MonoBehaviour
 {
     TMP_Text m_Text;
+    bool staCancellando;
     [SerializeField] TMP_Text m_InputField;
+
+    int counterDelet=0;
     private void Awake()
     {
         m_Text= GetComponentInChildren<TMP_Text>();
@@ -53,6 +56,12 @@ public class KeypadManager : MonoBehaviour
         {
             m_InputField.text=m_InputField.text.Substring(0,m_InputField.text.Length-1);
         }
+        StartCoroutine(DeleteAll(m_InputField));
+    }
+
+    public void StopDeleting()
+    {
+        staCancellando=false;
     }
 
     public void Enter()
@@ -61,5 +70,27 @@ public class KeypadManager : MonoBehaviour
         {
             APIManager.instance.GetCountryData(m_InputField.text);
         }
+    }
+
+    IEnumerator DeleteAll(TMP_Text testo)
+    {
+        staCancellando = true;
+        while (counterDelet < 2)
+        {
+            yield return new WaitForSeconds(1f);
+            if (staCancellando)
+            {
+                counterDelet += 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+        if (counterDelet >= 2)
+        {
+            testo.text = "";
+        }
+        counterDelet = 0;
     }
 }
