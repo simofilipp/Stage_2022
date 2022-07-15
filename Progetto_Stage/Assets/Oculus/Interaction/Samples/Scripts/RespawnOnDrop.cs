@@ -44,7 +44,7 @@ namespace Oculus.Interaction.Samples
 
         protected virtual void Update()
         {
-            if (transform.position.y < _yThresholdForRespawn)
+            if (transform.position.y < _initialPosition.y-_yThresholdForRespawn)
             {
                 transform.position = _initialPosition;
                 transform.rotation = _initialRotation;

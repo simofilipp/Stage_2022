@@ -20,17 +20,17 @@ public class ParentMovimento_manager : MonoBehaviour
     [SerializeField]
     GameObject parent_spostamento;
 
-    [SerializeField]
-    GameObject planetario;
+   
 
     [SerializeField]
-    GameObject pianeta;
-
-    [SerializeField]
-    GameObject spawnPianeti;
+    GameObject planetInteractable;
 
     [SerializeField]
     GameObject triggerOrbita;
+    [SerializeField]
+    GameObject canvasContoRovescia;
+    [SerializeField]
+    GameObject canvasPianeti;
 
 
     bool arrivato;
@@ -39,8 +39,7 @@ public class ParentMovimento_manager : MonoBehaviour
 
 
 
-    [SerializeField]
-    GameObject destinazione;
+  
   
     
 
@@ -50,50 +49,55 @@ public class ParentMovimento_manager : MonoBehaviour
         piattaforma.transform.parent = parent_spostamento.transform;
         scifiConsole.transform.parent = parent_spostamento.transform;
         tablet.transform.parent = parent_spostamento.transform;
-        planetario.transform.parent = parent_spostamento.transform;
-        spawnPianeti.transform.parent = parent_spostamento.transform;
+        planetInteractable.transform.parent = parent_spostamento.transform;
         triggerOrbita.transform.parent = parent_spostamento.transform;
+        canvasContoRovescia.transform.parent = parent_spostamento.transform;
+        canvasPianeti.transform.parent = parent_spostamento.transform;
     }
-
-
-    public void OnTriggerEnter(Collider other)
+    public void Viaggio(Transform destinazione)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.tag == "InitialInteractor")
-        {
-            foreach(var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
-            {
-                pianetino2d.enabled = false;
-            }
-            SetParentViaggio();
-            var module = pianeta.GetComponent<Modulo>();
-            LeanTween.resumeAll();
-            module.PauseTween();
-            
-            parent_spostamento.LeanMove(destinazione.transform.position, 5f).setEaseInOutQuart().setOnComplete(() =>
-            {
-                parent_spostamento.transform.parent= destinazione.transform;
-                parent_spostamento.transform.LeanRotate(destinazione.transform.rotation.eulerAngles, 3f).setOnComplete(() => 
-                { 
-                    parent_spostamento.LeanRotateAroundLocal(Vector3.up, -90, 3f);
-                    foreach (var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
-                    {
-                        pianetino2d.enabled = true;
-                    }
-
-                });
-                
-                module.RuotaSole();
-                
-            });
-
-            //StartCoroutine(Segui());
-
-            //parent_spostamento.LeanMove(destinazione.transform.position,10);
-            
-        }
-       
+        SetParentViaggio();
+        parent_spostamento.transform.position = destinazione.position;
     }
+
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    Debug.Log(other.gameObject.name);
+    //    if (other.gameObject.tag == "InitialInteractor")
+    //    {
+    //        foreach(var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
+    //        {
+    //            pianetino2d.enabled = false;
+    //        }
+    //        SetParentViaggio();
+    //        var module = pianeta.GetComponent<Modulo>();
+    //        LeanTween.resumeAll();
+    //        module.PauseTween();
+            
+    //        parent_spostamento.LeanMove(destinazione.transform.position, 5f).setEaseInOutQuart().setOnComplete(() =>
+    //        {
+    //            parent_spostamento.transform.parent= destinazione.transform;
+    //            parent_spostamento.transform.LeanRotate(destinazione.transform.rotation.eulerAngles, 3f).setOnComplete(() => 
+    //            { 
+    //                parent_spostamento.LeanRotateAroundLocal(Vector3.up, -90, 3f);
+    //                foreach (var pianetino2d in planetario.GetComponentsInChildren<BoxCollider>())
+    //                {
+    //                    pianetino2d.enabled = true;
+    //                }
+
+    //            });
+                
+    //            module.RuotaSole();
+                
+    //        });
+
+    //        //StartCoroutine(Segui());
+
+    //        //parent_spostamento.LeanMove(destinazione.transform.position,10);
+            
+    //    }
+       
+    //}
 
    
     
