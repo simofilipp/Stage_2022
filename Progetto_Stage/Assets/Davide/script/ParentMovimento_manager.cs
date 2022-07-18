@@ -32,6 +32,12 @@ public class ParentMovimento_manager : MonoBehaviour
     [SerializeField]
     GameObject canvasPianeti;
 
+    [SerializeField]
+    GameObject pianoPiccolo;
+
+    [SerializeField]
+    CollisionDetection collisionDet_;
+
 
     bool arrivato;
 
@@ -53,11 +59,12 @@ public class ParentMovimento_manager : MonoBehaviour
         triggerOrbita.transform.parent = parent_spostamento.transform;
         canvasContoRovescia.transform.parent = parent_spostamento.transform;
         canvasPianeti.transform.parent = parent_spostamento.transform;
+        pianoPiccolo.transform.parent = parent_spostamento.transform;
     }
-    public void Viaggio(Transform destinazione)
+    public void Viaggio()
     {
         SetParentViaggio();
-        parent_spostamento.transform.position = destinazione.position;
+        parent_spostamento.transform.position = collisionDet_.destinazioneScelta;
     }
 
     //public void OnTriggerEnter(Collider other)
