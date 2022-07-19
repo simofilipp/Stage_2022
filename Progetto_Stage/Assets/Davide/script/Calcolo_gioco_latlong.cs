@@ -9,7 +9,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     [SerializeField] GameObject cursore;
     [SerializeField] GameObject terra;
     [SerializeField] GameObject puntoPrefab;
-    [SerializeField] Transform coordinateZero;
+   
 
     float lat,lng;
     // Start is called before the first frame update
@@ -27,19 +27,22 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     {
         if (cursore.activeSelf)
         {
-            var puntoIstanziato= Instantiate(puntoPrefab, cursore.transform.position, coordinateZero.rotation);
+            var puntoIstanziato= Instantiate(puntoPrefab, cursore.transform.position, terra.transform.rotation);
             puntoIstanziato.transform.parent = terra.transform;
             float proiezioneRaggio = Mathf.Sqrt(((puntoIstanziato.transform.position.x - terra.transform.position.x) * (puntoIstanziato.transform.position.x - terra.transform.position.x))
                 + ((puntoIstanziato.transform.position.z - terra.transform.position.z) * (puntoIstanziato.transform.position.z - terra.transform.position.z)));
             float raggio = Mathf.Sqrt((proiezioneRaggio * proiezioneRaggio) + (puntoIstanziato.transform.position.y * puntoIstanziato.transform.position.y));
 
-            float distanzaPC = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, coordinateZero.position.y, puntoIstanziato.transform.position.z), coordinateZero.position);
+            //float distanzaPC = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, coordinateZero.position.y, puntoIstanziato.transform.position.z), coordinateZero.position);
 
-            lat = Mathf.Asin((coordinateZero.position.y) / raggio) * Mathf.Rad2Deg + Mathf.Asin((puntoIstanziato.transform.position.y) / raggio) * Mathf.Rad2Deg;
+            lat = Mathf.Asin((puntoIstanziato.transform.position.y) / raggio) * Mathf.Rad2Deg;
+            float raggioProiet = Mathf.Cos(lat) * raggio;
             float proiezionePunto = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, terra.transform.position.y, puntoIstanziato.transform.position.z), terra.transform.position);
-            lng = Mathf.Acos(((distanzaPC * distanzaPC) - (proiezionePunto * proiezionePunto) - (raggio * raggio)) / (-2 * raggio * raggio * proiezionePunto)) * Mathf.Rad2Deg;
+            lng = Mathf.Acos(((puntoIstanziato.transform.position.x* puntoIstanziato.transform.position.x)- (puntoIstanziato.transform.position.z * puntoIstanziato.transform.position.z)-(raggioProiet*raggioProiet))
+                /(-2*raggio*raggioProiet)
+                ) * Mathf.Rad2Deg; ;
 
-            Debug.Log(distanzaPC);
+           // Debug.Log(distanzaPC);
             Debug.Log(proiezionePunto);
 
 
