@@ -31,10 +31,12 @@ public class StartSequenceManager : MonoBehaviour
     [SerializeField] List<GameObject> tastiOpzioniEarthSystem;
     [SerializeField] List<GameObject> tastiOpzioniSolarSystem;
     [SerializeField] List<GameObject> tastiPlanetarioSubmode;
+    [SerializeField] List<GameObject> tastiFreeModeGioco;
     [SerializeField] Istanzia_istogrammi ii;
     [SerializeField] GameObject tavolo;
     [SerializeField] GameObject logo;
     Vector3 opzioniinitialScale;
+   
 
     bool bottoniPianetiAccesi;
 
@@ -47,6 +49,7 @@ public class StartSequenceManager : MonoBehaviour
     {
         actualMode = Mode.Initial;
         moonScale=luna.transform.localScale;
+        opzioniinitialScale = tastiOpzioniFreeMode[0].transform.localScale;
     }
 
     public void StartExperience()
@@ -140,6 +143,32 @@ public class StartSequenceManager : MonoBehaviour
             //}
             //    );
         });
+
+    }
+
+    public void StartGiocoFreeMode()
+    {
+       foreach(var tasto in tastiOpzioniFreeMode)
+        {
+            NascondiBottone(tasto);
+        }
+       foreach(var tastoGioco in tastiFreeModeGioco)
+        {
+            GeneraBottone(tastoGioco,opzioniinitialScale);
+        }
+
+    }
+    public void QuitGiocoFreeMode()
+    {
+        foreach (var tasto in tastiFreeModeGioco)
+        {
+            NascondiBottone(tasto);
+        }
+        //da mettere in un set on complete
+        foreach (var tastoOpzione in tastiOpzioniFreeMode)
+        {
+            GeneraBottone(tastoOpzione,opzioniinitialScale);
+        }
 
     }
     public void StartPlanetariumMode()
@@ -270,6 +299,15 @@ public class StartSequenceManager : MonoBehaviour
         t.transform.localScale = new Vector3(0,0,t.transform.localScale.z);
         t.SetActive(true);
         t.LeanScale(initialButtonScale, 0.5f).setEaseOutBack();//.setOnComplete(() => { t.transform.GetChild(1).GetChild(0).LeanMoveLocalZ(-0.3f, 0.5f); });
+        
+    }
+
+     public void GeneraBottone(GameObject t,Vector3 scalaFinale)
+    {
+        
+        t.transform.localScale = new Vector3(0,0,t.transform.localScale.z);
+        t.SetActive(true);
+        t.LeanScale(scalaFinale, 0.5f).setEaseOutBack();//.setOnComplete(() => { t.transform.GetChild(1).GetChild(0).LeanMoveLocalZ(-0.3f, 0.5f); });
         
     }
     

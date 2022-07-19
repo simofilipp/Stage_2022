@@ -33,14 +33,18 @@ public class Calcolo_gioco_latlong : MonoBehaviour
                 + ((puntoIstanziato.transform.position.z - terra.transform.position.z) * (puntoIstanziato.transform.position.z - terra.transform.position.z)));
             float raggio = Mathf.Sqrt((proiezioneRaggio * proiezioneRaggio) + (puntoIstanziato.transform.position.y * puntoIstanziato.transform.position.y));
 
-            lng = Mathf.Acos((((coordinateZero.position.z- puntoIstanziato.transform.position.z)* (coordinateZero.position.z - puntoIstanziato.transform.position.z))+ ((coordinateZero.position.x - puntoIstanziato.transform.position.x) * (coordinateZero.position.x - puntoIstanziato.transform.position.x))
-                - (raggio * raggio) - ((puntoIstanziato.transform.position.x* puntoIstanziato.transform.position.x) + (puntoIstanziato.transform.position.z* puntoIstanziato.transform.position.z))) / (-2 * raggio) * Mathf.Sqrt((puntoIstanziato.transform.position.x * puntoIstanziato.transform.position.x) + (puntoIstanziato.transform.position.z * puntoIstanziato.transform.position.z)))*Mathf.Rad2Deg;
+            float distanzaPC = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, coordinateZero.position.y, puntoIstanziato.transform.position.z), coordinateZero.position);
 
+            lat = Mathf.Asin((coordinateZero.position.y) / raggio) * Mathf.Rad2Deg + Mathf.Asin((puntoIstanziato.transform.position.y) / raggio) * Mathf.Rad2Deg;
+            float proiezionePunto = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, terra.transform.position.y, puntoIstanziato.transform.position.z), terra.transform.position);
+            lng = Mathf.Acos(((distanzaPC * distanzaPC) - (proiezionePunto * proiezionePunto) - (raggio * raggio)) / (-2 * raggio * raggio * proiezionePunto)) * Mathf.Rad2Deg;
 
+            Debug.Log(distanzaPC);
+            Debug.Log(proiezionePunto);
 
 
             //lng = Mathf.Asin((coordinateZero.position.z/Mathf.Sqrt((coordinateZero.position.z* coordinateZero.position.z)+(coordinateZero.position.x * coordinateZero.position.x))))*Mathf.Rad2Deg + Mathf.Asin((puntoIstanziato.transform.position.z / Mathf.Sqrt((puntoIstanziato.transform.position.z * puntoIstanziato.transform.position.z) + (puntoIstanziato.transform.position.x * puntoIstanziato.transform.position.x))))*Mathf.Rad2Deg;
-            lat = Mathf.Asin((coordinateZero.position.y) / raggio) * Mathf.Rad2Deg + Mathf.Asin((puntoIstanziato.transform.position.y) / raggio)*Mathf.Rad2Deg;
+
             Debug.LogWarning("lat: "+lat+"\nlong: "+lng);
         }
     }
