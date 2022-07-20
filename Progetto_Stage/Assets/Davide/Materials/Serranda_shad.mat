@@ -92,7 +92,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Dissolvenza_animazione: 1
+    - _Dissolvenza_animazione: -0.20000005
     - _Dissolvenza_spessore: 0.01
     - _DstBlend: 0
     - _EnvironmentReflections: 1
