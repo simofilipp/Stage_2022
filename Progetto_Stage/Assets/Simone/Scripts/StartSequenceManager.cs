@@ -85,11 +85,15 @@ public class StartSequenceManager : MonoBehaviour
 
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
-        LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
-        {
-            solve.SetFloat("_Dissolvenza_animazione", value);
 
-        }).setOnComplete(() =>
+        //LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
+        //{
+        //    solve.SetFloat("_Dissolvenza_animazione", value);
+
+        //})
+
+        pannelli.LeanColor(Color.black,dissolveTimeGabbia)
+            .setOnComplete(() =>
         {
             pannelli.SetActive(false);
             //lasciare attivo solo il tasto per tornare alla fase iniziale
@@ -194,11 +198,15 @@ public class StartSequenceManager : MonoBehaviour
         bottoneSpegniTavolo.SetActive(false);
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
-        LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
-        {
-            solve.SetFloat("_Dissolvenza_animazione", value);
 
-        }).setOnComplete(() =>
+        //LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
+        //{
+        //    solve.SetFloat("_Dissolvenza_animazione", value);
+
+        //})
+
+        pannelli.LeanColor(Color.black, dissolveTimeGabbia)
+    .setOnComplete(() =>
         {
             pannelli.SetActive(false);
 
@@ -239,11 +247,15 @@ public class StartSequenceManager : MonoBehaviour
         DisattivaTastiSubMode();
         ponte.SetActive(false);
         var solve = pannelli.GetComponent<MeshRenderer>().material;
-        LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
-        {
-            solve.SetFloat("_Dissolvenza_animazione", value);
 
-        }).setOnComplete(() =>
+        //LeanTween.value(-0.2f, 1f, dissolveTimeGabbia).setOnUpdate((float value) =>
+        //{
+        //    solve.SetFloat("_Dissolvenza_animazione", value);
+
+        //})
+
+        pannelli.LeanColor(Color.black, dissolveTimeGabbia)
+.setOnComplete(() =>
         {
             pannelli.SetActive(false);
             //holoEarth.LeanScale(Vector3.zero, 2f).setOnComplete(() =>

@@ -6,7 +6,8 @@ public class tavolo_script : MonoBehaviour
 {
    
     [SerializeField] GameObject console;
-    
+    [SerializeField] GameObject table;
+
     [SerializeField] List<Material> tavoloMats;
     [SerializeField] List<Material> matSpecials;
     [SerializeField] GameObject planetario2D;
@@ -16,19 +17,23 @@ public class tavolo_script : MonoBehaviour
 
 
     [SerializeField] StartSequenceManager startSequence;
-    
-    
+
+    Vector3 tavoloInitialScale;
     // Start is called before the first frame update
     private void Awake()
     {
-        foreach (var renderer in tavoloMats)
-        {
-            renderer.SetFloat("_Dissolvenza_animazione", 1);
-        }
-        foreach (var renderer in matSpecials)
-        {
-            renderer.SetFloat("_Dissolvenza_animazione", -0.2f);
-        }
+        //foreach (var renderer in tavoloMats)
+        //{
+        //    renderer.SetFloat("_Dissolvenza_animazione", 1);
+        //}
+        //foreach (var renderer in matSpecials)
+        //{
+        //    renderer.SetFloat("_Dissolvenza_animazione", -0.2f);
+        //}
+
+        tavoloInitialScale = table.transform.localScale;
+        table.transform.localScale = Vector3.zero;
+        table.SetActive(true);
     }
     // Start is called before the first frame update
     void Start()
@@ -52,23 +57,10 @@ public class tavolo_script : MonoBehaviour
     IEnumerator EnableTabletAndTable()
     {
         yield return new WaitForSeconds(4.1f);
-       
 
 
-        foreach (var renderer in tavoloMats)
-        {
-            LeanTween.value(1f, -0.2f, 4f).setOnUpdate((float value) =>
-            {
-                renderer.SetFloat("_Dissolvenza_animazione", value);
-            });
-        }
-        foreach (var renderer in matSpecials)
-        {
-            LeanTween.value(-0.2f, 1f, 4f).setOnUpdate((float value) =>
-            {
-                renderer.SetFloat("_Dissolvenza_animazione", value);
-            });
-        }
+        table.transform.LeanScale(tavoloInitialScale,1.5f).setEaseOutQuart();
+
         yield return new WaitForSeconds(4.5f);
         if(startSequenceManager.actualMode == Mode.SolarSystemMode)
         {
