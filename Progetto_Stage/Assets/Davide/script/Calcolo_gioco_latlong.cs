@@ -9,7 +9,10 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     [SerializeField] GameObject cursore;
     [SerializeField] GameObject terra;
     [SerializeField] GameObject puntoPrefab;
-   
+
+    public float latPuntoDaTrovare;
+    public float lngPuntoDaTrovare;
+
 
     float lat,lng;
     // Start is called before the first frame update
@@ -68,19 +71,63 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             Vector3 raggio = puntoIstanziato.transform.position - terra.transform.position;
             float raggioValue = Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
             Vector3 nuoveCoordinateP = Vector3.zero;
+            
             Debug.Log(raggio.magnitude);
             Debug.Log(raggioValue);
             nuoveCoordinateP.x = Vector3.Dot(raggio, terra.transform.right.normalized);
             nuoveCoordinateP.y = Vector3.Dot(raggio, terra.transform.up.normalized);
             nuoveCoordinateP.z = Vector3.Dot(raggio, terra.transform.forward.normalized);
+            Debug.LogWarning(nuoveCoordinateP);
 
             lat = Mathf.Asin((nuoveCoordinateP.y) / raggioValue) * Mathf.Rad2Deg;
             
 
             lng = Mathf.Atan2(Mathf.Abs(nuoveCoordinateP.z), Mathf.Abs(nuoveCoordinateP.x)) * Mathf.Rad2Deg;
 
+            if (nuoveCoordinateP.x > 0)
+            {
+                if (nuoveCoordinateP.z > 0)
+                {
+                    lng = lng - 180;
+                }
+                else
+                {
+                    lng = 180 - lng;
+                }
+            }
+            else
+            {
+                if (nuoveCoordinateP.z > 0)
+                {
+                    lng = -lng;
+                }
+                
+            }
             
             Debug.LogWarning("lat: " + lat + "\nlong: " + lng);
+
+            float latInRad= lat * Mathf.Deg2Rad;
+            float longInRad = lng * Mathf.Deg2Rad;
+
+            float latNotaInRad =latPuntoDaTrovare * Mathf.Deg2Rad;
+            float lngNotaInRad = lngPuntoDaTrovare * Mathf.Deg2Rad;
+
+           
+            //Questa é la distanza tra i due punti sulla sfera considerando il suo raggio
+            float distanceTwoPoint = raggioValue * Mathf.Acos((Mathf.Sin(lat) * Mathf.Sin(latPuntoDaTrovare)) + (Mathf.Cos(lat) * Mathf.Cos(latPuntoDaTrovare) * Mathf.Cos(lngPuntoDaTrovare - lng)));
+            //Questa é la distanza tra i due punti sulla sfera considerando il raggio terrestre
+            float distanceTwoPointOnEarth = 3963.0f * Mathf.Acos((Mathf.Sin(lat) * Mathf.Sin(latPuntoDaTrovare)) + (Mathf.Cos(lat) * Mathf.Cos(latPuntoDaTrovare) * Mathf.Cos(lngPuntoDaTrovare - lng)));
+            distanceTwoPointOnEarth *= 1.609344f;
+
+
+            //Calcolo in radianti
+            float deltaLat = (latInRad - latNotaInRad);
+            float deltalng = (longInRad - lngNotaInRad);
+            float a = Mathf.Pow(Mathf.Sin(deltaLat / 2), 2)+(Mathf.Cos(latInRad)*Mathf.Cos(latNotaInRad)*Mathf.Pow(Mathf.Sin(deltalng/2),2));
+            float c = 2 * Mathf.Asin(Mathf.Sqrt(a));
+            float distanzaCalcolataConIRadianti = c * 6371f;
+            Debug.Log("distanza da genova: " + distanceTwoPointOnEarth);
+            Debug.Log("distanza da genova: " + distanzaCalcolataConIRadianti);
         }
     }
 }
