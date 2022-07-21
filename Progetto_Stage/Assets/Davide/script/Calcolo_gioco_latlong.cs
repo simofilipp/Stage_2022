@@ -59,4 +59,28 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             Debug.LogWarning("lat: "+lat+"\nlong: "+lng);
         }
     }
+    public void RilevaPinchLocal()
+    {
+        if (cursore.activeSelf)
+        {
+            var puntoIstanziato = Instantiate(puntoPrefab, cursore.transform.position, terra.transform.rotation);
+
+            Vector3 raggio = puntoIstanziato.transform.position - terra.transform.position;
+            float raggioValue = Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
+            Vector3 nuoveCoordinateP = Vector3.zero;
+            Debug.Log(raggio.magnitude);
+            Debug.Log(raggioValue);
+            nuoveCoordinateP.x = Vector3.Dot(raggio, terra.transform.right.normalized);
+            nuoveCoordinateP.y = Vector3.Dot(raggio, terra.transform.up.normalized);
+            nuoveCoordinateP.z = Vector3.Dot(raggio, terra.transform.forward.normalized);
+
+            lat = Mathf.Asin((nuoveCoordinateP.y) / raggioValue) * Mathf.Rad2Deg;
+            
+
+            lng = Mathf.Atan2(Mathf.Abs(nuoveCoordinateP.z), Mathf.Abs(nuoveCoordinateP.x)) * Mathf.Rad2Deg;
+
+            
+            Debug.LogWarning("lat: " + lat + "\nlong: " + lng);
+        }
+    }
 }
