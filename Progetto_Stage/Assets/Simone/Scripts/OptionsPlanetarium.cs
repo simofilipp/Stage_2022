@@ -9,7 +9,7 @@ public class OptionsPlanetarium : MonoBehaviour
     [SerializeField] GameObject hubble;
     [SerializeField] LancioModuli lancioModuli;
     [SerializeField] TMP_Text countdown;
-    float timer = 15f;
+    float timer = 30f;
 
     public static bool moduloAttivo;
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class OptionsPlanetarium : MonoBehaviour
     {
         countdown.text = timer.ToString();
         StartCoroutine(Timer());
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(30f);
         if (planet.activeSelf && !lancioModuli.moduloInViaggio)
         {
             //manda in orbita automaticamente
@@ -68,6 +68,6 @@ public class OptionsPlanetarium : MonoBehaviour
 
         }
         countdown.text = "";
-        timer = 15f;
+        timer = 30f;
     }
 }

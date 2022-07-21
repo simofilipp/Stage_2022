@@ -65,6 +65,11 @@ public class ParentMovimento_manager : MonoBehaviour
     {
         SetParentViaggio();
         parent_spostamento.transform.position = collisionDet_.destinazioneScelta;
+    }  
+    public void ViaggioBase()
+    {
+        SetParentViaggio();
+        parent_spostamento.transform.position = Vector3.zero;
     }
 
     //public void OnTriggerEnter(Collider other)

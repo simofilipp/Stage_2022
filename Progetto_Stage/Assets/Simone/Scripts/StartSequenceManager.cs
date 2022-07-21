@@ -57,10 +57,7 @@ public class StartSequenceManager : MonoBehaviour
 
         NascondiBottone(tastoSTART);
         NascondiBottone(logo);
-        foreach (var tasto in tastiModalita)
-        {
-            GeneraBottone(tasto);
-        }
+
         ologrammiMode.SetActive(true);
         StartCoroutine(SpawnHolograms());
     
@@ -362,12 +359,16 @@ public class StartSequenceManager : MonoBehaviour
     }
     IEnumerator SpawnHolograms()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         for (int i = 0; i < ologrammiMode.transform.childCount; i++)
         {
-            GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, 1);
+            GeneraBottone(ologrammiMode.transform.GetChild(i).gameObject, .3f);
             yield return null;
             //yield return new WaitForSeconds(1f);
+        }
+        foreach (var tasto in tastiModalita)
+        {
+            GeneraBottone(tasto, 1);
         }
     }
 
