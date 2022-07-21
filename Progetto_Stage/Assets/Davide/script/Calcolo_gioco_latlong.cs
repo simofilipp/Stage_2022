@@ -84,7 +84,6 @@ public class Calcolo_gioco_latlong : MonoBehaviour
         if (cursore.activeSelf)
         {
             var puntoIstanziato = Instantiate(puntoPrefab, cursore.transform.position, terra.transform.rotation);
-
             Vector3 raggio = puntoIstanziato.transform.position - terra.transform.position;
             float raggioValue = Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
             Vector3 nuoveCoordinateP = Vector3.zero;
@@ -123,6 +122,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
 
             Debug.LogWarning("lat: " + lat + "\nlong: " + lng);
 
+            puntoIstanziato.transform.parent = terra.transform;
             DistanzaDaCapitaleEstratta();
         }
     }
@@ -155,7 +155,6 @@ public class Calcolo_gioco_latlong : MonoBehaviour
         {
             testoDistanza.text = "Torna a studiare geografia!!\nDistanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti;
         }
-        testoDistanza.text = "Distanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti;
     }
 
     GameData EstraiCapitale()
