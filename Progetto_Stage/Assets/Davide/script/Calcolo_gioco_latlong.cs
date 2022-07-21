@@ -3,22 +3,39 @@ using Oculus.Interaction.Surfaces;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Calcolo_gioco_latlong : MonoBehaviour
 {
     [SerializeField] GameObject cursore;
     [SerializeField] GameObject terra;
     [SerializeField] GameObject puntoPrefab;
+    [SerializeField] JsonData jdata;
+    [SerializeField] TMP_Text testoCapitale;
+    [SerializeField] TMP_Text testoDistanza;
 
-    public float latPuntoDaTrovare;
-    public float lngPuntoDaTrovare;
+    List<GameData> listaCapitali=new List<GameData>();
+    GameData capitaleEstratta;
+
+     float latPuntoDaTrovare;
+     float lngPuntoDaTrovare;
 
 
     float lat,lng;
-    // Start is called before the first frame update
-    void Start()
+
+
+    public void RiempiListaCapitali()
     {
-      
+        foreach (var dato in jdata.gameData.dati)
+        {
+            if (dato.capital == "primary")
+            {
+                listaCapitali.Add(dato);
+            }
+        }
+        capitaleEstratta = EstraiCapitale();
+        testoCapitale.text = capitaleEstratta.city;
+        Debug.LogWarning(capitaleEstratta.city);
     }
 
     // Update is called once per frame
@@ -71,7 +88,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             Vector3 raggio = puntoIstanziato.transform.position - terra.transform.position;
             float raggioValue = Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
             Vector3 nuoveCoordinateP = Vector3.zero;
-            
+
             Debug.Log(raggio.magnitude);
             Debug.Log(raggioValue);
             nuoveCoordinateP.x = Vector3.Dot(raggio, terra.transform.right.normalized);
@@ -80,7 +97,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             Debug.LogWarning(nuoveCoordinateP);
 
             lat = Mathf.Asin((nuoveCoordinateP.y) / raggioValue) * Mathf.Rad2Deg;
-            
+
 
             lng = Mathf.Atan2(Mathf.Abs(nuoveCoordinateP.z), Mathf.Abs(nuoveCoordinateP.x)) * Mathf.Rad2Deg;
 
@@ -101,33 +118,48 @@ public class Calcolo_gioco_latlong : MonoBehaviour
                 {
                     lng = -lng;
                 }
-                
+
             }
-            
+
             Debug.LogWarning("lat: " + lat + "\nlong: " + lng);
 
-            float latInRad= lat * Mathf.Deg2Rad;
-            float longInRad = lng * Mathf.Deg2Rad;
-
-            float latNotaInRad =latPuntoDaTrovare * Mathf.Deg2Rad;
-            float lngNotaInRad = lngPuntoDaTrovare * Mathf.Deg2Rad;
-
-           
-            //Questa é la distanza tra i due punti sulla sfera considerando il suo raggio
-            float distanceTwoPoint = raggioValue * Mathf.Acos((Mathf.Sin(lat) * Mathf.Sin(latPuntoDaTrovare)) + (Mathf.Cos(lat) * Mathf.Cos(latPuntoDaTrovare) * Mathf.Cos(lngPuntoDaTrovare - lng)));
-            //Questa é la distanza tra i due punti sulla sfera considerando il raggio terrestre
-            float distanceTwoPointOnEarth = 3963.0f * Mathf.Acos((Mathf.Sin(lat) * Mathf.Sin(latPuntoDaTrovare)) + (Mathf.Cos(lat) * Mathf.Cos(latPuntoDaTrovare) * Mathf.Cos(lngPuntoDaTrovare - lng)));
-            distanceTwoPointOnEarth *= 1.609344f;
-
-
-            //Calcolo in radianti
-            float deltaLat = (latInRad - latNotaInRad);
-            float deltalng = (longInRad - lngNotaInRad);
-            float a = Mathf.Pow(Mathf.Sin(deltaLat / 2), 2)+(Mathf.Cos(latInRad)*Mathf.Cos(latNotaInRad)*Mathf.Pow(Mathf.Sin(deltalng/2),2));
-            float c = 2 * Mathf.Asin(Mathf.Sqrt(a));
-            float distanzaCalcolataConIRadianti = c * 6371f;
-            Debug.Log("distanza da genova: " + distanceTwoPointOnEarth);
-            Debug.Log("distanza da genova: " + distanzaCalcolataConIRadianti);
+            DistanzaDaCapitaleEstratta();
         }
+    }
+
+    private void DistanzaDaCapitaleEstratta()
+    {
+        
+
+        latPuntoDaTrovare = capitaleEstratta.lat;
+        lngPuntoDaTrovare = capitaleEstratta.lng;
+
+        float latInRad = lat * Mathf.Deg2Rad;
+        float longInRad = lng * Mathf.Deg2Rad;
+
+        float latNotaInRad = latPuntoDaTrovare * Mathf.Deg2Rad;
+        float lngNotaInRad = lngPuntoDaTrovare * Mathf.Deg2Rad;
+
+        //Calcolo in radianti
+        float deltaLat = (latInRad - latNotaInRad);
+        float deltalng = (longInRad - lngNotaInRad);
+        float a = Mathf.Pow(Mathf.Sin(deltaLat / 2), 2) + (Mathf.Cos(latInRad) * Mathf.Cos(latNotaInRad) * Mathf.Pow(Mathf.Sin(deltalng / 2), 2));
+        float c = 2 * Mathf.Asin(Mathf.Sqrt(a));
+        float distanzaCalcolataConIRadianti = c * 6371f;
+        Debug.Log("Distanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti);
+        if (distanzaCalcolataConIRadianti <= 100)
+        {
+            testoDistanza.text = "VITTORIA!!\nDistanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti;
+        }
+        else
+        {
+            testoDistanza.text = "Torna a studiare geografia!!\nDistanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti;
+        }
+        testoDistanza.text = "Distanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti;
+    }
+
+    GameData EstraiCapitale()
+    {
+        return listaCapitali[Random.Range(0,listaCapitali.Count)];
     }
 }
