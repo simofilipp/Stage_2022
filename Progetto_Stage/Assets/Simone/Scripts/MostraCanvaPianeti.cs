@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MostraCanvaPianeti : MonoBehaviour
 {
     [SerializeField] GameObject canvasPianeti;
     [SerializeField] GameObject pianeti_da_accendere;
+    [SerializeField] string nome;
+    [SerializeField] TMP_Text titolo;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class MostraCanvaPianeti : MonoBehaviour
             canvasPianeti.transform.GetChild(0).GetChild(i).gameObject.SetActive(false);
         }
         pianeta.SetActive(true);
+        titolo.text = nome;
     }
 
     private void OnTriggerEnter(Collider other)
