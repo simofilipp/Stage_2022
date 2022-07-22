@@ -64,7 +64,9 @@ public class ParentMovimento_manager : MonoBehaviour
     public void Viaggio()
     {
         SetParentViaggio();
-        parent_spostamento.transform.position = collisionDet_.destinazioneScelta;
+        //Codice per far cambiare la posizione in base al toccco sul piano
+        //parent_spostamento.transform.position = collisionDet_.destinazioneScelta;
+        parent_spostamento.transform.position = new Vector3(103.360001f, -24.5200005f, 0);
     }  
     public void ViaggioBase()
     {
