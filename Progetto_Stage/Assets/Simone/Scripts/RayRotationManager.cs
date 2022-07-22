@@ -52,7 +52,7 @@ public class RayRotationManager : MonoBehaviour
 
     IEnumerator RayRotation()
     {
-        Debug.Log("Entrato nella coroutine");
+        
         while(grabbedSX || grabbedDX)
         {
             Debug.Log("Sta ruotando");

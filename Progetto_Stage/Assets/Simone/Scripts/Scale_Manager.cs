@@ -34,7 +34,7 @@ public class Scale_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(scala_iniziale_Pianeta);
+       
     }
 
     public void OnSelectedScale()

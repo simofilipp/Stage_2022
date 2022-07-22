@@ -13,6 +13,15 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     [SerializeField] JsonData jdata;
     [SerializeField] TMP_Text testoCapitale;
     [SerializeField] TMP_Text testoDistanza;
+    [SerializeField] TMP_Text testoTempo;
+
+
+    float tempo = 0;
+    int tentativi=0;
+    int tentativiCapitali=0;
+    float punteggio;
+    float distanzaCalcolataConIRadianti;
+    bool stagiocando;
 
     List<GameData> listaCapitali=new List<GameData>();
     GameData capitaleEstratta;
@@ -35,7 +44,12 @@ public class Calcolo_gioco_latlong : MonoBehaviour
         }
         capitaleEstratta = EstraiCapitale();
         testoCapitale.text = capitaleEstratta.city;
-        Debug.LogWarning(capitaleEstratta.city);
+        this.GetComponent<RayInteractable>().enabled = true;
+        testoDistanza.text = "";
+        stagiocando = true;
+        StartCoroutine(Timer());
+
+
     }
 
     // Update is called once per frame
@@ -43,42 +57,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     {
         
     }
-    public void RilevaPinch() 
-    {
-        if (cursore.activeSelf)
-        {
-            var puntoIstanziato= Instantiate(puntoPrefab, cursore.transform.position, terra.transform.rotation);
-            puntoIstanziato.transform.parent = terra.transform;
-            float proiezioneRaggio = Mathf.Sqrt(((puntoIstanziato.transform.position.x - terra.transform.position.x) * (puntoIstanziato.transform.position.x - terra.transform.position.x))
-                + ((puntoIstanziato.transform.position.z - terra.transform.position.z) * (puntoIstanziato.transform.position.z - terra.transform.position.z)));
-            //float raggio = Mathf.Sqrt((proiezioneRaggio * proiezioneRaggio) + (puntoIstanziato.transform.position.y * puntoIstanziato.transform.position.y));
-            float raggio=Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
-
-            //float distanzaPC = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, coordinateZero.position.y, puntoIstanziato.transform.position.z), coordinateZero.position);
-
-            Vector3 position = puntoIstanziato.transform.position;
-
-            Debug.Log(puntoIstanziato.transform.position);
-
-            lat = Mathf.Asin((puntoIstanziato.transform.position.y-terra.transform.position.y) / raggio) * Mathf.Rad2Deg;
-            float raggioProiet = Mathf.Cos(lat) * raggio;
-            //float proiezionePunto = Vector3.Distance(new Vector3(puntoIstanziato.transform.position.x, terra.transform.position.y, puntoIstanziato.transform.position.z), terra.transform.position);
-
-            lng = Mathf.Atan2(Mathf.Abs(puntoIstanziato.transform.position.z - terra.transform.position.z), Mathf.Abs(puntoIstanziato.transform.position.x - terra.transform.position.x))*Mathf.Rad2Deg;
-
-            //lng=Mathf.Asin(Mathf.Abs(puntoIstanziato.transform.position.z-terra.transform.position.z)/proiezioneRaggio)*Mathf.Rad2Deg;
-
-            //lng = Mathf.Acos(((puntoIstanziato.transform.position.x* puntoIstanziato.transform.position.x)- (puntoIstanziato.transform.position.z * puntoIstanziato.transform.position.z)-(raggioProiet*raggioProiet))
-            //    /(-2* puntoIstanziato.transform.position.z * raggioProiet)
-            //    ) * Mathf.Rad2Deg; ;
-
-           // Debug.Log(distanzaPC);
-
-            //lng = Mathf.Asin((coordinateZero.position.z/Mathf.Sqrt((coordinateZero.position.z* coordinateZero.position.z)+(coordinateZero.position.x * coordinateZero.position.x))))*Mathf.Rad2Deg + Mathf.Asin((puntoIstanziato.transform.position.z / Mathf.Sqrt((puntoIstanziato.transform.position.z * puntoIstanziato.transform.position.z) + (puntoIstanziato.transform.position.x * puntoIstanziato.transform.position.x))))*Mathf.Rad2Deg;
-
-            Debug.LogWarning("lat: "+lat+"\nlong: "+lng);
-        }
-    }
+  
     public void RilevaPinchLocal()
     {
         if (cursore.activeSelf)
@@ -88,12 +67,12 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             float raggioValue = Vector3.Distance(puntoIstanziato.transform.position, terra.transform.position);
             Vector3 nuoveCoordinateP = Vector3.zero;
 
-            Debug.Log(raggio.magnitude);
-            Debug.Log(raggioValue);
+           
+            
             nuoveCoordinateP.x = Vector3.Dot(raggio, terra.transform.right.normalized);
             nuoveCoordinateP.y = Vector3.Dot(raggio, terra.transform.up.normalized);
             nuoveCoordinateP.z = Vector3.Dot(raggio, terra.transform.forward.normalized);
-            Debug.LogWarning(nuoveCoordinateP);
+           
 
             lat = Mathf.Asin((nuoveCoordinateP.y) / raggioValue) * Mathf.Rad2Deg;
 
@@ -120,10 +99,30 @@ public class Calcolo_gioco_latlong : MonoBehaviour
 
             }
 
-            Debug.LogWarning("lat: " + lat + "\nlong: " + lng);
+            
 
             puntoIstanziato.transform.parent = terra.transform;
             DistanzaDaCapitaleEstratta();
+
+            tentativi += 1;
+            if (tentativi == 3)
+            {
+                tentativi = 0;
+                tentativiCapitali += 1;
+                punteggio += distanzaCalcolataConIRadianti;
+
+                if(tentativiCapitali == 3)
+                {
+                    stagiocando = false;
+                    StopCoroutine(Timer());
+                    testoCapitale.text = "GAME OVER";
+                    testoDistanza.text = "Punteggio: " + punteggio / tempo;
+                    this.GetComponent<RayInteractable>().enabled = false;
+                    return;
+                }
+                RiempiListaCapitali();
+            }
+
         }
     }
 
@@ -145,7 +144,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
         float deltalng = (longInRad - lngNotaInRad);
         float a = Mathf.Pow(Mathf.Sin(deltaLat / 2), 2) + (Mathf.Cos(latInRad) * Mathf.Cos(latNotaInRad) * Mathf.Pow(Mathf.Sin(deltalng / 2), 2));
         float c = 2 * Mathf.Asin(Mathf.Sqrt(a));
-        float distanzaCalcolataConIRadianti = c * 6371f;
+        distanzaCalcolataConIRadianti = c * 6371f;
         Debug.Log("Distanza da " + capitaleEstratta.city + ": " + distanzaCalcolataConIRadianti);
         if (distanzaCalcolataConIRadianti <= 100)
         {
@@ -160,5 +159,15 @@ public class Calcolo_gioco_latlong : MonoBehaviour
     GameData EstraiCapitale()
     {
         return listaCapitali[Random.Range(0,listaCapitali.Count)];
+    }
+
+    IEnumerator Timer()
+    {
+        while (stagiocando)
+        {
+            testoTempo.text = tempo.ToString();
+            yield return new WaitForSeconds(1f);
+            tempo += 1;
+        }
     }
 }

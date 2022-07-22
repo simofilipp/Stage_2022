@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,5 +43,7 @@ public class CapitalFinderManager : MonoBehaviour
 
         sferaGioco.SetActive(false);
         terraGioco.SetActive(false);
+
+        terraGioco.GetComponent<RayInteractable>().enabled = false;
     }
 }

@@ -68,7 +68,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolvenza_animazione: 1
+    - _Dissolvenza_animazione: -0.71
     - _Dissolvenza_spessore: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0

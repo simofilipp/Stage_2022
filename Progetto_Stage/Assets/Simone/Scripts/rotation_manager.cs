@@ -83,7 +83,7 @@ public class Rotation_manager : MonoBehaviour
                     //terra.transform.rotation = this.transform.rotation;
                     LeanTween.cancel(id);
                     id=terra.transform.LeanRotate(transform.rotation.eulerAngles, 0.4f).id;
-                    Debug.LogWarning(id);
+                    
                 }
                 rot_inizialeX = rot_sucessivaX;
                 rot_inizialeY = rot_sucessivaY;

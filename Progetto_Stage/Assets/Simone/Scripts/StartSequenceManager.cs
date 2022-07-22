@@ -113,11 +113,11 @@ public class StartSequenceManager : MonoBehaviour
                     {
                         obj.SetActive(true);
 
-                        var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
-                        LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
-                        {
-                            solveSfera.SetFloat("_Dissolvenza_animazione", value);
-                        });
+                        //var solveSfera = obj.GetComponentsInChildren<MeshRenderer>()[0].material;
+                        //LeanTween.value(1f, -0.2f, dissolveTimeSfere).setOnUpdate((float value) =>
+                        //{
+                        //    solveSfera.SetFloat("_Dissolvenza_animazione", value);
+                        //});
                     }
                     luna.SetActive(false);
 
