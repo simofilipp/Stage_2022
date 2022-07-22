@@ -17,6 +17,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
 
 
     float tempo = 0;
+    float tempoMalus;
     int tentativi=0;
     int tentativiCapitali=0;
     float punteggio;
@@ -32,7 +33,10 @@ public class Calcolo_gioco_latlong : MonoBehaviour
 
     float lat,lng;
 
-
+    public void InizioTimer()
+    {
+        StartCoroutine(Timer());
+    }
     public void RiempiListaCapitali()
     {
         foreach (var dato in jdata.gameData.dati)
@@ -47,7 +51,6 @@ public class Calcolo_gioco_latlong : MonoBehaviour
         this.GetComponent<RayInteractable>().enabled = true;
         testoDistanza.text = "";
         stagiocando = true;
-        StartCoroutine(Timer());
 
 
     }
@@ -114,9 +117,7 @@ public class Calcolo_gioco_latlong : MonoBehaviour
                 if(tentativiCapitali == 3)
                 {
                     stagiocando = false;
-                    StopCoroutine(Timer());
-                    testoCapitale.text = "GAME OVER";
-                    testoDistanza.text = "Punteggio: " + punteggio / tempo;
+
                     this.GetComponent<RayInteractable>().enabled = false;
                     return;
                 }
@@ -169,5 +170,10 @@ public class Calcolo_gioco_latlong : MonoBehaviour
             yield return new WaitForSeconds(1f);
             tempo += 1;
         }
+        yield return new WaitForSeconds(2f);
+        testoCapitale.text = "GAME OVER";
+        tempoMalus = tempo / 20;
+        testoDistanza.text = "Punteggio: " + ((30000 / punteggio)+tempoMalus);
+        tempo=0;
     }
 }
