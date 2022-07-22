@@ -378,17 +378,17 @@ public class StartSequenceManager : MonoBehaviour
         {
             case Mode.FreeMode:
                 //spegnere ologrammi diversi e spostare questo al centro
-                ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
-                ologrammiMode.transform.GetChild(2).gameObject.SetActive(false);
+                ologrammiMode.transform.GetChild(1).gameObject.SetActive(false);
+                //ologrammiMode.transform.GetChild(2).gameObject.SetActive(false);
                 //implementare modo per far partire tutto in sequenza di questo leantween
-                ologrammiMode.transform.GetChild(1).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
+                ologrammiMode.transform.GetChild(0).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
 
                 break;
             case Mode.PlanetariumMode:
                 //spegnere ologrammi diversi e spostare questo al centro
                 ologrammiMode.transform.GetChild(0).gameObject.SetActive(false);
-                ologrammiMode.transform.GetChild(1).gameObject.SetActive(false);
-                ologrammiMode.transform.GetChild(2).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
+                //ologrammiMode.transform.GetChild(2).gameObject.SetActive(false);
+                ologrammiMode.transform.GetChild(1).LeanMoveLocal(Vector3.zero, 1f).setEaseOutQuad();
                 break;
         }
     }

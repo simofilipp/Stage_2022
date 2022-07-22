@@ -65,7 +65,6 @@ public class Istanzia_istogrammi : MonoBehaviour
         {
             if (dato.capital == "primary")
             {
-                Debug.Log("Entrato nel foreach di idtanzia...");
                 var punto = Instantiate(cubo_scala, CalcolaPunto(dato.lat, dato.lng), Quaternion.identity);
                 punto.transform.parent = parent_punti.transform;
                 punto.transform.LookAt(punto.transform.position * 2);
@@ -105,9 +104,10 @@ public class Istanzia_istogrammi : MonoBehaviour
                         for (int j = 0; j < dataValues.Count; j++)
                         {
                             //scala in base al dato, le liste devono essere lunghe uguali e precise
-                            var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 100000);
+                            var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j] / 300000);
                             punti[j].transform.LeanScale(scalaFinale, 5f);
-                            punti[j].GetComponentInChildren<TMP_Text>().text = dataValues[j].ToString();
+                            punti[j].GetComponentInChildren<TMP_Text>().enabled = true;
+                            punti[j].GetComponentInChildren<TMP_Text>().text = Math.Round((float)dataValues[j]/1000000f,2).ToString()+" Mln";
                             punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
                             punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
                             if (dataValues[j] > 1000000)
@@ -162,6 +162,7 @@ public class Istanzia_istogrammi : MonoBehaviour
                             //scala in base al dato, le liste devono essere lunghe uguali e precise
                             var scalaFinale = new Vector3(punti[j].transform.localScale.x, punti[j].transform.localScale.y, dataValues[j]);
                             punti[j].transform.LeanScale(scalaFinale, 5f);
+                            punti[j].GetComponentInChildren<TMP_Text>().enabled = false;
                             punti[j].GetComponent<MeshRenderer>().material.color = Color.green;
                             punti[j].GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.green);
                             if (dataValues[j] > 30)
